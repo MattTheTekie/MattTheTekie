@@ -1,0 +1,144 @@
+https://www.gnome-look.org/p/1229193/ window decorations
+https://www.reddit.com/r/linux/comments/24ydl6/sonic_the_hedgehog_simplistic_animated_plymouth/ boot screen
+wallpaper https://www.pixel4k.com/sonic-the-hedge-hog-movie-111189.html
+https://arcolinux.com/how-to-install-any-cursor-theme/ how to cursor
+https://www.deviantart.com/kuronine721/art/Mini-Sonic-Mania-Animated-Cursor-Set-714454475 sonic cursor set
+https://www.deviantart.com/trunks24/art/super-sonic-vs-ssj-goku-204579330 chrome wallpaper
+https://www.themebeta.com/chrome/theme/143444/download chrome sonic theme
+https://drive.google.com/file/d/1huLYtcJCAOF3j_2W9FwXRzvylCDVPwDX/view?usp=sharing stylish setup
+https://1000logos.net/wp-content/uploads/2017/10/sonic-logo.png start menu icon
+https://store.kde.org/p/1334044/ icon theme
+
+
+test
+
+https://gsf-fl.softonic.com/f8e/ab7/e2060bb2a94852570461573866ac76b145/file?Expires=1583654636&Signature=20d09f543a9ed12fdf8996c281d331680a8abe03&url=https://sonic-games.en.softonic.com&Filename=sonicgamesv1.zip
+https://www.youtube.com/redirect?q=https%3A%2F%2F1drv.ms%2Fu%2Fs%21AiWTYraL9_mMg_0AL9V9GgkccoCQ9w&event=video_description&redir_token=oY1mylqza3sWpx7UJ3sGcfRYlu58MTU4NDYzNzAzNkAxNTg0NTUwNjM2&v=Fft2GY5ZXDQ
+https://lutris.net/
+https://lutris.net/games/sonic-adventure-dx/
+https://store.kde.org/p/1303587/ sddm theme
+
+https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb 
+https://linux.wps.com/
+
+
+
+
+edit this
+
+2. LOcation show dekstop folder
+
+3 .LOok and feel breeze
+
+4. Workspace tHeme  lux
+
+
+
+7. FOnts- General Notosans 10pt bold
+
+ 9. APp style breeze
+
+
+
+12. autostart plank 
+
+
+13. bottom memory statsu and cpu load monitor 
+
+14. icons only task manager
+
+
+firefox,chrome,steam,vlc
+
+max rows 2 
+
+
+
+
+
+
+
+
+
+ADDONS
+
+
+Touch VPN
+2.2.40
+Unblock any blocked website and stay secure with Touch VPN. Easy use with one-click activation. Unlimited and completely FREE!
+ID: najhihpmcgeelmeoodonanjdaobgogjl
+Inspect views
+background page
+Extension Icon
+Universal Bypass
+13.6.1
+Don't waste your time with compliance. Universal Bypass circumvents annoying link shorteners.
+ID: afmmceflfinaobbpmdgbeenpbijjbgpi
+Inspect views
+background page
+Extension Icon
+Dark Web - Dark Theme for Chrome
+1.2
+Simple button turns on dark mode for all webpages. Classic design of Dark Theme changes web to black color
+ID: cjjfaljaaljdjknnmhoajnmgbdcchmpp
+Inspect views
+background page
+Extension Icon
+Google Docs Offline
+1.9.1
+ This extension may have been corrupted.
+ID: ghbmnnjooekpmoecnnnilnnbdlolhkhi
+Extension Icon
+Nano Adblocker
+1.0.0.140
+An adblocker
+ID: gabbbocakeomblphkmmnoamkioajlkfo
+Inspect views
+background.html
+Extension Icon
+Nano Defender
+15.0.0.194
+Companion extension for Nano Adblocker
+ID: ggolfgbegefeeoocgjbmkembbncoadlb
+Inspect views
+background page
+Extension Icon
+Screen Recorder
+2.1.0
+Record a video from the camera or capture it from the screen (desktop, specific application window or Chrome tab)
+ID: hniebljpgcogalllopnjokppmgbhaden
+Inspect views
+background page
+Extension Icon
+Stylish - Custom themes for any website
+2.0.9
+Customize any website to your color scheme in 1 click, thousands of user styles with beautiful themes, skins & free backgrounds.
+ID: fjnbnpbmkenffdnngjfgmeleoegfcffe
+Inspect views
+background page
+Extension Icon
+Touch VPN - Secure and unlimited VPN proxy
+3.1.3
+Unblock any website and stay secure with Touch VPN. One-click connect to our fast VPN. Unlimited bandwidth and completely FREE!
+ID: bihmplhobchoageeokmgbdihknkjbknd
+Extension Icon
+uBlock Origin
+1.24.4
+Finally, an efficient blocker. Easy on CPU and memory.
+ID: cjpalhdlnbpafiamejdnhcphjbkeiagm
+Inspect views
+background.html
+Extension Icon
+uBlock Origin Extra
+2.88
+A companion extension to uBlock Origin: to gain ability to foil early hostile anti-user mechanisms working around content blockers.
+ID: pgdnlhfefecpicbbihgmbmffkjpaplco
+Extension Icon
+User-Agent Switcher for Chrome
+1.1.0
+Spoofs & Mimics User-Agent strings.
+ID: djflhoibgkdhkhhcedjiklpkjnoahfmg
+Inspect views
+background page
+
+
