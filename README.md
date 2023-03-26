@@ -5,6 +5,12 @@
 
 <a href="https://spotify-github-profile.vercel.app/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&redirect=true"><img align="right" src="https://spotify-github-profile.vercel.app/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false" /></a>
  - You can call me Matt or 宇宙飛行士.
+### GitHub Stats
+<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=MattTheTekie&show_icons=true&locale=en" alt="MattTheTekie" /></p>
+<br>
+
+### GitHub Info
+<p><img src="/github-metrics.svg" alt="Metrics" width="100%"></p>
 
 ## 🤔 What I'm doing
  - Reverse engineering. 💻
