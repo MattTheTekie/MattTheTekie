@@ -18,3 +18,4 @@ Making a simple webpage on Windows XP on the 2007 MacBook
 Shorting pin on NAND and flashing SOC with DIY cable
 ![Images](https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/main/Personal-Scripts/Images/IMG_20211030_131810_354.jpg)
 [Collab MacBook 2012 video with a friend](https://odysee.com/@mattdoestech726:5/leopard-on-lion-mid-2012-mac-book-pro:8)
+[Archive of making a Linux distro](https://odysee.com/@TheDebianPowerUser:f/MakingALinuxDistro:6)
