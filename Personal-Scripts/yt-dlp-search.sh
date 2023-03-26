@@ -6,7 +6,7 @@ while getopts "p:s:" opt; do
   case $opt in
     p)
       playlist=$OPTARG
-      mpv "$playlist" --ytdl-format="bestvideo[height<=?720][fps<=?30]+bestaudio/best" --screen=1 --sid=1
+      mpv "$playlist" --ytdl-format="mp4[height<=?720][fps<=?30]+bestaudio/best"
       ;;
     s)
       searchterm=$OPTARG
@@ -14,7 +14,7 @@ while getopts "p:s:" opt; do
     sed 's/-s //' -i 1.txt
     sed -n 1,1p 1.txt
     export BWD="$(cat 1.txt)"
-    mpv ytdl://ytsearch:"$BWD" --ytdl-format="bestvideo[height<=?720][fps<=?30]+bestaudio/best" --screen=1 --sid=1
+    mpv ytdl://ytsearch:"$BWD" --ytdl-format="mp4[height<=?720][fps<=?30]+bestaudio/best"
     rm 1.txt
       ;;
     \?)
@@ -26,5 +26,5 @@ done
 if [ -z "$searchterm" ] && [ -z "$playlist" ]; then
   echo -n "Enter Searchterm: "
   read searchterm
-  mpv ytdl://ytsearch:"$searchterm" --ytdl-format="bestvideo[height<=?720][fps<=?30]+bestaudio/best" --screen=1 --sid=1
+  mpv ytdl://ytsearch:"$searchterm" --ytdl-format="mp4[height<=?720][fps<=?30]+bestaudio/best"
   fi
