@@ -12,3 +12,5 @@ Acronis TrueImage on Fitjitsu Lifebook T734
 ![Images](https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/main/Personal-Scripts/Images/Screenshot_20230326_183131_Photos.jpg)
 Making a simple webpage on Windows XP on the 2007 MacBook
 ![Images](https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/main/Personal-Scripts/Images/Mgs5FQ.png)
+Shorting pin on NAND and flashing SOC with DIY cable
+![Images](https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/main/Personal-Scripts/Images/IMG_20211030_131810_354.jpg)
