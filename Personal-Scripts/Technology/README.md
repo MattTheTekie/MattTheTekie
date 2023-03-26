@@ -19,3 +19,7 @@ Shorting pin on NAND and flashing SOC with DIY cable
 ![Images](https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/main/Personal-Scripts/Images/IMG_20211030_131810_354.jpg)
 [Collab MacBook 2012 video with a friend](https://odysee.com/@mattdoestech726:5/leopard-on-lion-mid-2012-mac-book-pro:8)\
 [Archive of making a Linux distro](https://odysee.com/@TheDebianPowerUser:f/MakingALinuxDistro:6)
+2014 archives
+![Images](https://github.com/MattTheTekie/MattTheTekie/raw/main/Personal-Scripts/Images/image-197.png)
+![Images](https://github.com/MattTheTekie/MattTheTekie/raw/main/Personal-Scripts/Images/DxbK-T-Y-1.png)
+![Images](https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/main/Personal-Scripts/Images/2014-08-12_17.39.22.png)
