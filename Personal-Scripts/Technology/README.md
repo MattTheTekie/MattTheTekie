@@ -1,6 +1,8 @@
 # MattTheTekie's technology page.
-Needs to be formatted better.\\
-MattTheTekie's personal collection of geekery.\\
+Needs to be formatted better.\
+
+MattTheTekie's personal collection of geekery.\
+
 ![Matt](https://avatars.githubusercontent.com/u/94870997)
 [Old video archive](https://odysee.com/@mattdoestech726:5?view=content)\
 Windows 10 on MacBook from 2007
