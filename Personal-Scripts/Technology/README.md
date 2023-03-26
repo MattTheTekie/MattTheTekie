@@ -11,4 +11,4 @@ Flashing microsd with Linux iso using TV box over ADB
 Acronis TrueImage on Fitjitsu Lifebook T734
 ![Images](https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/main/Personal-Scripts/Images/Screenshot_20230326_183131_Photos.jpg)
 Making a simple webpage on Windows XP on the 2007 MacBook
-![Images](https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/main/Personal-Scripts/Images/Screenshot_20230326_183131_Photos.jpg)
+![Images](https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/main/Personal-Scripts/Images/Mgs5FQ.png)
