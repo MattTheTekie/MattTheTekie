@@ -25,5 +25,5 @@ Needs to be formatted better.
 ![Images](https://github.com/MattTheTekie/MattTheTekie/raw/main/Personal-Scripts/Images/image-197.png)
 - Middle school desktop.
 ![Images](https://github.com/MattTheTekie/MattTheTekie/raw/main/Personal-Scripts/Images/DxbK-T-Y-1.png)
-- test
+- Windows 98 on Galaxy Tab.
 ![Images](https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/main/Personal-Scripts/Images/2014-08-12_17.39.22.png)
