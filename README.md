@@ -32,7 +32,7 @@
 ## 📫 Get in touch
 [![Telegram](https://img.shields.io/badge/%40Knight666_666-0088cc?style=flat-square&logo=telegram&logoColor=ffffff)](https://t.me/Knight666_666)<br>
 [![Mastodon](https://img.shields.io/badge/%40ASTAFATHERSATAN-0088cc?style=flat-square&logo=mastodon&logoColor=ffffff)](https://nerdculture.de/@ASTAFATHERSATAN)<br>
-[!DSiPaint](https://dsipaint.com/images/icons/icon_dsipaint.png)](https://dsipaint.com/member/?id=152737)<br>
+[![DSiPaint](https://dsipaint.com/images/icons/icon_dsipaint.png)](https://dsipaint.com/member/?id=152737)<br>
 ## 🛸 You can check out my website's below.&nbsp;
 
 > [**MattTheTekie's Blog**] 🔭 [Click here.](https://mattthetekie.github.io/MattTheTekie)
