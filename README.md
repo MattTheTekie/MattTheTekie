@@ -5,18 +5,19 @@
 
 <a href="https://spotify-github-profile.vercel.app/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&redirect=true"><img align="right" src="https://spotify-github-profile.vercel.app/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false" /></a>
  - You can call me Matt or 宇宙飛行士.
-### 📃 GitHub Stats
-<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=MattTheTekie&show_icons=true&locale=en" alt="MattTheTekie" /></p>
-<br>
-
-### 🧾 GitHub Info
-<p><img src="/github-metrics.svg" alt="Metrics" width="100%"></p>
 
 ## 🤔 What I'm doing
  - Reverse engineering. 💻
  - Maintaining the N3RDP0RT4L organization webpage from time to time. 🌐
  - Maintaining scripts for various projects. ⌨️
  - Living on Kepler-186F. 🌌
+
+### 📃 GitHub Stats
+<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=MattTheTekie&show_icons=true&locale=en" alt="MattTheTekie" /></p>
+<br>
+
+### 🧾 GitHub Info
+<p><img src="/github-metrics.svg" alt="Metrics" width="100%"></p>
 
 ## 💻 Working environment
 [![Android 13](https://img.shields.io/badge/Android%2013-3ddc84?style=flat-square&logo=android&logoColor=ffffff)](https://www.android.com/android-13/)<br>
