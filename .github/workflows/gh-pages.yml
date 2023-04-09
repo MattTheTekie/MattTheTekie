@@ -1,7 +1,7 @@
 name: github pages
 
 on:
-  push:
+  workflow_dispatch:
     branches:
       - main  # Set a branch to deploy
 
