@@ -8,7 +8,7 @@
 
 ## 🤔 What I'm doing
  - Reverse engineering. 💻
- - Maintaining the N3RDP0RT4L organization webpage from time to time. 🌐
+ - Maintaining the FREEDOM organization webpage from time to time. 🌐
  - Maintaining scripts for various projects. ⌨️
  - Living on Kepler-186F. 🌌
 
@@ -40,8 +40,8 @@
 
 My new corner on the world wide web. [**Work in progress. Under construction.**]&nbsp;
 
-> [**N3RDP0RT4L-HQ**] 👾
-[Click here.](https://n3rdp0rt4l-hq.gitlab.io/n3rdp0rt4l)
+> [**FREEDOM-HQ**] 👾
+[Click here.](tbc)
 
 We're a development group, focusing on the T380 and codename "enuma" tablet. We have achieved many application ports, and modifications to make the SM-T380 better then ever before. [**Xiaomi.**]&nbsp;
 
