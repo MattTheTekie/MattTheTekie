@@ -43,7 +43,7 @@ My new corner on the world wide web. [**Work in progress. Under construction.**]
 > [**FREEDOM-HQ**] 👾
 [Click here.](https://github.com/FREEDOM-HQ/)
 
-We're a development group, focusing on the T380 and codename "enuma" tablet. We have achieved many application ports, and modifications to make the SM-T380 better then ever before. [**Xiaomi.**]&nbsp;
+We're a development group, focusing on Linux, and Android. We have achieved  some nice application ports, and have made modifications to make the RK3228A better then ever before. We also have some Xiaomi stuff going on. [**Xiaomi.**]&nbsp;
 
 > [**TheBestBros**] 🕹️ [Click here.](https://thebestbros.surge.sh)
 
