@@ -41,7 +41,7 @@
 My new corner on the world wide web. [**Work in progress. Under construction.**]&nbsp;
 
 > [**FREEDOM-HQ**] 👾
-[Click here.](tbc)
+[Click here.](https://github.com/FREEDOM-HQ/)
 
 We're a development group, focusing on the T380 and codename "enuma" tablet. We have achieved many application ports, and modifications to make the SM-T380 better then ever before. [**Xiaomi.**]&nbsp;
 
