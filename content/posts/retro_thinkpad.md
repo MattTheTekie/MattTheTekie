@@ -1,6 +1,6 @@
 ---
 title: "Retro ThinkPad Upgrade Project."
-date: 1678717603
+date: 1683033247
 draft: false
 ---
 
