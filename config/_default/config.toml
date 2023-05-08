@@ -114,13 +114,7 @@ url = "https://github.com/MattTheTekie"
   [menu.social.params]
   icon = "brand-github"
 
-[[menu.social]]
-identifier = "twitter"
-name = "Twitter"
-url = "https://twitter.com/"
 
-  [menu.social.params]
-  icon = "brand-twitter"
 
 [related]
 includeNewer = true
