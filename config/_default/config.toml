@@ -119,7 +119,7 @@ url = "https://github.com/MattTheTekie"
 [[menu.social]]
 identifier = "twitter"
 name = "Twitter"
-url = "https://twitter.com/LuigiBlood"
+url = "https://twitter.com/"
 
   [menu.social.params]
   icon = "brand-twitter"
