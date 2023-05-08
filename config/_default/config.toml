@@ -1,7 +1,7 @@
 baseurl = "https://mattthetekie.github.io/MattTheTekie/"
 languageCode = "en-us"
 paginate = 5
-title = "Nothing There"
+title = "Matt's Blog"
 disqusShortname = "mattthetekie"
 DefaultContentLanguage = "ja"
 hasCJKLanguage = "ja"
