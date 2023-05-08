@@ -45,6 +45,10 @@ jobs:
             - name: Build
               run: hugo --minify --gc
 
+            - name: Test
+
+              run: find public/post/page/ -name "*.html" -type f -print0 | xargs -0 sed -i '' -e 's/<div class="site-avatar">.*<\/div>//g'
+
             - name: Deploy 🚀
               uses: JamesIves/github-pages-deploy-action@4.1.4
               with:
