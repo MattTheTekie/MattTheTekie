@@ -1,5 +1,5 @@
 ---
-title: "Retro ThinkPad Upgrade Project"
+title: "Retro ThinkPad upgrade project"
 date: 1683033247
 draft: false
 categories: ["thinkpad"]
