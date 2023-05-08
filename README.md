@@ -48,7 +48,7 @@ We're a simple development group, focusing on DSiPaint, Linux, and Android.&nbsp
 
 My old website that holds memories beyond imagination.&nbsp;
 
-> ### 💾 You can check some of my favourite webpages here.
+### 💾 You can check some of my favourite webpages here.
 > [**Cameron's World**] 🌎 [Click here.](https://www.cameronsworld.net/)
 
 It's a collection of archived Geocities websites. It's pretty cool.&nbsp;
