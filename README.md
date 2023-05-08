@@ -35,29 +35,28 @@
 [![DSiPaint](https://dsipaint.com/images/icons/icon_dsipaint.png)](https://dsipaint.com/member/?id=152737)<br>
 ### 🛸 You can check out my website's below.&nbsp;
 
-> [**MattTheTekie's Blog**] 🔭 [Click here.](https://mattthetekie.github.io/MattTheTekie)
+> 🔭 [**MattTheTekie's Blog**](https://mattthetekie.github.io/MattTheTekie)
 
 My new corner on the world wide web.&nbsp;
 
-> [**FREEDOM-HQ**] 👾
-[Click here.](https://github.com/FREEDOM-HQ/)
+> 🐧 [**FREEDOM-HQ**](https://github.com/FREEDOM-HQ/)
 
 We're a simple development group, focusing on DSiPaint, Linux, and Android.&nbsp;
 
-> [**TheBestBros**] 🕹️ [Click here.](https://thebestbros.surge.sh)
+> 🕹️ [**TheBestBros**](https://thebestbros.surge.sh)
 
 My old website that holds memories beyond imagination.&nbsp;
 
 ### 💾 You can check some of my favourite webpages here.
-> [**Cameron's World**] 🌎 [Click here.](https://www.cameronsworld.net/)
+> 🌎 [**Cameron's World**](https://www.cameronsworld.net/)
 
 It's a collection of archived Geocities websites. It's pretty cool.&nbsp;
 
-> 🔗 [**Click here.**](http://cyberspaceandtime.com/)
+> 🔗 [**CyberSpaceAndTime**](http://cyberspaceandtime.com/)
 
 This is a really awesome Amiga OS like web operating system complete with a web chat room, and a video player.&nbsp;
 
-> [**Daedal OS**] 🖥️ [Click here.](https://dustinbrett.com/)
+> 🖥️ [**Daeal OS**](https://dustinbrett.com/)
 
 A full on complete open source Windows 10 like experience including DOOM, 3D pinball, and much more.
 
