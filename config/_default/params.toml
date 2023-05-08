@@ -16,7 +16,7 @@ emoji = ""
 subtitle = ""
 
 [sidebar.avatar]
-enabled = true
+enabled = false
 local = false
 src = "https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/master/Personal-Scripts/Images/94870997.png"
 
