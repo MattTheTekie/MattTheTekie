@@ -2,7 +2,7 @@ baseurl = "https://mattthetekie.github.io/MattTheTekie/"
 languageCode = "en-us"
 paginate = 5
 title = ""
-disqusShortname = "hugo-theme-stack"
+disqusShortname = "mattthetekie"
 DefaultContentLanguage = "ja"
 hasCJKLanguage = "ja"
 
