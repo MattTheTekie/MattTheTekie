@@ -1,3 +1,18 @@
+---
+
+title: "Phantom, Cached And Empty Processes"
+
+description: "Phantom, Cached And Empty Processes"
+
+date: 2021-10-17T17:31:45+09:00
+
+draft: false
+
+categories: [Android]
+
+tags: ["Android"]
+
+---
 # Phantom, Cached And Empty Processes
 
 This was originally posted in a comment in [`termux/termux-app` issue `#2366`](https://github.com/termux/termux-app/issues/2366#issuecomment-961305970) references info in relation to it, its comments and the original issue creator (OP/@V-no-A) and then posted at https://gist.github.com/agnostic-apollo/dc7e47991c512755ff26bd2d31e72ca8.
