@@ -47,7 +47,7 @@ jobs:
 
             - name: Test
 
-              run: ls -a public/
+              run: ls -a public/post/page
 
             - name: Deploy 🚀
               uses: JamesIves/github-pages-deploy-action@4.1.4
