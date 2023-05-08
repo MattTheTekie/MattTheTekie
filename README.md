@@ -53,7 +53,7 @@ My old website that holds memories beyond imagination.&nbsp;
 
 It's a collection of archived Geocities websites. It's pretty cool.&nbsp;
 
-> [**CyberSpaceAndTime**] 🔗 [Click here.](http://cyberspaceandtime.com/)
+> 🔗 [**Click here.**](http://cyberspaceandtime.com/)
 
 This is a really awesome Amiga OS like web operating system complete with a web chat room, and a video player.&nbsp;
 
