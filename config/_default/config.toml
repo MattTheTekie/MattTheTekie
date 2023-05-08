@@ -24,12 +24,10 @@ favicon = "https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/master/Pe
   lastUpdated = "Jan 02, 2006 15:04 MST"
 
   [params.sidebar]
-  subtitle = "落書き帳みたいなもの"
-
-    [params.sidebar.avatar]
-    enabled = true
-    local = false
-    src = "https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/master/Personal-Scripts/Images/94870997.png"
+  subtitle = "You're average techie."
+  enabled = true
+  local = false
+  src = "https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/master/Personal-Scripts/Images/94870997.png"
 
   [params.article]
   math = false
