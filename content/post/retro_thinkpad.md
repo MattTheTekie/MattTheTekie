@@ -1,6 +1,6 @@
 ---
 title: "Retro ThinkPad upgrade project"
-date: 1683033247
+date: 1683566689
 draft: false
 categories: ["thinkpad"]
 tags: ["Thinkpad","Linux"]
