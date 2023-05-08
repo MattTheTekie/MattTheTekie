@@ -27,7 +27,7 @@ favicon = "https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/master/Pe
   subtitle = "落書き帳みたいなもの"
 
     [params.sidebar.avatar]
-    enabled = true
+    enabled = false
     local = false
     src = "https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/master/Personal-Scripts/Images/94870997.png"
 
