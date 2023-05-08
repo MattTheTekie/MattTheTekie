@@ -47,7 +47,8 @@ jobs:
 
             - name: Test
 
-              run: ls -a public/post/page
+              run: find public/post/page -name "*.html" -type f -execdir sed -i '' -e 's/<div class="site-avatar">.*<\/div>//g' {} +
+             
 
             - name: Deploy 🚀
               uses: JamesIves/github-pages-deploy-action@4.1.4
