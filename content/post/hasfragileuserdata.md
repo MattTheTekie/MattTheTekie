@@ -1,3 +1,18 @@
+---
+
+title: "hasFragileUserData"
+
+description: "hasFragileUserData"
+
+date: 2021-10-17T17:31:45+09:00
+
+draft: false
+
+categories: [Android]
+
+tags: ["Android"]
+
+---
 The [`hasFragileUserData`](https://developer.android.com/guide/topics/manifest/application-element#fragileuserdata) flag can be added to the `application` node of `AndroidManifest.xml`. If its value is `true,` then when the user uninstalls the app, a prompt will be shown to the user asking him whether to keep the app's data.
 
 ```
