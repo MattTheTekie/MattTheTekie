@@ -2,7 +2,10 @@
 title: "Retro ThinkPad Upgrade Project"
 date: 1683033247
 draft: false
+categories: ["thinkpad"]
+tags: ["Thinkpad","Linux"]
 ---
+
 
 ## Story
 Ever since ive used my first ThinkPad, ive been impressed with the modular design, upgradability, and expansion slots. Only until a few years ago I didnt know IBM made ThinkPads until Lenovo bought the series out from IBM. My uncle worked for IBM back in his days, but I always wanted a retro ThinkPad, already having my modern ThinkPad W520.
