@@ -1,11 +1,7 @@
 ---
-
 title: "DCTheGamr"
-
 date: 1683508523
-
 draft: false
-
 --
 
 ## Prologue 
