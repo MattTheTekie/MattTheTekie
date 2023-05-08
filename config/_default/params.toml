@@ -79,8 +79,8 @@ provider = "disqus"
 
 [comments.disqusjs]
 shortname = ""
-apiUrl = "https://disqus.com/api/oauth/2.0/authorize/"
-apiKey = "u9UucPh9xXGO2KXdAXqnFvf0BbACiuG8Juv4MPBl4bcamuW46fBxnte2n0J5wMP2"
+apiUrl = ""
+apiKey = ""
 admin = ""
 adminLabel = ""
 
