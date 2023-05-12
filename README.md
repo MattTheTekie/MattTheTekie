@@ -32,6 +32,9 @@
 ### 📫 Get in touch
 [![Telegram](https://img.shields.io/badge/%40Knight666_666-0088cc?style=flat-square&logo=telegram&logoColor=ffffff)](https://t.me/Knight666_666)<br>
 [![Mastodon](https://img.shields.io/badge/%40ASTAFATHERSATAN-0088cc?style=flat-square&logo=mastodon&logoColor=ffffff)](https://nerdculture.de/@ASTAFATHERSATAN)<br>
+[!Discord]
+(img)]
+(link)<br>
 [![DSiPaint](https://img.shields.io/badge/%F0%9F%8E%A8%20MattFromSpace-blue.svg?style=flat-square)](https://dsipaint.com/member/?id=152737)<br>
 ### 🛸 You can check out my website's below.&nbsp;
 
