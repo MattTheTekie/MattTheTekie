@@ -7,10 +7,9 @@ draft: false
 ## Beginnings
 I'm currently in the process of redoing my workflow, and making it more proactive for my new desires. I got a lot of work to do, and one of them involves getting up a Home Lab. One of the things I need to get done is a dashboard for managing it all. Since this one is easy, just like setting up a proxmox server. I figured I would get it done quick.
 
-## Git WorkFlow
 
-### Fork/Clone
-首先我们在需要多人协作的项目中将项目 `Fork` 到我们自己的仓库（当然也可以直接 `Clone`，但是防止对源仓库误操作，最好还是 `Fork`）
+### Enter Dashy
+I was scrolling throughout GitHub, and came across Dashy. I was a bit hesitant to set it up, but after giving it a bit of time, I quickly realized how much potential it has. I then got off to working on my configuration for it more and more. The time definitely payed off, and I found even more free APIs to play around with!
 
 ### 添加 Remote
 添加远端仓库的 `Remote`
