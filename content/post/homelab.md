@@ -4,12 +4,8 @@ date: 1683892282
 draft: false
 ---
 
-## 前言
-在上一家公司上班的时候，很少多人协同开发，所以 `Git` 上的操作仅限于 `add`, `commit`, `push` 等等简单的。
-
-但是目前这家公司，多人协同就非常的频繁，所以稍微记录一下操作，免得自己以后忘记了。
-
-一般公司都是用 `GitLab` 比较多，所以这里也按照 `GitLab` 来写。
+## Beginnings
+I'm currently in the process of redoing my workflow, and making it more proactive for my new desires. I got a lot of work to do, and one of them involves getting up a Home Lab. One of the things I need to get done is a dashboard for managing it all. Since this one is easy, just like setting up a proxmox server. I figured I would get it done quick.
 
 ## Git WorkFlow
 
