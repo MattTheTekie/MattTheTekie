@@ -36,24 +36,24 @@
 [![DSiPaint](https://img.shields.io/badge/%F0%9F%8E%A8%20MattFromSpace-blue.svg?style=flat-square)](https://dsipaint.com/member/?id=152737)<br>
 ### 🛸 You can check out my website's below.&nbsp;
 
-> 🔭 [**MattTheTekie's Blog**](https://mattthetekie.github.io/MattTheTekie)
+> 🔭 [[**MattTheTekie's Blog**]](https://mattthetekie.github.io/MattTheTekie)
 
 My new corner on the world wide web.&nbsp;
 
-> 🐧 [**FREEDOM-HQ**](https://github.com/FREEDOM-HQ/)
+> 🐧 [[**FREEDOM-HQ**]](https://github.com/FREEDOM-HQ/)
 
 We're a simple development group, focusing on DSiPaint, Linux, and Android.&nbsp;
 
-> 🕹️ [**TheBestBros**](https://thebestbros.surge.sh)
+> 🕹️ [[**TheBestBros**]](https://thebestbros.surge.sh)
 
 My old website that holds memories beyond imagination.&nbsp;
 
 ### 💾 You can check some of my favourite webpages here.
-> 🌎 [**Cameron's World**](https://www.cameronsworld.net/)
+> 🌎 [[**Cameron's World**]](https://www.cameronsworld.net/)
 
 It's a collection of archived Geocities websites. It's pretty cool.&nbsp;
 
-> 🔗 [**CyberSpaceAndTime**](http://cyberspaceandtime.com/)
+> 🔗 [[**CyberSpaceAndTime**]](http://cyberspaceandtime.com/)
 
 This is a really awesome Amiga OS like web operating system complete with a web chat room, and a video player.&nbsp;
 
