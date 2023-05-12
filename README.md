@@ -57,7 +57,7 @@ It's a collection of archived Geocities websites. It's pretty cool.&nbsp;
 
 This is a really awesome Amiga OS like web operating system complete with a web chat room, and a video player.&nbsp;
 
-> 🖥️ [[**Daedal OS**](https://dustinbrett.com/)
+> 🖥️ [[**Daedal OS**]](https://dustinbrett.com/)
 
 A full on complete open source Windows 10 like experience including DOOM, 3D pinball, and much more.
 
