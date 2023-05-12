@@ -13,5 +13,9 @@ I'm currently in the process of redoing my workflow, and making it more proactiv
 ### Enter Dashy
 I was scrolling throughout GitHub, and came across Dashy. I was a bit hesitant to set it up, but after giving it a bit of time, I quickly realized how much potential it has. I then got off to working on my configuration for it more and more. The time definitely payed off, and I found even more free APIs to play around with!
 
-### tbc
+### Finale
 In the end, I'm really happy with the outcome I have so far, but I will definitely be posting once I get around to the next parts of my Home Lab!
+https://tsukashomelab.netlify.app/
+
+### Part II
+Coming soon.
