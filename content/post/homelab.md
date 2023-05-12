@@ -2,6 +2,8 @@
 title: "Starting up my Home Lab."
 date: 1683892282
 draft: false
+categories: ["HomeLab"]
+tags: ["HomeLab","Linux"]
 ---
 
 ## Beginnings
