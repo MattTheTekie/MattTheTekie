@@ -7,13 +7,10 @@
  - You can call me Matt or 宇宙飛行士.
 
 ### 🤔 What I'm doing
- > 💻 Reverse engineering. <br>
-
- > 🌐 Maintaining the FREEDOM organization webpage from time to time. <br>
-
- > ⌨️ Maintaining scripts for various projects. <br>
-
- > 🌌 Living on Kepler-186F. <br>
+ - Reverse engineering. 💻
+ - Maintaining the FREEDOM organization webpage from time to time. 🌐
+ - Maintaining scripts for various projects. ⌨️
+ - Living on Kepler-186F. 🌌
 
 ### 📃 GitHub Stats
 <p><img align="center" src="https://github-readme-stats.vercel.app/api?username=MattTheTekie&show_icons=true&locale=en" alt="MattTheTekie" /></p>
