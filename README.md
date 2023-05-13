@@ -8,8 +8,11 @@
 
 ### 🤔 What I'm doing
  > 💻 Reverse engineering. <br>
+
  > 🌐 Maintaining the FREEDOM organization webpage from time to time. <br>
+
  > ⌨️ Maintaining scripts for various projects. <br>
+
  > 🌌 Living on Kepler-186F. <br>
 
 ### 📃 GitHub Stats
