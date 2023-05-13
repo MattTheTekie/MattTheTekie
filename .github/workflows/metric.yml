@@ -2,7 +2,7 @@ name: Metrics
 on:
   schedule: [{cron: "0 0 1 1 *"}]
 
-  workflow_dispatch: {branches: ["main"]}
+  push: {branches: ["main"]}
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
