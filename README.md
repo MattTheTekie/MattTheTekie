@@ -43,6 +43,8 @@ My new corner on the world wide web.&nbsp;
 > 📡 [[**MattTheTekie**]]
 (https://mattthetekie-test.pages.dev/)
 
+My new homepage on the corner of the internet.&nbsp;
+
 > 🐧 [[**FREEDOM-HQ**]](https://github.com/FREEDOM-HQ/)
 
 We're a simple development group, focusing on DSiPaint, Linux, and Android.&nbsp;
