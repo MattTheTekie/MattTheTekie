@@ -40,8 +40,7 @@
 
 My new corner on the world wide web.&nbsp;
 
-> 📡 [[**MattTheTekie**]]
-(https://mattthetekie-test.pages.dev/)
+> 📡 [[**MattTheTekie**]](https://mattthetekie-test.pages.dev/)
 
 My new homepage on the corner of the internet.&nbsp;
 
