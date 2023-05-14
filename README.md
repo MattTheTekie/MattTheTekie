@@ -38,7 +38,7 @@
 
 > 🔭 [[**MattTheTekie's Blog**]](https://mattthetekie.github.io/MattTheTekie)
 
-My new corner on the world wide web.&nbsp;
+My new blogging corner on the world wide web.&nbsp;
 
 > 📡 [[**MattTheTekie**]](https://mattthetekie-test.pages.dev/)
 
