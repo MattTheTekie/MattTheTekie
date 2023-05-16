@@ -1,5 +1,5 @@
 
-<img align="right" src="https://komarev.com/ghpvc/?username=MattTheTekie" /> 
+<img align="right" src="https://komarev.com/ghpvc/?username=MattTheTekie" />
 
 ### 👋 Hi there
 
