@@ -2,6 +2,8 @@
 title: "Social Media Worm"
 date: 1684841026
 draft: false
+categories: ["Malware"]
+tags: ["Malware"]
 ---
 
 ## A new type of worm
