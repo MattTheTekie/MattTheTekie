@@ -18,7 +18,15 @@ icon = "brand-github"
 [[social]]
 identifier = "twitter"
 name = "Twitter"
-url = "https://twitter.com"
+url = "https://twitter.com/AstaFatherSatan"
 
 [social.params]
 icon = "brand-twitter"
+
+[[social]]
+identifier = "mastodon"
+name = "Mastodon"
+url = "https://nerdculture.de/@ASTAFATHERSATAN"
+
+[social.params]
+icon = "brand-mastodon"
