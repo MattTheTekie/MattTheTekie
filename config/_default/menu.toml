@@ -30,3 +30,11 @@ url = "https://nerdculture.de/@ASTAFATHERSATAN"
 
 [social.params]
 icon = "brand-mastodon"
+
+[[social]]
+identifer = "odysee"
+name = "Odysee"
+url = "https://odysee.com/@mattdoestech726:5"
+
+[social.params]
+icon = "brand-odysee"
