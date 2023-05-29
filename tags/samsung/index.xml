@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>samsung on Matt's Blog</title><link>https://mattthetekie.github.io/MattTheTekie/tags/samsung/</link><description>Recent content in samsung on Matt's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 17 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mattthetekie.github.io/MattTheTekie/tags/samsung/index.xml" rel="self" type="application/rss+xml"/><item><title>How not to root a phone</title><link>https://mattthetekie.github.io/MattTheTekie/p/how-not-to-root-a-phone/</link><pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/how-not-to-root-a-phone/</guid><description>&lt;p>This article is about rooting and installing custom OS onto a Samsung Exynos phone.&lt;/p>
+&lt;p>I&amp;rsquo;m using a &lt;a class="link" href="https://en.wikipedia.org/wiki/Samsung_Galaxy_A21s" target="_blank" rel="noopener"
+>Samsung Galaxy A21s&lt;/a> with. an Exynos chip, bought right here in Slovenia and is carrier unlocked.&lt;/p>
+&lt;p>When I was starting on rooting my phone, it was a horrible experience. I haven&amp;rsquo;t found many tutorials, which were beginner-friendly and some were riddled with words I didn&amp;rsquo;t understand.
+I&amp;rsquo;ve learnt a lot while rooting my phone, have passed many challanges, such as bootloops, and would like to help a beginner to root their phone and potentially even install their custom ROM
+onto it. So, this post is dedicated to all the beginners out there, I know it&amp;rsquo;s hard, but don&amp;rsquo;t give up. Most of this article should be the same for all Samsung devices, except
+you will have to find other TWRP recoveries.&lt;/p>
+&lt;p>It was also a huge undocumented pain on how to install Magisk onto GSIs, so that&amp;rsquo;s why I&amp;rsquo;m writing it here.&lt;/p>
+&lt;p>If you believe, you&amp;rsquo;ve followed the article correctly, and there are any issues or this article is incorrect at some points,
+you may &lt;a class="link" href="mailto:mytja@protonmail.com" >contact me&lt;/a> anytime and send the logs and your issue.&lt;/p>
+&lt;p>&lt;strong>WARNING:&lt;/strong> The author shall not be liable for any misuse and/or any damage made to the device.&lt;/p>
+&lt;h1 id="stage-0---preparation">Stage 0 - Preparation&lt;/h1>
+&lt;p>Requirements:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://forum.xda-developers.com/t/tool-samsung-samsung-firmware-downloader.4240719/" target="_blank" rel="noopener"
+>Samsung Firmware Downloader&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://forum.xda-developers.com/t/patched-odin-3-13-1.3762572/" target="_blank" rel="noopener"
+>Samsung Odin&lt;/a>, preferably patched variant &amp;amp; newer version&lt;/li>
+&lt;li>&lt;a class="link" href="https://developer.android.com/studio/releases/platform-tools" target="_blank" rel="noopener"
+>adb&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/DozNaka/exynos3830-a21s-twrp/releases/tag/twrp-2" target="_blank" rel="noopener"
+>TWRP&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/topjohnwu/Magisk/releases/latest" target="_blank" rel="noopener"
+>Magisk&lt;/a>&lt;/li>
+&lt;li>Phone&lt;/li>
+&lt;/ul>
+&lt;h1 id="stage-1---patch-the-stock-firmware-with-magisk">Stage 1 - Patch the stock firmware with Magisk&lt;/h1>
+&lt;p>Open up the Samsung Firmware Downloader and download the appropriate image for your phone.&lt;/p>
+&lt;h2 id="stage-11---find-your-csc">Stage 1.1 - Find your CSC&lt;/h2>
+&lt;ol>
+&lt;li>Open your Samsung phone dialer, type in &lt;strong>*#1234#&lt;/strong>.&lt;/li>
+&lt;li>You&amp;rsquo;ll see a new screen with your firmware information.&lt;/li>
+&lt;li>Look at the CSC section, there you can find 4 characters, which are the model number, followed by three characters, which are the region codes.&lt;/li>
+&lt;/ol>
+&lt;h2 id="stage-12---download">Stage 1.2 - Download&lt;/h2>
+&lt;p>Input the region code and your model number into the corresponding inputs in Samsung Firmware Downloader, afterwards just download the latest image.&lt;/p>
+&lt;p>File will be downloading for some time, output file should be a &lt;code>.tar.md5&lt;/code> file.&lt;/p>
+&lt;h2 id="stage-13---transfer-the-stock-image-to-your-phone">Stage 1.3 - Transfer the stock image to your phone&lt;/h2>
+&lt;p>You can use any file explorer for this. Preferably you should copy it to external media, such as an SD card, as it won&amp;rsquo;t be erased onwards.&lt;/p>
+&lt;h2 id="stage-14---install-magisk-manager">Stage 1.4 - Install Magisk Manager&lt;/h2>
+&lt;p>Install the latest &lt;code>apk&lt;/code> from &lt;a class="link" href="https://github.com/topjohnwu/Magisk/releases/latest" target="_blank" rel="noopener"
+>Magisk&amp;rsquo;s official GitHub&lt;/a>.&lt;/p>
+&lt;h2 id="stage-15---patch-the-stock-image-using-magisk-manager">Stage 1.5 - Patch the stock image using Magisk Manager&lt;/h2>
+&lt;p>Open the Magisk app on your phone and go to section, where it says Magisk and the currently installed version (none). Click &lt;code>Install&lt;/code> and click &lt;code>Select and Patch a File&lt;/code>,
+where you&amp;rsquo;ll find your Samsung stock image, select it and afterwards click &lt;code>Let's go&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>WARNING:&lt;/strong> If Magisk suddenly crashes, it&amp;rsquo;s best to relaunch it after a reboot and restart the process of patching the file. Patched file is probably corrupted and shall not be used and/or flashed,
+unless you want bootloops.&lt;/p>
+&lt;h2 id="stage-16---transfer-the-patched-magisk-image-back-to-your-computer">Stage 1.6 - Transfer the patched Magisk image back to your computer&lt;/h2>
+&lt;p>You can use any file explorer for this job. Meanwhile it&amp;rsquo;s copying, you can do part 1.7.&lt;/p>
+&lt;h2 id="stage-17---ensuring-bootloader-unlocking">Stage 1.7 - Ensuring bootloader unlocking&lt;/h2>
+&lt;p>On your phone, go to settings and enable developer mode. Afterwards, go to developer settings and enable &lt;code>OEM unlocking&lt;/code>.
+Wait for file transfer from beforehand to finish, before proceeding to Part 1.8.&lt;/p>
+&lt;h2 id="stage-18---unlocking-the-bootloader">Stage 1.8 - Unlocking the bootloader&lt;/h2>
+&lt;p>&lt;strong>WARNING:&lt;/strong> This &lt;strong>will&lt;/strong> trip Samsung Knox eFuse and there&amp;rsquo;s no way to undo it. Once you do this process,
+your bootloader will be unlocked and your warranty might be void (though legally, it wouldn&amp;rsquo;t have been, yet manufacturers don&amp;rsquo;t obey the laws).
+After you trip your Knox eFuse, you won&amp;rsquo;t be able to install and/or make some propriatery Samsung apps work (such as Samsung Pay, Samsung Wear).
+Do this on your own responsibility.&lt;/p>
+&lt;p>Turn off the phone compeletely. Afterwards, hold Volume Up and Volume Down buttons, both together until a blue screen is displayed,
+while plugging your phone into the computer&amp;rsquo;s USB port through an USB-C to USB-A cable. Your device&amp;rsquo;ll go into the Download mode,
+where you&amp;rsquo;ll be able to unlock the bootoloader. By holding the Volume Up button for long time, the device&amp;rsquo;ll unlock the bootloader.&lt;/p>
+&lt;p>When the bootloader is unlocked, you can confirm this by an annoying message, that tells you about an unlocked bootloader on every device boot.&lt;/p>
+&lt;p>If your device reboots back to your operating system, go ahead and repeat the instructions about going into the Download mode.&lt;/p>
+&lt;h2 id="stage-19---flash-the-patched-image">Stage 1.9 - Flash the patched image&lt;/h2>
+&lt;p>&lt;strong>WARNING:&lt;/strong> You might have to download additional drivers for Odin to detect your device.&lt;/p>
+&lt;p>&lt;strong>WARNING:&lt;/strong> This might erase all of your data. Please make a backup beforehand.&lt;/p>
+&lt;p>Once in Download mode, go ahead and click Volume Up button to download a custom OS. Connect your phone to your computer, afterwards use Odin to flash the patched &lt;code>AP&lt;/code> image.
+Leave every field in Odin empty, except &lt;code>AP&lt;/code>, where you should select the patched Magisk version.&lt;/p>
+&lt;p>After you&amp;rsquo;ve done that, click &lt;code>Start&lt;/code> and wait for the process to finish. Once it finishes, it should reboot back to your operating system. You might have to set it up again.&lt;/p>
+&lt;p>&lt;strong>WARNING:&lt;/strong> You must go through the entire setup process before continuing to Part 2.&lt;/p>
+&lt;p>If you reinstall the Magisk apk, your device should now be rooted with a default ROM.
+You do not have to continue with the process anymore, if you&amp;rsquo;re happy with just rooting your phone and not changing the whole OS.&lt;/p>
+&lt;h1 id="stage-2---installing-twrp-and-disabling-filesystem-based-encryption">Stage 2 - Installing TWRP and disabling filesystem-based encryption&lt;/h1>
+&lt;p>If you want to install TWRP, make sure not to install any important applications, as we&amp;rsquo;ll once again erase the whole &lt;code>/data&lt;/code> partition.&lt;/p>
+&lt;h2 id="stage-21---actual-installation">Stage 2.1 - Actual installation&lt;/h2>
+&lt;p>As simple as going into Download mode in your phone and flashing the previously downloaded TWRP through the &lt;code>AP&lt;/code> tab in Odin.&lt;/p>
+&lt;h2 id="stage-22---disable-samsung-filesystem-encryption">Stage 2.2 - Disable Samsung filesystem encryption&lt;/h2>
+&lt;p>You should now be back in your operating system (rooted with Magisk). Go into the Magisk app and click the reboot button in app bar. Click &lt;code>Reboot to recovery&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>WARNING:&lt;/strong> This &lt;strong>will&lt;/strong> erase all of your data.&lt;/p>
+&lt;p>Once in recovery, go to &lt;code>Erase&lt;/code> or &lt;code>Wipe&lt;/code>, where you&amp;rsquo;ll click &lt;code>Format Data&lt;/code> and confirm everything. After that&amp;rsquo;s done, go back to your main screen,
+where you&amp;rsquo;ll go into Advanced -&amp;gt; Terminal, where you&amp;rsquo;ll run the following command:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">multidisabler
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>This command will disable Samsung&amp;rsquo;s filesystem-based encryption, which will come in handy in case of wanting to install other operating systems.&lt;/p>
+&lt;h1 id="stage-3---installing-custom-os">Stage 3 - Installing custom OS&lt;/h1>
+&lt;p>I recommend the following GSIs, as they have been tested on my device:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/phhusson/treble_experimentations/releases/latest" target="_blank" rel="noopener"
+>phhusson&amp;rsquo;s GSI&lt;/a>. You&amp;rsquo;d want to download the &lt;code>system-squeak-arm64-ab-vndklite-*.img.xz&lt;/code>. &lt;code>gogapps&lt;/code> comes with preinstalled Google Go apps, &lt;code>gapps&lt;/code> comes with preinstalled Google (not Go) apps, &lt;code>vanilla&lt;/code> comes with no preinstalled apps and &lt;code>floss&lt;/code> comes with FOSS alternatives to Google&amp;rsquo;s apps. Make sure to install the &lt;code>vndklite&lt;/code> variant, as it&amp;rsquo;ll make installing Magisk actually possible later on.&lt;/li>
+&lt;/ul>
+&lt;p>GSI is a system image, thus doesn&amp;rsquo;t come with a kernel and doesn&amp;rsquo;t come with a boot image. This means, your manufacturer provides the GSI&lt;/p>
+&lt;p>Once you download the custom OS, uncompress it (using 7-zip or something similar, so that file extension becomes &lt;code>.img&lt;/code>), afterwards transfer it onto an SD card in your phone.
+This&amp;rsquo;ll make it much easier to install the GSI later on using TWRP.&lt;/p>
+&lt;p>Boot into recovery, if you aren&amp;rsquo;t there already. Afterwards, you should go into the &lt;code>Install&lt;/code> section, where you&amp;rsquo;ll select the appropriate storage using the button &lt;code>Select Storage&lt;/code>.
+You should have your SD card selected. Make sure that there is a button &lt;code>Install Zip&lt;/code>. If there is s button &lt;code>Install Image&lt;/code>, click it, as we want to install a system image.
+Select your downloaded image and in the section &lt;code>Select Partition to Flash Image&lt;/code>, go ahead and select &lt;code>System Image&lt;/code>. Once you&amp;rsquo;re ready, go ahead and swipe to confirm the flash.
+This&amp;rsquo;ll take some time, but afterwards, you can reboot into your system, where you&amp;rsquo;ll see your new OS successfully installed. You now may proceed with installation of your apps and
+make the phone yours again, as we won&amp;rsquo;t be erasing the &lt;code>/data&lt;/code> partition anymore.&lt;/p>
+&lt;p>phhusson&amp;rsquo;s GSI come with preinstalled root using phh-su, which is a fork of SuperSU. This is very outdated and not recommended, as it also isn&amp;rsquo;t very practical to modify and customize your
+system with. So, if you want to root your phone with Magisk, go ahead and read further.&lt;/p>
+&lt;h1 id="stage-4---installing-magisk">Stage 4 - Installing Magisk&lt;/h1>
+&lt;p>Huge thanks to &lt;a class="link" href="https://github.com/topjohnwu/Magisk/issues/3593#issuecomment-751534120" target="_blank" rel="noopener"
+>@OnlyCS&lt;/a> on GitHub for his work on applying Magisk onto GSIs. It was very helpful.&lt;/p>
+&lt;h2 id="stage-41---uninstalling-phh-su">Stage 4.1 - Uninstalling phh-su&lt;/h2>
+&lt;p>As phhusson&amp;rsquo;s GSIs come with phh-su preinstalled instead of Magisk, it&amp;rsquo;ll conflict with Magisk (which is installed in our boot image, which was patched in Stage 1) and use &lt;code>phh-su&lt;/code> instead.
+This means that Magisk will (even though the latest version is installed) report back an outdated version.
+Ignore that as Magisk is installed and instead, let&amp;rsquo;s focus on uninstalling the annoying &lt;code>phh-su&lt;/code>, so that we can use Magisk.&lt;/p>
+&lt;p>OnlyCS&amp;rsquo;s GitHub comment was adapted to be minimal. I only actually needed following things, if it doesn&amp;rsquo;t work for you, you can always have a look at his comment and try other suggested things.&lt;/p>
+&lt;h3 id="stage-411---adb-shell">Stage 4.1.1 - &lt;code>adb shell&lt;/code>&lt;/h3>
+&lt;p>Run the following commands in your terminal (command prompt, PowerShell, GNOME Terminal etc.).&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>adb shell&lt;/code>&lt;/li>
+&lt;li>&lt;code>su&lt;/code>&lt;/li>
+&lt;li>You might need to approve the superuser elevation request on your phone&lt;/li>
+&lt;li>&lt;code>phh-securize.sh&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;p>After you&amp;rsquo;ve done that, try restarting your phone and if Magisk doesn&amp;rsquo;t report an outdated Magisk installation, you have succeeded in rooting your phone properly.
+Now you can customize your phone even further. Congratulations. Continue to Stage 4.1.4.&lt;/p>
+&lt;p>If it still reports too low Magisk version, you might want to consider next step.&lt;/p>
+&lt;h3 id="stage-412---unsu-script">Stage 4.1.2 - UnSU Script&lt;/h3>
+&lt;p>Download the &lt;a class="link" href="https://forum.xda-developers.com/t/beta-2017-10-01-supersu-v2-82-sr5.2868133/page-122#post-63615067" target="_blank" rel="noopener"
+>UnSU script&lt;/a> and move it to the SD card of your phone.&lt;/p>
+&lt;p>Now go ahead and reboot to TWRP, where you&amp;rsquo;ll go to &lt;code>Install&lt;/code> part and click on &lt;code>Install Zip&lt;/code> and find the downloaded UnSU &lt;code>zip&lt;/code>.
+The UnSU script will remove all traces of any root frameworks (such as Magisk, phh-su, SuperSU etc.).&lt;/p>
+&lt;p>You might want to try and repeat Stage 4.1.1 before and after this process just to be sure it&amp;rsquo;s removed.&lt;/p>
+&lt;h3 id="stage-413---other-methods">Stage 4.1.3 - Other methods&lt;/h3>
+&lt;p>If Magisk app now says, the phone is not rooted and doesn&amp;rsquo;t display any messages about too old version of Magisk, please refer to the following methods of getting Magisk back on.&lt;/p>
+&lt;p>After each of these methods, check if Magisk works. If it doesn&amp;rsquo;t continue to the next one.&lt;/p>
+&lt;h4 id="stage-4131---install-magisk-to-boot-image">Stage 4.1.3.1 - Install Magisk to Boot image&lt;/h4>
+&lt;p>If Magisk now says, the phone is not rooted, then try to repeat the process, mentioned in stage 1.5 once again, but this time, you don&amp;rsquo;t want to reset the whole operating system.
+Try to open the before downloaded Samsung Stock image (not modified by Magisk) with 7-zip and extract the &lt;code>boot.img&lt;/code> or the &lt;code>boot.img.lz4&lt;/code>.
+&lt;strong>GSIs are only system images and don&amp;rsquo;t come with a Boot image, therefore you cannot use the phhusson&amp;rsquo;s GSI in Magisk app.&lt;/strong>
+Afterwards, transfer it to the phone&amp;rsquo;s SD card and patch the Boot image using the Magisk app. Transfer the patched Boot image back to your computer and flash it in Odin as &lt;code>AP&lt;/code> file.
+Of course, you need to be in Download mode to do this.&lt;/p>
+&lt;p>If Magisk app now says, the phone is rooted (or needs additional configuration), just follow the instructions in Magisk app, then you&amp;rsquo;ll have your phone successfully rooted. Congratulations. 🎉&lt;/p>
+&lt;h4 id="stage-4132---install-magisk-as-a-zip">Stage 4.1.3.2 - Install Magisk as a zip&lt;/h4>
+&lt;p>This is supposed to be your last resort.&lt;/p>
+&lt;p>Rename the downloaded Magisk apk for it&amp;rsquo;s extension to be &lt;code>.zip&lt;/code> (for example, rename from &lt;code>Magisk-v25.1.apk&lt;/code> to &lt;code>Magisk-v25.1.zip&lt;/code>) and move the made zip file to an SD card.
+This can all be done on your phone. Then reboot to TWRP (can be done through the Magisk app) and install the zip, like mentioned in stage 4.1.2 (UnSU Script).
+If Magisk installation zip in TWRP reports no errors, then it should be installed, otherwise, please reread the article, you must&amp;rsquo;ve done something incorrectly.
+If you believe, you&amp;rsquo;ve followed the article, and the issue persists, you may &lt;a class="link" href="mailto:mytja@protonmail.com" >contact me&lt;/a> and send the logs, that TWRP is outputing.&lt;/p>
+&lt;h2 id="stage-42---success">Stage 4.2 - Success&lt;/h2>
+&lt;p>If Magisk app now says, the phone is rooted (or needs additional configuration), just follow the instructions in Magisk app, then you&amp;rsquo;ll have your phone successfully rooted. Congratulations. 🎉&lt;/p>
+&lt;h2 id="stage-43---failure">Stage 4.3 - Failure&lt;/h2>
+&lt;p>If Magisk still insists, that it has a way too outdated image, you might also want to try things mentioned in the attached OnlyCS&amp;rsquo;s comment on the issue, but if even that doesn&amp;rsquo;t work,
+then sorry, but I cannot help any further, as it was working for me using these steps, but you can always ask people on &lt;a class="link" href="https://forum.xda-developers.com/" target="_blank" rel="noopener"
+>XDA-Developers forum&lt;/a> 😄.&lt;/p>
+&lt;p>In this case, you might want (have) to stick to phh-su&amp;hellip; 😔&lt;/p>
+&lt;p>Thank you so much for reading this article. I hope you&amp;rsquo;ve enjoyed it and found success in your renewed operating system and/or root options.&lt;/p>
+&lt;h1 id="special-thanks">Special thanks&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/phhusson" target="_blank" rel="noopener"
+>@phhusson&lt;/a> for the &lt;a class="link" href="https://github.com/phhusson/treble_experimentations" target="_blank" rel="noopener"
+>treble_experimentations&lt;/a> repository.&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/topjohnwu" target="_blank" rel="noopener"
+>@topjohnwu&lt;/a> for &lt;a class="link" href="https://github.com/topjohnwu/Magisk" target="_blank" rel="noopener"
+>Magisk&lt;/a>.&lt;/li>
+&lt;li>&lt;a class="link" href="https://forum.xda-developers.com/m/osm0sis.4544860" target="_blank" rel="noopener"
+>@osm0sis&lt;/a> for the &lt;a class="link" href="https://forum.xda-developers.com/t/beta-2017-10-01-supersu-v2-82-sr5.2868133/page-122#post-63615067" target="_blank" rel="noopener"
+>UnSU Script&lt;/a>.&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/OnlyCS" target="_blank" rel="noopener"
+>@OnlyCS&lt;/a> for &lt;a class="link" href="https://github.com/topjohnwu/Magisk/issues/3593#issuecomment-751534120" target="_blank" rel="noopener"
+>their comment&lt;/a>.&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/DozNaka" target="_blank" rel="noopener"
+>@DozNaka&lt;/a> for &lt;a class="link" href="https://github.com/DozNaka/exynos3830-a21s-twrp" target="_blank" rel="noopener"
+>A21s TWRP&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h1 id="sources">Sources&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/topjohnwu/Magisk/issues/3593#issuecomment-751534120" target="_blank" rel="noopener"
+>OnlyCS&amp;rsquo;s comment about GSI Magisk installation&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/phhusson/treble_experimentations/wiki/Samsung-Galaxy-A21s" target="_blank" rel="noopener"
+>phhusson&amp;rsquo;s treble_experimentations wiki about Samsung Galaxy A21s&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/phhusson/treble_experimentations/wiki" target="_blank" rel="noopener"
+>phhusson&amp;rsquo;s treble_experimentations wiki&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

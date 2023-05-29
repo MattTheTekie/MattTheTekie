@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unity on Matt's Blog</title><link>https://mattthetekie.github.io/MattTheTekie/categories/unity/</link><description>Recent content in Unity on Matt's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 06 Jul 2022 19:00:39 +0900</lastBuildDate><atom:link href="https://mattthetekie.github.io/MattTheTekie/categories/unity/index.xml" rel="self" type="application/rss+xml"/><item><title>PC用アバターをQuest GoodにしてFallback Avatarにする</title><link>https://mattthetekie.github.io/MattTheTekie/p/pc%E7%94%A8%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC%E3%82%92quest-good%E3%81%AB%E3%81%97%E3%81%A6fallback-avatar%E3%81%AB%E3%81%99%E3%82%8B/</link><pubDate>Wed, 06 Jul 2022 19:00:39 +0900</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/pc%E7%94%A8%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC%E3%82%92quest-good%E3%81%AB%E3%81%97%E3%81%A6fallback-avatar%E3%81%AB%E3%81%99%E3%82%8B/</guid><description>&lt;h2 id="前置き">前置き&lt;/h2>
+&lt;p>別のアバターをFallback対応したくなった時用に自分向けに書き殴ったメモ書きです。&lt;/p>
+&lt;h2 id="この記事を読むにあたって">この記事を読むにあたって&lt;/h2>
+&lt;ul>
+&lt;li>Blenderの操作がある程度わかる人向けです。&lt;/li>
+&lt;li>怪文書の解読に自身がある人以外は読まないほうがいいです。参考文献の方を読んだ方がいいです絶対。&lt;/li>
+&lt;/ul>
+&lt;h2 id="環境">環境&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>OS&lt;/th>
+&lt;th>Windows10&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Blenderのバージョン&lt;/td>
+&lt;td>2.93.9&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="流れをざっくり">流れをざっくり&lt;/h2>
+&lt;blockquote>
+&lt;ul>
+&lt;li>アドオンの準備&lt;/li>
+&lt;li>アバターをインポート&lt;/li>
+&lt;li>テクスチャの割り当て&lt;/li>
+&lt;li>マテリアルを結合&lt;/li>
+&lt;li>ポリゴンを減らす&lt;/li>
+&lt;li>メッシュ結合&lt;/li>
+&lt;li>FBXとしてエクスポート&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;h2 id="アドオンの準備">アドオンの準備&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/absolute-quantum/cats-blender-plugin" target="_blank" rel="noopener"
+>cats blender plugin&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/Grim-es/material-combiner-addon" target="_blank" rel="noopener"
+>material-combiner-addon&lt;/a>&lt;br>
+(入れ方は)ググろうね！&lt;/li>
+&lt;/ul>
+&lt;h2 id="アバターをインポート">アバターをインポート&lt;/h2>
+&lt;p>上のメニューからインポート&amp;gt;FBX(.fbx)&lt;br>
+ボーンの向きがおかしい場合は右の設定のアーマーチュアからボーンの自動整列をオンにしましょう。&lt;br>
+自分はこれで解決しました(シャオン、幽狐族のお姉様で確認)&lt;br>
+ボーンの向きをしっかり確認しないと後々指先が曲がる等の問題が発生する可能性があるので必ず確認しましょう。&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1PSjvGOD0FdOpxcvrvkaiCpQs3tGI3WCi"/>
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="テクスチャを割り当て">テクスチャを割り当て&lt;/h2>
+&lt;p>ここはアバターによって違うので各自で頑張ってください。&lt;br>
+貼り終わったら一旦名前をつけて作業状況を保存しましょう。&lt;br>
+画像テクスチャで割り当てるとマテリアルの結合後に単色になることがあります。&lt;br>
+そうなる場合はMMD Textureの方から割り当ててあげましょう。&lt;/p>
+&lt;h2 id="マテリアルを結合">マテリアルを結合&lt;/h2>
+&lt;p>ここからは自分のキメラアバターを例に書きます。&lt;br>
+CATSプラグインのタブから&lt;br>
+最適化&amp;gt;アトラス&amp;gt;Generate Material Listでマテリアルリストを表示。&lt;br>
+全てのチェックボックスにチェックを入れたらSave Atlas to&amp;hellip;でマテリアルを結合。&lt;br>
+保存するディレクトリを聞かれるので指定したら&lt;del>自分の環境だと12000*12000強のバケモンが生成された〜〜&lt;/del>&lt;br>
+Atras_&amp;lt;ランダムな6桁の数字&amp;gt;.pngでテクスチャが保存されます。&lt;/p>
+&lt;h2 id="ポリゴンを減らす">ポリゴンを減らす&lt;/h2>
+&lt;p>ポリゴンを減らす前に現在のポリゴン数と目標ポリゴン数を把握しましょう。&lt;br>
+今回はQuest Goodにしたいので10000以下にします。&lt;/p>
+&lt;p>顔や髪はよく見られるのでそちらを優先に他の部分を削っていくつもりでやりましょう。&lt;br>
+特に素体は服で見えない部分も多いのでかなり大胆にいきます。&lt;br>
+まずは素体の隠れる部位を編集モードで削除します。&lt;br>
+素体を選択したままTABキーで編集モードに切り替えます。&lt;br>
+切り替わったら服で隠れる部分を選択してXキー&amp;gt;頂点で頂点を削除していきます。&lt;br>
+自分は胸~足首の範囲を削除しました。&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=151xMKLYSAP-XM-kMtX9JPlQ1VX1Ic32l"/>
+&lt;/figure>
+&lt;/p>
+&lt;p>さて、シェイプキーを壊さないまま顔のポリゴンを減らしたいのですがCATSはメッシュ単位でのデシメートができないので&lt;br>
+顔とそれ以外でアーマーチュアを分けます。&lt;br>
+アーマーチュアを複製して顔とそれ以外のアーマーチュアを作りましょう。(アーマーチュアを階層ごと選択してShift+Dで複製)&lt;br>
+おけ&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1uesNSURdxNIIZHN1vUQO6JY8hCNAbkjq"/>
+&lt;/figure>
+&lt;/p>
+&lt;p>複製が終わったらCATSのメニューから顔だけのアーマーチュアを選択して&lt;br>
+デシメーション&amp;gt;スマートを選択。&lt;br>
+トリスに先ほど設定したポリゴンの目標値を入力してQuick Decimation。&lt;br>
+顔がボコボコになります。&lt;br>
+ある程度はシェーダーを適応したら誤魔化せるので自分の心とポリゴン数と相談しながら妥協してください。&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1UizrZX_uNvFe75RocS_h1bS4tDjFym4u"/>
+&lt;/figure>
+&lt;/p>
+&lt;p>他の部位はBlender標準のデシメートを使って削ります。(こっちの方が楽だから)&lt;br>
+メッシュを選択したらモディファイアーからデシメートを選択して比率をいじっていい感じに調整しましょう(細かい手順は割愛)&lt;/p>
+&lt;h2 id="メッシュの結合">メッシュの結合&lt;/h2>
+&lt;p>CATSのメニューからカスタムモデルの作成&amp;gt;アーマーチュアをマージを以下の画像の設定で実行。&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1ZxfHPoxIMYhTgFs-WkND8CHBfI0_JdKh"/>
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="fbxとしてエクスポート">FBXとしてエクスポート&lt;/h2>
+&lt;p>CATSのメニューからできます。&lt;br>
+各自の環境に合わせて詳細設定を触ってみましょう。&lt;/p>
+&lt;h2 id="後書き">後書き&lt;/h2>
+&lt;p>これらの作業でこんな感じになりました。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">　&lt;/th>
+&lt;th style="text-align:center">調整前&lt;/th>
+&lt;th style="text-align:center">調整後&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">全体&lt;/td>
+&lt;td style="text-align:center">47708&lt;/td>
+&lt;td style="text-align:center">7283&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1YG4aB1WgM9UrWVg0vobAnkNpa_V1I3-e"/>
+&lt;/figure>
+&lt;p>失ったもの&lt;/p>
+&lt;ul>
+&lt;li>下着類&lt;/li>
+&lt;/ul>
+&lt;p>胸のサイズが調整できるようなアバターは素体も顔同様に分割してCATSで個別にデシメーションしましょう。&lt;br>
+マテリアルの設定やアップロード等は割愛します。&lt;del>面倒になったので&lt;/del>&lt;br>
+ボーンが多すぎる場合は必要のないボーンを適切に削除しましょう。&lt;/p>
+&lt;h2 id="おまけ">おまけ&lt;/h2>
+&lt;p>Questアバターでは頬染め等の元々透過を使用していたものは使用できません。
+そこで透過素材を合成したテクスチャとマテリアルを用意してアニメーションを活用することで擬似的に透過を使用した表情を使うようにします。&lt;br>
+詳しくは以下に参考文献を貼るのでそちらをご覧ください(丸投げ)&lt;/p>
+&lt;h2 id="参考文献">参考文献&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/mew-ton/teckbook_convert_lowpoly" target="_blank" rel="noopener"
+>PC向けアバター 5000ポリまでダイエット - Quest Excellent を目指す本&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://zenn.dev/tsumujiwind/articles/d56c4736388d9e" target="_blank" rel="noopener"
+>PC向けアバター(50,000ポリ超)をポリゴン削減してFallback対応したメモ&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>なんならこの二つ読んだ方がわかりやすいし為になる。いやガチで&lt;/p></description></item><item><title>アバター改変のメモ書き的なお話(随時更新)</title><link>https://mattthetekie.github.io/MattTheTekie/p/%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC%E6%94%B9%E5%A4%89%E3%81%AE%E3%83%A1%E3%83%A2%E6%9B%B8%E3%81%8D%E7%9A%84%E3%81%AA%E3%81%8A%E8%A9%B1%E9%9A%8F%E6%99%82%E6%9B%B4%E6%96%B0/</link><pubDate>Fri, 20 May 2022 21:38:21 +0900</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC%E6%94%B9%E5%A4%89%E3%81%AE%E3%83%A1%E3%83%A2%E6%9B%B8%E3%81%8D%E7%9A%84%E3%81%AA%E3%81%8A%E8%A9%B1%E9%9A%8F%E6%99%82%E6%9B%B4%E6%96%B0/</guid><description>&lt;img src="https://mattthetekie.github.io/MattTheTekie/site/thumbnail/2022-05-20-VRC-Avatar/600x200.webp" alt="Featured image of post アバター改変のメモ書き的なお話(随時更新)" />&lt;h2 id="shaon_custom">Shaon_Custom&lt;/h2>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1GxPwiU1ilqheZMgdy-sQkQkzmCXym_PU"/>
+&lt;/figure>
+&lt;h3 id="詳細">詳細&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:right">部位&lt;/th>
+&lt;th style="text-align:left">パーツ&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:right">髪&lt;/td>
+&lt;td style="text-align:left">&lt;a class="link" href="https://booth.pm/ja/items/3205288" target="_blank" rel="noopener"
+>MEKAKUREショート(QuQu)&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:right">顔&lt;/td>
+&lt;td style="text-align:left">&lt;a class="link" href="https://booth.pm/ja/items/2048231" target="_blank" rel="noopener"
+>Shaon(くつした屋)&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:right">素体&lt;/td>
+&lt;td style="text-align:left">&lt;a class="link" href="https://booth.pm/ja/items/1484117" target="_blank" rel="noopener"
+>幽狐族のお姉様(FRIENDLY PLANET)&lt;/a>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ul>
+&lt;li>Blenderで素体と顔をくっつけたよ(眠気と戦いながらやったので大変だったよ)&lt;/li>
+&lt;li>PhysBoneとコライダーはシャオンちゃんのを参考に自分で設定したのでガバガバ&lt;/li>
+&lt;/ul>
+&lt;h3 id="今後やること">今後やること&lt;/h3>
+&lt;ul>
+&lt;li>表情の設定&lt;/li>
+&lt;li>お出かけパーカーワンピに着せ替え&lt;/li>
+&lt;li>コライダージャンプ&lt;/li>
+&lt;li>Gamingシャオンちゃん&lt;/li>
+&lt;/ul></description></item><item><title>ダンスする時のシャオンちゃんを表情豊かにしてみた。</title><link>https://mattthetekie.github.io/MattTheTekie/p/%E3%83%80%E3%83%B3%E3%82%B9%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%82%B7%E3%83%A3%E3%82%AA%E3%83%B3%E3%81%A1%E3%82%83%E3%82%93%E3%82%92%E8%A1%A8%E6%83%85%E8%B1%8A%E3%81%8B%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link><pubDate>Fri, 25 Feb 2022 19:46:05 +0900</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/%E3%83%80%E3%83%B3%E3%82%B9%E3%81%99%E3%82%8B%E6%99%82%E3%81%AE%E3%82%B7%E3%83%A3%E3%82%AA%E3%83%B3%E3%81%A1%E3%82%83%E3%82%93%E3%82%92%E8%A1%A8%E6%83%85%E8%B1%8A%E3%81%8B%E3%81%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid><description>&lt;img src="https://mattthetekie.github.io/MattTheTekie/site/thumbnail/2022-02-25-shaon-shapekey/600x200.webp" alt="Featured image of post ダンスする時のシャオンちゃんを表情豊かにしてみた。" />&lt;h2 id="前置き">前置き&lt;/h2>
+&lt;p>シャオンちゃんを魔改造している際のテストで某ダンスワールドで踊ってもらってたのですか&lt;br>
+デフォルトの表情のままなのが勿体ないな～と感じたので頑張りました。&lt;/p>
+&lt;p>注意&lt;/p>
+&lt;ul>
+&lt;li>Unityでシャオンちゃんを読み込める環境を作っていること&lt;/li>
+&lt;li>VRChatにシャオンちゃんをアップロード出来る条件を満たしていること&lt;br>
+を前提に書いています。&lt;/li>
+&lt;/ul>
+&lt;p>環境&lt;/p>
+&lt;ul>
+&lt;li>Unity 2019.4.31f1&lt;/li>
+&lt;li>VRCSDK3&lt;/li>
+&lt;li>&lt;a class="link" href="https://kutsushita03.booth.pm/items/2048231" target="_blank" rel="noopener"
+>Shaon_v1.10&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="ダウンロードするもの">ダウンロードするもの&lt;/h2>
+&lt;p>&lt;a class="link" href="https://gatosyocora.booth.pm/items/1016739" target="_blank" rel="noopener"
+>VRCDeveloperTool&lt;/a>
+がとーしょこらさんが作ったツールです。感謝して使いましょう。&lt;/p>
+&lt;h2 id="ダミーのメッシュを削除する">ダミーのメッシュを削除する&lt;/h2>
+&lt;p>VRCDeveloperToolをインポートしたら上のメニューから&lt;br>
+VRCDeveloperTool &amp;gt; メッシュ &amp;gt; Shapekey Deleterを選択して開きます。&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1LXRVKKOBmqOzzjCzSNXnal6mYlFzgY0n"/>
+&lt;/figure>
+&lt;/p>
+&lt;p>Shapekey Deleterを開いたらSkinnedMeshRendererにBodyを入れて&lt;br>
+dummyが1つになるようにチェックを入れて削除しましょう。&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1IWa_-Vs7mckNigcDpA41zZmcvETAdmK3"/>
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="mmd用に名前を変更したキーを作る">MMD用に名前を変更したキーを作る&lt;/h2>
+&lt;p>dummyを削除したらVRCDeveloperTool &amp;gt; メッシュ &amp;gt; ShapekeyName Changerを開いて&lt;br>
+RendererにBodyを指定します。&lt;/p>
+&lt;p>以下のサイトを見ながらシャオンちゃんのBlendShapesをいじりつつ&lt;br>
+リネームしたいシェイプキーの右にあるテキストボックスにMMD用のシェイプキーを入力していきましょう。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://docs.google.com/spreadsheets/d/1DnkY4-nKIOJzpk1CPynX5_3_fznUQ-XdpVZm9mmt68o/edit#gid=0" target="_blank" rel="noopener"
+>MMDモーフ一覧（TDAミク基準）&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://mmd15gyuunyuu.blog.jp/archives/11193436.html" target="_blank" rel="noopener"
+>MMD表情モーフ一覧&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>変更を適応する際にはDuplication Shapekeysにチェックを入れてからChange ShapekeyNameを押すことをお勧めします。&lt;br>
+Duplication Shapekeysにチェックを入れることで既存のシェイプキーを残したままMMD用にリネームしたシェイプキーを作ることができます。&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1_a1Yd4G2EwT55pqJKa88QPotcjUv-7bd"/>
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="fxレイヤーにある全てのアニメーションのwrite-defaultをオンにする">FXレイヤーにある全てのアニメーションのWrite Defaultをオンにする。&lt;/h2>
+&lt;p>アバターのFXレイヤーに&amp;quot;vrc_AvatarV3HandsLayer2_Shaon_standard&amp;quot;を指定した後アニメーターで開いて、&lt;br>
+&amp;ldquo;ResetFace&amp;rdquo;,&amp;ldquo;Left Hand&amp;rdquo;,&amp;ldquo;Right Hand&amp;quot;の中にある全てのアニメーションのWrite Defaultにチェックを入れてください。&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=15my_fXSQOSgm5STWpvE7ApnoqrQgyOIc"/>
+&lt;/figure>
+&lt;br>
+入れ終わったらアップロードして確認してみよう！&lt;/p>
+&lt;h2 id="ちゃんと設定できてたらこうなってるはず">ちゃんと設定できてたらこうなってるはず&lt;/h2>
+&lt;p>シェイプキーを設定する前は張り付いた笑顔で踊っていたシャオンちゃんが..?&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1oaF0BiGTXHsseFnXsuXECymvfTRrdMaM"/>
+&lt;/figure>
+&lt;br>
+表情豊かになった！
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1coNaFwM-00Qnv33hb1rnB6MneFE7fRax"/>
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="参考にした記事">参考にした記事&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://note.com/yosidanue/n/n246547256460" target="_blank" rel="noopener"
+>VRChatのMMDダンスワールドで可愛く踊らせる方法&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://gall.dcinside.com/mgallery/board/view/?id=vr&amp;amp;no=1246548" target="_blank" rel="noopener"
+>mmd월드 쉐이프키 작동조건 정리&lt;/a>　　&lt;/li>
+&lt;/ul></description></item></channel></rss>

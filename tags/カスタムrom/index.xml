@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>カスタムROM on Matt's Blog</title><link>https://mattthetekie.github.io/MattTheTekie/tags/%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0rom/</link><description>Recent content in カスタムROM on Matt's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 10 Sep 2022 23:11:01 +0900</lastBuildDate><atom:link href="https://mattthetekie.github.io/MattTheTekie/tags/%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0rom/index.xml" rel="self" type="application/rss+xml"/><item><title>Zenfone8 Project Blaze</title><link>https://mattthetekie.github.io/MattTheTekie/p/zenfone8-project-blaze/</link><pubDate>Sat, 10 Sep 2022 23:11:01 +0900</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/zenfone8-project-blaze/</guid><description>&lt;img src="https://user-images.githubusercontent.com/87426352/157710326-991ecb31-65cf-460b-b3ec-d6ddad1edbdb.png" alt="Featured image of post Zenfone8 Project Blaze" />&lt;h2 id="projectblazeって">ProjectBlazeって？&lt;/h2>
+&lt;p>カスタムROMの一種で様々なカスタム機能を持ち合わせています。&lt;br>
+またAndroid12で変更されたQSパネルのデザインが11以前のものになるようにカスタマイズされています。&lt;del>多分一番の目玉機能&lt;/del>&lt;/p>
+&lt;h2 id="リンク">リンク&lt;/h2>
+&lt;p>&lt;a class="link" href="https://sourceforge.net/projects/any-artifact/files/sake/projectblaze/" target="_blank" rel="noopener"
+>sourceforge.net&lt;/a>&lt;br>
+Gappsビルドは無いのでサイドロードでNikGappsを入れてください。&lt;/p>
+&lt;h2 id="how-2-install">How 2 install?&lt;/h2>
+&lt;p>※事前にAndroid12にしておいてください。&lt;/p>
+&lt;h3 id="必要なもののダウンロード">必要なもののダウンロード&lt;/h3>
+&lt;p>boot.img,Blaze-v1.x-sake-xxxxxxxx-xxxx-VANILLA-UNOFFICIAL.zip,&lt;a class="link" href="https://mirror.math.princeton.edu/pub/lineageos/full/sake/20220909/vendor_boot.img" target="_blank" rel="noopener"
+>vendor_boot.img&lt;/a>をダウンロード。&lt;/p>
+&lt;h3 id="リカバリのダウンロード">リカバリのダウンロード&lt;/h3>
+&lt;p>ブートローダーに入って以下のコマンドを実行してリカバリとvendor_bootを書き込む。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">fastboot flash vendor_boot &amp;lt;vendor_boot&amp;gt;.img
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">fastboot flash boot boot.img
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="インストール">インストール&lt;/h3>
+&lt;p>Lineage RecoveryでBlaze-v1.x-sake-xxxxxxxx-xxxx-VANILLA-UNOFFICIAL.zipをサイドロードしてインストール。&lt;br>
+GappsやMagiskが必要な場合はこの段階で一緒にサイドロードしとくと楽です。&lt;br>
+Magisk.zipはapkの拡張子をzipに変更することで使用できます。(公式的にはこの使い方は&lt;a class="link" href="https://topjohnwu.github.io/Magisk/install.html#custom-recovery" target="_blank" rel="noopener"
+>非推奨&lt;/a>)&lt;/p>
+&lt;h2 id="不具合とか">不具合とか&lt;/h2>
+&lt;ul>
+&lt;li>NFCが動作しない(ビルド時になんかエラーを吐かれたので一時的に無効化していますそのうち何とかします。)&lt;/li>
+&lt;li>バッテリー残量を検出できない&lt;/li>
+&lt;/ul>
+&lt;h2 id="changelog">Changelog&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">20220918-1405
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">1.5-EOLの不具合修正版に更新
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[詳細](https://t.me/projectblaze/45825)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">20220910-1119
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ベースバンドがおかしかったのでカーネルをArrowOSのものからLineage19.1に変更
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">20220909-1317
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">初めてのビルド
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="ちょっとした小話">ちょっとした小話&lt;/h2>
+&lt;p>ビルド時に詰まったところ&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&amp;ldquo;generated_kernel_includes &amp;ldquo;: cmd: unknown variable &amp;lsquo;$(PATH_OVERRIDE_SOONG)&lt;br>
+GSIビルドしてる時にもここで詰まった。&lt;br>
+結論としては、lunchではなくbreakfast sakeを叩いてあげるとエラーが出なかった。理由は知らん。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>clang-12: error: no such file or directory: &amp;lsquo;aarch64-linux-android-&amp;rsquo;&lt;br>
+こいつに4日くらい悩んでた気がする。&lt;br>
+Blazeのofficial deviceのツリーに習ってBoardconfig.mkに以下を記入することで解決した。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">TARGET_KERNEL_CLANG_COMPILE := true
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>qcom hardware関連のエラー&lt;br>
+android_hardware_qcom_bootctrl,android_hardware_qcom_commonのブランチをarrow-12.1-cafに、
+sm8350のandroid_hardware_qcom_audio,android_hardware_qcom_display,android_hardware_qcom_mediaのブランチをarrow-12.1-caf-sm8350に変更することで対処。&lt;/li>
+&lt;/ul>
+&lt;p>GSIのほうのお話&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Gapps同梱ビルドについての悩み&lt;br>
+GappsはGoogleの製品なので最初は同梱しない方針だったけど&lt;br>
+Gapps同梱して！みたいな話が短時間で数件来てTelegramでも&lt;del>晒されて&lt;/del>関係のないphhusson氏のコミュニティでも若干迷惑をかけてしまったので&lt;br>
+&lt;del>渋々&lt;/del>同梱ビルドを配布していますが良くないよなぁってのが最近の悩み。&lt;br>
+GSIを使っている人の中にはカスタムリカバリがない端末を使用している人もいるだろうからちょっと同情してしまったのもありますが。&lt;br>
+Magisk GappsもA12.1用のものはAlphaリリースで挙動も怪しいので何とも言えません。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>機種名を書かないままissueを飛ばしてくる人が多かったのでテンプレを作成して強制的に機種を書かせるようにしたら知らない機種の話を聞く羽目になった話。&lt;br>
+お悩み相談には乗ってあげたいけど正直わからんもんはわからん。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>あと金欠でツユさんのライブ行けなくて瀕死です。&lt;del>あの世行きのバスに乗ってさらば&lt;/del>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>Xperia ZR用のLineage 18.1をビルドした</title><link>https://mattthetekie.github.io/MattTheTekie/p/xperia-zr%E7%94%A8%E3%81%AElineage-18.1%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%9F/</link><pubDate>Sat, 18 Dec 2021 21:23:05 +0900</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/xperia-zr%E7%94%A8%E3%81%AElineage-18.1%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%9F/</guid><description>&lt;h2 id="前置きと注意">前置きと注意&lt;/h2>
+&lt;p>実機を持ってないので動作確認してません。&lt;br>
+Xperia ZR用のLineageOS 18.1です。&lt;br>
+※こちらのromはXperia ZR用なのでSO-04eでは使用出来ません。&lt;/p>
+&lt;h2 id="リンク">リンク&lt;/h2>
+&lt;p>&lt;a class="link" href="https://drive.google.com/drive/folders/1xH97o3F_hUxgZ1yeYg2i8MXCNS0c63XN" target="_blank" rel="noopener"
+>Lineage-18.1-dogo&lt;/a>&lt;/p>
+&lt;h2 id="manifests">manifests&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;manifest&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;project name=&amp;#34;fusion3-common/android_device_sony_dogo&amp;#34; path=&amp;#34;device/sony/dogo&amp;#34; remote=&amp;#34;github&amp;#34; revision=&amp;#34;lineage-17.1&amp;#34;/&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;project name=&amp;#34;sony-fusion3-dev/android_device_sony_fusion3-common&amp;#34; path=&amp;#34;device/sony/fusion3-common&amp;#34; remote=&amp;#34;github&amp;#34; revision=&amp;#34;lineage-18.1&amp;#34;/&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;project name=&amp;#34;sony-fusion3-dev/android_kernel_sony_apq8064&amp;#34; path=&amp;#34;kernel/sony/apq8064&amp;#34; remote=&amp;#34;github&amp;#34; revision=&amp;#34;lineage-18.1&amp;#34;/&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;project name=&amp;#34;LineageOS/android_device_sony_common&amp;#34; path=&amp;#34;device/sony/common&amp;#34; remote=&amp;#34;github&amp;#34;/&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;project name=&amp;#34;LineageOS/android_hardware_sony_DASH&amp;#34; path=&amp;#34;hardware/sony/DASH&amp;#34; remote=&amp;#34;github&amp;#34;/&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;project name=&amp;#34;LineageOS/android_hardware_sony_thermanager&amp;#34; path=&amp;#34;hardware/sony/thermanager&amp;#34; remote=&amp;#34;github&amp;#34;/&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;project name=&amp;#34;sony-fusion3-dev/proprietary_vendor_sony&amp;#34; path=&amp;#34;vendor/sony&amp;#34; remote=&amp;#34;github&amp;#34; revision=&amp;#34;lineage-18.1&amp;#34;/&amp;gt;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/manifest&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Zenfone 5Zを買ったのでEvolution Xを入れてみる</title><link>https://mattthetekie.github.io/MattTheTekie/p/zenfone-5z%E3%82%92%E8%B2%B7%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7evolution-x%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/</link><pubDate>Thu, 09 Dec 2021 08:16:58 +0900</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/zenfone-5z%E3%82%92%E8%B2%B7%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%A7evolution-x%E3%82%92%E5%85%A5%E3%82%8C%E3%81%A6%E3%81%BF%E3%82%8B/</guid><description>&lt;h2 id="前置き">前置き&lt;/h2>
+&lt;p>Asus関連の項目が邪魔だったのでカスタムROMを使おう！というのが動機。&lt;br>
+なかなかブートロゴにお目にかかれなかったりブートロゴでスタックしたりとで自分的にかなり詰まったのでまとめます。&lt;br>
+この記事は公式アンロックなZenfone 5ZにOFFICIALなEvolution Xをインストールする人向けなので他のROMを焼くのであれば&lt;a class="link" href="https://forum.xda-developers.com/t/guide-noob-friendly-custom-rom-flashing-guide.3944849/" target="_blank" rel="noopener"
+>こちら&lt;/a>を参考にした方が絶対に良いです。&lt;/p>
+&lt;p>⚠注意&lt;br>
+この作業に取り掛かる前に必ずデータのバックアップを取ってください。&lt;br>
+また、ここに書いてることを真似する場合は自己責任でお願いします。&lt;br>
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。&lt;br>
+&lt;del>あなたの大切なスマホが文鎮になっても私は責任を取れません。&lt;/del>&lt;/p>
+&lt;h2 id="前提条件">前提条件&lt;/h2>
+&lt;ul>
+&lt;li>BootloaderがunlockされているZenfone5Z(この記事は公式アンロックな端末向けに書かれています。 )&lt;/li>
+&lt;li>fastbootコマンドが使用できる環境。&lt;/li>
+&lt;/ul>
+&lt;h2 id="ダウンロードするもの">ダウンロードするもの&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://sourceforge.net/projects/evolution-x/files/Z01R/EvolutionX_5.8_Z01R-11-20210612-0637-OFFICIAL.zip/download" target="_blank" rel="noopener"
+>EvolutionX_5.8_Z01R&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://sourceforge.net/projects/evolution-x/files/Z01R/evolution_Z01R-ota-rq3a.210905.001-09171152-unsigned.zip/download" target="_blank" rel="noopener"
+>evolution_Z01R-ota&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://forum.xda-developers.com/attachments/q_vbmeta-img.4961371/" target="_blank" rel="noopener"
+>q_vbmeta.img&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://sourceforge.net/projects/custom-romeo/files/Evolution-X/vendor_20_3.img/download" target="_blank" rel="noopener"
+>Encrypted Vendor&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.mediafire.com/file/k551ecf62vdebfh/ABL.zip/file" target="_blank" rel="noopener"
+>ABL.zip&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.mediafire.com/file/xhm1kf0korurp69/dfe.zip/file" target="_blank" rel="noopener"
+>dfe.zip&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://dl.twrp.me/Z01RD/twrp-3.4.0-0-Z01RD.img.html" target="_blank" rel="noopener"
+>twrp-3.4.0-0-Z01RD.img&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://dl.twrp.me/Z01RD/twrp-installer-3.4.0-0-Z01RD.zip.html" target="_blank" rel="noopener"
+>twrp-installer-3.4.0-0-Z01RD.zip&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>多分こんな感じになっていると思います。&lt;br>
+よく確認しておきましょう。&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1aEBKbHMsxVQckCXh_oDsuqf3JiOIVmrH"/>
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="下準備">下準備&lt;/h2>
+&lt;p>電源+volume upでbootloaderを起動してPCと接続。&lt;br>
+そしてダウンロードしたフォルダのある場所でターミナルを開いて以下のコマンドを実行し、ユーザーデータを削除した後にvbmetaをflash。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">$ fastboot -w
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ fastboot --disable-verity --disable-verification flash vbmeta q_vbmeta.img
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>コマンドの実行が完了したらここで1回画面の方にご注目！&lt;br>
+ACTIVE SLOTの項目を確認してください。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">#アクティブなスロットがaなら
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ fastboot set_active b
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#bの場合は
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">fastboot set_active a
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#そしてbootloaderを再起動
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ fastboot reboot bootloader
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>ACTIVE SLOTが先ほどとは別のスロットに変更されているはずです。&lt;/p>
+&lt;h2 id="twrpを焼く">TWRPを焼く&lt;/h2>
+&lt;p>以下のコマンドを実行した後リカバリーモードに移行。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">$ fastboot flash boot twrp-3.4.0-0-Z01RD.img
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="romをflash">ROMをflash&lt;/h2>
+&lt;p>リカバリーが起動したら、「Wipe」&amp;gt;「ADVANCED WIPE」と進んでsystem、Dalvik(Cache)、DataをWipeしてください。&lt;br>
+完了したら、&lt;/p>
+&lt;ul>
+&lt;li>EvolutionX_5.8_Z01R&lt;/li>
+&lt;li>evolution_Z01R-ota&lt;/li>
+&lt;li>Encrypted Vendor&lt;/li>
+&lt;li>ABL.zip&lt;/li>
+&lt;li>dfe.zip&lt;/li>
+&lt;li>twrp-installer-3.4.0-0-Z01RD.zip&lt;br>
+を本体に転送してください。(Magiskを導入する場合は&amp;quot;Magisk.apk&amp;quot;を&amp;quot;Magisk.zip&amp;quot;にリネームして一緒に転送してください。)&lt;br>
+したらばROM焼きを開始しましょう。&lt;/li>
+&lt;/ul>
+&lt;p>EvolutionX_5.8_Z01R &amp;gt; evolution_Z01R-ota &amp;gt; twrp-installer-3.4.0-0-Z01RD.zip&lt;br>
+の順番でflashしてリカバリーを再起動しましょう。&lt;br>
+自動的にアクティブなスロットに切り替わって起動します。&lt;/p>
+&lt;p>無事リカバリーが起動したら最後の仕上げです。&lt;br>
+Encrypted Vendor &amp;gt; ABL.zip &amp;gt; dfe.zip&lt;br>
+の順番でファイルをflashしてください。
+完了したらsystemを再起動、Evolution Xのロゴが表示された後セットアップ画面が出てくるはずです。&lt;/p>
+&lt;h2 id="最後に">最後に&lt;/h2>
+&lt;p>Volteが不安定ですが全体的に動作も良好なので使いやすいですね。&lt;/p></description></item><item><title>Huawei P30 (ELE-L29) のsystem領域を拡張した話 その1</title><link>https://mattthetekie.github.io/MattTheTekie/p/huawei-p30-ele-l29-%E3%81%AEsystem%E9%A0%98%E5%9F%9F%E3%82%92%E6%8B%A1%E5%BC%B5%E3%81%97%E3%81%9F%E8%A9%B1-%E3%81%9D%E3%81%AE1/</link><pubDate>Sun, 17 Oct 2021 17:31:45 +0900</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/huawei-p30-ele-l29-%E3%81%AEsystem%E9%A0%98%E5%9F%9F%E3%82%92%E6%8B%A1%E5%BC%B5%E3%81%97%E3%81%9F%E8%A9%B1-%E3%81%9D%E3%81%AE1/</guid><description>&lt;h2 id="前置きと注意">前置きと注意&lt;/h2>
+&lt;p>&lt;a class="link" href="https://mattthetekie.github.io/MattTheTekie/p/huawei-p30%e3%81%ablineageos-18.1%e3%82%92%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab%e3%81%97%e3%81%9f%e8%a9%b1/" >Huawei P30にlineageOS 18.1をインストールした話&lt;/a>の続きです。&lt;br>
+P30にGSIなカスタムROMをflashしようとしたところ&lt;br>
+system領域が小さい！と怒られて大敗北しました。&lt;br>
+今回はsystem領域の拡張に成功したのでメモ帳代わりにまとめることにしました。&lt;/p>
+&lt;p>⚠注意&lt;br>
+この作業に取り掛かる前に必ずデータのバックアップを取ってください。&lt;br>
+また、ここに書いてることを真似する場合は自己責任でお願いします。&lt;br>
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。&lt;br>
+&lt;del>あなたの大切なスマホが文鎮になっても私は責任を取れません。&lt;/del>&lt;br>
+また、この方法で拡張した場合はeRecoveryを使って純正ROMに戻す場合はパーティションを元に戻さないとエラーを吐くので注意してください。&lt;/p>
+&lt;h2 id="前提条件">前提条件&lt;/h2>
+&lt;ul>
+&lt;li>BootloaderがunlockされているHuawei P30(自分はDC-Phoneix&amp;amp;HCUの時限ライセンスを購入して解除しました。 )&lt;/li>
+&lt;li>fastbootコマンドが使用できる環境&lt;/li>
+&lt;li>USB Type C to USB A 変換アダプタ&lt;/li>
+&lt;li>USBマウス&lt;/li>
+&lt;/ul>
+&lt;p>P30はEMUI9.1にしておいてください。(EMUI10以降はfastbootコマンドが使えない&amp;amp;強制的にBootloaderにロックがかけられるため。)&lt;br>
+eRecoveryを使用すると強制的にEMUI10にされますが、HCUでアンロックした場合は、HisuiteでEMUI9.1に戻すとbootloaderがアンロックされた状態に戻るはずなので慌てないでください。&lt;br>
+(自分の場合はちゃんと戻りました)&lt;/p>
+&lt;h2 id="準備">準備&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://androidfilehost.com/?fid=11410963190603905658" target="_blank" rel="noopener"
+>Mate20 XのTWRP&lt;/a>&lt;/li>
+&lt;li>P30のRecovery_ramdisk&lt;/li>
+&lt;li>&lt;a class="link" href="https://forum.xda-developers.com/attachments/parted_gdisk_fdisk_mkfs-ext4-aarch64-zip.4494670/" target="_blank" rel="noopener"
+>parted_gdisk_fdisk_mkfs-ext4-aarch64-zip&lt;/a>&lt;/li>
+&lt;li>flashするROM(今回は&lt;a class="link" href="https://droidontime.com/devices/arm64" target="_blank" rel="noopener"
+>DotOS&lt;/a>を選択しました)&lt;/li>
+&lt;li>P30(&lt;del>当たり前ですね&lt;/del>)&lt;/li>
+&lt;/ul>
+&lt;h2 id="twrpをflashする">TWRPをflashする&lt;/h2>
+&lt;p>Mate20 XのTWRPイメージがあるディレクトリでターミナルを開いてください。&lt;br>
+開いたら&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">$ fastboot flash recovery_ramdisk twrp-3.2.1-0-everest-unofficial-v3.img
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>と入力してTWRPをflashしましょう。&lt;/p>
+&lt;h2 id="下準備">下準備&lt;/h2>
+&lt;p>再起動してTWRPを起動しましょう。(電源+Volume Up)&lt;br>
+タッチ操作は出来ないのでUSBマウスを接続して操作します。&lt;br>
+作業が長引くかもしれないのでスリープを無効にして画面の明るさを最低にしましょう。&lt;/p>
+&lt;p>マウスの接続を解除してPCに接続してください。&lt;br>
+接続したら一度&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">$ adb devices
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>と入力してちゃんと接続されているかを確認しましょう。&lt;/p>
+&lt;p>接続が確認出来たらpartedとgdiskをP30にコピーしましょう。&lt;br>
+parted_gdisk_fdisk_mkfs.ext4-AARCH64.zipを展開してターミナルで開きましょう&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">$ adb push parted /
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">$ adb push gdisk /
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>コピーが終わったら端末のシェルを起動します。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">$ adb shell
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>シェルを起動したらpartedとgdiskがコピーされているかを確認してください。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">~ # ls
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">acc 　　 init patch_hw splash2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">acct 　 init.rc plat_file_contexts storage
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">file_contexts.bin parted sec_storage
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">gdisk patch sepolicy
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>partedとgdiskがあることを確認したら実行権限を付与しましょう。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">~ # chmod +x parted
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">~ # chmod +x gdisk
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="拡張">拡張&lt;/h2>
+&lt;p>ここまで来たらあと一息！&lt;br>
+パーティションを操作しましょう。&lt;br>
+partedでsddを開きます。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">/parted /dev/block/sdd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">GNU Parted 3.2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Using /dev/block/sdd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Welcome to GNU Parted! Type &amp;#39;help&amp;#39; to view a list of commands.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>まずはパーティションテーブルを確認しましょう。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>parted&lt;span class="p">)&lt;/span> unit MiB
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>parted&lt;span class="p">)&lt;/span> p
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Error: The backup GPT table is corrupt, but the primary appears OK, so that will
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">be used.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">OK/Cancel? ok
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Model: HISI SS6100GBCV100MBD (scsi)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Disk /dev/block/sdd: 122000MiB
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Sector size (logical/physical): 4096B/4096B
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Partition Table: gpt
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Disk Flags:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Number Start End Size File system Name Flags
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">62 2928MiB 3016MiB 88.0MiB cust_a msftdata
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">63 3016MiB 5328MiB 2312MiB ext4 system_a msftdata
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">64 5328MiB 7480MiB 2152MiB product_a msftdata
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">65 7480MiB 8056MiB 576MiB version_a msftdata
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">66 8056MiB 9200MiB 1144MiB preload_a msftdata
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">67 9200MiB 122000MiB 112800MiB ext4 userdata msftdata
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>確認ができたら適当なテキストファイルにコピペしておきましょう。&lt;br>
+メモを忘れた人用に自分のパーティションテーブルを貼っておきます。&lt;a class="link" href="https://drive.google.com/file/d/1udu6zJOhqdF3KGqjez9y3yI2fYaiY6Vx/view" target="_blank" rel="noopener"
+>Google Drive&lt;/a>&lt;br>
+今回はproduct_aとsystem_aを削除して新しくsystem_aを作成します。
+この記事の場合は63,64ですね。&lt;br>
+注意&lt;br>
+ここで間違ったパーティションを削除してしまうと再起不可になってしまう可能性があるので必ず手作業でやるようにしましょう。&lt;br>
+コピペはしないようにね。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>parted&lt;span class="p">)&lt;/span> rm
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Partition number? 63
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>parted&lt;span class="p">)&lt;/span> rm
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Partition number? 64
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>削除が終わったらgdiskに移動します。&lt;br>
+一度partedを閉じてから&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">~ # /gdisk /dev/block/sdd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">GPT fdisk (gdisk) version 1.0.3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Partition table scan:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> MBR: protective
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> BSD: not present
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> APM: not present
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> GPT: present
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Found valid GPT with protective MBR; using GPT.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Command (? for help):
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>ここからパーティションを追加します。&lt;br>
+この記事の場合は63ですね。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">Command (? for help): n
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Partition number (63-128, default 63): 63
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">First sector (34-1914879, default = 772096) or {+-}size{KMGTP}:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Last sector (772096-1914879, default = 1914879) or {+-}size{KMGTP}: +4464MiB
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Current type is &amp;#39;Linux filesystem&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Hex code or GUID (L to show codes, Enter = 8300): 0700
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Changed type of partition to &amp;#39;Microsoft basic data&amp;#39;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Command (? for help):
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>作成したパーティションの名前を変更します。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">Command (? for help): c
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Partition number (1-67): 63
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Enter name: system_a
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>作業が終わったら書き込みをする前に一度変更後のパーティションテーブルを確認しましょう。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">Command (? for help): p
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Disk /dev/block/sdd: 31232000 sectors, 119.1 GiB
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Sector size (logical/physical): 4096/4096 bytes
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Disk identifier (GUID): F9F21FFF-A8D4-5F0E-9746-594869AEC34E
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Partition table holds up to 128 entries
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Main partition table begins at sector 2 and ends at sector 5
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">First usable sector is 34, last usable sector is 31231999
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Partitions will be aligned on 128-sector boundaries
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Total free space is 94 sectors (376.0 KiB)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Number Start (sector) End (sector) Size Code Name
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 62 749568 772095 88.0 MiB 0700 cust_a
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 63 772096 1914879 4.4 GiB 0700 system_a
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 65 1914880 2062335 576.0 MiB 0700 version_a
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 66 2062336 2355199 1.1 GiB 0700 preload_a
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> 67 2355200 31231999 110.2 GiB 0700 userdata
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>確認して大丈夫だったらパーティション情報の書き込みをしましょう。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">Command (? for help): w
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">PARTITIONS!!
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Do you want to proceed? (Y/N): Y
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">OK; writing new GUID partition table (GPT) to /dev/block/sdd.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Warning: The kernel is still using the old partition table.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">The new table will be used at the next reboot or after you
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">run partprobe(8) or kpartx(8)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">The operation has completed successfully.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>書き込みが終わったらgdiskを閉じてpartedを開いてください。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">~ # /parted /dev/block/sdd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">GNU Parted 3.2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Using /dev/block/sdd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Welcome to GNU Parted! Type &amp;#39;help&amp;#39; to view a list of commands.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>parted&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Flagの設定&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>parted&lt;span class="p">)&lt;/span> &lt;span class="k">set&lt;/span> &lt;span class="nv">63&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Flag to Invert? msftdata
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">New state? on/[off]? on
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>ext4にフォーマット&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">~ # make_ext4fs /dev/block/sdd63
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Creating filesystem with parameters:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Size: 3472883712
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Block size: 4096
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Blocks per group: 32768
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Inodes per group: 8160
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Inode size: 256
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Journal blocks: 13248
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Label:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Blocks: 847872
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Block groups: 26
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Reserved block group size: 207
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Created filesystem with 11/212160 inodes and 28026/847872 blocks
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>変更がちゃんとできているかの確認&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">~ # /parted /dev/block/sdd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">GNU Parted 3.2
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Using /dev/block/sdd
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Welcome to GNU Parted! Type &amp;#39;help&amp;#39; to view a list of commands.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">(&lt;/span>parted&lt;span class="p">)&lt;/span> p
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Model: HISI SS6100GBCV100MBD (scsi)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Disk /dev/block/sdd: 128GB
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Sector size (logical/physical): 4096B/4096B
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Partition Table: gpt
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Disk Flags:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Number Start End Size File system Name Flags
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">62 3070MB 3163MB 92.3MB cust_a msftdata
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">63 3163MB 7843MB 4681MB ext4 system_a msftdata
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">65 7843MB 8447MB 604MB version_a msftdata
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">66 8447MB 9647MB 1200MB preload_a msftdata
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">67 9647MB 128GB 118GB userdata msftdata
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>これで拡張作業はおしまい。&lt;/p>
+&lt;h2 id="romをflashしよう">ROMをflashしよう&lt;/h2>
+&lt;p>これでようやく好きなROMが焼けるはず&amp;hellip;。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">fastboot --disable-verity --disable-verification flash system dotOS-R-v5.2-arm64-ab-GAPPS-OFFICIAL.img
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Sending sparse &amp;#39;system&amp;#39; 1/8 (458752 KB) OKAY [ 3.193s]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Writing &amp;#39;system&amp;#39; OKAY [ 1.051s]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Sending sparse &amp;#39;system&amp;#39; 2/8 (458752 KB) OKAY [ 9.784s]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Writing &amp;#39;system&amp;#39; OKAY [ 1.050s]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Sending sparse &amp;#39;system&amp;#39; 3/8 (458752 KB) OKAY [ 9.894s]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Writing &amp;#39;system&amp;#39; OKAY [ 1.051s]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Sending sparse &amp;#39;system&amp;#39; 4/8 (458752 KB) OKAY [ 9.541s]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Writing &amp;#39;system&amp;#39; OKAY [ 1.789s]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Sending sparse &amp;#39;system&amp;#39; 5/8 (458752 KB) OKAY [ 9.920s]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Writing &amp;#39;system&amp;#39; OKAY [ 4.190s]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Sending sparse &amp;#39;system&amp;#39; 6/8 (458752 KB) OKAY [ 9.487s]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Writing &amp;#39;system&amp;#39; OKAY [ 4.602s]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Sending sparse &amp;#39;system&amp;#39; 7/8 (458752 KB) OKAY [ 9.500s]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Writing &amp;#39;system&amp;#39; OKAY [ 1.034s]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Sending sparse &amp;#39;system&amp;#39; 8/8 (233220 KB) OKAY [ 4.879s]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Writing &amp;#39;system&amp;#39; OKAY [ 0.807s]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Finished. Total time: 81.857s
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>わーい。
+この後初期化するので一度stock recoveryに戻してください。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">fastboot flash recovery_ramdisk recovery_ramdiS.img
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Sending &amp;#39;recovery_ramdisk&amp;#39; (32768 KB) OKAY [ 0.232s]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Writing &amp;#39;recovery_ramdisk&amp;#39; OKAY [ 0.077s]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Finished. Total time: 0.341s
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>リカバリーを起動してファクトリーリセットをしたらいよいよ起動！&lt;/p>
+&lt;h2 id="いよいよ起動">いよいよ起動&lt;/h2>
+&lt;p>まぁ普通に起動するはずです。&lt;br>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">P30にDotOS降臨&lt;br>ばいばいP20lite😭 &lt;a href="https://t.co/iNxlIEgnJz">pic.twitter.com/iNxlIEgnJz&lt;/a>&lt;/p>&amp;mdash; なね (@j7b3y) &lt;a href="https://twitter.com/j7b3y/status/1449644900442464258?ref_src=twsrc%5Etfw">October 17, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;br>
+後はmagiskを入れるなりなんなりで自由にやっちゃってください！&lt;br>
+&lt;del>USB接続してもWindowsが認識できない不具合(?)はこちらでも残ってました&lt;/del>&lt;/p>
+&lt;h2 id="参考にした記事">参考にした記事&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://ysss.hateblo.jp/entry/20200425/1587793352#parted%E3%81%A8gdisk%E3%81%AE%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89" target="_blank" rel="noopener"
+>Android端末にカスタムROMを焼くにシステム領域が足りないためパーティションを拡張する&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://android.stackexchange.com/questions/216123/android-how-to-increase-system-partition-and-decrease-data-partition" target="_blank" rel="noopener"
+>Android: how to increase system partition and decrease data partition?&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Huawei P30にlineageOS 18.1をインストールした話</title><link>https://mattthetekie.github.io/MattTheTekie/p/huawei-p30%E3%81%ABlineageos-18.1%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E8%A9%B1/</link><pubDate>Mon, 11 Oct 2021 10:12:31 +0900</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/huawei-p30%E3%81%ABlineageos-18.1%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E8%A9%B1/</guid><description>&lt;h2 id="前置き">前置き&lt;/h2>
+&lt;p>再起動する度に画面の明るさ自動調整が勝手にONになるのが地味に面倒だなと感じたので、別にEMUIを使う理由もないということでカスタムROMを焼こうとなりました。&lt;/p>
+&lt;p>⚠注意&lt;br>
+この作業に取り掛かる前に必ずデータのバックアップを取ってください。&lt;br>
+ここに書いていることを真似する場合は自己責任でお願いします。&lt;br>
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。&lt;br>
+&lt;del>あなたの大切なスマホが文鎮になっても私は責任を取れません。&lt;/del>&lt;/p>
+&lt;h2 id="前提条件">前提条件&lt;/h2>
+&lt;ul>
+&lt;li>BootloaderがunlockされているHuawei P30(自分はDC-Unlockerのライセンスを購入して解除しました。 )&lt;/li>
+&lt;li>fastbootコマンドが使用できる環境。&lt;/li>
+&lt;/ul>
+&lt;p>P30はEMUI9.1にしておいてください。(EMUI10以降はfastbootコマンドが使えなくされているためです。&lt;del>ふざけんな&lt;/del>)&lt;/p>
+&lt;h2 id="romの選択とダウンロード">romの選択とダウンロード&lt;/h2>
+&lt;p>今回使用するromを選びましょう。&lt;br>
+私は&lt;a class="link" href="https://sourceforge.net/projects/andyyan-gsi/files/lineage-18.x/lineage-18.1-20211010-UNOFFICIAL-treble_arm64_bvS.img.xz/download" target="_blank" rel="noopener"
+>LineageOS 18.1&lt;/a>にしました。&lt;br>
+&lt;del>本当はOctaviOSを使用したかったのですが自分の環境ではflash出来なかったので断念しました。&lt;/del>&lt;br>
+&lt;del>P30のsystemパーティションよりOctaviOSのイメージの方が大きかったのでsystem領域を拡張しようと思ったのですが&lt;/del>&lt;br>
+&lt;del>delete-logical-partitionを実行しようとしても&lt;/del>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">$ fastboot delete-logical-partition product
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Deleting &amp;#39;product&amp;#39; FAILED (remote: &amp;#39;Command not allowed&amp;#39;)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">fastboot: error: Command failed
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;del>とエラーを吐いてしまい素人な自分ではどうにもならなかったからです。たすけて&lt;/del>&lt;br>
+&lt;del>自分だけなのか他の人もこうなってるのかはわからないですが、&lt;/del>&lt;br>
+&lt;del>そもそもの話P30をBLUしている人が少数なので全く情報が無かったです。&lt;/del>&lt;/p>
+&lt;p>system領域の拡張が上手く行ったので近いうちに&lt;a class="link" href="https://mattthetekie.github.io/MattTheTekie/p/huawei-p30-ele-l29-%e3%81%aesystem%e9%a0%98%e5%9f%9f%e3%82%92%e6%8b%a1%e5%bc%b5%e3%81%97%e3%81%9f%e8%a9%b1-%e3%81%9d%e3%81%ae1/" >まとめました&lt;/a>。&lt;br>
+追記&lt;br>
+そもそもfastbootdに対応していなかったってオチでした。&lt;br>
+&lt;del>ちゃんと文章は読もうねというお話&lt;/del>&lt;br>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">よく読め &lt;a href="https://t.co/HToiVz7lDm">pic.twitter.com/HToiVz7lDm&lt;/a>&lt;/p>&amp;mdash; なね (@j7b3y) &lt;a href="https://twitter.com/j7b3y/status/1449012464603975681?ref_src=twsrc%5Etfw">October 15, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;/p>
+&lt;p>system領域は2.25GBくらいでした。
+&lt;blockquote class="twitter-tweet">&lt;p lang="qme" dir="ltr">😩 &lt;a href="https://t.co/wyMwMLW1Wt">pic.twitter.com/wyMwMLW1Wt&lt;/a>&lt;/p>&amp;mdash; なね (@j7b3y) &lt;a href="https://twitter.com/j7b3y/status/1449017523542708230?ref_src=twsrc%5Etfw">October 15, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;/p>
+&lt;p>flashするROMの候補としては&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://sourceforge.net/projects/treblerom/files/CAOS11/2021.10.10/caos-v313%2B211010-arm64-bvZ.img.xz/download" target="_blank" rel="noopener"
+>CAOS11&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://sourceforge.net/projects/andyyan-gsi/files/lineage-18.x/lineage-18.1-20211010-UNOFFICIAL-treble_arm64_bvS.img.xz/download" target="_blank" rel="noopener"
+>LineageOS 18.1&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/phhusson/treble_experimentations/releases/tag/v313" target="_blank" rel="noopener"
+>AOSP 11.0 v313&lt;/a>(system-roar-arm64-ab-vndklite-vanilla.img or system-roar-arm64-ab-vanilla.img)&lt;/li>
+&lt;/ul>
+&lt;p>ここ辺りでしょうか。&lt;/p>
+&lt;h2 id="romをflashする">romをflashする&lt;/h2>
+&lt;p>ダウンロードしたファイルが圧縮されていた場合は展開しておいてください。&lt;br>
+イメージファイルのディレクトリでターミナルを開いて&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">$ fastboot --disable-verity --disable-verification flash system (file_name).img
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>と実行してください。&lt;br>
+flashが完了したらファクトリーリセットをしましょう。&lt;br>
+ケーブルを抜いてからVolume+と電源を長押しして起動、&lt;br>
+Huaweiロゴが表示されたらボタンを離してください。&lt;br>
+リカバリーが起動します。&lt;/p>
+&lt;h2 id="実際に使ってみる">実際に使ってみる&lt;/h2>
+&lt;p>数十分使ってみましたが動作はすごく良かったです。&lt;br>
+EMUIよりも軽量で使いやすかったです。&lt;br>
+しかしながら&lt;del>1つ&lt;/del>2つだけ大きな欠点がありました。&lt;br>
+LineageOSが画面内指紋認証に対応していないようで&lt;br>
+頑張って指紋を登録してもロック画面で使うことができないみたいです&amp;hellip;。&lt;br>
+背面か物理ボタンにセンサーが搭載されているタイプしか使えないみたいです。&lt;br>
+顔認証も使用出来ないようなので流石に厳しいってことで画面内指紋認証を採用している機種ではカスタムromは厳しいのかもしれないです。&lt;br>
+もう1つは端末や環境との相性問題かもしれませんが&lt;br>
+windowsとP30を接続しても認識されない問題が発生しました。&lt;/p>
+&lt;blockquote class="twitter-tweet">&lt;p lang="et" dir="ltr">ELE-L29 LineageOS 18.1 ～完～ &lt;a href="https://t.co/2srtsZziJg">pic.twitter.com/2srtsZziJg&lt;/a>&lt;/p>&amp;mdash; なね (@j7b3y) &lt;a href="https://twitter.com/j7b3y/status/1447494835682758656?ref_src=twsrc%5Etfw">October 11, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;p>流石に&lt;del>面倒になったので&lt;/del>これは厳しいってことで一回休むことにしました😩。&lt;br>
+Mate 20 XのTWRPがP30でも動作したので(唐突)&lt;br>
+時間があればこれを使ってsystem領域の拡張に挑戦しようかなと思っています。&lt;/p>
+&lt;p>Lineageを入れた際にスクリーンショットをいくつか撮影しておいたので供養しておきます。&lt;/p>
+&lt;ul>
+&lt;li>home&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1wls2coc_ArmllhfwA-0PSsn9ADeOHO4P" width="190"/>
+&lt;/figure>
+&lt;/li>
+&lt;li>設定&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1t61yJjeKylKHBeWoRgyjYdd3E3GGhakd" width="190"/>
+&lt;/figure>
+&lt;/li>
+&lt;li>本体情報&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1qYD-m8IhYqftt79Om1BQYI_fGkfS0HGn" width="190"/>
+&lt;/figure>
+&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1Hc5M8Pzbowu-rtionu8BuymzUvqWTVXH" width="190"/>
+&lt;/figure>
+&lt;/li>
+&lt;li>ステータスバー
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1FjJREiZYrCyqeq8I46OyTcpehDEqAJ1i" width="190"/>
+&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="参考にした記事">参考にした記事&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://source.android.com/setup/build/gsi?hl=ja#flashing-gsis" target="_blank" rel="noopener"
+>Generic System Image | Android オープンソース プロジェクト&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://forum.xda-developers.com/t/losq-lir-lineageos-17-1-18-1-unofficial-gsi.4219291/" target="_blank" rel="noopener"
+>LOSQ/LiR - LineageOS 17.1/18.1-UNOFFICIAL-GSI&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

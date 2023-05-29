@@ -1,0 +1,335 @@
+<!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="顶部 编辑器相关（VSCode） 实用插件 Beautify 格式化代码 Bracket Pair Colorizer 括号颜色 Path Intellisense 路径智能提示 Vetur Vue提示插件 ES6 ES6语法提示 Open in Browser 在浏览器中打开 回到顶部
+React开启JSX支持 打开settings，然后在右上角打开settings.json，配置如下：
+1 2 3 &amp;#34;emmet.includeLanguages&amp;#34;: { &amp;#34;javascript&amp;#34;: &amp;#34;javascriptreact&amp;#34; } 回到顶部
+NPM(Yarn)相关 &amp;ndash;save和&amp;ndash;save-dev的区别 npm install --save安装的包是运行时的依赖，比如axios
+npm install --save-dev安装的包仅仅是在开发阶段的依赖，比如less\sass等
+回到顶部
+npm在国内加快下载速度 可以使用cnpm，安装方法npm install -g cnpm --registry=https://registry.npm.taobao.org(不推荐，有时候会出问题) 文档 安装yarn来代替，直接下载或者在npm中下载，推荐直接下载安装 (推荐) 1 2 3 4 # 切换淘宝源 npx nrm use taobao # 切换回来 npx nrm use npm 回到顶部
+框架（Vue, React等）相关 Vue监听 Vue在mounted()中添加监听事件之后，记得在destroyed()中移除监听，特别是监听滚动事件"><title>前端技术一些踩坑记录</title><link rel=canonical href=https://mattthetekie.github.io/MattTheTekie/p/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E4%B8%80%E4%BA%9B%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/><link rel=stylesheet href=/MattTheTekie/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css><meta property="og:title" content="前端技术一些踩坑记录"><meta property="og:description" content="顶部 编辑器相关（VSCode） 实用插件 Beautify 格式化代码 Bracket Pair Colorizer 括号颜色 Path Intellisense 路径智能提示 Vetur Vue提示插件 ES6 ES6语法提示 Open in Browser 在浏览器中打开 回到顶部
+React开启JSX支持 打开settings，然后在右上角打开settings.json，配置如下：
+1 2 3 &amp;#34;emmet.includeLanguages&amp;#34;: { &amp;#34;javascript&amp;#34;: &amp;#34;javascriptreact&amp;#34; } 回到顶部
+NPM(Yarn)相关 &amp;ndash;save和&amp;ndash;save-dev的区别 npm install --save安装的包是运行时的依赖，比如axios
+npm install --save-dev安装的包仅仅是在开发阶段的依赖，比如less\sass等
+回到顶部
+npm在国内加快下载速度 可以使用cnpm，安装方法npm install -g cnpm --registry=https://registry.npm.taobao.org(不推荐，有时候会出问题) 文档 安装yarn来代替，直接下载或者在npm中下载，推荐直接下载安装 (推荐) 1 2 3 4 # 切换淘宝源 npx nrm use taobao # 切换回来 npx nrm use npm 回到顶部
+框架（Vue, React等）相关 Vue监听 Vue在mounted()中添加监听事件之后，记得在destroyed()中移除监听，特别是监听滚动事件"><meta property="og:url" content="https://mattthetekie.github.io/MattTheTekie/p/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E4%B8%80%E4%BA%9B%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"><meta property="og:site_name" content="Matt's Blog"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:published_time" content="2021-03-08T15:30:51+08:00"><meta property="article:modified_time" content="2021-03-08T15:30:51+08:00"><meta name=twitter:title content="前端技术一些踩坑记录"><meta name=twitter:description content="顶部 编辑器相关（VSCode） 实用插件 Beautify 格式化代码 Bracket Pair Colorizer 括号颜色 Path Intellisense 路径智能提示 Vetur Vue提示插件 ES6 ES6语法提示 Open in Browser 在浏览器中打开 回到顶部
+React开启JSX支持 打开settings，然后在右上角打开settings.json，配置如下：
+1 2 3 &amp;#34;emmet.includeLanguages&amp;#34;: { &amp;#34;javascript&amp;#34;: &amp;#34;javascriptreact&amp;#34; } 回到顶部
+NPM(Yarn)相关 &amp;ndash;save和&amp;ndash;save-dev的区别 npm install --save安装的包是运行时的依赖，比如axios
+npm install --save-dev安装的包仅仅是在开发阶段的依赖，比如less\sass等
+回到顶部
+npm在国内加快下载速度 可以使用cnpm，安装方法npm install -g cnpm --registry=https://registry.npm.taobao.org(不推荐，有时候会出问题) 文档 安装yarn来代替，直接下载或者在npm中下载，推荐直接下载安装 (推荐) 1 2 3 4 # 切换淘宝源 npx nrm use taobao # 切换回来 npx nrm use npm 回到顶部
+框架（Vue, React等）相关 Vue监听 Vue在mounted()中添加监听事件之后，记得在destroyed()中移除监听，特别是监听滚动事件"><link rel="shortcut icon" href=https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/master/Personal-Scripts/Images/94870997.png></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=メニューを開く・閉じる>
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/MattTheTekie/><img src=https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/master/Personal-Scripts/Images/94870997.png width=300 height=300 class=site-logo loading=lazy alt=Avatar></a></figure><div class=site-meta><h1 class=site-name><a href=/MattTheTekie>Matt's Blog</a></h1><h2 class=site-description>You're average techie.</h2></div></header><ol class=social-menu><li><a href=https://github.com/MattTheTekie target=_blank title=GitHub rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href=https://nerdculture.de/@ASTAFATHERSATAN target=_blank title=Mastodon rel=me><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Mastodon</title><path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792.0 11.813.0h-.03c-3.98.0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057.0 00.023-.043v-1.809a.052.052.0 00-.02-.041.053.053.0 00-.046-.01 20.282 20.282.0 01-4.709.545c-2.73.0-3.463-1.284-3.674-1.818a5.593 5.593.0 01-.319-1.433.053.053.0 01.066-.054c1.517.363 3.072.546 4.632.546.376.0.75.0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23.0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112.0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311.0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13.0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"/></svg></a></li><li><a href=https://odysee.com/@mattdoestech726:5 target=_blank title=Odysee rel=me><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Odysee</title><path d="M11.965.0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12 12 12 0 00-3.209-8.167 7.272 7.272.0 01-.799 3.218c-.548.957-2.281 2.77-3.264 3.699a.723.723.0 00.056 1.104c.996.74 2.658 2.151 2.788 3.422.176 1.835 1.6 4.02 1.675 4.159a.67.67.0 01-.105.327 12.067 12.067.0 01-2.03 1.898 2.435 2.435.0 01-.807.126c-1.944-.04-1.526-1.866-1.712-2.905s-.78-3.085-2.716-2.788c0 0 .484 4.243-1.489 5.546s-5.843 2.27-6.55-.408 2.46-2.384 2.684-2.384c.223.0 2.233-.632 1.267-2.53-.967-1.898-2.01-3.5-2.01-3.5a11.37 11.37.0 00-2.735 1.285 5.42 5.42.0 00-1.061.82c-1.065 1.104-2.19 1.713-2.954 1.358a1.368 1.368.0 01-.32-.221A11.926 11.926.0 01.1 13.503c.43-.641 2.082-2.038 3.696-2.906 1.304-.702 2.737-.988 3.118-1.355-.671-2.235-1.882-5.703.832-7.33C9.881.634 12.69-.142 13.77 2.958c1.08 3.1.802 3.796 1.267 3.796s1.608.223 2.09-1.75c.356-1.445.574-2.685 1.379-3.087A12 12 0 0012 0a12 12 0 00-.035.0zm-.498 2.125c-.353-.019-.78.05-1.303.224.0.0-1.895.52-1.749 2.53.13 1.777 1.08 2.753 3.053 2.01 1.972-.737 2.31-1.264 1.824-2.753-.364-1.117-.765-1.956-1.825-2.011zm.48.726a.249.249.0 01.183.07 1.58 1.58.0 01.232.346.253.253.0 01-.197.37.253.253.0 01-.233-.131 1.559 1.559.0 00-.148-.232.256.256.0 010-.353.249.249.0 01.163-.07zm3.529.152a.22.22.0 01.192.103.22.22.0 01-.07.305.22.22.0 11-.122-.408zM12.609 4.27a.253.253.0 01.227.133 1.5 1.5.0 01.102.982.253.253.0 01-.246.205h-.049a.253.253.0 01-.2-.295 1.013 1.013.0 00-.071-.697.253.253.0 01.237-.328zm-8.035.552a.12.12.0 01.029.003.12.12.0 11-.147.091.12.12.0 01.118-.094zm15.77 3.419.273.539.593.12-.539.275-.123.592-.272-.539-.592-.123.538-.272zm-17.767.535a.22.22.0 01.193.104.22.22.0 01-.07.304.22.22.0 11-.123-.408zm16.004 2.79a.258.258.0 01.062.007.258.258.0 11-.31.195.258.258.0 01.248-.202zM4.914 16.115a.17.17.0 01.165.14.17.17.0 01-.137.197.17.17.0 11-.028-.337zm9.769 4.094a.2.2.0 01.036.004.2.2.0 11-.233.15.2.2.0 01.197-.154z"/></svg></a></li><li><a href=https://twitter.com/AstaFatherSatan target=_blank title=Twitter rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84.0 00.497-3.753C20.18 7.773 21.692 5.25 22 4.009z"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/MattTheTekie/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg><span>Home</span></a></li><li><a href=/MattTheTekie/about/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg><span>About</span></a></li><li><a href=/MattTheTekie/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span>Archives</span></a></li><li><a href=/MattTheTekie/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg><span>Search</span></a></li><div class=menu-bottom-section><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><span>ダークモード</span></li></div></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目次</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#编辑器相关vscode>编辑器相关（VSCode）</a><ol><li><a href=#实用插件>实用插件</a></li><li><a href=#react开启jsx支持>React开启JSX支持</a></li></ol></li><li><a href=#npmyarn相关>NPM(Yarn)相关</a><ol><li><a href=#--save和--save-dev的区别>&ndash;save和&ndash;save-dev的区别</a></li><li><a href=#npm在国内加快下载速度>npm在国内加快下载速度</a></li></ol></li><li><a href=#框架vue-react等相关>框架（Vue, React等）相关</a><ol><li><a href=#vue监听>Vue监听</a></li><li><a href=#vue引入iview之后使用col标签后vscode会报错>Vue引入iView之后使用Col标签后VSCode会报错</a></li><li><a href=#在vscode中识别webpack的alias>在VsCode中识别webpack的alias</a></li><li><a href=#关于axios使用post传递applicationx-www-form-urlencoded的问题>关于axios使用post传递application/x-www-form-urlencoded的问题</a></li><li><a href=#关于mockjs>关于Mock.js</a></li><li><a href=#在vue中使用lodash中的debounce>在Vue中使用<code>Lodash</code>中的<code>debounce</code></a></li><li><a href=#后端接口long类型的问题>后端接口Long类型的问题</a></li><li><a href=#vue和ts>Vue和TS</a></li><li><a href=#vue中通过cdn引入高德地图externals的问题>Vue中通过CDN引入高德地图externals的问题</a></li><li><a href=#element-ui如果在项目中需要cdn引入>Element UI如果在项目中需要CDN引入</a></li><li><a href=#vite的问题>Vite的问题</a></li></ol></li><li><a href=#小程序相关以及html>小程序相关以及HTML</a><ol><li><a href=#movable-view>movable-view</a></li><li><a href=#关于点击穿透>关于点击穿透</a></li><li><a href=#css来判断元素是否为空>css来判断元素是否为空</a></li><li><a href=#百度地图自定义标记点图标>百度地图自定义标记点图标</a></li><li><a href=#关于判断网络状态>关于判断网络状态</a></li><li><a href=#js录制屏幕内容>JS录制屏幕内容</a></li><li><a href=#获取内部可滚动元素的滚动>获取内部可滚动元素的滚动</a></li><li><a href=#原生js获取当前经纬度>原生JS获取当前经纬度</a></li><li><a href=#关于调用百度腾讯等web服务>关于调用百度腾讯等web服务</a></li><li><a href=#关于cookies>关于cookies</a></li><li><a href=#微信sdk>微信sdk</a></li><li><a href=#监听dom变化>监听DOM变化</a></li><li><a href=#页面平滑滚动>页面平滑滚动</a></li><li><a href=#ios格式化日期出错>IOS格式化日期出错</a></li><li><a href=#js文字转语音>JS文字转语音</a></li><li><a href=#tailwind在vscode中的智能提示>Tailwind在VSCode中的智能提示</a></li></ol></li></ol></nav></div></section></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><div class=article-title-wrapper><h2 class=article-title><a href=/MattTheTekie/p/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E4%B8%80%E4%BA%9B%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/>前端技术一些踩坑记录</a></h2></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>Mar 08, 2021</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--reading>読了時間: 4分</time></div></footer></div></header><section class=article-content><h1 id=顶部目录><a class=link href=#%e7%9b%ae%e5%bd%95>顶部</a></h1><h2 id=编辑器相关vscode>编辑器相关（VSCode）</h2><h3 id=实用插件>实用插件</h3><ul><li>Beautify <em>格式化代码</em></li><li>Bracket Pair Colorizer <em>括号颜色</em></li><li>Path Intellisense <em>路径智能提示</em></li><li>Vetur <em>Vue提示插件</em></li><li>ES6 <em>ES6语法提示</em></li><li>Open in Browser <em>在浏览器中打开</em></li></ul><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=react开启jsx支持>React开启JSX支持</h3><p>打开<code>settings</code>，然后在右上角打开<code>settings.json</code>，配置如下：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=s2>&#34;emmet.includeLanguages&#34;</span><span class=err>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;javascript&#34;</span><span class=p>:</span> <span class=s2>&#34;javascriptreact&#34;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h2 id=npmyarn相关>NPM(Yarn)相关</h2><h3 id=--save和--save-dev的区别>&ndash;save和&ndash;save-dev的区别</h3><p><code>npm install --save</code>安装的包是运行时的依赖，比如<code>axios</code><br><code>npm install --save-dev</code>安装的包仅仅是在开发阶段的依赖，比如<code>less\sass</code>等</p><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=npm在国内加快下载速度>npm在国内加快下载速度</h3><ul><li>可以使用<code>cnpm</code>，安装方法<code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code>(不推荐，有时候会出问题) <a class=link href="https://developer.aliyun.com/mirror/NPM?from=tnpm" target=_blank rel=noopener>文档</a></li><li>安装<code>yarn</code>来代替，直接下载或者在npm中下载，推荐直接下载安装 <code>(推荐)</code></li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=c1># 切换淘宝源</span>
+</span></span><span class=line><span class=cl><span class=n>npx</span> <span class=n>nrm</span> <span class=n>use</span> <span class=n>taobao</span>
+</span></span><span class=line><span class=cl><span class=c1># 切换回来</span>
+</span></span><span class=line><span class=cl><span class=n>npx</span> <span class=n>nrm</span> <span class=n>use</span> <span class=n>npm</span>
+</span></span></code></pre></td></tr></table></div></div><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h2 id=框架vue-react等相关>框架（Vue, React等）相关</h2><h3 id=vue监听>Vue监听</h3><p>Vue在<code>mounted()</code>中添加监听事件之后，记得在<code>destroyed()</code>中移除监听，特别是监听滚动事件</p><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=vue引入iview之后使用col标签后vscode会报错>Vue引入iView之后使用Col标签后VSCode会报错</h3><p>解决方法：在<code>settings</code>中搜索<code>vetur.validation.template</code>，关闭或者改成false之后重启vscode即可解决</p><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=在vscode中识别webpack的alias>在VsCode中识别webpack的alias</h3><p>在项目根目录下创建<code>jsconfig.json</code>，如果使用ts则创建<code>tsconfig.json</code>，这里只展示js</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;compilerOptions&#34;</span><span class=p>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;baseUrl&#34;</span><span class=p>:</span> <span class=s2>&#34;./&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;paths&#34;</span><span class=p>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=nt>&#34;@/*&#34;</span><span class=p>:</span> <span class=p>[</span><span class=s2>&#34;src/*&#34;</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;exclude&#34;</span><span class=p>:</span> <span class=p>[</span><span class=s2>&#34;node_modules&#34;</span><span class=p>,</span> <span class=s2>&#34;dist&#34;</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><blockquote><p>问题：只会显示js文件和文件夹，其他文件不会显示，暂时没发现解决方法</p></blockquote><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=关于axios使用post传递applicationx-www-form-urlencoded的问题>关于axios使用post传递application/x-www-form-urlencoded的问题</h3><p>使用<code>qs</code>库来格式化数据</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-javascript data-lang=javascript><span class=line><span class=cl><span class=nx>axios</span><span class=p>({</span>
+</span></span><span class=line><span class=cl>  <span class=nx>method</span><span class=o>:</span> <span class=s1>&#39;post&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>url</span><span class=o>:</span> <span class=s1>&#39;/api/demo&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>data</span><span class=o>:</span> <span class=nx>qs</span><span class=p>.</span><span class=nx>stringify</span><span class=p>({</span> <span class=nx>id</span><span class=o>:</span> <span class=mi>1</span> <span class=p>})</span>
+</span></span><span class=line><span class=cl><span class=p>})</span>
+</span></span></code></pre></td></tr></table></div></div><p>如果你需要传递的数据中包含数组，则需要这样解决</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-javascript data-lang=javascript><span class=line><span class=cl><span class=nx>axios</span><span class=p>({</span>
+</span></span><span class=line><span class=cl>  <span class=nx>method</span><span class=o>:</span> <span class=s1>&#39;post&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>url</span><span class=o>:</span> <span class=s1>&#39;/api/demo&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>data</span><span class=o>:</span> <span class=nx>qs</span><span class=p>.</span><span class=nx>stringify</span><span class=p>({</span> <span class=nx>id</span><span class=o>:</span> <span class=mi>1</span><span class=p>,</span> <span class=nx>arr</span><span class=o>:</span> <span class=p>[</span><span class=mi>1</span><span class=p>,</span> <span class=mi>2</span><span class=p>]</span> <span class=p>},</span> <span class=p>{</span> <span class=nx>indices</span><span class=o>:</span> <span class=kc>false</span> <span class=p>})</span>
+</span></span><span class=line><span class=cl><span class=p>})</span>
+</span></span></code></pre></td></tr></table></div></div><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=关于mockjs>关于Mock.js</h3><ul><li>无法使用<code>fetch</code>来进行模拟</li></ul><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=在vue中使用lodash中的debounce>在Vue中使用<code>Lodash</code>中的<code>debounce</code></h3><p>官方文档演示</p><blockquote><p>_.debounce(func, [wait=0], [options={}])
+之后自己在使用过程中发现用不了，搜索了一下别人的代码，然后写成如下</p></blockquote><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=kr>import</span> <span class=nx>_</span> <span class=nx>from</span> <span class=s1>&#39;lodash&#39;</span>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>methods</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>handleClick</span><span class=o>:</span> <span class=nx>_</span><span class=p>.</span><span class=nx>debounce</span><span class=p>(()</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;防抖成功&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>      <span class=k>this</span><span class=p>.</span><span class=nx>fetchData</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span> <span class=mi>500</span><span class=p>),</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nx>fetchData</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;fetch&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>上面代码就会报错，原因是<code>_.debounce</code>中的<code>this</code>指向错误，所以不能使用箭头函数，要改成普通的写法，如果<code>handleClick</code>带参数，也可以直接写在<code>function(args)</code>中</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=kr>import</span> <span class=nx>_</span> <span class=nx>from</span> <span class=s1>&#39;lodash&#39;</span>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>methods</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>handleClick</span><span class=o>:</span> <span class=nx>_</span><span class=p>.</span><span class=nx>debounce</span><span class=p>(</span><span class=kd>function</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;防抖成功&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>      <span class=k>this</span><span class=p>.</span><span class=nx>fetchData</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span> <span class=mi>500</span><span class=p>),</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nx>fetchData</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;fetch&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=后端接口long类型的问题>后端接口Long类型的问题</h3><p>请求接口中，如果后端返回Long类型的参数（比如ID），前端浏览器会自动截断，需要后端将Long转成String返回</p><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=vue和ts>Vue和TS</h3><ul><li>如果是Vue-Cli创建的项目，可以在现有项目下直接<code>vue add typescript</code></li><li>关于<code>Mixins</code></li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=kr>import</span> <span class=p>{</span> <span class=nx>Vue</span><span class=p>,</span> <span class=nx>Component</span><span class=p>,</span> <span class=nx>Mixins</span> <span class=p>}</span> <span class=nx>from</span> <span class=s1>&#39;vue-property-decorator&#39;</span>
+</span></span><span class=line><span class=cl><span class=c1>// 这个可以封装成 .ts文件做全局mixins
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=err>@</span><span class=nx>Component</span><span class=p>({})</span>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=kr>class</span> <span class=nx>GlobalMixins</span> <span class=kr>extends</span> <span class=nx>Vue</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>   * 设置提示框
+</span></span></span><span class=line><span class=cl><span class=cm>   */</span>
+</span></span><span class=line><span class=cl>  <span class=nx>setSnackbar</span><span class=p>({</span>
+</span></span><span class=line><span class=cl>    <span class=nx>msg</span> <span class=o>=</span> <span class=s2>&#34;一条提醒&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nx>type</span> <span class=o>=</span> <span class=s2>&#34;success&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nx>timeout</span> <span class=o>=</span> <span class=mi>2000</span>
+</span></span><span class=line><span class=cl>  <span class=p>})</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>this</span><span class=p>.</span><span class=nx>$store</span><span class=p>.</span><span class=nx>commit</span><span class=p>(</span><span class=s1>&#39;openSnackbar&#39;</span><span class=p>,</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=nx>msg</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>type</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=nx>timeout</span>
+</span></span><span class=line><span class=cl>    <span class=p>})</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=c1>// 要这么写
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=err>@</span><span class=nx>Component</span><span class=p>({})</span>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=kr>class</span> <span class=nx>App</span> <span class=kr>extends</span> <span class=nx>Mixins</span><span class=p>(</span><span class=nx>GlobalMixins</span><span class=p>)</span> <span class=p>{}</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>在TS中定义prototype,可参考<a class=link href=https://stackoverflow.com/questions/55893522/vue-prototype-property-doesnt-work-with-typescript target=_blank rel=noopener>这个答案</a></li><li>关于$refs.form.validate()报错(Vuetify)</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>interface</span> <span class=nx>VuetifyValidType</span> <span class=kr>extends</span> <span class=nx>Vue</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>validate</span><span class=p>()</span><span class=o>:</span> <span class=kr>boolean</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kr>export</span> <span class=k>default</span> <span class=kr>class</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>$refs</span><span class=o>!:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>form</span>: <span class=kt>VuetifyValidType</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=vue中通过cdn引入高德地图externals的问题>Vue中通过CDN引入高德地图externals的问题</h3><p>在Vue中通过CDN引入高德地图，script标签需要放在head中，不然会报错<code>AMap undefined</code></p><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=element-ui如果在项目中需要cdn引入>Element UI如果在项目中需要CDN引入</h3><p>不需要配置externals，直接通过官方提供的CDN引入方式就好，也不需要在<code>main.js</code>中调用<br>直接就能全局引入</p><blockquote><p>后续有什么问题再更新</p></blockquote><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=vite的问题>Vite的问题</h3><ul><li>Vite引入VueRouter4的问题</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// 以下代码是报错代码
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>import</span> <span class=nx>VueRouter</span> <span class=nx>from</span> <span class=s1>&#39;vue-router&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// 以下代码是正确代码
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kr>import</span> <span class=p>{</span><span class=nx>createRouter</span><span class=p>,</span> <span class=nx>createWebHashHistory</span><span class=p>}</span> <span class=nx>from</span> <span class=err>&#39;</span><span class=nx>vue</span><span class=o>-</span><span class=nx>router</span>
+</span></span><span class=line><span class=cl><span class=c1>// 因为VueRouter4没有export default，所以不能使用第一种方式
+</span></span></span></code></pre></td></tr></table></div></div><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h2 id=小程序相关以及html>小程序相关以及HTML</h2><h3 id=movable-view>movable-view</h3><p><code>movable-view</code> 这个组件内部无法滚动设置了 <code>overflow: scroll</code> 样式的元素（尚未解决）</p><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=关于点击穿透>关于点击穿透</h3><p>例子: 当你点击一个嵌套元素，你点击的是<code>span</code>的范围，但你想获取父元素<code>div</code>的内容</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-html data-lang=html><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>div</span> <span class=na>class</span><span class=o>=</span><span class=s>&#34;test&#34;</span> <span class=na>data-index</span><span class=o>=</span><span class=s>&#34;outer&#34;</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>&lt;</span><span class=nt>span</span> <span class=na>data-index</span><span class=o>=</span><span class=s>&#34;inner&#34;</span><span class=p>&gt;</span>Click<span class=p>&lt;/</span><span class=nt>span</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>div</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>script</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=nb>document</span><span class=p>.</span><span class=nx>querySelector</span><span class=p>(</span><span class=s1>&#39;.test&#39;</span><span class=p>).</span><span class=nx>onclick</span> <span class=o>=</span> <span class=kd>function</span> <span class=p>(</span><span class=nx>e</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=nx>e</span><span class=p>.</span><span class=nx>target</span><span class=p>.</span><span class=nx>dataset</span><span class=p>.</span><span class=nx>index</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>&lt;/</span><span class=nt>script</span><span class=p>&gt;</span>
+</span></span></code></pre></td></tr></table></div></div><blockquote><p>解决方法：内部元素的样式<code>pointer-events</code>修改为<code>none</code>; 或在内部放置一个位于所有子元素顶层的<code>div</code>专门用来点击;</p></blockquote><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=css来判断元素是否为空>css来判断元素是否为空</h3><p>通过伪类<code>:empty</code>来判断一个元素内部是否有文字或者是否存在子元素</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-css data-lang=css><span class=line><span class=cl><span class=nt>div</span><span class=p>:</span><span class=nd>empty</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>width</span><span class=p>:</span> <span class=mi>100</span><span class=kt>px</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=k>height</span><span class=p>:</span> <span class=mi>100</span><span class=kt>px</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=k>background-color</span><span class=p>:</span> <span class=kc>red</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=nt>div</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=k>width</span><span class=p>:</span> <span class=mi>50</span><span class=kt>px</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=k>height</span><span class=p>:</span> <span class=mi>50</span><span class=kt>px</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=k>background-color</span><span class=p>:</span> <span class=kc>orange</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=百度地图自定义标记点图标>百度地图自定义标记点图标</h3><p>从iconfont上下载的图标，设置好大小即可显示，但如果图标太大，在PS中修改后又无法正常显示尺寸（尚不知问题，但从iconfont上设置好大小没问题）</p><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=关于判断网络状态>关于判断网络状态</h3><ul><li><code>navigator.onLine</code>能判断网络是否在线</li><li><code>navigator.connection</code>能获取网络状态信息</li><li><code>navigator.connection</code>可以监听<code>change</code>事件</li></ul><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=js录制屏幕内容>JS录制屏幕内容</h3><ul><li>使用<code>navigator.mediaDevices</code>来获取stream流&mdash;<a class=link href=https://developer.mozilla.org/zh-CN/docs/Web/API/MediaDevices target=_blank rel=noopener>MDN文档</a></li><li>获取的stream流可以使用MediaRecorder录制获取webm文件&mdash;<a class=link href=https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Recording_API/Recording_a_media_element target=_blank rel=noopener>MDN文档</a></li></ul><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=获取内部可滚动元素的滚动>获取内部可滚动元素的滚动</h3><ul><li>通过offsetTop来获取内部以及外部的高度，通过相减则是实际内部高度</li></ul><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=原生js获取当前经纬度>原生JS获取当前经纬度</h3><p><a class=link href=https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition target=_blank rel=noopener>MDN官方文档</a></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=kr>const</span> <span class=nx>geo</span> <span class=o>=</span> <span class=nx>navigator</span><span class=p>.</span><span class=nx>geolocation</span>
+</span></span><span class=line><span class=cl><span class=nx>geo</span><span class=p>.</span><span class=nx>getCurrentPosition</span><span class=p>((</span><span class=nx>res</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kr>const</span> <span class=nx>crd</span> <span class=o>=</span> <span class=nx>res</span><span class=p>.</span><span class=nx>coords</span>
+</span></span><span class=line><span class=cl>  <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;Your current position is:&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=sb>`Latitude : </span><span class=si>${</span><span class=nx>crd</span><span class=p>.</span><span class=nx>latitude</span><span class=si>}</span><span class=sb>`</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=sb>`Longitude: </span><span class=si>${</span><span class=nx>crd</span><span class=p>.</span><span class=nx>longitude</span><span class=si>}</span><span class=sb>`</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=sb>`More or less </span><span class=si>${</span><span class=nx>crd</span><span class=p>.</span><span class=nx>accuracy</span><span class=si>}</span><span class=sb> meters.`</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>})</span>
+</span></span></code></pre></td></tr></table></div></div><p>问题：</p><blockquote><p>微信H5下无法使用，可能移动端H5都无法正常使用</p></blockquote><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=关于调用百度腾讯等web服务>关于调用百度腾讯等web服务</h3><p>使用<code>axios</code>这些会出现跨域问题，需要使用<code>jsonp</code></p><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=关于cookies>关于cookies</h3><p>如果在不同域名下,cookies会无法设置,简单来说就是: 同域名下cookies有效,不同域名下cookies无效</p><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=微信sdk>微信sdk</h3><p>前端微信sdk的Config只需要域名或者ip地址能够对上就好</p><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=监听dom变化>监听DOM变化</h3><p>原生JS监听DOM变化</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=c1>// 选择需要观察变动的节点
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>var</span> <span class=nx>targetNode</span> <span class=o>=</span> <span class=nb>document</span><span class=p>.</span><span class=nx>getElementById</span><span class=p>(</span><span class=s1>&#39;some-id&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// 观察器的配置（需要观察什么变动）
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>var</span> <span class=nx>config</span> <span class=o>=</span> <span class=p>{</span> <span class=nx>attributes</span><span class=o>:</span> <span class=kc>true</span><span class=p>,</span> <span class=nx>childList</span><span class=o>:</span> <span class=kc>true</span><span class=p>,</span> <span class=nx>subtree</span><span class=o>:</span> <span class=kc>true</span> <span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// 当观察到变动时执行的回调函数
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>var</span> <span class=nx>callback</span> <span class=o>=</span> <span class=kd>function</span><span class=p>(</span><span class=nx>mutations</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span><span class=p>(</span><span class=kd>var</span> <span class=nx>mutation</span> <span class=k>of</span> <span class=nx>mutations</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=nx>mutation</span><span class=p>.</span><span class=nx>type</span> <span class=o>==</span> <span class=s1>&#39;childList&#39;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;A child node has been added or removed.&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>else</span> <span class=k>if</span> <span class=p>(</span><span class=nx>mutation</span><span class=p>.</span><span class=nx>type</span> <span class=o>==</span> <span class=s1>&#39;attributes&#39;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>            <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=s1>&#39;The &#39;</span> <span class=o>+</span> <span class=nx>mutation</span><span class=p>.</span><span class=nx>attributeName</span> <span class=o>+</span> <span class=s1>&#39; attribute was modified.&#39;</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// 创建一个观察器实例并传入回调函数
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=kd>var</span> <span class=nx>observer</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>MutationObserver</span><span class=p>(</span><span class=nx>callback</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// 以上述配置开始观察目标节点
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nx>observer</span><span class=p>.</span><span class=nx>observe</span><span class=p>(</span><span class=nx>targetNode</span><span class=p>,</span> <span class=nx>config</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1>// 之后，可停止观察
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=nx>observer</span><span class=p>.</span><span class=nx>disconnect</span><span class=p>();</span>
+</span></span></code></pre></td></tr></table></div></div><p><a class=link href=https://developer.mozilla.org/zh-CN/docs/Web/API/MutationObserver target=_blank rel=noopener>参考MDN文档</a></p><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=页面平滑滚动>页面平滑滚动</h3><ul><li>css<ul><li><code>scroll-behavior: smooth</code></li></ul></li><li>js<ul><li><code>scrollIntoView({ behavior: "smooth" })</code></li></ul></li></ul><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=ios格式化日期出错>IOS格式化日期出错</h3><p>Safari格式化日期格式<strong>yyyy-mm-dd</strong>时会返回NaN，或者直接报错，需要把-替换成/变成<strong>yyyy/mm/dd</strong>才可正常格式化。</p><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=js文字转语音>JS文字转语音</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=kr>const</span> <span class=nx>voice</span> <span class=o>=</span> <span class=nx>speechSynthesis</span><span class=p>.</span><span class=nx>getVoices</span><span class=p>()[</span><span class=mi>0</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=kd>let</span> <span class=nx>speech</span> <span class=o>=</span> <span class=k>new</span> <span class=nx>SpeechSynthesisUtterance</span><span class=p>();</span>
+</span></span><span class=line><span class=cl><span class=k>for</span> <span class=p>(</span><span class=kr>const</span> <span class=nx>key</span> <span class=k>in</span> <span class=nx>voice</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>speech</span><span class=p>[</span><span class=nx>key</span><span class=p>]</span> <span class=o>=</span> <span class=nx>voice</span><span class=p>[</span><span class=nx>key</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=nx>speech</span><span class=p>.</span><span class=nx>text</span> <span class=o>=</span> <span class=s1>&#39;你好&#39;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=nx>speechSynthesis</span><span class=p>.</span><span class=nx>speak</span><span class=p>(</span><span class=nx>speech</span><span class=p>);</span>
+</span></span></code></pre></td></tr></table></div></div><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p><h3 id=tailwind在vscode中的智能提示>Tailwind在VSCode中的智能提示</h3><ul><li>安装插件<code>Tailwind CSS IntelliSense</code></li><li>在VSCode设置中找到<code>tailwindCSS.includeLanguages</code></li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;plaintext&#34;</span><span class=p>:</span> <span class=s2>&#34;vue&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nt>&#34;javascript&#34;</span><span class=p>:</span> <span class=s2>&#34;javascript&#34;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>如上设置之后就能Vue和React都能智能提示了</li></ul><p><a class=link href=#%e9%a1%b6%e9%83%a8%e7%9b%ae%e5%bd%95>回到顶部</a></p></section><footer class=article-footer><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg><span>Licensed under CC BY-NC-SA 4.0</span></section></footer></article><div class=disqus-container><div id=disqus_thread></div><script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//mattthetekie.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><style>.disqus-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding)}</style><script>window.addEventListener("onColorSchemeChange",e=>{typeof DISQUS=="object"&&DISQUS.reset({reload:!0})})</script><footer class=site-footer><section class=copyright>&copy;
+2020 -
+2023 Matt's Blog</section><section class=powerby>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>テーマ <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.16.0>Stack</a></b> は <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a> によって設計されています。</section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/MattTheTekie/ts/main.js defer></script>
+<script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>

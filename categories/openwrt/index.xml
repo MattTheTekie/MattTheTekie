@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Openwrt on Matt's Blog</title><link>https://mattthetekie.github.io/MattTheTekie/categories/openwrt/</link><description>Recent content in Openwrt on Matt's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 08 Jan 2023 19:58:31 +0900</lastBuildDate><atom:link href="https://mattthetekie.github.io/MattTheTekie/categories/openwrt/index.xml" rel="self" type="application/rss+xml"/><item><title>Openwrtの設定に関するメモ</title><link>https://mattthetekie.github.io/MattTheTekie/p/openwrt%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%83%A1%E3%83%A2/</link><pubDate>Sun, 08 Jan 2023 19:58:31 +0900</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/openwrt%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%83%A1%E3%83%A2/</guid><description>&lt;h2 id="やること">やること&lt;/h2>
+&lt;ul>
+&lt;li>スイッチ化&lt;/li>
+&lt;li>DDNSを使用&lt;/li>
+&lt;li>WireGuardサーバーを構築して自宅lanを外で触れるように、&lt;/li>
+&lt;li>WireGuard Clientの設定をしてルーターに接続している機器(lan,wlan,wireguard)のトラフィックをSurfsharkを経由させるようにする。&lt;/li>
+&lt;li>ゲストwifi(自宅lan、wireguard serverとは独立したネットワーク、Surfsharkを通してグローバルネットワークに接続)&lt;/li>
+&lt;/ul>
+&lt;p>記事の完成度(35%くらい)&lt;/p>
+&lt;h2 id="構成の紹介">構成の紹介&lt;/h2>
+&lt;ul>
+&lt;li>親機 HUAWEI WiFi AX3 NEW(192.168.11.1)&lt;br>
+HUAWEI WiFi Mesh 3(192.168.11.2)を使用してメッシュネットワークを構成&lt;/li>
+&lt;li>Openwrt Archer C6 v3.2(192.168.1.1,192.168.11.3)&lt;br>
+Mesh 3に接続&lt;/li>
+&lt;/ul>
+&lt;h2 id="スイッチ化">スイッチ化&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://eco.senritu.net/openwrt-access-point/" target="_blank" rel="noopener"
+>OpenWRT化したTP-Link Archer C6 v2をAP（アクセスポイント）モードで利用する&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://yassi.hatenablog.com/entry/2021/12/25/011106" target="_blank" rel="noopener"
+>OpenWrtをスイッチ化してWireGuardを入れた&lt;/a>&lt;br>
+これらの手順を参考に以下のように設定&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Interfaces&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1f4hAI8k5sfwnXnCRaFZ0jJufmTHsjESe"/>
+&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Interfaces » LAN&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=15uuP20ic_ciGiUYv9EyvJMXOS18UlsGO"/>
+&lt;/figure>
+&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1JWvoLXTiQlwoqBeJI-rjHfLd6Jg9KpoB"/>
+&lt;/figure>
+&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1VdBNv37L2zQOFa4GNbWrLYAXg9RAPEQg"/>
+&lt;/figure>
+&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1A-8xg1_yqXEK5WTdS4H6eEqXe8GPEjow"/>
+&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Bridge device: br-lan&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1Ns-aM8CEsn4Iy_XksewNiJuhcbPlzFS5"/>
+&lt;/figure>
+&lt;br>
+ここでWANを設定することでWANポートもLANポートとして使用できる。&lt;br>
+startupの設定からdnsmasq,firewall,odhcpdをdisabledにしてstopも押してその場で息の根を止めてあげる。&lt;br>
+一応自分は親機側でOpenwrtに192.168.11.3を割り当てるようにしている。&lt;br>
+設定を適応すると192.168.11.3でluciにアクセスできるようになる。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="lucuでopkgを使用した際にhttpsのリンクからパッケージをダウンロードできない問題を修正">lucuでopkgを使用した際にhttpsのリンクからパッケージをダウンロードできない問題を修正&lt;/h2>
+&lt;p>おま環かもしれないが何度やっても&amp;quot;ailed to download the package list from ~~&amp;ldquo;が再発するのでsshでコマンドを叩いて修正する。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">$ ssh root@192.168.11.3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">root@OpenWrt:~# opkg update --no-check-certificate
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">root@OpenWrt:~# opkg install libopenssl openssl-util --no-check-certificate
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">root@OpenWrt:~# reboot #一応再起動
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>これでluciからopkgを叩いてもエラーがでなくなる。&lt;/p>
+&lt;h2 id="ddnsの設定">ddnsの設定&lt;/h2>
+&lt;p>固定ipプランに入ってないのでう*ち&lt;br>
+DDNSの設定をする前にCloudflare(自分の場合)で使用する予定のサブドメイン用に適当にdnsの設定をしてあげる。&lt;br>
+(こうしないとエラーを吐く、どうやらddns-scripts-cloudflareだと新規でレコードを作成できないよう)&lt;br>
+Softwareでluci-app-ddns,ddns-scripts-cloudflare(これは使用するddnsサービスに合わせる)をインストールする。&lt;br>
+ページを更新するとServiceタブが現れる(小並感)のでDynamic DNSのページを開いて新規でサービスを作成する。&lt;br>
+ここではサービス名をddnsとする。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Basic&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>lookup Hostname&lt;/td>
+&lt;td>example.com(使用するドメイン名)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Domain&lt;/td>
+&lt;td>example.com(サブドメインを使用する場合はsub@example.com)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Username&lt;/td>
+&lt;td>cloudflareの場合はアカウントのメールアドレス&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Password&lt;/td>
+&lt;td>API Key(Cloudflareの場合はGlobal API Key出ないと使用できない&lt;del>らしい&lt;/del>)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Path to CA-Certificate&lt;/td>
+&lt;td>/etc/ssl/certs&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Advanced&lt;/th>
+&lt;th>&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>IP address source&lt;/td>
+&lt;td>URL(こうしないとスイッチ化しているためローカルipでdnsの設定をしようとしてだめらしい)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>URL to detect&lt;/td>
+&lt;td>&lt;a class="link" href="http://checkip.dyndns.com" target="_blank" rel="noopener"
+>http://checkip.dyndns.com&lt;/a>(これはお好みのサービスで)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>ここまで設定したら保存してRestart DDnsしてあげてサービスのログを確認してあげて上手くいってるか見てあげる。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted --></description></item></channel></rss>

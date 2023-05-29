@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>カスタムROM on Matt's Blog</title><link>https://mattthetekie.github.io/MattTheTekie/categories/%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0rom/</link><description>Recent content in カスタムROM on Matt's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 10 Sep 2022 23:11:01 +0900</lastBuildDate><atom:link href="https://mattthetekie.github.io/MattTheTekie/categories/%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0rom/index.xml" rel="self" type="application/rss+xml"/><item><title>Zenfone8 Project Blaze</title><link>https://mattthetekie.github.io/MattTheTekie/p/zenfone8-project-blaze/</link><pubDate>Sat, 10 Sep 2022 23:11:01 +0900</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/zenfone8-project-blaze/</guid><description>&lt;img src="https://user-images.githubusercontent.com/87426352/157710326-991ecb31-65cf-460b-b3ec-d6ddad1edbdb.png" alt="Featured image of post Zenfone8 Project Blaze" />&lt;h2 id="projectblazeって">ProjectBlazeって？&lt;/h2>
+&lt;p>カスタムROMの一種で様々なカスタム機能を持ち合わせています。&lt;br>
+またAndroid12で変更されたQSパネルのデザインが11以前のものになるようにカスタマイズされています。&lt;del>多分一番の目玉機能&lt;/del>&lt;/p>
+&lt;h2 id="リンク">リンク&lt;/h2>
+&lt;p>&lt;a class="link" href="https://sourceforge.net/projects/any-artifact/files/sake/projectblaze/" target="_blank" rel="noopener"
+>sourceforge.net&lt;/a>&lt;br>
+Gappsビルドは無いのでサイドロードでNikGappsを入れてください。&lt;/p>
+&lt;h2 id="how-2-install">How 2 install?&lt;/h2>
+&lt;p>※事前にAndroid12にしておいてください。&lt;/p>
+&lt;h3 id="必要なもののダウンロード">必要なもののダウンロード&lt;/h3>
+&lt;p>boot.img,Blaze-v1.x-sake-xxxxxxxx-xxxx-VANILLA-UNOFFICIAL.zip,&lt;a class="link" href="https://mirror.math.princeton.edu/pub/lineageos/full/sake/20220909/vendor_boot.img" target="_blank" rel="noopener"
+>vendor_boot.img&lt;/a>をダウンロード。&lt;/p>
+&lt;h3 id="リカバリのダウンロード">リカバリのダウンロード&lt;/h3>
+&lt;p>ブートローダーに入って以下のコマンドを実行してリカバリとvendor_bootを書き込む。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">fastboot flash vendor_boot &amp;lt;vendor_boot&amp;gt;.img
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">fastboot flash boot boot.img
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="インストール">インストール&lt;/h3>
+&lt;p>Lineage RecoveryでBlaze-v1.x-sake-xxxxxxxx-xxxx-VANILLA-UNOFFICIAL.zipをサイドロードしてインストール。&lt;br>
+GappsやMagiskが必要な場合はこの段階で一緒にサイドロードしとくと楽です。&lt;br>
+Magisk.zipはapkの拡張子をzipに変更することで使用できます。(公式的にはこの使い方は&lt;a class="link" href="https://topjohnwu.github.io/Magisk/install.html#custom-recovery" target="_blank" rel="noopener"
+>非推奨&lt;/a>)&lt;/p>
+&lt;h2 id="不具合とか">不具合とか&lt;/h2>
+&lt;ul>
+&lt;li>NFCが動作しない(ビルド時になんかエラーを吐かれたので一時的に無効化していますそのうち何とかします。)&lt;/li>
+&lt;li>バッテリー残量を検出できない&lt;/li>
+&lt;/ul>
+&lt;h2 id="changelog">Changelog&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">20220918-1405
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">1.5-EOLの不具合修正版に更新
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[詳細](https://t.me/projectblaze/45825)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">20220910-1119
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ベースバンドがおかしかったのでカーネルをArrowOSのものからLineage19.1に変更
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">20220909-1317
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">初めてのビルド
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="ちょっとした小話">ちょっとした小話&lt;/h2>
+&lt;p>ビルド時に詰まったところ&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&amp;ldquo;generated_kernel_includes &amp;ldquo;: cmd: unknown variable &amp;lsquo;$(PATH_OVERRIDE_SOONG)&lt;br>
+GSIビルドしてる時にもここで詰まった。&lt;br>
+結論としては、lunchではなくbreakfast sakeを叩いてあげるとエラーが出なかった。理由は知らん。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>clang-12: error: no such file or directory: &amp;lsquo;aarch64-linux-android-&amp;rsquo;&lt;br>
+こいつに4日くらい悩んでた気がする。&lt;br>
+Blazeのofficial deviceのツリーに習ってBoardconfig.mkに以下を記入することで解決した。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">TARGET_KERNEL_CLANG_COMPILE := true
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>qcom hardware関連のエラー&lt;br>
+android_hardware_qcom_bootctrl,android_hardware_qcom_commonのブランチをarrow-12.1-cafに、
+sm8350のandroid_hardware_qcom_audio,android_hardware_qcom_display,android_hardware_qcom_mediaのブランチをarrow-12.1-caf-sm8350に変更することで対処。&lt;/li>
+&lt;/ul>
+&lt;p>GSIのほうのお話&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Gapps同梱ビルドについての悩み&lt;br>
+GappsはGoogleの製品なので最初は同梱しない方針だったけど&lt;br>
+Gapps同梱して！みたいな話が短時間で数件来てTelegramでも&lt;del>晒されて&lt;/del>関係のないphhusson氏のコミュニティでも若干迷惑をかけてしまったので&lt;br>
+&lt;del>渋々&lt;/del>同梱ビルドを配布していますが良くないよなぁってのが最近の悩み。&lt;br>
+GSIを使っている人の中にはカスタムリカバリがない端末を使用している人もいるだろうからちょっと同情してしまったのもありますが。&lt;br>
+Magisk GappsもA12.1用のものはAlphaリリースで挙動も怪しいので何とも言えません。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>機種名を書かないままissueを飛ばしてくる人が多かったのでテンプレを作成して強制的に機種を書かせるようにしたら知らない機種の話を聞く羽目になった話。&lt;br>
+お悩み相談には乗ってあげたいけど正直わからんもんはわからん。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>あと金欠でツユさんのライブ行けなくて瀕死です。&lt;del>あの世行きのバスに乗ってさらば&lt;/del>&lt;/p>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

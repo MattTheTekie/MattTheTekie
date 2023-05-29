@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Matt's Blog</title><link>https://mattthetekie.github.io/MattTheTekie/tags/linux/</link><description>Recent content in Linux on Matt's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 12 May 2023 11:51:22 +0000</lastBuildDate><atom:link href="https://mattthetekie.github.io/MattTheTekie/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Starting up my Home Lab.</title><link>https://mattthetekie.github.io/MattTheTekie/p/starting-up-my-home-lab./</link><pubDate>Fri, 12 May 2023 11:51:22 +0000</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/starting-up-my-home-lab./</guid><description>&lt;h2 id="beginnings">Beginnings&lt;/h2>
+&lt;p>I&amp;rsquo;m currently in the process of redoing my workflow, and making it more proactive for my new desires. I got a lot of work to do, and one of them involves getting up a Home Lab. One of the things I need to get done is a dashboard for managing it all. Since this one is easy, just like setting up a proxmox server. I figured I would get it done quick.&lt;/p>
+&lt;h3 id="enter-dashy">Enter Dashy&lt;/h3>
+&lt;p>I was scrolling throughout GitHub, and came across Dashy. I was a bit hesitant to set it up, but after giving it a bit of time, I quickly realized how much potential it has. I then got off to working on my configuration for it more and more. The time definitely payed off, and I found even more free APIs to play around with!&lt;/p>
+&lt;h3 id="finale">Finale&lt;/h3>
+&lt;p>In the end, I&amp;rsquo;m really happy with the outcome I have so far, but I will definitely be posting once I get around to the next parts of my Home Lab!
+&lt;a class="link" href="https://tsukashomelab.netlify.app/" target="_blank" rel="noopener"
+>https://tsukashomelab.netlify.app/&lt;/a>&lt;/p>
+&lt;h3 id="part-ii">Part II&lt;/h3>
+&lt;p>Coming soon.&lt;/p></description></item><item><title>Retro ThinkPad upgrade project</title><link>https://mattthetekie.github.io/MattTheTekie/p/retro-thinkpad-upgrade-project/</link><pubDate>Mon, 08 May 2023 17:24:49 +0000</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/retro-thinkpad-upgrade-project/</guid><description>&lt;h2 id="story">Story&lt;/h2>
+&lt;p>Ever since ive used my first ThinkPad, ive been impressed with the modular design, upgradability, and expansion slots. Only until a few years ago I didnt know IBM made ThinkPads until Lenovo bought the series out from IBM. My uncle worked for IBM back in his days, but I always wanted a retro ThinkPad, already having my modern ThinkPad W520.&lt;/p>
+&lt;h2 id="project">Project&lt;/h2>
+&lt;p>Now having a ThinkPad R30, with 256MB RAM, a slow HDD, and a dead CMOS, and a dated wifi card, Its time we do some upgrades to make this the best retro ThinkPad I could own. Stay tuned for updates.&lt;/p>
+&lt;h2 id="end">End&lt;/h2>
+&lt;p>I&amp;rsquo;m Matt, I&amp;rsquo;m into Opsec, Linux, Networking, and much more. I&amp;rsquo;ve done loads of project&amp;rsquo;s over the year&amp;rsquo;s, and am glad to &lt;em>FINALLY&lt;/em> have a blog after such a long time. The project should resume within a few month&amp;rsquo;s as I&amp;rsquo;m working on a few different things currently.
+&lt;br>
+That&amp;rsquo;s all for now! - Matt.&lt;/p></description></item></channel></rss>

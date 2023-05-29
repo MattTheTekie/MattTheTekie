@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>WSA on Matt's Blog</title><link>https://mattthetekie.github.io/MattTheTekie/tags/wsa/</link><description>Recent content in WSA on Matt's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 09 Nov 2021 05:12:15 +0900</lastBuildDate><atom:link href="https://mattthetekie.github.io/MattTheTekie/tags/wsa/index.xml" rel="self" type="application/rss+xml"/><item><title>MagiskとGappsを入りのWSA(Windows Subsystem for Android)をインストールする話。</title><link>https://mattthetekie.github.io/MattTheTekie/p/magisk%E3%81%A8gapps%E3%82%92%E5%85%A5%E3%82%8A%E3%81%AEwsawindows-subsystem-for-android%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E8%A9%B1/</link><pubDate>Tue, 09 Nov 2021 05:12:15 +0900</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/magisk%E3%81%A8gapps%E3%82%92%E5%85%A5%E3%82%8A%E3%81%AEwsawindows-subsystem-for-android%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E8%A9%B1/</guid><description>&lt;p>##前置きと注意と筆者の環境&lt;br>
+Win11の発表時からWSAを楽しみにしていたのにお預けをくらって待ちきれなかったのでネットサーフィンをしていたら、&lt;br>
+なんか凄そうなのを発見したので実行してみました。&lt;/p>
+&lt;p>⚠注意 ここに書いてることを真似する場合は自己責任でお願いします。&lt;br>
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。&lt;br>
+&lt;del>無いとは思うけど&lt;/del>万が一Windowsが吹っ飛んだ時のために&lt;br>
+不安ならバックアップを取っておこうね。&lt;br>
+また、Hyper-Vを有効にするためMemuやBS5 32bit等々のエミュレーターが動作しなくなります、ご注意を。&lt;/p>
+&lt;ul>
+&lt;li>筆者の環境&lt;br>
+CPU: Ryzen5 3600&lt;br>
+GPU: GTX1060 6GB&lt;br>
+RAM: DDR4 4GB×2 16GB×1
+OS: Windows 11 Pro 21H2 22000.282&lt;/li>
+&lt;/ul>
+&lt;h2 id="必要なもの">必要なもの&lt;/h2>
+&lt;p>Windows11&lt;br>
+Githubのアカウント&lt;br>
+仮想化支援機能に対応したCPU&lt;/p>
+&lt;ul>
+&lt;li>あると嬉しい&lt;br>
+ADBが使用できる環境&lt;/li>
+&lt;/ul>
+&lt;p>(試していないので真偽は不明ですがプレビュービルドでなくてもできるそうです。&lt;del>誰か人柱になって&lt;/del>)&lt;/p>
+&lt;h2 id="下準備">下準備&lt;/h2>
+&lt;ul>
+&lt;li>Windowsの機能の有効化または無効化からHyper-V、Windows ハイパーバイザー プラットフォーム、仮想マシンプラットフォームを有効にして再起動する。&lt;br>
+これ↓&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1ETXjwPUrAkITQ9hLIXr0fYfsn-nATdub"/>
+&lt;/figure>
+&lt;/li>
+&lt;li>Biosの設定から仮想化支援機能を有効にする。(マザーボードのメーカーによってBiosの入り方等々が異なるので割愛)&lt;/li>
+&lt;/ul>
+&lt;h2 id="必要なファイルの用意">必要なファイルの用意&lt;/h2>
+&lt;p>&lt;a class="link" href="https://github.com/LSPosed/MagiskOnWSA" target="_blank" rel="noopener"
+>MagiskOnWSA&lt;/a>のリポジトリをForkしてActionsを開きましょう。&lt;br>
+Workflowsの中にあるMagiskの項目を選択して
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=119rTrJS3EwmLtn6xsVPLoUL6I1byzvS3"/>
+&lt;/figure>
+&lt;br>
+Run workflowを開いてRun workflowのボタンを押します。&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1GWceZHZRIWWTNP9j0KDKQ3LrkV9Z63w_"/>
+&lt;/figure>
+&lt;br>
+(この時にGappsの種類を選べるのでnoneのところを入れたいGappsの種類に書き換えてあげましょう)&lt;br>
+自分でやるのが面倒！って人はGapps nanoが入ったものをビルドしているので&lt;a class="link" href="https://github.com/j7b3y/MagiskOnWSA/actions/workflows/magisk.yml" target="_blank" rel="noopener"
+>私がForkしたリポジトリ&lt;/a>からDLしてください。&lt;/p>
+&lt;p>ビルドが終わったらWorkflowを開いてArtifactsの一覧にあるWSA-with-Magisk-GApps-〇〇_x64をDLしましょう。&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1Yknyh8kmzSiKTsQkc4osoqZkllgd04-O"/>
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="wsaをインストール">WSAをインストール&lt;/h2>
+&lt;p>DLが終わったら自分の好きな場所に展開してください。
+展開している間にWindows設定から開発者モードを有効にしてあげましょう。&lt;br>
+プライバシーとセキュリティ &amp;gt; 開発者向け と開いて一番上にある&lt;br>
+&amp;ldquo;圧縮されていないファイルも含め、任意のソースからのアプリをインストールします。&amp;rdquo;&lt;br>
+のスイッチをオンにしましょう。&lt;br>
+展開が終わったら展開したフォルダーを開いて中にあるInstall.ps1をshift+右クリックからのpowershellで開くを選択。&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1HrvPLuTpF0SkzFVSa1x9W9eYmsOqaCZB"/>
+&lt;/figure>
+&lt;br>
+インストールが開始します。&lt;/p>
+&lt;h2 id="5いざ起動">5.いざ起動&lt;/h2>
+&lt;p>スタートメニューの検索に&amp;quot;アプリ: android&amp;quot;と入力すると&lt;br>
+Windows Subsystem for Androidが出てくるので実行するとこんなメニューが出てきます。&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1ompHWjdTc9_fRigsjtVDoQW2ac4gBRMl"/>
+&lt;/figure>
+Developer modeをOnにしてからManage developer settingsをクリックしてWSAを起動してみましょう。&lt;br>
+&amp;ldquo;2.下準備&amp;quot;でちゃんと機能が有効になっているなら起動するはずです。&lt;br>
+有効にしたのに*Unable to start Windows Subsystem for Android.*と言われる！って人は&lt;br>
+&amp;ldquo;7.Unable to start Windows Subsystem for Androidと言われて動かない！&amp;ldquo;を見てみてください。&lt;/p>
+&lt;h2 id="magisk-managerをインストール">Magisk Managerをインストール&lt;/h2>
+&lt;ul>
+&lt;li>adbを使用する場合&lt;br>
+ターミナルで以下を実行&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">adb connect localhost:58526
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">adb install magisk.apk
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>adbを使用しない場合&lt;br>
+スタートメニューで&amp;quot;アプリ: play ストア&amp;quot;と検索してplayストアを開いてGoogleアカウントにログイン、&lt;br>
+適当なブラウザをダウンロードして&lt;a class="link" href="https://github.com/topjohnwu/Magisk" target="_blank" rel="noopener"
+>ここ&lt;/a>からMagisk Canaryのapkをダウンロードしてインストールしてください。&lt;/li>
+&lt;/ul>
+&lt;h2 id="unable-to-start-windows-subsystem-for-androidと言われて動かない">Unable to start Windows Subsystem for Androidと言われて動かない！&lt;/h2>
+&lt;p>ちゃんと設定したのに動かない！って人向けです。
+自分もここで一回詰まりました。 &lt;br>
+管理者として実行されたターミナルで以下を実行。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">bcdedit /set hypervisorlaunchtype auto
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>そして再起動。&lt;br>
+多分起動するはずです。&lt;br>
+これで起動しないのなら他に何か原因があるのかもしれないです。&lt;/p>
+&lt;h2 id="後書き">後書き&lt;/h2>
+&lt;p>動作は良好で結構いい感じだったのですが思ったよりメモリを食うので飽きたらBS5に戻るのかな～って感じです。&lt;br>
+生のAndroidが動くってのはロマンがあるのですが逆にそれ以外は何もないな～と思いました。&lt;br>
+Hyper-Vを有効にしたのでBS5 32bitやMemuが動作しなくなるのもかなり痛いし多分今後は使わないかな～というのが自分の結論です。&lt;/p>
+&lt;p>&lt;del>スクショ供養のコーナー&lt;/del>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">今日の進捗、後でMagisk更新しよ &lt;a href="https://t.co/cqAt3rqH6C">pic.twitter.com/cqAt3rqH6C&lt;/a>&lt;/p>&amp;mdash; なね (@j7b3y) &lt;a href="https://twitter.com/j7b3y/status/1457247747153666049?ref_src=twsrc%5Etfw">November 7, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="pl" dir="ltr">CPU-Z &lt;a href="https://t.co/qmxjOIXidf">pic.twitter.com/qmxjOIXidf&lt;/a>&lt;/p>&amp;mdash; なね (@j7b3y) &lt;a href="https://twitter.com/j7b3y/status/1457248305482592259?ref_src=twsrc%5Etfw">November 7, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">WSAの中身はA11だった &lt;a href="https://t.co/bc2y3L3tyI">pic.twitter.com/bc2y3L3tyI&lt;/a>&lt;/p>&amp;mdash; なね (@j7b3y) &lt;a href="https://twitter.com/j7b3y/status/1457206889020723201?ref_src=twsrc%5Etfw">November 7, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;/p>
+&lt;h2 id="参考にした記事">参考にした記事&lt;/h2>
+&lt;p>多分こっちを翻訳したほうが分かりやすいと思います。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/LSPosed/MagiskOnWSA" target="_blank" rel="noopener"
+>MagiskOnWSA&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

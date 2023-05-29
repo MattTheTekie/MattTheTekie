@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Magisk on Matt's Blog</title><link>https://mattthetekie.github.io/MattTheTekie/tags/magisk/</link><description>Recent content in Magisk on Matt's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 17 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://mattthetekie.github.io/MattTheTekie/tags/magisk/index.xml" rel="self" type="application/rss+xml"/><item><title>How not to root a phone</title><link>https://mattthetekie.github.io/MattTheTekie/p/how-not-to-root-a-phone/</link><pubDate>Fri, 17 Mar 2023 00:00:00 +0000</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/how-not-to-root-a-phone/</guid><description>&lt;p>This article is about rooting and installing custom OS onto a Samsung Exynos phone.&lt;/p>
+&lt;p>I&amp;rsquo;m using a &lt;a class="link" href="https://en.wikipedia.org/wiki/Samsung_Galaxy_A21s" target="_blank" rel="noopener"
+>Samsung Galaxy A21s&lt;/a> with. an Exynos chip, bought right here in Slovenia and is carrier unlocked.&lt;/p>
+&lt;p>When I was starting on rooting my phone, it was a horrible experience. I haven&amp;rsquo;t found many tutorials, which were beginner-friendly and some were riddled with words I didn&amp;rsquo;t understand.
+I&amp;rsquo;ve learnt a lot while rooting my phone, have passed many challanges, such as bootloops, and would like to help a beginner to root their phone and potentially even install their custom ROM
+onto it. So, this post is dedicated to all the beginners out there, I know it&amp;rsquo;s hard, but don&amp;rsquo;t give up. Most of this article should be the same for all Samsung devices, except
+you will have to find other TWRP recoveries.&lt;/p>
+&lt;p>It was also a huge undocumented pain on how to install Magisk onto GSIs, so that&amp;rsquo;s why I&amp;rsquo;m writing it here.&lt;/p>
+&lt;p>If you believe, you&amp;rsquo;ve followed the article correctly, and there are any issues or this article is incorrect at some points,
+you may &lt;a class="link" href="mailto:mytja@protonmail.com" >contact me&lt;/a> anytime and send the logs and your issue.&lt;/p>
+&lt;p>&lt;strong>WARNING:&lt;/strong> The author shall not be liable for any misuse and/or any damage made to the device.&lt;/p>
+&lt;h1 id="stage-0---preparation">Stage 0 - Preparation&lt;/h1>
+&lt;p>Requirements:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://forum.xda-developers.com/t/tool-samsung-samsung-firmware-downloader.4240719/" target="_blank" rel="noopener"
+>Samsung Firmware Downloader&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://forum.xda-developers.com/t/patched-odin-3-13-1.3762572/" target="_blank" rel="noopener"
+>Samsung Odin&lt;/a>, preferably patched variant &amp;amp; newer version&lt;/li>
+&lt;li>&lt;a class="link" href="https://developer.android.com/studio/releases/platform-tools" target="_blank" rel="noopener"
+>adb&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/DozNaka/exynos3830-a21s-twrp/releases/tag/twrp-2" target="_blank" rel="noopener"
+>TWRP&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/topjohnwu/Magisk/releases/latest" target="_blank" rel="noopener"
+>Magisk&lt;/a>&lt;/li>
+&lt;li>Phone&lt;/li>
+&lt;/ul>
+&lt;h1 id="stage-1---patch-the-stock-firmware-with-magisk">Stage 1 - Patch the stock firmware with Magisk&lt;/h1>
+&lt;p>Open up the Samsung Firmware Downloader and download the appropriate image for your phone.&lt;/p>
+&lt;h2 id="stage-11---find-your-csc">Stage 1.1 - Find your CSC&lt;/h2>
+&lt;ol>
+&lt;li>Open your Samsung phone dialer, type in &lt;strong>*#1234#&lt;/strong>.&lt;/li>
+&lt;li>You&amp;rsquo;ll see a new screen with your firmware information.&lt;/li>
+&lt;li>Look at the CSC section, there you can find 4 characters, which are the model number, followed by three characters, which are the region codes.&lt;/li>
+&lt;/ol>
+&lt;h2 id="stage-12---download">Stage 1.2 - Download&lt;/h2>
+&lt;p>Input the region code and your model number into the corresponding inputs in Samsung Firmware Downloader, afterwards just download the latest image.&lt;/p>
+&lt;p>File will be downloading for some time, output file should be a &lt;code>.tar.md5&lt;/code> file.&lt;/p>
+&lt;h2 id="stage-13---transfer-the-stock-image-to-your-phone">Stage 1.3 - Transfer the stock image to your phone&lt;/h2>
+&lt;p>You can use any file explorer for this. Preferably you should copy it to external media, such as an SD card, as it won&amp;rsquo;t be erased onwards.&lt;/p>
+&lt;h2 id="stage-14---install-magisk-manager">Stage 1.4 - Install Magisk Manager&lt;/h2>
+&lt;p>Install the latest &lt;code>apk&lt;/code> from &lt;a class="link" href="https://github.com/topjohnwu/Magisk/releases/latest" target="_blank" rel="noopener"
+>Magisk&amp;rsquo;s official GitHub&lt;/a>.&lt;/p>
+&lt;h2 id="stage-15---patch-the-stock-image-using-magisk-manager">Stage 1.5 - Patch the stock image using Magisk Manager&lt;/h2>
+&lt;p>Open the Magisk app on your phone and go to section, where it says Magisk and the currently installed version (none). Click &lt;code>Install&lt;/code> and click &lt;code>Select and Patch a File&lt;/code>,
+where you&amp;rsquo;ll find your Samsung stock image, select it and afterwards click &lt;code>Let's go&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>WARNING:&lt;/strong> If Magisk suddenly crashes, it&amp;rsquo;s best to relaunch it after a reboot and restart the process of patching the file. Patched file is probably corrupted and shall not be used and/or flashed,
+unless you want bootloops.&lt;/p>
+&lt;h2 id="stage-16---transfer-the-patched-magisk-image-back-to-your-computer">Stage 1.6 - Transfer the patched Magisk image back to your computer&lt;/h2>
+&lt;p>You can use any file explorer for this job. Meanwhile it&amp;rsquo;s copying, you can do part 1.7.&lt;/p>
+&lt;h2 id="stage-17---ensuring-bootloader-unlocking">Stage 1.7 - Ensuring bootloader unlocking&lt;/h2>
+&lt;p>On your phone, go to settings and enable developer mode. Afterwards, go to developer settings and enable &lt;code>OEM unlocking&lt;/code>.
+Wait for file transfer from beforehand to finish, before proceeding to Part 1.8.&lt;/p>
+&lt;h2 id="stage-18---unlocking-the-bootloader">Stage 1.8 - Unlocking the bootloader&lt;/h2>
+&lt;p>&lt;strong>WARNING:&lt;/strong> This &lt;strong>will&lt;/strong> trip Samsung Knox eFuse and there&amp;rsquo;s no way to undo it. Once you do this process,
+your bootloader will be unlocked and your warranty might be void (though legally, it wouldn&amp;rsquo;t have been, yet manufacturers don&amp;rsquo;t obey the laws).
+After you trip your Knox eFuse, you won&amp;rsquo;t be able to install and/or make some propriatery Samsung apps work (such as Samsung Pay, Samsung Wear).
+Do this on your own responsibility.&lt;/p>
+&lt;p>Turn off the phone compeletely. Afterwards, hold Volume Up and Volume Down buttons, both together until a blue screen is displayed,
+while plugging your phone into the computer&amp;rsquo;s USB port through an USB-C to USB-A cable. Your device&amp;rsquo;ll go into the Download mode,
+where you&amp;rsquo;ll be able to unlock the bootoloader. By holding the Volume Up button for long time, the device&amp;rsquo;ll unlock the bootloader.&lt;/p>
+&lt;p>When the bootloader is unlocked, you can confirm this by an annoying message, that tells you about an unlocked bootloader on every device boot.&lt;/p>
+&lt;p>If your device reboots back to your operating system, go ahead and repeat the instructions about going into the Download mode.&lt;/p>
+&lt;h2 id="stage-19---flash-the-patched-image">Stage 1.9 - Flash the patched image&lt;/h2>
+&lt;p>&lt;strong>WARNING:&lt;/strong> You might have to download additional drivers for Odin to detect your device.&lt;/p>
+&lt;p>&lt;strong>WARNING:&lt;/strong> This might erase all of your data. Please make a backup beforehand.&lt;/p>
+&lt;p>Once in Download mode, go ahead and click Volume Up button to download a custom OS. Connect your phone to your computer, afterwards use Odin to flash the patched &lt;code>AP&lt;/code> image.
+Leave every field in Odin empty, except &lt;code>AP&lt;/code>, where you should select the patched Magisk version.&lt;/p>
+&lt;p>After you&amp;rsquo;ve done that, click &lt;code>Start&lt;/code> and wait for the process to finish. Once it finishes, it should reboot back to your operating system. You might have to set it up again.&lt;/p>
+&lt;p>&lt;strong>WARNING:&lt;/strong> You must go through the entire setup process before continuing to Part 2.&lt;/p>
+&lt;p>If you reinstall the Magisk apk, your device should now be rooted with a default ROM.
+You do not have to continue with the process anymore, if you&amp;rsquo;re happy with just rooting your phone and not changing the whole OS.&lt;/p>
+&lt;h1 id="stage-2---installing-twrp-and-disabling-filesystem-based-encryption">Stage 2 - Installing TWRP and disabling filesystem-based encryption&lt;/h1>
+&lt;p>If you want to install TWRP, make sure not to install any important applications, as we&amp;rsquo;ll once again erase the whole &lt;code>/data&lt;/code> partition.&lt;/p>
+&lt;h2 id="stage-21---actual-installation">Stage 2.1 - Actual installation&lt;/h2>
+&lt;p>As simple as going into Download mode in your phone and flashing the previously downloaded TWRP through the &lt;code>AP&lt;/code> tab in Odin.&lt;/p>
+&lt;h2 id="stage-22---disable-samsung-filesystem-encryption">Stage 2.2 - Disable Samsung filesystem encryption&lt;/h2>
+&lt;p>You should now be back in your operating system (rooted with Magisk). Go into the Magisk app and click the reboot button in app bar. Click &lt;code>Reboot to recovery&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>WARNING:&lt;/strong> This &lt;strong>will&lt;/strong> erase all of your data.&lt;/p>
+&lt;p>Once in recovery, go to &lt;code>Erase&lt;/code> or &lt;code>Wipe&lt;/code>, where you&amp;rsquo;ll click &lt;code>Format Data&lt;/code> and confirm everything. After that&amp;rsquo;s done, go back to your main screen,
+where you&amp;rsquo;ll go into Advanced -&amp;gt; Terminal, where you&amp;rsquo;ll run the following command:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">multidisabler
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>This command will disable Samsung&amp;rsquo;s filesystem-based encryption, which will come in handy in case of wanting to install other operating systems.&lt;/p>
+&lt;h1 id="stage-3---installing-custom-os">Stage 3 - Installing custom OS&lt;/h1>
+&lt;p>I recommend the following GSIs, as they have been tested on my device:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/phhusson/treble_experimentations/releases/latest" target="_blank" rel="noopener"
+>phhusson&amp;rsquo;s GSI&lt;/a>. You&amp;rsquo;d want to download the &lt;code>system-squeak-arm64-ab-vndklite-*.img.xz&lt;/code>. &lt;code>gogapps&lt;/code> comes with preinstalled Google Go apps, &lt;code>gapps&lt;/code> comes with preinstalled Google (not Go) apps, &lt;code>vanilla&lt;/code> comes with no preinstalled apps and &lt;code>floss&lt;/code> comes with FOSS alternatives to Google&amp;rsquo;s apps. Make sure to install the &lt;code>vndklite&lt;/code> variant, as it&amp;rsquo;ll make installing Magisk actually possible later on.&lt;/li>
+&lt;/ul>
+&lt;p>GSI is a system image, thus doesn&amp;rsquo;t come with a kernel and doesn&amp;rsquo;t come with a boot image. This means, your manufacturer provides the GSI&lt;/p>
+&lt;p>Once you download the custom OS, uncompress it (using 7-zip or something similar, so that file extension becomes &lt;code>.img&lt;/code>), afterwards transfer it onto an SD card in your phone.
+This&amp;rsquo;ll make it much easier to install the GSI later on using TWRP.&lt;/p>
+&lt;p>Boot into recovery, if you aren&amp;rsquo;t there already. Afterwards, you should go into the &lt;code>Install&lt;/code> section, where you&amp;rsquo;ll select the appropriate storage using the button &lt;code>Select Storage&lt;/code>.
+You should have your SD card selected. Make sure that there is a button &lt;code>Install Zip&lt;/code>. If there is s button &lt;code>Install Image&lt;/code>, click it, as we want to install a system image.
+Select your downloaded image and in the section &lt;code>Select Partition to Flash Image&lt;/code>, go ahead and select &lt;code>System Image&lt;/code>. Once you&amp;rsquo;re ready, go ahead and swipe to confirm the flash.
+This&amp;rsquo;ll take some time, but afterwards, you can reboot into your system, where you&amp;rsquo;ll see your new OS successfully installed. You now may proceed with installation of your apps and
+make the phone yours again, as we won&amp;rsquo;t be erasing the &lt;code>/data&lt;/code> partition anymore.&lt;/p>
+&lt;p>phhusson&amp;rsquo;s GSI come with preinstalled root using phh-su, which is a fork of SuperSU. This is very outdated and not recommended, as it also isn&amp;rsquo;t very practical to modify and customize your
+system with. So, if you want to root your phone with Magisk, go ahead and read further.&lt;/p>
+&lt;h1 id="stage-4---installing-magisk">Stage 4 - Installing Magisk&lt;/h1>
+&lt;p>Huge thanks to &lt;a class="link" href="https://github.com/topjohnwu/Magisk/issues/3593#issuecomment-751534120" target="_blank" rel="noopener"
+>@OnlyCS&lt;/a> on GitHub for his work on applying Magisk onto GSIs. It was very helpful.&lt;/p>
+&lt;h2 id="stage-41---uninstalling-phh-su">Stage 4.1 - Uninstalling phh-su&lt;/h2>
+&lt;p>As phhusson&amp;rsquo;s GSIs come with phh-su preinstalled instead of Magisk, it&amp;rsquo;ll conflict with Magisk (which is installed in our boot image, which was patched in Stage 1) and use &lt;code>phh-su&lt;/code> instead.
+This means that Magisk will (even though the latest version is installed) report back an outdated version.
+Ignore that as Magisk is installed and instead, let&amp;rsquo;s focus on uninstalling the annoying &lt;code>phh-su&lt;/code>, so that we can use Magisk.&lt;/p>
+&lt;p>OnlyCS&amp;rsquo;s GitHub comment was adapted to be minimal. I only actually needed following things, if it doesn&amp;rsquo;t work for you, you can always have a look at his comment and try other suggested things.&lt;/p>
+&lt;h3 id="stage-411---adb-shell">Stage 4.1.1 - &lt;code>adb shell&lt;/code>&lt;/h3>
+&lt;p>Run the following commands in your terminal (command prompt, PowerShell, GNOME Terminal etc.).&lt;/p>
+&lt;ol>
+&lt;li>&lt;code>adb shell&lt;/code>&lt;/li>
+&lt;li>&lt;code>su&lt;/code>&lt;/li>
+&lt;li>You might need to approve the superuser elevation request on your phone&lt;/li>
+&lt;li>&lt;code>phh-securize.sh&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;p>After you&amp;rsquo;ve done that, try restarting your phone and if Magisk doesn&amp;rsquo;t report an outdated Magisk installation, you have succeeded in rooting your phone properly.
+Now you can customize your phone even further. Congratulations. Continue to Stage 4.1.4.&lt;/p>
+&lt;p>If it still reports too low Magisk version, you might want to consider next step.&lt;/p>
+&lt;h3 id="stage-412---unsu-script">Stage 4.1.2 - UnSU Script&lt;/h3>
+&lt;p>Download the &lt;a class="link" href="https://forum.xda-developers.com/t/beta-2017-10-01-supersu-v2-82-sr5.2868133/page-122#post-63615067" target="_blank" rel="noopener"
+>UnSU script&lt;/a> and move it to the SD card of your phone.&lt;/p>
+&lt;p>Now go ahead and reboot to TWRP, where you&amp;rsquo;ll go to &lt;code>Install&lt;/code> part and click on &lt;code>Install Zip&lt;/code> and find the downloaded UnSU &lt;code>zip&lt;/code>.
+The UnSU script will remove all traces of any root frameworks (such as Magisk, phh-su, SuperSU etc.).&lt;/p>
+&lt;p>You might want to try and repeat Stage 4.1.1 before and after this process just to be sure it&amp;rsquo;s removed.&lt;/p>
+&lt;h3 id="stage-413---other-methods">Stage 4.1.3 - Other methods&lt;/h3>
+&lt;p>If Magisk app now says, the phone is not rooted and doesn&amp;rsquo;t display any messages about too old version of Magisk, please refer to the following methods of getting Magisk back on.&lt;/p>
+&lt;p>After each of these methods, check if Magisk works. If it doesn&amp;rsquo;t continue to the next one.&lt;/p>
+&lt;h4 id="stage-4131---install-magisk-to-boot-image">Stage 4.1.3.1 - Install Magisk to Boot image&lt;/h4>
+&lt;p>If Magisk now says, the phone is not rooted, then try to repeat the process, mentioned in stage 1.5 once again, but this time, you don&amp;rsquo;t want to reset the whole operating system.
+Try to open the before downloaded Samsung Stock image (not modified by Magisk) with 7-zip and extract the &lt;code>boot.img&lt;/code> or the &lt;code>boot.img.lz4&lt;/code>.
+&lt;strong>GSIs are only system images and don&amp;rsquo;t come with a Boot image, therefore you cannot use the phhusson&amp;rsquo;s GSI in Magisk app.&lt;/strong>
+Afterwards, transfer it to the phone&amp;rsquo;s SD card and patch the Boot image using the Magisk app. Transfer the patched Boot image back to your computer and flash it in Odin as &lt;code>AP&lt;/code> file.
+Of course, you need to be in Download mode to do this.&lt;/p>
+&lt;p>If Magisk app now says, the phone is rooted (or needs additional configuration), just follow the instructions in Magisk app, then you&amp;rsquo;ll have your phone successfully rooted. Congratulations. 🎉&lt;/p>
+&lt;h4 id="stage-4132---install-magisk-as-a-zip">Stage 4.1.3.2 - Install Magisk as a zip&lt;/h4>
+&lt;p>This is supposed to be your last resort.&lt;/p>
+&lt;p>Rename the downloaded Magisk apk for it&amp;rsquo;s extension to be &lt;code>.zip&lt;/code> (for example, rename from &lt;code>Magisk-v25.1.apk&lt;/code> to &lt;code>Magisk-v25.1.zip&lt;/code>) and move the made zip file to an SD card.
+This can all be done on your phone. Then reboot to TWRP (can be done through the Magisk app) and install the zip, like mentioned in stage 4.1.2 (UnSU Script).
+If Magisk installation zip in TWRP reports no errors, then it should be installed, otherwise, please reread the article, you must&amp;rsquo;ve done something incorrectly.
+If you believe, you&amp;rsquo;ve followed the article, and the issue persists, you may &lt;a class="link" href="mailto:mytja@protonmail.com" >contact me&lt;/a> and send the logs, that TWRP is outputing.&lt;/p>
+&lt;h2 id="stage-42---success">Stage 4.2 - Success&lt;/h2>
+&lt;p>If Magisk app now says, the phone is rooted (or needs additional configuration), just follow the instructions in Magisk app, then you&amp;rsquo;ll have your phone successfully rooted. Congratulations. 🎉&lt;/p>
+&lt;h2 id="stage-43---failure">Stage 4.3 - Failure&lt;/h2>
+&lt;p>If Magisk still insists, that it has a way too outdated image, you might also want to try things mentioned in the attached OnlyCS&amp;rsquo;s comment on the issue, but if even that doesn&amp;rsquo;t work,
+then sorry, but I cannot help any further, as it was working for me using these steps, but you can always ask people on &lt;a class="link" href="https://forum.xda-developers.com/" target="_blank" rel="noopener"
+>XDA-Developers forum&lt;/a> 😄.&lt;/p>
+&lt;p>In this case, you might want (have) to stick to phh-su&amp;hellip; 😔&lt;/p>
+&lt;p>Thank you so much for reading this article. I hope you&amp;rsquo;ve enjoyed it and found success in your renewed operating system and/or root options.&lt;/p>
+&lt;h1 id="special-thanks">Special thanks&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/phhusson" target="_blank" rel="noopener"
+>@phhusson&lt;/a> for the &lt;a class="link" href="https://github.com/phhusson/treble_experimentations" target="_blank" rel="noopener"
+>treble_experimentations&lt;/a> repository.&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/topjohnwu" target="_blank" rel="noopener"
+>@topjohnwu&lt;/a> for &lt;a class="link" href="https://github.com/topjohnwu/Magisk" target="_blank" rel="noopener"
+>Magisk&lt;/a>.&lt;/li>
+&lt;li>&lt;a class="link" href="https://forum.xda-developers.com/m/osm0sis.4544860" target="_blank" rel="noopener"
+>@osm0sis&lt;/a> for the &lt;a class="link" href="https://forum.xda-developers.com/t/beta-2017-10-01-supersu-v2-82-sr5.2868133/page-122#post-63615067" target="_blank" rel="noopener"
+>UnSU Script&lt;/a>.&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/OnlyCS" target="_blank" rel="noopener"
+>@OnlyCS&lt;/a> for &lt;a class="link" href="https://github.com/topjohnwu/Magisk/issues/3593#issuecomment-751534120" target="_blank" rel="noopener"
+>their comment&lt;/a>.&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/DozNaka" target="_blank" rel="noopener"
+>@DozNaka&lt;/a> for &lt;a class="link" href="https://github.com/DozNaka/exynos3830-a21s-twrp" target="_blank" rel="noopener"
+>A21s TWRP&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;h1 id="sources">Sources&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/topjohnwu/Magisk/issues/3593#issuecomment-751534120" target="_blank" rel="noopener"
+>OnlyCS&amp;rsquo;s comment about GSI Magisk installation&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/phhusson/treble_experimentations/wiki/Samsung-Galaxy-A21s" target="_blank" rel="noopener"
+>phhusson&amp;rsquo;s treble_experimentations wiki about Samsung Galaxy A21s&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/phhusson/treble_experimentations/wiki" target="_blank" rel="noopener"
+>phhusson&amp;rsquo;s treble_experimentations wiki&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>アプリ別音量コントロールを可能にする『Audio HeadQuarter』を使ってみた</title><link>https://mattthetekie.github.io/MattTheTekie/p/%E3%82%A2%E3%83%97%E3%83%AA%E5%88%A5%E9%9F%B3%E9%87%8F%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%AB%E3%82%92%E5%8F%AF%E8%83%BD%E3%81%AB%E3%81%99%E3%82%8Baudio-headquarter%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/</link><pubDate>Tue, 25 Jan 2022 16:03:00 +0900</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/%E3%82%A2%E3%83%97%E3%83%AA%E5%88%A5%E9%9F%B3%E9%87%8F%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%AB%E3%82%92%E5%8F%AF%E8%83%BD%E3%81%AB%E3%81%99%E3%82%8Baudio-headquarter%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/</guid><description>&lt;h2 id="前置き">前置き&lt;/h2>
+&lt;p>Z01RのOSをAndroid11(Evolution X 5.9)からAndroid12(crDroid8.0)に変更しました。&lt;br>
+動作も良好で安定していたのですが1つ問題があって、&lt;br>
+Evolution Xにはあったアプリ別に音量を調整する機能が無かったので不便だな～と思ってググったら&lt;br>
+良さそうなものを見つけたので使ってみたところかなり良かったので自分用に書き残すことにしました。&lt;/p>
+&lt;p>・環境&lt;br>
+機種: Zenfone 5z&lt;br>
+OS: Android12(crDroid8.0)&lt;br>
+Magisk Canary 23018 &amp;amp; Zygisk&lt;/p>
+&lt;p>⚠注意&lt;br>
+この作業に取り掛かる前に必ずデータのバックアップを取ってください。&lt;br>
+また、ここに書いてることを真似する場合は自己責任でお願いします。&lt;br>
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。&lt;br>
+&lt;del>あなたの大切なスマホが文鎮になっても私は責任を取れません。&lt;/del>&lt;/p>
+&lt;h2 id="ダウンロードするもの">ダウンロードするもの&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/Alcatraz323/audiohq_module/releases/tag/api31_r1" target="_blank" rel="noopener"
+>audiohq_combined_1.zip&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="インストール">インストール&lt;/h2>
+&lt;p>Magisk Managerでaudiohq_combined_1.zipをインストールして再起動。&lt;br>
+再起動すると『Audio HeadQuarter』という名前のアプリがあるので起動する。&lt;br>
+あとは注意書きやらなんやらを読みつつbattery optimizationと他のアプリの上に重ねて表示を有効にすればセットアップは完了。&lt;/p>
+&lt;p>Settings &amp;gt; Float windowと進んでFloat Serviceにチェックを入れる。&lt;/p>
+&lt;h2 id="使ってみよう">使ってみよう&lt;/h2>
+&lt;p>音量ボタンを押すと左上に音量マークが出てくるのでそれをタップすると起動しているアプリの音量が0~100%で調整できる。&lt;br>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">うぃ &lt;a href="https://t.co/nH5eVCxTDq">pic.twitter.com/nH5eVCxTDq&lt;/a>&lt;/p>&amp;mdash; なね (@j7b3y) &lt;a href="https://twitter.com/j7b3y/status/1485880208393908225?ref_src=twsrc%5Etfw">January 25, 2022&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;/p>
+&lt;h2 id="最後に">最後に&lt;/h2>
+&lt;p>多分一番お勧めできる神モジュール&lt;/p></description></item><item><title>Androidに必ず入れたいモノをメモる(Zygisk環境)</title><link>https://mattthetekie.github.io/MattTheTekie/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Bzygisk%E7%92%B0%E5%A2%83/</link><pubDate>Wed, 19 Jan 2022 16:17:12 +0900</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Bzygisk%E7%92%B0%E5%A2%83/</guid><description>&lt;p>##前置き&lt;br>
+&lt;a class="link" href="https://mattthetekie.github.io/MattTheTekie/p/android%e3%81%ab%e5%bf%85%e3%81%9a%e5%85%a5%e3%82%8c%e3%81%9f%e3%81%84%e3%83%a2%e3%83%8e%e3%82%92%e3%83%a1%e3%83%a2%e3%82%8briru%e7%92%b0%e5%a2%83/" >Androidに必ず入れたいモノをメモる(Riru環境)&lt;/a>をZygisk環境向けに編集したついでに&lt;br>
+新しく使用するようになったアプリ等々を追加した感じです。&lt;br>
+前記事から特に変化していない項目は省略しています。 &lt;br>
+・環境&lt;br>
+機種: Zenfone 5z&lt;br>
+OS: Android11(EvolutionX 5.9)&lt;br>
+Magisk Canary 23016 &amp;amp; Zygisk&lt;/p>
+&lt;h2 id="magisk関連">Magisk関連&lt;/h2>
+&lt;p>&lt;a class="link" href="https://github.com/topjohnwu/Magisk/releases" target="_blank" rel="noopener"
+>Magisk&lt;/a>&lt;br>
+これがないと何も始まらない。&lt;/p>
+&lt;h3 id="モジュール">モジュール&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://github.com/VR-25/acc/" target="_blank" rel="noopener"
+>Advanced Charging Controller&lt;/a>
+充電周りを見直そうと思って入れた。&lt;br>
+でもあまり触ってないので使いこなせていない。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://github.com/Alcatraz323/audiohq_module" target="_blank" rel="noopener"
+>audiohq module&lt;/a>&lt;br>
+アプリ別音量をコントロールを可能にするモジュール。&lt;br>
+&lt;a class="link" href="https://mattthetekie.github.io/MattTheTekie/p/%e3%82%a2%e3%83%97%e3%83%aa%e5%88%a5%e9%9f%b3%e9%87%8f%e3%82%b3%e3%83%b3%e3%83%88%e3%83%ad%e3%83%bc%e3%83%ab%e3%82%92%e5%8f%af%e8%83%bd%e3%81%ab%e3%81%99%e3%82%8baudio-headquarter%e3%82%92%e4%bd%bf%e3%81%a3%e3%81%a6%e3%81%bf%e3%81%9f/" >こちら&lt;/a>に詳細書いてます。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://github.com/Magisk-Modules-Repo/CloudflareDNS4Magisk" target="_blank" rel="noopener"
+>CloudflareDNS4Magisk&lt;/a>&lt;br>
+気になったので使ってるだけ。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://github.com/AndroPlus-org/magisk-module-koruri-font/releases" target="_blank" rel="noopener"
+>Koruri Font&lt;/a>&lt;br>
+見やすいので愛用しています。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://github.com/LSPosed/LSPosed.github.io/releases" target="_blank" rel="noopener"
+>Shamiko&lt;/a>
+Magiskを隠すのに使用しています。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://github.com/Magisk-Modules-Alt-Repo/ttf-twemoji/" target="_blank" rel="noopener"
+>Twemoji replacer&lt;/a>
+FontManager使うのやめました。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://github.com/nishuoshenme/UnityFPSUnlocker" target="_blank" rel="noopener"
+>UnityFPSUnlocker&lt;/a>
+ウ*娘60FPS👊👊&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://github.com/AndroPlus-org/Zygisk-InternalBrowserRedirect" target="_blank" rel="noopener"
+>Zygisk - InternalBrowserRedirect&lt;/a>&lt;br>
+Lineの内臓ブラウザが嫌いだからこれ使ってる。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://github.com/LSPosed/LSPosed/actions" target="_blank" rel="noopener"
+>Zygisk - LSPosed&lt;/a>&lt;br>
+Xposedの後継。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="モジュールの管理">モジュールの管理&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/Fox2Code/FoxMagiskModuleManager" target="_blank" rel="noopener"
+>Fox&amp;rsquo;s Magisk Module Manager&lt;/a>&lt;br>
+Magisk CanaryでモジュールのDLが出来なくなったため。&lt;/li>
+&lt;/ul>
+&lt;h2 id="ブラウザ">ブラウザ&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/fork-maintainers/iceraven-browser/releases" target="_blank" rel="noopener"
+>Iceraven Browser&lt;/a>&lt;br>
+PC版Firefoxのようにアドオンのインストールに制限が無いfirefox。&lt;/li>
+&lt;/ul></description></item><item><title>MagiskとGappsを入りのWSA(Windows Subsystem for Android)をインストールする話。</title><link>https://mattthetekie.github.io/MattTheTekie/p/magisk%E3%81%A8gapps%E3%82%92%E5%85%A5%E3%82%8A%E3%81%AEwsawindows-subsystem-for-android%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E8%A9%B1/</link><pubDate>Tue, 09 Nov 2021 05:12:15 +0900</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/magisk%E3%81%A8gapps%E3%82%92%E5%85%A5%E3%82%8A%E3%81%AEwsawindows-subsystem-for-android%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E8%A9%B1/</guid><description>&lt;p>##前置きと注意と筆者の環境&lt;br>
+Win11の発表時からWSAを楽しみにしていたのにお預けをくらって待ちきれなかったのでネットサーフィンをしていたら、&lt;br>
+なんか凄そうなのを発見したので実行してみました。&lt;/p>
+&lt;p>⚠注意 ここに書いてることを真似する場合は自己責任でお願いします。&lt;br>
+この記事の内容を実践して生じた損害等の一切の責任を負いかねますので、ご了承ください。&lt;br>
+&lt;del>無いとは思うけど&lt;/del>万が一Windowsが吹っ飛んだ時のために&lt;br>
+不安ならバックアップを取っておこうね。&lt;br>
+また、Hyper-Vを有効にするためMemuやBS5 32bit等々のエミュレーターが動作しなくなります、ご注意を。&lt;/p>
+&lt;ul>
+&lt;li>筆者の環境&lt;br>
+CPU: Ryzen5 3600&lt;br>
+GPU: GTX1060 6GB&lt;br>
+RAM: DDR4 4GB×2 16GB×1
+OS: Windows 11 Pro 21H2 22000.282&lt;/li>
+&lt;/ul>
+&lt;h2 id="必要なもの">必要なもの&lt;/h2>
+&lt;p>Windows11&lt;br>
+Githubのアカウント&lt;br>
+仮想化支援機能に対応したCPU&lt;/p>
+&lt;ul>
+&lt;li>あると嬉しい&lt;br>
+ADBが使用できる環境&lt;/li>
+&lt;/ul>
+&lt;p>(試していないので真偽は不明ですがプレビュービルドでなくてもできるそうです。&lt;del>誰か人柱になって&lt;/del>)&lt;/p>
+&lt;h2 id="下準備">下準備&lt;/h2>
+&lt;ul>
+&lt;li>Windowsの機能の有効化または無効化からHyper-V、Windows ハイパーバイザー プラットフォーム、仮想マシンプラットフォームを有効にして再起動する。&lt;br>
+これ↓&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1ETXjwPUrAkITQ9hLIXr0fYfsn-nATdub"/>
+&lt;/figure>
+&lt;/li>
+&lt;li>Biosの設定から仮想化支援機能を有効にする。(マザーボードのメーカーによってBiosの入り方等々が異なるので割愛)&lt;/li>
+&lt;/ul>
+&lt;h2 id="必要なファイルの用意">必要なファイルの用意&lt;/h2>
+&lt;p>&lt;a class="link" href="https://github.com/LSPosed/MagiskOnWSA" target="_blank" rel="noopener"
+>MagiskOnWSA&lt;/a>のリポジトリをForkしてActionsを開きましょう。&lt;br>
+Workflowsの中にあるMagiskの項目を選択して
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=119rTrJS3EwmLtn6xsVPLoUL6I1byzvS3"/>
+&lt;/figure>
+&lt;br>
+Run workflowを開いてRun workflowのボタンを押します。&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1GWceZHZRIWWTNP9j0KDKQ3LrkV9Z63w_"/>
+&lt;/figure>
+&lt;br>
+(この時にGappsの種類を選べるのでnoneのところを入れたいGappsの種類に書き換えてあげましょう)&lt;br>
+自分でやるのが面倒！って人はGapps nanoが入ったものをビルドしているので&lt;a class="link" href="https://github.com/j7b3y/MagiskOnWSA/actions/workflows/magisk.yml" target="_blank" rel="noopener"
+>私がForkしたリポジトリ&lt;/a>からDLしてください。&lt;/p>
+&lt;p>ビルドが終わったらWorkflowを開いてArtifactsの一覧にあるWSA-with-Magisk-GApps-〇〇_x64をDLしましょう。&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1Yknyh8kmzSiKTsQkc4osoqZkllgd04-O"/>
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="wsaをインストール">WSAをインストール&lt;/h2>
+&lt;p>DLが終わったら自分の好きな場所に展開してください。
+展開している間にWindows設定から開発者モードを有効にしてあげましょう。&lt;br>
+プライバシーとセキュリティ &amp;gt; 開発者向け と開いて一番上にある&lt;br>
+&amp;ldquo;圧縮されていないファイルも含め、任意のソースからのアプリをインストールします。&amp;rdquo;&lt;br>
+のスイッチをオンにしましょう。&lt;br>
+展開が終わったら展開したフォルダーを開いて中にあるInstall.ps1をshift+右クリックからのpowershellで開くを選択。&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1HrvPLuTpF0SkzFVSa1x9W9eYmsOqaCZB"/>
+&lt;/figure>
+&lt;br>
+インストールが開始します。&lt;/p>
+&lt;h2 id="5いざ起動">5.いざ起動&lt;/h2>
+&lt;p>スタートメニューの検索に&amp;quot;アプリ: android&amp;quot;と入力すると&lt;br>
+Windows Subsystem for Androidが出てくるので実行するとこんなメニューが出てきます。&lt;br>
+&lt;figure>&lt;img src="https://drive.google.com/uc?export=view&amp;amp;id=1ompHWjdTc9_fRigsjtVDoQW2ac4gBRMl"/>
+&lt;/figure>
+Developer modeをOnにしてからManage developer settingsをクリックしてWSAを起動してみましょう。&lt;br>
+&amp;ldquo;2.下準備&amp;quot;でちゃんと機能が有効になっているなら起動するはずです。&lt;br>
+有効にしたのに*Unable to start Windows Subsystem for Android.*と言われる！って人は&lt;br>
+&amp;ldquo;7.Unable to start Windows Subsystem for Androidと言われて動かない！&amp;ldquo;を見てみてください。&lt;/p>
+&lt;h2 id="magisk-managerをインストール">Magisk Managerをインストール&lt;/h2>
+&lt;ul>
+&lt;li>adbを使用する場合&lt;br>
+ターミナルで以下を実行&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">adb connect localhost:58526
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">adb install magisk.apk
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>adbを使用しない場合&lt;br>
+スタートメニューで&amp;quot;アプリ: play ストア&amp;quot;と検索してplayストアを開いてGoogleアカウントにログイン、&lt;br>
+適当なブラウザをダウンロードして&lt;a class="link" href="https://github.com/topjohnwu/Magisk" target="_blank" rel="noopener"
+>ここ&lt;/a>からMagisk Canaryのapkをダウンロードしてインストールしてください。&lt;/li>
+&lt;/ul>
+&lt;h2 id="unable-to-start-windows-subsystem-for-androidと言われて動かない">Unable to start Windows Subsystem for Androidと言われて動かない！&lt;/h2>
+&lt;p>ちゃんと設定したのに動かない！って人向けです。
+自分もここで一回詰まりました。 &lt;br>
+管理者として実行されたターミナルで以下を実行。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-cmd" data-lang="cmd">&lt;span class="line">&lt;span class="cl">bcdedit /set hypervisorlaunchtype auto
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>そして再起動。&lt;br>
+多分起動するはずです。&lt;br>
+これで起動しないのなら他に何か原因があるのかもしれないです。&lt;/p>
+&lt;h2 id="後書き">後書き&lt;/h2>
+&lt;p>動作は良好で結構いい感じだったのですが思ったよりメモリを食うので飽きたらBS5に戻るのかな～って感じです。&lt;br>
+生のAndroidが動くってのはロマンがあるのですが逆にそれ以外は何もないな～と思いました。&lt;br>
+Hyper-Vを有効にしたのでBS5 32bitやMemuが動作しなくなるのもかなり痛いし多分今後は使わないかな～というのが自分の結論です。&lt;/p>
+&lt;p>&lt;del>スクショ供養のコーナー&lt;/del>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">今日の進捗、後でMagisk更新しよ &lt;a href="https://t.co/cqAt3rqH6C">pic.twitter.com/cqAt3rqH6C&lt;/a>&lt;/p>&amp;mdash; なね (@j7b3y) &lt;a href="https://twitter.com/j7b3y/status/1457247747153666049?ref_src=twsrc%5Etfw">November 7, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="pl" dir="ltr">CPU-Z &lt;a href="https://t.co/qmxjOIXidf">pic.twitter.com/qmxjOIXidf&lt;/a>&lt;/p>&amp;mdash; なね (@j7b3y) &lt;a href="https://twitter.com/j7b3y/status/1457248305482592259?ref_src=twsrc%5Etfw">November 7, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">WSAの中身はA11だった &lt;a href="https://t.co/bc2y3L3tyI">pic.twitter.com/bc2y3L3tyI&lt;/a>&lt;/p>&amp;mdash; なね (@j7b3y) &lt;a href="https://twitter.com/j7b3y/status/1457206889020723201?ref_src=twsrc%5Etfw">November 7, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;/p>
+&lt;h2 id="参考にした記事">参考にした記事&lt;/h2>
+&lt;p>多分こっちを翻訳したほうが分かりやすいと思います。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/LSPosed/MagiskOnWSA" target="_blank" rel="noopener"
+>MagiskOnWSA&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Androidに必ず入れたいモノをメモる(Riru環境)</title><link>https://mattthetekie.github.io/MattTheTekie/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Briru%E7%92%B0%E5%A2%83/</link><pubDate>Sat, 06 Nov 2021 23:08:18 +0900</pubDate><guid>https://mattthetekie.github.io/MattTheTekie/p/android%E3%81%AB%E5%BF%85%E3%81%9A%E5%85%A5%E3%82%8C%E3%81%9F%E3%81%84%E3%83%A2%E3%83%8E%E3%82%92%E3%83%A1%E3%83%A2%E3%82%8Briru%E7%92%B0%E5%A2%83/</guid><description>&lt;p>##前置き&lt;br>
+初期化する度に入れていたアプリ等々を思い出すのも面倒なので自分用にまとめます。&lt;br>
+・環境&lt;br>
+機種: Huawei P30&lt;br>
+OS: Android11(DotOS 5.2 arm64 Vanilla)
+Magisk 23.0 &amp;amp; Riru v26&lt;/p>
+&lt;h2 id="magisk関連">Magisk関連&lt;/h2>
+&lt;p>&lt;a class="link" href="https://github.com/topjohnwu/Magisk/releases" target="_blank" rel="noopener"
+>Magisk&lt;/a>&lt;br>
+これがないと何も始まらない。&lt;/p>
+&lt;h3 id="モジュール">モジュール&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://www.androidacy.com/downloads/?fm_rdme_links=&amp;amp;view=%2540Magisk-Modules%2540Busybox_for_Android_NDK" target="_blank" rel="noopener"
+>Busybox for Android NDK&lt;/a>&lt;br>
+これが必要なアプリがいくつかあるので(後述)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://www.androidacy.com/downloads/?fm_rdme_links=&amp;amp;view=%2540Magisk-Modules%2540Font_Manager" target="_blank" rel="noopener"
+>Font Manager&lt;/a>&lt;br>
+システムの絵文字をTwemojiに変更するのに使用。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://github.com/AndroPlus-org/magisk-module-koruri-font/releases" target="_blank" rel="noopener"
+>Koruri Font&lt;/a>&lt;br>
+見やすいので愛用しています。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://sourceforge.net/projects/magiskgapps/files/r/Core/" target="_blank" rel="noopener"
+>Magisk GApps Core&lt;/a>&lt;br>
+使用しているROMがVanillaなのでGMSを使用するために使用。(Android R限定)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://github.com/Magisk-Modules-Repo/MagiskHidePropsConf/releases" target="_blank" rel="noopener"
+>MagiskHide Props Config&lt;/a>&lt;br>
+出来ることが多くて何を書けばいいのか分からない。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://github.com/RikkaApps/Riru/releases" target="_blank" rel="noopener"
+>Riru&lt;/a>&lt;br>
+LSPosedやHide My Applist(後述)を使用するために入れている。Zygiskなるものが出たので今後は不要になるかもしれない。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Riru - Hide My Applist&lt;br>
+Hide My Applistのアプリからインストールできるやつ。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://github.com/Magisk-Modules-Repo/riru_lsposed/releases" target="_blank" rel="noopener"
+>Riru - LSPosed&lt;/a>&lt;br>
+Xposedの後継。今後はZygisk版を使うかもしれない。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a class="link" href="https://github.com/kdrag0n/safetynet-fix/releases" target="_blank" rel="noopener"
+>Universal SafetyNet Fix&lt;/a>&lt;br>
+おま環かもしれないがDotOSは初期状態でもSafetyNetが通るので必要ないと思うが一応。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="root権限が必要なアプリ">Root権限が必要なアプリ&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://vancedapp.com/" target="_blank" rel="noopener"
+>Vanced Manager&lt;/a>&lt;br>
+消されちまった😂&lt;br>
+真面目な話広告ブロックは必要ないからその他の便利機能だけ詰め込んだやつが欲しい。&lt;br>
+結局オフライン再生の為にpremium使うしな～。&lt;/li>
+&lt;li>&lt;a class="link" href="https://drive.google.com/file/d/1g6PZ_H1FlH92BRr5DCqwNAKUkhDczioA" target="_blank" rel="noopener"
+>Pakage Disabler&lt;/a>&lt;br>
+邪魔なアプリは全部これで無効化している。&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.luckypatchers.com/download/" target="_blank" rel="noopener"
+>Lucky Patcher&lt;/a>&lt;br>
+万能Patcher。自分は主に邪魔な広告を&lt;del>潰す&lt;/del>消すのに使用している。(主にLINEのトークリスト広告ですね。現在は対策されています。)&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/oasisfeng/island/releases" target="_blank" rel="noopener"
+>Island&lt;/a>&lt;br>
+早い話EMUIで言うツインアプリだったりOne UIで言うデュアルメッセンジャーみたいなもの。&lt;/li>
+&lt;/ul>
+&lt;h3 id="xposedモジュール">Xposedモジュール&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://github.com/LSPosed/CorePatch/releases" target="_blank" rel="noopener"
+>Core Patch&lt;/a>&lt;br>
+署名検証を無効にしてくれる。&lt;br>
+アプリのダウングレードなどができるようになる。&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/Dr-TSNG/Hide-My-Applist/releases" target="_blank" rel="noopener"
+>Hide My Applist&lt;/a>&lt;br>
+XposedモジュールやLSPosed、LPを隠すのに使っています。&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/ppawel/twitter-ad-eater/releases" target="_blank" rel="noopener"
+>Twitter Ad Eater&lt;/a>&lt;br>
+プロモツイートを非表示にしてくれる。&lt;del>でもタイムラインがバグるのであまり使ってない&lt;/del>解決しました。&lt;/li>
+&lt;/ul>
+&lt;h3 id="ブラウザ">ブラウザ&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://brave.com/ja/" target="_blank" rel="noopener"
+>Brave&lt;/a>&lt;br>
+筆者が愛用していたブラウザ。&lt;br>
+簡単にweb上の広告をブロックしたりオンラインのプライバシーを保護出来たりと優秀。&lt;br>
+かなり軽いのでPC、Androidともにおすすめできる。&lt;/li>
+&lt;li>&lt;a class="link" href="https://play.google.com/store/apps/details?id=org.mozilla.fenix" target="_blank" rel="noopener"
+>Firefox Nightly&lt;/a>&lt;br>
+筆者が最近使い始めたメインブラウザ。&lt;br>
+条件付きではあるがPC版と同じ拡張機能が使えるので重宝している。 &lt;br>
+&lt;del>翻訳系の拡張機能も使えるので英語弱者な自分でも安心&lt;/del>&lt;br>
+PC版はかなり軽かったのだがAndroid版はそうでもなかった。&lt;/li>
+&lt;/ul>
+&lt;h2 id="firefox-アドオンhttpsaddonsmozillaorgjafirefoxcollections17097905my-addon">&lt;a class="link" href="https://addons.mozilla.org/ja/firefox/collections/17097905/my-addon/" target="_blank" rel="noopener"
+>Firefox アドオン&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://addons.mozilla.org/ja/firefox/addon/ublock-origin/" target="_blank" rel="noopener"
+>uBlock Origin&lt;/a>
+軽量広告ブロッカー。道端で**漫画広告に出会いたくない人は使おう。&lt;/li>
+&lt;li>&lt;a class="link" href="https://addons.mozilla.org/ja/firefox/addon/traduzir-paginas-web/" target="_blank" rel="noopener"
+>ウェブページを翻訳&lt;/a>
+英語弱者にはうれしい翻訳くん。Chromiumブラウザ向けの拡張機能版Google翻訳より有能。&lt;/li>
+&lt;/ul>
+&lt;h3 id="その他">その他&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://bitwarden.com/" target="_blank" rel="noopener"
+>Bitwarden&lt;/a>&lt;br>
+オープンソースなパスワードマネージャー(基本無料)&lt;br>
+パスワード生成、支払情報の保存、パスワードが漏洩していないかの確認、セキュアメモ等々、&lt;br>
+無料なのに機能が多くとても有能。&lt;/li>
+&lt;li>$10/年な有料プランに入るとOTPや1GBの暗号化ストレージが付いてくるぞ！&lt;br>
+ちなみにPCのクライアントやブラウザ版もあるのでスマホが急死しても安心。&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/WSTxda/QP-Gallery-Releases" target="_blank" rel="noopener"
+>QuickPic Gallery&lt;/a>&lt;br>
+Android初期の頃にあったQuickPicの改造版らしい。使いやすい。&lt;/li>
+&lt;li>&lt;a class="link" href="https://es-file-explorer.jp.uptodown.com/android" target="_blank" rel="noopener"
+>ES file explorer&lt;/a>&lt;br>
+昔から愛用しているもの。Google playから消えてからは怪しい広告などが絶えないのでLPで消している。&lt;br>
+移行先が見つかればなと思いつつも探すのも面倒。&lt;/li>
+&lt;/ul></description></item></channel></rss>
