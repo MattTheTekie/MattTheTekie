@@ -34,7 +34,7 @@
 [![Mastodon](https://img.shields.io/badge/%40ASTAFATHERSATAN-0088cc?style=flat-square&logo=mastodon&logoColor=ffffff)](https://nerdculture.de/@ASTAFATHERSATAN)<br>
 [![Discord](https://tinyurl.com/5n8j3rwd)](https://discord.gg/VhfM3UncBB)<br>
 [![DSiPaint](https://img.shields.io/badge/%F0%9F%8E%A8%20MattFromSpace-blue.svg?style=flat-square)](https://dsipaint.com/member/?id=152737)<br>
-### 🛸 You can check out my website's below.&nbsp;
+### 🛸 You can check out my website's below&nbsp;
 
 > 🔭 [[**MattTheTekie's Blog**]](https://mattthetekie.github.io/MattTheTekie)
 
@@ -52,7 +52,7 @@ We're a simple development group, focusing on DSiPaint, Linux, and Android.&nbsp
 
 My old website that holds memories beyond imagination.&nbsp;
 
-### 💾 You can check some of my favourite webpages here.
+### 💾 You can check some of my favourite webpages here
 > 🌎 [[**Cameron's World**]](https://www.cameronsworld.net/)
 
 It's a collection of archived Geocities websites. It's pretty cool.&nbsp;
