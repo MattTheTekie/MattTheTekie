@@ -13,10 +13,10 @@
  - Living on Kepler-186F. 🌌
 
 ### 📃 GitHub Stats
-<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=MattTheTekie&show_icons=true&locale=en" alt="MattTheTekie" width="100" height="100"></p>
+<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=MattTheTekie&show_icons=true&locale=en" alt="MattTheTekie" /></p>
 <br>
 
-<p><img src="/github-metrics.svg" alt="Metrics" width="100%"></p>
+<p><img src="/github-metrics.svg" alt="Metrics"></p>
 
 ### 💻 Working environment
 [![Android 13](https://img.shields.io/badge/Android%2013-3ddc84?style=flat-square&logo=android&logoColor=ffffff)](https://www.android.com/android-13/)<br>
