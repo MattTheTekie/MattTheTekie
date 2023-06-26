@@ -37,6 +37,7 @@
 [![DSiPaint](https://img.shields.io/badge/%F0%9F%8E%A8%20MattFromSpace-blue.svg?style=flat)](https://dsipaint.com/member/?id=152737)<br>
 [![Odysee](https://img.shields.io/badge/CrazyHellTechnologies-EF1970?style=flat&logo=Odysee&logoColor=white)](https://odysee.com/@mattdoestech726:5)<br>
 [![Bilibili](https://bilistats.lonelyion.com/followers?uid=1500079337&style=flat)](https://space.bilibili.com/1500079337)<br>
+[![NicoNico](https://img.shields.io/badge/%40CrazyHellTech-0088cc?style=flat&logo=niconico&logoColor=ffffff)](https://www.nicovideo.jp/user/126721048)<br>
 [![NetroCorp](https://tinyurl.com/mr4xfncc)](https://netrocorp.net/users/61)<br>
 ### 🛸 You can check out my website's below&nbsp;
 
