@@ -33,7 +33,7 @@
 [![Telegram](https://img.shields.io/badge/%40Knight666_666-0088cc?style=flat-square&logo=telegram&logoColor=ffffff)](https://t.me/Knight666_666)<br>
 [![Mastodon](https://img.shields.io/badge/%40ASTAFATHERSATAN-0088cc?style=flat-square&logo=mastodon&logoColor=ffffff)](https://nerdculture.de/@ASTAFATHERSATAN)<br>
 [![Discord](https://tinyurl.com/5n8j3rwd)](https://discord.gg/VhfM3UncBB)<br>
-[![KOOKAPP](https://www.kookapp.cn/api/v3/badge/guild?guild_id=2477159536848951&style=0)](https://kook.top/Md6bzJ)
+[![KOOKAPP](https://www.kookapp.cn/api/v3/badge/guild?guild_id=2477159536848951&style=0)](https://kook.top/Md6bzJ)<br>
 [![DSiPaint](https://img.shields.io/badge/%F0%9F%8E%A8%20MattFromSpace-blue.svg?style=flat-square)](https://dsipaint.com/member/?id=152737)<br>
 ### 🛸 You can check out my website's below&nbsp;
 
