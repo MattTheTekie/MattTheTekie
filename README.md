@@ -36,7 +36,7 @@
 [![KOOKAPP](https://tinyurl.com/2zzx7cpa)](https://kookapp.cn/widget?id=2477159536848951&theme=dark)<br>
 [![DSiPaint](https://img.shields.io/badge/%F0%9F%8E%A8%20MattFromSpace-blue.svg?style=flat)](https://dsipaint.com/member/?id=152737)<br>
 [![Odysee](https://img.shields.io/badge/CrazyHellTechnologies-EF1970?style=flat&logo=Odysee&logoColor=white)](https://odysee.com/@mattdoestech726:5])<br>
-[![Bilibili](https://bilistats.lonelyion.com/followers?uid=1500079337)](https://space.bilibili.com/1500079337])<br>
+[![Bilibili](https://bilistats.lonelyion.com/followers?uid=1500079337&style=flat)](https://space.bilibili.com/1500079337])<br>
 [![NetroCorp](https://tinyurl.com/mr4xfncc)](https://netrocorp.net/users/61])<br>
 ### 🛸 You can check out my website's below&nbsp;
 
