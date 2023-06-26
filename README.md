@@ -30,12 +30,12 @@
 [![Samsung S21+ 5G](https://img.shields.io/badge/Samsung%20S21+%205G-fd4900?style=flat-square&logo=Samsung&logoColor=ffffff&color=blue)](https://icecat.biz/en/p/samsung/sm-g996bzvgeue/galaxy-smartphones-8806090882357-sm-g996b-88009632.html)<br>
 
 ### 📫 Get in touch
-[![Telegram](https://img.shields.io/badge/%40Knight666_666-0088cc?style=flat-square&logo=telegram&logoColor=ffffff)](https://t.me/Knight666_666)<br>
-[![Mastodon](https://img.shields.io/badge/%40ASTAFATHERSATAN-0088cc?style=flat-square&logo=mastodon&logoColor=ffffff)](https://nerdculture.de/@ASTAFATHERSATAN)<br>
+[![Telegram](https://img.shields.io/badge/%40Knight666_666-0088cc?style=flat&logo=telegram&logoColor=ffffff)](https://t.me/Knight666_666)<br>
+[![Mastodon](https://img.shields.io/badge/%40ASTAFATHERSATAN-0088cc?style=flat&logo=mastodon&logoColor=ffffff)](https://nerdculture.de/@ASTAFATHERSATAN)<br>
 [![Discord](https://tinyurl.com/5n8j3rwd)](https://discord.gg/VhfM3UncBB)<br>
 [![KOOKAPP](https://tinyurl.com/2zzx7cpa)](https://kookapp.cn/widget?id=2477159536848951&theme=dark)<br>
-[![DSiPaint](https://img.shields.io/badge/%F0%9F%8E%A8%20MattFromSpace-blue.svg?style=flat-square)](https://dsipaint.com/member/?id=152737)<br>
-[![Odysee](https://img.shields.io/badge/CrazyHellTechnologies-EF1970?style=flat-square&logo=Odysee&logoColor=white)](https://odysee.com/@mattdoestech726:5])<br>
+[![DSiPaint](https://img.shields.io/badge/%F0%9F%8E%A8%20MattFromSpace-blue.svg?style=flat)](https://dsipaint.com/member/?id=152737)<br>
+[![Odysee](https://img.shields.io/badge/CrazyHellTechnologies-EF1970?style=flat&logo=Odysee&logoColor=white)](https://odysee.com/@mattdoestech726:5])<br>
 [![Bilibili](https://bilistats.lonelyion.com/followers?uid=1500079337)](https://space.bilibili.com/1500079337])<br>
 [![NetroCorp](https://tinyurl.com/mr4xfncc)](https://netrocorp.net/users/61])<br>
 ### 🛸 You can check out my website's below&nbsp;
