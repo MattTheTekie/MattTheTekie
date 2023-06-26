@@ -13,7 +13,7 @@
  - Living on Kepler-186F. 🌌
 
 ### 📃 GitHub Stats
-<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=MattTheTekie&show_icons=true&locale=en" alt="MattTheTekie" /></p>
+<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=MattTheTekie&show_icons=true&locale=en&theme=dark" alt="MattTheTekie" /></p>
 <br>
 
 <p><img src="/github-metrics.svg" alt="Metrics"></p>
