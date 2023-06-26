@@ -12,6 +12,12 @@
  - Maintaining scripts for various projects. ⌨️
  - Living on Kepler-186F. 🌌
 
+### 📃 GitHub Stats
+<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=MattTheTekie&show_icons=true&locale=en&theme=dark" alt="MattTheTekie" /></p>
+<br>
+
+<p><img src="/github-metrics.svg" alt="Metrics"></p>
+
 ### 💻 Working environment
 [![Android 13](https://img.shields.io/badge/Android%2013-3ddc84?style=flat&logo=android&logoColor=ffffff)](https://www.android.com/android-13/)<br>
 [![Windows 10](https://img.shields.io/badge/Windows%2010-00adef?style=flat&logo=windows&logoColor=ffffff)](https://www.teamos.xyz/threads/windows-10-x-lite-redstone-redux.193627/)<br>
@@ -33,11 +39,6 @@
 [![Bilibili](https://bilistats.lonelyion.com/followers?uid=1500079337&style=flat)](https://space.bilibili.com/1500079337)<br>
 [![NicoNico](https://img.shields.io/badge/%40CrazyHellTech-0088cc?style=flat&logo=niconico&logoColor=ffffff)](https://www.nicovideo.jp/user/126721048)<br>
 [![NetroCorp](https://tinyurl.com/mr4xfncc)](https://netrocorp.net/users/61)<br>
-### 📃 GitHub Stats
-<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=MattTheTekie&show_icons=true&locale=en&theme=dark" alt="MattTheTekie" /></p>
-<br>
-<p><img src="/github-metrics.svg" alt="Metrics"></p>
-
 ### 🛸 You can check out my website's below&nbsp;
 
 > 🔭 [[**MattTheTekie's Blog**]](https://mattthetekie.github.io/MattTheTekie)
