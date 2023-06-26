@@ -37,6 +37,7 @@
 <p><img align="center" src="https://github-readme-stats.vercel.app/api?username=MattTheTekie&show_icons=true&locale=en&theme=dark" alt="MattTheTekie" /></p>
 <br>
 <p><img src="/github-metrics.svg" alt="Metrics"></p>
+
 ### 🛸 You can check out my website's below&nbsp;
 
 > 🔭 [[**MattTheTekie's Blog**]](https://mattthetekie.github.io/MattTheTekie)
