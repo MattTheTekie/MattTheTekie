@@ -49,6 +49,14 @@ My new blogging corner on the world wide web.&nbsp;
 
 My new homepage on the corner of the internet.&nbsp;
 
+> 🧪 [[**Tsuka's Homelab **]](https://tsukashomelab.netlify.app/)
+
+My new homelab on the corner of the internet.&nbsp;
+
+> 🧪 [[**Tsuka's Homelab **]](https://www.guilded.gg/TDK)
+
+TDK's corner of the internet. He deserve's it. &nbsp;
+
 > 🐧 [[**FREEDOM-HQ**]](https://github.com/FREEDOM-HQ/)
 
 We're a simple development group, focusing on DSiPaint, Linux, and Android.&nbsp;
