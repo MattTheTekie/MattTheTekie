@@ -77,7 +77,3 @@ This is a really awesome Amiga OS like web operating system complete with a web 
 > 🖥️ [[**Daedal OS**]](https://dustinbrett.com/)
 
 A full on complete open source Windows 10 like experience including DOOM, 3D pinball, and much more.
-
-
-
-
