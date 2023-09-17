@@ -33,8 +33,8 @@ export const SOCIAL = [
 ]
 export const OTHER_LINKS = [
   {
-    name: 'Curriculum Vitae',
-    link: '/FILIPE_LIMA-EN.pdf'
+    name: 'Coming soon',
+    link: '#'
   },
   {
     link: 'https://github.com/sponsors/mattthetekie',
