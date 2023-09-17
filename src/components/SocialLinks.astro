@@ -10,7 +10,12 @@ import {
   FaMastodon,
 } from 'react-icons/fa';
 
-const icons = [ FaGithub, FaTwitter, FaLinkedinIn, FaRedditAlien, FaYoutube, FaTiktok, FaMastodon ];
+import {
+  SiLemmy,
+  SiOdysee,
+} from 'react-icons/si';
+
+const icons = [ FaGithub, FaTwitter, FaLinkedinIn, FaRedditAlien, FaYoutube, FaTiktok, FaMastodon, SiOdysee, SiLemmy ];
 import {
   SOCIAL,
 } from '../consts';
@@ -22,6 +27,8 @@ import {
       <span class:list={["p-1 rounded-md", {
         "bg-blue-800": item.name.toLowerCase().includes('email'),
         "bg-grey-800": item.name.toLowerCase().includes('mastodon'),
+        "bg-grey-800": item.name.toLowerCase().includes('odysee'),
+        "bg-grey-800": item.name.toLowerCase().includes('lemmy'),
         "bg-gray-700": item.name.toLowerCase().includes('github'),
         "bg-blue-400": item.name.toLowerCase().includes('twitter'),
         "bg-blue-600": item.name.toLowerCase().includes('linkedin'),
