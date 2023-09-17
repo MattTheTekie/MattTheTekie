@@ -1,8 +1,8 @@
 ---
 author: "Mitja Ševerkar"
 title: "How not to root a phone"
-date: "2023-03-17"
-description: "Guide on rooting an Exynos-based phone and installing custom OS onto it."
+publishedAt: "2023-03-17"
+summary: "Guide on rooting an Exynos-based phone and installing custom OS onto it."
 ---
 
 This article is about rooting and installing custom OS onto a Samsung Exynos phone.
