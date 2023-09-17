@@ -1,7 +1,7 @@
 ---
 title: "WSL2 配置代理"
 summary: "WSL2 配置代理"
-publishedAt: "2010-01-12"
+publishedAt: "2022-05-30"
 draft: false
 ---
 

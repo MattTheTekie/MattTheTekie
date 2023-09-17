@@ -2,7 +2,7 @@
 title: "Zenfone 5Zを買ったのでEvolution Xを入れてみる"
 summary: "Zenfone 5Zを買ったのでEvolution Xを入れてみる"
 description: "詰まったところがあったのでまとめる"
-publishedAt: "2010-01-12"
+publishedAt: "2021-12-09"
 draft: false
 categories: [Android]
 tags: ["Android", "カスタムROM"]

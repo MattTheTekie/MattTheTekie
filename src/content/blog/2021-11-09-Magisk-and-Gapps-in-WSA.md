@@ -2,7 +2,7 @@
 title: "MagiskとGappsを入りのWSA(Windows Subsystem for Android)をインストールする話。"
 summary: "MagiskとGappsを入りのWSA(Windows Subsystem for Android)をインストールする話。"
 description: "米国リージョン以外でも可"
-publishedAt: "2010-01-12"
+publishedAt: "2021-11-09"
 draft: false
 categories: [Android,Windows11]
 tags: ["Android","Windows","Magisk","WSA"]

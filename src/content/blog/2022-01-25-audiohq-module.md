@@ -2,7 +2,7 @@
 title: "アプリ別音量コントロールを可能にする『Audio HeadQuarter』を使ってみた"
 summary: "アプリ別音量コントロールを可能にする『Audio HeadQuarter』を使ってみた"
 description: "便利でとても気に入りました。"
-publishedAt: "2010-01-12"
+publishedAt: "2022-01-25"
 draft: false
 categories: [Android]
 tags: ["Android","Magisk",]

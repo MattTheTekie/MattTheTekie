@@ -2,7 +2,7 @@
 title: "Android�必�入れ��モ�をメモる(Zygisk環境)"
 summary: "Android�必�入れ��モ�をメモる(Zygisk環境)"
 description: "自分�入れ��るアプリやモジュール等々(2022/5/20更新)"
-publishedAt: "2010-01-12"
+publishedAt: "2022-01-19"
 draft: false
 categories: [Android]
 tags: ["Android","Magisk","Xposed"]

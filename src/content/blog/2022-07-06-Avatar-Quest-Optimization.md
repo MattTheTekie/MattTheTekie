@@ -2,7 +2,7 @@
 title: "PC用アバターをQuest GoodにしてFallback Avatarにする"
 summary: "PC用アバターをQuest GoodにしてFallback Avatarにする"
 description: "途中で疲れた"
-publishedAt: "2010-01-12"
+publishedAt: "2022-07-06"
 draft: false
 categories: ["Unity","Blender"]
 tags: ["Unity", "VRChat","Blender"]
