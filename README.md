@@ -79,7 +79,7 @@ My new blogging corner on the world wide web.&nbsp;
 
 My new hackerlab on the corner of the internet.&nbsp;
 
-> 🐱‍💻 [[**VENITH NETWORK**]](https://hackerlab.venith.net/)
+> 🐱‍💻 [[**VENITH NETWORK**]](https://venith.net/)
 
 My new infrastructure project on the internet.&nbsp;
 
