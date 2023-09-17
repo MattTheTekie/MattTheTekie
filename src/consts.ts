@@ -11,28 +11,24 @@ export const SOCIAL = [
     name: 'Github'
   },
   {
-    link: 'https://twitter.com/datsfilipe',
-    name: 'Twitter'
+    link: 'https://nerdculture.de/@ASTAFATHERSATAN',
+    name: 'Mastodon'
   },
   {
-    link: 'https://www.linkedin.com/in/datsfilipe/',
+    link: 'https://www.linkedin.com/in/matthew-pitsicalis',
     name: 'Linkedin'
   },
   {
-    link: 'https://www.reddit.com/user/datsfilipe',
-    name: 'Reddit'
+    link: 'https://social.venith.net/u/MattTheTekie',
+    name: 'Lemmy'
   },
   {
-    link: 'mailto:contato@datsfilipe.dev',
+    link: 'mailto:mattfromspace@protonmail.com',
     name: 'Email'
   },
   {
-    link: 'https://www.youtube.com/@datsfilipe',
-    name: 'Youtube'
-  },
-  {
-    link: 'https://www.tiktok.com/@datsfilipe1',
-    name: 'TikTok'
+    link: 'https://odysee.com/@mattdoestech726:5',
+    name: 'Odysee'
   }
 ]
 export const OTHER_LINKS = [
@@ -41,11 +37,11 @@ export const OTHER_LINKS = [
     link: '/FILIPE_LIMA-EN.pdf'
   },
   {
-    link: 'https://github.com/sponsors/datsfilipe',
+    link: 'https://github.com/sponsors/mattthetekie',
     name: 'Sponsor me on GitHub'
   },
   {
-    link: 'https://ko-fi.com/datsfilipe',
+    link: 'https://ko-fi.com/mattthetekie',
     name: 'Buy me a coffee'
   }
 ]
