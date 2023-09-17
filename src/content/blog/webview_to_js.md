@@ -1,7 +1,7 @@
 ---
 title: "安卓WebView同Javascript通信"
 summary: "安卓WebView同Javascript通信"
-publishedAt: "2010-01-12"
+publishedAt: "2021-03-26"
 draft: false
 ---
 

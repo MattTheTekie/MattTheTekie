@@ -2,7 +2,7 @@
 title: "hasFragileUserData"
 summary: "hasFragileUserData"
 description: "hasFragileUserData"
-publishedAt: "2010-01-12"
+publishedAt: "2021-10-17"
 draft: false
 categories: [Android]
 tags: ["Android"]

@@ -1,7 +1,7 @@
 ---
 title: "国内环境配置 Golang"
 summary: "国内环境配置 Golang"
-publishedAt: "2010-01-12"
+publishedAt: "2021-08-28"
 draft: false
 ---
 
