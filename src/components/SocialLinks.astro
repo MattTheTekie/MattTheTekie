@@ -7,9 +7,10 @@ import {
   FaYoutube,
   FaEnvelope,
   FaTiktok,
+  FaMastodon,
 } from 'react-icons/fa';
 
-const icons = [ FaGithub, FaTwitter, FaLinkedinIn, FaRedditAlien, FaYoutube, FaTiktok ];
+const icons = [ FaGithub, FaTwitter, FaLinkedinIn, FaRedditAlien, FaYoutube, FaTiktok, FaMastodon ];
 import {
   SOCIAL,
 } from '../consts';
@@ -20,6 +21,7 @@ import {
       <span>~</span>
       <span class:list={["p-1 rounded-md", {
         "bg-blue-800": item.name.toLowerCase().includes('email'),
+        "bg-grey-800": item.name.toLowerCase().includes('mastodon')
         "bg-gray-700": item.name.toLowerCase().includes('github'),
         "bg-blue-400": item.name.toLowerCase().includes('twitter'),
         "bg-blue-600": item.name.toLowerCase().includes('linkedin'),

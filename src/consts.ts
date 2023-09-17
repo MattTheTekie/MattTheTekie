@@ -8,7 +8,7 @@ export const HOBBIES = ['Linux customization', 'gaming', 'reading', 'coding']
 export const SOCIAL = [
   {
     link: 'https://github.com/MattTheTekie',
-    name: 'Github'
+    name: 'GitHub'
   },
   {
     link: 'https://nerdculture.de/@ASTAFATHERSATAN',
