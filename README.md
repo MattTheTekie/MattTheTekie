@@ -79,6 +79,10 @@ My new blogging corner on the world wide web.&nbsp;
 
 My new hackerlab on the corner of the internet.&nbsp;
 
+> 🐱‍💻 [[**VENITH NETWORK**]](https://hackerlab.venith.net/)
+
+My new infrastructure project on the internet.&nbsp;
+
 > 🐧 [[**CrazyHellTechnologies**]](https://github.com/CrazyHellTechnologies/)
 
 We're a simple development group, focusing on DSiPaint, Linux, and Android.&nbsp;
