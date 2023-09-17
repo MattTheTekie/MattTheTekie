@@ -1,13 +1,13 @@
-export const SITE_TITLE = 'Filipe Lima'
+export const SITE_TITLE = 'MattTheTekie'
 export const SITE_DESCRIPTION = 'Welcome to my personal website!'
 
-export const NAME = 'Filipe Lima'
+export const NAME = 'MattTheTekie'
 export const ROLE = 'Frontend Software Engineer'
 export const BOOKS = ['Clean Code - Robert C. Martin', 'Metamorphosis - Franz Kafka', 'Fahrenheit 451 - Ray Bradbury', 'The Crow and Other Stories - Edgar Allan Poe']
 export const HOBBIES = ['Linux customization', 'gaming', 'reading', 'coding']
 export const SOCIAL = [
   {
-    link: 'https://github.com/datsfilipe',
+    link: 'https://github.com/MattTheTekie',
     name: 'Github'
   },
   {
