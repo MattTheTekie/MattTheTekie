@@ -1,7 +1,7 @@
 ---
 title: "uni-app安卓调用前置摄像头并自动拍照"
 summary: "uni-app安卓调用前置摄像头并自动拍照"
-publishedAt: "2010-01-12"
+publishedAt: "2021-04-19"
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "React+Vite 配置 jest"
 summary: "React+Vite 配置 jest"
-publishedAt: "2010-01-12"
+publishedAt: "2022-01-28"
 draft: false
 ---
 
