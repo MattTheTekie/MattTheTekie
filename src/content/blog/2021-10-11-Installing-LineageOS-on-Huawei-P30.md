@@ -2,7 +2,7 @@
 title: "Huawei P30にlineageOS 18.1をインストールした話"
 summary: "Huawei P30にlineageOS 18.1をインストールした話"
 description: "EMUIに愛想が尽きたのでHuawei端末で脱Huaweiを試みる。"
-publishedAt: "2010-01-12"
+publishedAt: "2021-10-11"
 draft: false
 categories: [Android]
 tags: ["Android", "カスタムROM"]

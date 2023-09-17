@@ -2,7 +2,7 @@
 title: "Huawei P30 (ELE-L29) のsystem領域を拡張した話 その1"
 summary: "Huawei P30 (ELE-L29) のsystem領域を拡張した話 その1"
 description: "system領域が小さいので拡張してみる。"
-publishedAt: "2010-01-12"
+publishedAt: "2021-10-17"
 draft: false
 categories: [Android]
 tags: ["Android", "カスタムROM"]

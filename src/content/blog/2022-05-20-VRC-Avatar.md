@@ -2,7 +2,7 @@
 title: "アバター改変のメモ書き的なお話(随時更新)"
 summary: "アバター改変のメモ書き的なお話(随時更新)"
 description: "いつかやるQuest対応の時のために"
-publishedAt: "2010-01-12"
+publishedAt: "2022-05-20"
 draft: false
 categories: [Unity]
 tags: ["Unity", "VRChat"]

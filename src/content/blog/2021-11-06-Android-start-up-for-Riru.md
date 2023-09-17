@@ -2,7 +2,7 @@
 title: "Androidに必ず入れたいモノをメモる(Riru環境)"
 summary: "Androidに必ず入れたいモノをメモる(Riru環境)"
 description: "自分が入れているアプリやモジュール等々"
-publishedAt: "2010-01-12"
+publishedAt: "2021-11-06"
 draft: false
 categories: [Android]
 tags: ["Android","Magisk","Xposed"]

@@ -2,7 +2,7 @@
 title: "Zenfone8 Project Blaze"
 summary: "Zenfone8 Project Blaze"
 description: "メモ書きと詰まったところの小話と愚痴"
-publishedAt: "2010-01-12"
+publishedAt: "2022-09-10"
 draft: false
 categories: ["Android","カスタムROM"]
 tags: ["Android", "カスタムROM"]

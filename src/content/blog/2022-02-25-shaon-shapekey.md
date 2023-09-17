@@ -2,7 +2,7 @@
 title: "ダンスする時のシャオンちゃんを表情豊かにしてみた。"
 summary: "ダンスする時のシャオンちゃんを表情豊かにしてみた。"
 description: "MMD用に名前を変えたシェイプキーを設定した"
-publishedAt: "2010-01-12"
+publishedAt: "2022-02-25"
 draft: false
 categories: [Unity]
 tags: ["Unity","VRChat",]

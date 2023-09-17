@@ -2,7 +2,7 @@
 title: "Xperia ZR用のLineage 18.1をビルドした"
 summary: "Xperia ZR用のLineage 18.1をビルドした"
 description: "Xperia ZR用のLineage 18.1をビルドした"
-publishedAt: "2010-01-12"
+publishedAt: "2021-12-18"
 draft: false
 categories: [Android]
 tags: ["Android", "カスタムROM"]
