@@ -1,0 +1,42 @@
+{
+  "name": "kirenai-kotoba",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "Pacharapol Withayasakpunt",
+    "email": "polv@polv.cc",
+    "url": "https://www.polv.cc"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/vue-fontawesome": "^3.0.0-5",
+    "@oruga-ui/oruga-next": "^0.5.2",
+    "sql.js": "^1.6.2",
+    "vue": "^3.2.25",
+    "wanakana": "^4.0.2"
+  },
+  "devDependencies": {
+    "@originjs/vite-plugin-content": "^1.0.1",
+    "@types/sql.js": "^1.4.3",
+    "@types/wanakana": "^4.0.3",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "import-sort-parser-typescript": "^6.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2",
+    "vue-tsc": "^0.29.8"
+  },
+  "importSort": {
+    ".js, .ts": {
+      "parser": "typescript",
+      "style": "module"
+    }
+  }
+}

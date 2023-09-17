@@ -1,0 +1,21 @@
+https://www.gnome-look.org/p/1229193/ 
+sweet dark transparent Window Decorations
+https://www.reddit.com/r/linux/comments/24ydl6/sonic_the_hedgehog_simplistic_animated_plymouth/ Boot Screen
+https://store.kde.org/p/1334044/ Icon Theme
+https://store.kde.org/p/1303587/ SDDM Theme
+
+1. Location > Show Desktop Folder
+2. Look and feel > Breeze
+3. Workspace theme > Lux
+4. Fonts > General > Notosans 10pt Bold
+5. App style > Breeze
+6. Autostart > Cairo 
+7. Bottom memory status, and CPU load monitor 
+8. Icons only task manager
+Firefox, Chrome, Spotify, Steam, VLC
+Max rows 2 
+
+Browser Ext:
+Universal Bypass
+uBlock Origin
+Bypass Firewalls

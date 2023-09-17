@@ -1,0 +1,5 @@
+export HOME=/etc/skel
+export DISPLAY=:1
+Xephyr -ac -reset -resizeable :1 &
+startkde
+

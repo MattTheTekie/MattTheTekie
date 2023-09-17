@@ -1,0 +1,4060 @@
+周り [まわり] n4 wanikani14
+学校 [がっこう] n5 wanikani7
+川 [かわ がわ] n3 n5 wanikani1 wanikani26
+手 [て] n5 wanikani2
+戸 [と] n5 wanikani3
+眼鏡 [めがね がんきょう メガネ] n1 n5 wanikani34
+煙草 [たばこ えんそう タバコ] n1 n5
+赤 [あか] n5 wanikani4
+仕事 [しごと] n5 wanikani11
+英語 [えいご] n5 wanikani15
+問題 [もんだい] n5 wanikani13
+部屋 [へや] n5 wanikani9
+子供 [こども] n5 wanikani24
+時間 [じかん] n5 wanikani8
+雨 [あめ] n5 wanikani5
+先生 [せんせい] n5 wanikani4
+年 [とし] n5 wanikani4
+手紙 [てがみ] n5 wanikani7
+電話 [でんわ] n5 wanikani8
+水 [みず み] n5 wanikani2
+病気 [びょうき] n5 wanikani10
+上げる [あげる] n4 n2 n5 wanikani1 wanikani23 wanikani42
+結婚 [けっこん] n5 wanikani30 wanikani32
+言葉 [ことば けとば] n5 wanikani12
+目 [め] n5 wanikani2
+走る [はしる] n5 wanikani5
+名前 [なまえ] n5 wanikani8
+旅行 [りょこう] n5 wanikani12 wanikani14
+道 [みち] n5 wanikani8
+飛行機 [ひこうき] n5 wanikani20
+映画 [えいが] n5 wanikani13
+音楽 [おんがく] n5 wanikani8
+木 [き] n5 wanikani2
+大学 [だいがく] n5 wanikani5
+時計 [とけい ときはかり] n5 wanikani15
+家族 [かぞく] n5 wanikani12
+花 [はな] n5 wanikani4
+猫 [ねこ ネコ] n5 wanikani15
+毎日 [まいにち] n5 wanikani5
+宿題 [しゅくだい] n5 wanikani13
+雪 [ゆき] n5 wanikani7
+山 [やま] n5 wanikani1
+窓 [まど] n5 wanikani33
+動物 [どうぶつ] n5 wanikani12
+夜 [よる よ] n3 n5 wanikani6
+料理 [りょうり] n5 wanikani14
+夏 [なつ] n5 wanikani7
+新聞 [しんぶん] n5 wanikani10
+公園 [こうえん] n5 wanikani16
+意味 [いみ] n5 wanikani11
+自転車 [じてんしゃ じでんしゃ] n5 wanikani10
+足 [あし] n5 wanikani4 wanikani45
+電車 [でんしゃ] n5 wanikani8
+散歩 [さんぽ] n3 n5 wanikani31 wanikani33
+声 [こえ] n5 wanikani5
+朝 [あさ あした] n5 wanikani8
+歌 [うた] n5 wanikani10 wanikani60
+靴 [くつ] n5 wanikani27
+箱 [はこ ハコ] n5 wanikani16
+机 [つくえ つき] n5 wanikani32
+帽子 [ぼうし] n5 wanikani47
+海 [うみ み わた わだ] n5 wanikani6
+授業 [じゅぎょう] n5 wanikani26
+銀行 [ぎんこう] n5 wanikani13
+写真 [しゃしん] n5 wanikani16
+冬 [ふゆ] n5 wanikani3
+村 [むら そん] n5 wanikani4
+傘 [かさ] n5 wanikani28
+口 [くち] n5 wanikani1
+橋 [はし] n5 wanikani13
+病院 [びょういん] n5 wanikani10
+図書館 [としょかん ずしょかん] n5 wanikani16
+春 [はる] n5 wanikani15
+買い物 [かいもの かいもん] n5 wanikani11
+椅子 [いす イス] n3 n5 wanikani46
+自動車 [じどうしゃ] n5 wanikani16
+色 [いろ] n5 wanikani5
+卵 [たまご] n5 wanikani32
+肉 [にく] n5 wanikani5
+風邪 [かぜ ふうじゃ] n5 wanikani50
+掃除 [そうじ] n5 wanikani31 wanikani33
+紙 [かみ] n5 wanikani7
+鍵 [かぎ カギ] n3 n5 wanikani46
+雑誌 [ざっし] n5 wanikani33
+切符 [きっぷ] n5 wanikani30
+外国人 [がいこくじん] n5 wanikani6
+財布 [さいふ] n5 wanikani19
+鉛筆 [えんぴつ エンピツ] n5 wanikani26
+大人 [おとな だいにん] n5 wanikani1
+地図 [ちず] n5 wanikani6
+塩 [しお] n1 n5 wanikani17
+夏休み [なつやすみ] n5 wanikani7
+砂糖 [さとう] n5 wanikani33
+郵便局 [ゆうびんきょく] n5 wanikani28
+池 [いけ] n5 wanikani8
+教室 [きょうしつ] n5 wanikani7
+耳 [みみ] n5 wanikani4
+切手 [きって] n5 wanikani4
+台所 [だいどころ だいどこ] n5 wanikani10
+電気 [でんき] n5 wanikani8
+作文 [さくぶん] n5 wanikani5
+歯 [は] n5 wanikani12
+紅茶 [こうちゃ] n5 wanikani34
+家庭 [かてい] n5 wanikani12
+野菜 [やさい] n5 wanikani31
+風呂 [ふろ] n3 n5
+玄関 [げんかん] n5 wanikani51
+地下鉄 [ちかてつ] n5 wanikani10
+鼻 [はな] n5 wanikani17
+緑 [みどり] n5 wanikani13
+昼 [ひる] n5 wanikani15
+西 [にし] n5 wanikani5
+白 [しろ] n5 wanikani2
+洗濯 [せんたく せんだく] n5 wanikani51
+冷蔵庫 [れいぞうこ] n5 wanikani33
+火曜日 [かようび] n5 wanikani18
+南 [みなみ] n5 wanikani6
+北 [きた] n5 wanikani3
+茶色 [ちゃいろ] n5 wanikani6
+喫茶店 [きっさてん きっちゃてん] n5 wanikani18
+喫茶店 [きっさてん きっちゃてん] n5 wanikani18
+青 [あお] n5
+靴下 [くつした] n5 wanikani27
+封筒 [ふうとう] n5 wanikani43
+辺 [へん] n5 wanikani7
+黄色 [きいろ こうしょく おうしょく] n1 n5 wanikani7
+映画館 [えいがかん] n5 wanikani15
+箸 [はし] n2 n5 wanikani47
+食堂 [しょくどう] n5 wanikani17
+牛肉 [ぎゅうにく] n5 wanikani5
+交差点 [こうさてん] n5 wanikani24
+曇り [くもり] n3 n5 wanikani45
+漢字 [かんじ] n5 wanikani10
+茶わん [ちゃわん] n2 n5
+背広 [せびろ セビロ] n5 wanikani32
+万年筆 [まんねんひつ まんねんぴつ まんねんふで] n5 wanikani26
+灰皿 [はいざら] n1 n5 wanikani33
+大使館 [たいしかん] n5
+交番 [こうばん] n5 wanikani8
+豚肉 [ぶたにく とんにく] n5 wanikani26
+飲む [のむ] n5 wanikani10
+頭-1 [あたま かしら] n5 wanikani10
+日曜日 [にちようび] n5 wanikani18
+誕生日 [たんじょうび] n5 wanikani24
+可愛い [かわいい かわゆい カワイイ カワイい] n1 n5 wanikani18
+鞄 [かばん カバン] n5
+土曜日 [どようび] n5 wanikani18
+月曜日 [げつようび] n5 wanikani18
+金曜日 [きんようび] n5 wanikani18
+花瓶 [かびん はながめ かへい] n5 wanikani51
+木曜日 [もくようび] n5 wanikani18
+本棚 [ほんだな] n5 wanikani44
+石鹸 [せっけん] n2 n5
+水曜日 [すいようび] n5 wanikani18
+飴 [あめ] n5
+八百屋 [やおや] n5
+腕 [うで] n4 wanikani24
+人形 [にんぎょう] n4 wanikani7
+文化 [ぶんか] n4 wanikani6
+海岸 [かいがん] n4 wanikani11
+産業 [さんぎょう] n4 wanikani22
+動物園 [どうぶつえん] n4 wanikani16
+美術館 [びじゅつかん] n4 wanikani16
+飛行場 [ひこうじょう] n4
+水道 [すいどう] n4 wanikani8
+葡萄 [ぶどう えび ブドウ] n4
+成る [なる] n3 n5 wanikani11
+程 [ほど] n3 wanikani28
+事故 [じこ ことゆえ] n4 wanikani26
+息子 [むすこ そく] n4 wanikani12
+生活 [せいかつ] n4 wanikani6
+注意 [ちゅうい] n4 wanikani11
+生きる [いきる] n4 wanikani3
+女性 [じょせい にょしょう] n4 wanikani14
+船 [ふね] n4 n3 wanikani7 wanikani45
+説明 [せつめい] n4 wanikani17
+警察 [けいさつ] n4 wanikani17
+危険 [きけん] n4 wanikani16
+世界 [せかい] n4 wanikani9
+戦争 [せんそう] n4 wanikani11
+小説 [しょうせつ] n4 wanikani17
+関係 [かんけい] n4 wanikani16
+研究 [けんきゅう] n4 wanikani8
+会議 [かいぎ] n4 wanikani20
+音 [おと ね おん] n4 n3 n1 wanikani5
+普通 [ふつう] n4 wanikani31
+湖 [みずうみ] n4 wanikani35
+夢 [ゆめ] n4 wanikani20
+空港 [くうこう] n4 wanikani12
+数学 [すうがく] n4 wanikani8
+教育 [きょういく] n4 wanikani11
+赤ちゃん [あかちゃん] n4 n1 wanikani4
+自由 [じゆう] n4 wanikani7
+火 [ひ] n4 wanikani2
+森 [もり] n4 wanikani8
+法律 [ほうりつ] n4 wanikani23
+気分 [きぶん] n4 wanikani4
+壁 [かべ へき] n4 wanikani39
+田舎 [いなか] n4 wanikani35
+気 [き] n4 wanikani4
+男性 [だんせい] n4 wanikani14
+地震 [じしん ない なえ じぶるい] n4 wanikani20
+故障 [こしょう] n4 n3 wanikani26
+人口 [じんこう] n4 wanikani1
+残念 [ざんねん] n4 wanikani14
+島 [しま] n4 wanikani12
+教会 [きょうかい] n4
+歴史 [れきし] n4 wanikani19
+住所 [じゅうしょ] n4 wanikani8
+社会 [しゃかい] n4 wanikani7
+工場 [こうじょう こうば] n4 wanikani8
+趣味 [しゅみ] n4 wanikani43
+経済 [けいざい] n4 wanikani21
+台風 [たいふう] n4 wanikani7
+卒業 [そつぎょう] n4 wanikani14 wanikani16
+雲 [くも] n4 wanikani8
+贈り物 [おくりもの] n4 wanikani40
+科学 [かがく] n4 wanikani6
+光 [ひかり] n4 wanikani5
+政治 [せいじ] n4 wanikani16
+特別 [とくべつ] n4 wanikani11
+水泳 [すいえい] n4
+講義 [こうぎ] n4 wanikani35
+指 [ゆび および おゆび] n4 wanikani11
+生産 [せいさん] n4 n3
+会話 [かいわ] n4 wanikani8
+季節 [きせつ] n4 wanikani19
+玩具 [おもちゃ がんぐ オモチャ] n4 n1
+翻訳 [ほんやく] n4 wanikani50
+貿易 [ぼうえき] n4 wanikani36
+文学 [ぶんがく] n4 wanikani5
+葉 [は] n4 wanikani10
+交通 [こうつう] n4 wanikani7
+遊び [あそび] n4 wanikani32
+道具 [どうぐ] n4 wanikani9
+入学 [にゅうがく] n4 n3 wanikani5
+背中 [せなか] n4 wanikani32
+指輪 [ゆびわ] n4 wanikani15
+発音 [はつおん] n4 wanikani9
+医学 [いがく] n4 wanikani8
+漫画 [まんが マンガ] n4 wanikani50
+鏡 [かがみ] n4 wanikani13
+電報 [でんぽう] n4
+校長 [こうちょう] n4
+郊外 [こうがい] n4 wanikani51
+国際 [こくさい] n4 wanikani21
+市民 [しみん] n4
+砂 [すな いさご] n4 wanikani33
+手袋 [てぶくろ] n4 wanikani44
+絹 [きぬ] n4 wanikani58
+日記 [にっき] n4 wanikani7
+糸 [いと] n4 wanikani4
+文法 [ぶんぽう] n4 wanikani15
+神社 [じんじゃ じんしゃ] n4 wanikani11
+小学校 [しょうがっこう] n4 wanikani9
+展覧会 [てんらんかい] n4
+駐車場 [ちゅうしゃじょう] n4 wanikani40
+先輩 [せんぱい] n4 wanikani25
+西洋 [せいよう] n4 wanikani11
+注射 [ちゅうしゃ] n4 wanikani34
+坂 [さか] n4 wanikani15
+乗り物 [のりもの] n4 wanikani11
+旅館 [りょかん] n4 wanikani13
+林 [はやし] n4 wanikani5
+布団 [ふとん] n4 wanikani19
+研究室 [けんきゅうしつ] n4 wanikani10
+会議室 [かいぎしつ] n4 wanikani20
+柔道 [じゅうどう] n4 wanikani43
+中学校 [ちゅうがっこう] n4 wanikani9
+高等学校 [こうとうがっこう] n4 wanikani20
+花見 [はなみ] n4 wanikani4
+公務員 [こうむいん] n4
+辞典 [じてん ことばてん] n4 wanikani16
+心 [こころ] n4 wanikani3
+力 [ちから] n4 wanikani1
+喧嘩 [けんか ケンカ] n4 n3
+天気予報 [てんきよほう] n4 wanikani20
+髭 [ひげ ヒゲ] n4 n2
+押し入れ [おしいれ] n4 wanikani32
+味噌 [みそ] n4 wanikani35
+正直 [しょうじき] n3 wanikani6
+一致 [いっち] n3 wanikani38
+博物館 [はくぶつかん] n3 wanikani28
+皿 [さら] n3 wanikani4
+舞台 [ぶたい] n3 wanikani36
+寄付 [きふ] n3 wanikani29
+猿 [さる サル] n3 wanikani46
+平等 [びょうどう] n3
+金属 [きんぞく] n3 wanikani25
+左右 [さゆう そう さう] n3 wanikani2
+商人 [しょうにん あきんど あきうど あきゅうど あきびと] n3 n1 wanikani12
+国境 [こっきょう くにざかい こっかい] n3 n1 wanikani24
+集団 [しゅうだん] n3 wanikani19
+根 [ね] n3 wanikani12
+鎖 [くさり] n3 wanikani52
+より [より] n5
+一番 [いちばん] n3 n5 wanikani8
+私 [わたし] n5 wanikani6
+外 [そと と] n5 wanikani3
+姉 [あね] n5 wanikani6
+百 [ひゃく はく] n5 wanikani4
+時 [とき] n3 wanikani7
+元 [もと] n3 wanikani3
+計画 [けいかく] n3 wanikani15
+少年 [しょうねん] n3 wanikani4
+列車 [れっしゃ] n3
+健康 [けんこう] n3 wanikani27
+人間 [にんげん] n3 wanikani8
+結果 [けっか] n3 wanikani17
+理解 [りかい] n3 wanikani21 wanikani23
+少女 [しょうじょ おとめ] n3 n1 wanikani3
+事実 [じじつ] n3 wanikani9
+食事 [しょくじ] n3 wanikani9
+人生 [じんせい] n3 wanikani3
+母親 [ははおや] n3 wanikani12
+行動 [こうどう] n3 wanikani12
+父親 [ちちおや] n3 wanikani12
+太陽 [たいよう] n3 wanikani12
+幸福 [こうふく] n3 wanikani16
+政府 [せいふ] n3 wanikani16
+経験 [けいけん] n3 wanikani20
+責任 [せきにん] n3 wanikani21
+我慢 [がまん ガマン] n3 wanikani52
+噂 [うわさ] n3
+道路 [どうろ] n3 wanikani10
+機械 [きかい] n3 n2 wanikani20
+地球 [ちきゅう] n3 wanikani12
+偶然 [ぐうぜん] n3 wanikani50
+秘密 [ひみつ] n3 wanikani32
+情報 [じょうほう] n3 wanikani18
+現在 [げんざい] n3 wanikani23
+昼食 [ちゅうしょく ちゅうじき ひるげ] n3
+期待 [きたい] n3 wanikani12 wanikani14
+嵐 [あらし] n3 wanikani44
+丘 [おか] n3 wanikani44
+運動 [うんどう] n3 wanikani12
+大統領 [だいとうりょう] n3 wanikani22
+演説 [えんぜつ] n3
+神 [かみ] n3 wanikani11
+馬 [うま いま おま ウマ] n3 wanikani8
+馬 [うま いま おま ウマ] n3 wanikani8
+詩 [し] n3 wanikani13
+知識 [ちしき] n3 wanikani17
+嘘 [うそ ウソ] n3
+収入 [しゅうにゅう] n3 wanikani23
+都市 [とし] n3 wanikani12
+詩人 [しじん] n3 wanikani13
+涙 [なみだ なみた なだ なんだ] n3 wanikani44
+円 [えん] n3 wanikani2
+酒 [さけ ささ き くし しゅ] n3
+財産 [ざいさん] n3
+勇気 [ゆうき] n3 wanikani15
+発見 [はっけん] n3 wanikani9
+学者 [がくしゃ] n3 wanikani8
+解決 [かいけつ] n3 wanikani21
+患者 [かんじゃ] n3 wanikani37
+存在 [そんざい] n3 wanikani20 wanikani22
+言語 [げんご ごんご げんきょ] n3 wanikani10
+信頼 [しんらい] n3 wanikani36
+海外 [かいがい] n3 wanikani6
+海外 [かいがい] n3 wanikani6
+平和 [へいわ] n3 wanikani9
+希望 [きぼう] n3 wanikani14 wanikani16
+調査 [ちょうさ] n3
+気候 [きこう] n3 wanikani25
+地域 [ちいき] n3 wanikani22
+愛 [あい] n3 wanikani17
+実験 [じっけん] n3 wanikani9
+国民 [こくみん] n3 wanikani7
+権利 [けんり] n3 wanikani21
+騒音 [そうおん] n3 wanikani30
+義務 [ぎむ] n3 wanikani21
+釣り [つり] n3 n1 wanikani44
+胸 [むね むな] n3 wanikani18
+過去 [かこ] n3 wanikani22
+利益 [りえき りやく] n3 wanikani28
+物価 [ぶっか] n3 wanikani22
+発明 [はつめい] n3
+教授 [きょうじゅ] n3 wanikani26
+植物 [しょくぶつ] n3 wanikani12
+氷 [こおり] n3 wanikani4
+石油 [せきゆ] n3 wanikani35
+痛み [いたみ] n3 wanikani29
+進歩 [しんぽ] n3
+物語 [ものがたり] n3 wanikani11
+感情 [かんじょう] n3 wanikani13
+週 [しゅう] n3
+屋根 [やね] n3 wanikani12
+議長 [ぎちょう] n3 wanikani20
+恐怖 [きょうふ くふ] n3 wanikani29
+商品 [しょうひん] n3 wanikani16
+否定 [ひてい] n3 wanikani33 wanikani35
+費用 [ひよう] n3 wanikani22
+作品 [さくひん] n3 wanikani16
+賞 [しょう] n3
+城 [しろ] n3 wanikani23
+価格 [かかく] n3 wanikani22
+留学 [りゅうがく] n3 wanikani16
+犯罪 [はんざい] n3 wanikani20
+肩 [かた] n3 wanikani24
+意志 [いし] n3 wanikani32
+正午 [しょうご] n3
+評価 [ひょうか] n3 wanikani22
+家具 [かぐ] n3 wanikani9
+職業 [しょくぎょう] n3 wanikani23
+首相 [しゅしょう] n3
+不安 [ふあん] n3 wanikani6
+劇場 [げきじょう] n3 wanikani17
+自然 [しぜん] n3 wanikani13
+意識 [いしき] n3 wanikani17
+自殺 [じさつ] n3 wanikani13
+逮捕 [たいほ] n3 wanikani25 wanikani27
+爆発 [ばくはつ] n3 wanikani37
+論文 [ろんぶん] n3 wanikani20
+記録 [きろく] n3 wanikani28
+世紀 [せいき] n3 wanikani15
+頭痛 [ずつう] n3 wanikani27
+契約 [けいやく] n3 wanikani37
+精神 [せいしん] n3 wanikani28
+牛 [うし ぎゅう ウシ] n3 wanikani3
+記憶 [きおく] n3 wanikani48
+独立 [どくりつ] n3 wanikani26
+俳優 [はいゆう] n3 wanikani23
+優勝 [ゆうしょう] n3 wanikani23
+額 [がく] n3 wanikani24
+州 [しゅう] n3 wanikani6
+公平 [こうへい] n3
+強盗 [ごうとう] n3 wanikani30
+生命 [せいめい] n3
+記事 [きじ] n3 wanikani9
+霧 [きり] n3 wanikani47
+命令 [めいれい] n3 wanikani11
+輸入 [ゆにゅう しゅにゅう] n3 wanikani26 wanikani28
+合図 [あいず] n3 wanikani14
+宇宙 [うちゅう] n3 wanikani19
+計算 [けいさん] n3 wanikani15
+銃 [じゅう] n3 n1 wanikani39
+医師 [いし] n3 wanikani23
+禁煙 [きんえん] n3 wanikani18
+友情 [ゆうじょう] n3
+友情 [ゆうじょう] n3
+現実 [げんじつ] n3 wanikani23
+香り [かおり] n3 wanikani37
+訓練 [くんれん] n3 wanikani18
+企業 [きぎょう] n3
+方向 [ほうこう] n3 wanikani6
+生物 [せいぶつ] n3 wanikani9
+攻撃 [こうげき] n3 wanikani28 wanikani30
+服装 [ふくそう] n3 wanikani33
+流れ [ながれ] n3
+役割 [やくわり] n3 wanikani23
+宗教 [しゅうきょう] n3 wanikani29
+羽 [はね は] n3 n2 wanikani5
+波 [なみ] n3 wanikani11
+芸術 [げいじゅつ] n3 wanikani14
+無料 [むりょう] n3 wanikani17
+署名 [しょめい] n3 wanikani17
+個人 [こじん] n3 wanikani20
+広告 [こうこく] n3 wanikani18
+駐車 [ちゅうしゃ] n3
+駐車 [ちゅうしゃ] n3
+宝石 [ほうせき] n3 wanikani4
+現金 [げんきん] n3
+証明 [しょうめい] n3 wanikani16
+塔 [とう] n3 wanikani44
+芝居 [しばい] n3
+出版 [しゅっぱん] n3 wanikani30 wanikani32
+博士 [はかせ] n3
+話題 [わだい] n3 wanikani13
+保証 [ほしょう] n3 n1 wanikani16 wanikani26
+競技 [きょうぎ] n3
+離婚 [りこん] n3 wanikani31
+診察 [しんさつ] n3 wanikani29
+軍隊 [ぐんたい] n3 wanikani28
+投票 [とうひょう] n3 wanikani25
+販売 [はんばい ハンバイ] n3 wanikani24
+年寄り [としより] n3 n1
+心臓 [しんぞう] n3 wanikani34
+衝突 [しょうとつ] n3 wanikani40
+影 [かげ] n3 wanikani25
+型 [かた がた] n3 wanikani24
+輸出 [ゆしゅつ しゅしゅつ] n3 wanikani24 wanikani26
+平均 [へいきん へいぎん] n3 n1 wanikani31
+永遠 [えいえん] n3 wanikani32
+冒険 [ぼうけん] n3 wanikani16
+表情 [ひょうじょう] n3 wanikani13
+未来 [みらい] n3 wanikani7
+女王 [じょおう じょうおう にょおう] n3 wanikani2
+制度 [せいど] n3 wanikani21
+虎 [とら トラ] n3 wanikani41
+小屋 [こや しょうおく] n3
+胃 [い] n3 wanikani27
+青年 [せいねん] n3 wanikani5
+改善 [かいぜん] n3 wanikani19
+通学 [つうがく] n3
+畑 [はたけ はた] n3 wanikani41
+中心 [ちゅうしん] n3
+文字 [もじ もんじ] n3 wanikani4
+籠 [かご カゴ] n3
+観客 [かんきゃく] n3 wanikani22
+鉄道 [てつどう] n3
+観客 [かんきゃく] n3 wanikani22
+籠 [かご カゴ] n3
+信号 [しんごう] n3 wanikani15
+中心 [ちゅうしん] n3
+睡眠 [すいみん] n3 wanikani27
+化学 [かがく ばけがく] n3
+国家 [こっか] n3
+袋 [ふくろ] n3 wanikani42
+節約 [せつやく] n3
+建設 [けんせつ] n3 wanikani21
+教科書 [きょうかしょ] n3 wanikani16
+毒 [どく] n3 wanikani15
+油 [あぶら] n3 wanikani35
+単位 [たんい] n3
+常識 [じょうしき] n3 wanikani17
+座席 [ざせき] n3 wanikani18
+郵便 [ゆうびん] n3 wanikani26
+運 [うん] n3 wanikani12
+家事 [かじ] n3 wanikani9
+誕生 [たんじょう] n3 wanikani22
+家事 [かじ] n3 wanikani9
+観光 [かんこう] n3 wanikani22
+食欲 [しょくよく] n3 wanikani32
+汗 [あせ] n3 wanikani26
+失業 [しつぎょう] n3
+学習 [がくしゅう] n3
+数字 [すうじ] n3 wanikani8
+分析 [ぶんせき] n3 wanikani42
+婚約 [こんやく] n3
+知恵 [ちえ] n3 wanikani37
+毛布 [もうふ] n3 wanikani19
+武器 [ぶき] n3 wanikani24
+引用 [いんよう] n3
+首都 [しゅと] n3
+鉄 [てつ] n3
+砂漠 [さばく] n3 wanikani33
+書斎 [しょさい] n3 wanikani42
+硬貨 [こうか] n3
+笑い [わらい] n3 wanikani18
+監督 [かんとく] n3 wanikani29
+針 [はり ち] n3
+舌 [した] n3 wanikani19
+異常 [いじょう] n3 wanikani33
+笑い [わらい] n3 wanikani18
+速度 [そくど] n3 wanikani10
+予算 [よさん] n3
+瞬間 [しゅんかん] n3 wanikani46
+絶滅 [ぜつめつ] n3 wanikani43
+感覚 [かんかく] n3 wanikani17
+対象 [たいしょう] n3 wanikani24
+酸素 [さんそ] n3 wanikani32
+穀物 [こくもつ] n3 wanikani56
+拍手 [はくしゅ] n3 wanikani56
+逆 [ぎゃく] n3 wanikani28
+奨学金 [しょうがくきん] n3 wanikani49
+祭 [まつり] n3 wanikani12
+腰 [こし コシ] n3 wanikani24
+物質 [ぶっしつ] n3
+議会 [ぎかい] n3 wanikani20
+泥 [どろ] n3 wanikani31
+批評 [ひひょう] n3
+巣 [す] n3 wanikani31
+農家 [のうか] n3
+石炭 [せきたん いしずみ] n3 wanikani41
+黒板 [こくばん] n3 wanikani29
+独身 [どくしん] n3 wanikani26
+議会 [ぎかい] n3 wanikani20
+谷 [たに] n3 wanikani5
+農業 [のうぎょう] n3 wanikani10
+建築 [けんちく] n3 wanikani15
+吸収 [きゅうしゅう] n3 wanikani23 wanikani25
+日付 [ひづけ] n3 n1
+活用 [かつよう] n3 wanikani6
+体温 [たいおん] n3
+大陸 [たいりく] n3 wanikani31
+文明 [ぶんめい] n3
+知事 [ちじ] n3
+消費 [しょうひ] n3 wanikani22
+信仰 [しんこう] n3 wanikani50
+信仰 [しんこう] n3 wanikani50
+外交 [がいこう] n3 wanikani5
+学期 [がっき] n3 wanikani12
+翼 [つばさ よく] n3 wanikani44
+大臣 [だいじん] n3 wanikani29
+人種 [じんしゅ] n3 wanikani18
+現状 [げんじょう] n3
+筋肉 [きんにく] n3 wanikani33
+理想 [りそう] n3
+居間 [いま] n3 wanikani27
+鍋 [なべ] n3 wanikani35 wanikani37
+絵画 [かいが] n3
+火災 [かさい] n3 wanikani20
+営業 [えいぎょう] n3 wanikani22 wanikani24
+神経 [しんけい] n3
+助手 [じょしゅ すけて] n3 wanikani10
+組合 [くみあい] n3
+伝統 [でんとう] n3 wanikani22
+悪魔 [あくま] n3 wanikani46
+板 [いた] n3 wanikani29
+組合 [くみあい] n3
+悪魔 [あくま] n3 wanikani46
+板 [いた] n3 wanikani29
+恋人 [こいびと] n3 wanikani19
+食品 [しょくひん] n3
+資源 [しげん] n3
+旗 [はた] n3 wanikani30
+現象 [げんしょう] n3 wanikani24
+岸 [きし] n3
+宝 [たから] n3 wanikani4
+炎 [ほのお ほむら] n3 wanikani35
+温度 [おんど] n3 wanikani12
+呼吸 [こきゅう] n3
+哲学 [てつがく] n3 wanikani42
+跡 [あと] n3 wanikani37
+梅雨 [つゆ ばいう] n3
+印刷 [いんさつ] n3 wanikani43
+登山 [とざん] n3 wanikani12
+代理 [だいり] n3
+骨折 [こっせつ] n3 wanikani14
+登山 [とざん] n3 wanikani12
+鬼 [おに き] n3 wanikani23
+裸 [はだか] n3 wanikani45
+知能 [ちのう] n3
+銀 [ぎん しろがね しろかね] n3 wanikani13
+渋滞 [じゅうたい] n3 wanikani39
+大使 [たいし] n3
+相続 [そうぞく] n3
+航空 [こうくう] n3 wanikani29
+弁当 [べんとう] n3 wanikani16
+歩道 [ほどう] n3 wanikani8
+医療 [いりょう] n3 wanikani36
+衛星 [えいせい] n3 wanikani32
+芽 [め] n3 wanikani44
+栄養 [えいよう] n3
+免許 [めんきょ] n3 wanikani39
+模様 [もよう] n3 wanikani25
+会計 [かいけい] n3
+缶 [かん カン] n3 wanikani44
+地下 [ちか] n3 wanikani6
+地下 [ちか] n3 wanikani6
+議員 [ぎいん] n3 wanikani20
+筋 [すじ スジ] n3 wanikani33
+差別 [さべつ しゃべつ しゃべち] n3 wanikani24 wanikani26
+道徳 [どうとく] n3 wanikani31
+笛 [ふえ ちゃく] n3 wanikani19
+国語 [こくご] n3
+湾 [わん] n3 wanikani37
+資本 [しほん] n3 wanikani21
+豆 [まめ マメ] n3 wanikani34
+礼 [れい] n3
+体育 [たいいく たいく] n3 wanikani13
+筆 [ふで ひつ] n3 wanikani26
+作曲 [さっきょく] n3
+句 [く] n3
+土産 [みやげ] n3
+茶 [ちゃ] n3
+刀 [かたな とう] n3 wanikani2
+粉 [こな こ] n3 wanikani31
+菓子 [かし] n3
+電子 [でんし] n3 wanikani8
+泡 [あわ あぶく] n3 wanikani46
+菓子 [かし] n3
+梅 [うめ むめ ウメ] n3 wanikani17
+飯 [めし] n3 wanikani15
+能 [のう] n3
+儀式 [ぎしき] n2 wanikani41
+職人 [しょくにん] n2
+南極 [なんきょく] n2 wanikani27
+北極 [ほっきょく] n2
+新幹線 [しんかんせん] n2 wanikani23
+昼寝 [ひるね] n2 wanikani22
+木材 [もくざい] n2 wanikani14
+大通り [おおどおり] n2
+運河 [うんが] n2 wanikani26
+遊園地 [ゆうえんち] n2 wanikani30
+天皇 [てんのう] n2 n1 wanikani33
+蛇口 [じゃぐち] n2
+溶岩 [ようがん] n2 wanikani48
+武士 [ぶし もののふ ぶふ] n2 wanikani24
+月 [つき] n3 wanikani2
+馬鹿 [ばか バカ] n3 wanikani36
+屡々 [しばしば] n3 n1
+退屈 [たいくつ] n3 wanikani27
+流れる [ながれる] n3 wanikani14
+暗記 [あんき] n3 wanikani13 wanikani15
+兎 [うさぎ う ウサギ] n3
+鼠 [ねずみ ねず ネズミ] n3 n1
+頬 [ほお ほほ] n3
+膝 [ひざ ヒザ] n3
+餌 [えさ え エサ] n3
+量 [りょう] n3 wanikani24
+莫大 [ばくだい] n3
+式 [しき] n3 wanikani15
+紐 [ひも ヒモ] n3
+連想 [れんそう] n3
+地平線 [ちへいせん] n3
+場 [ば] n3
+動詞 [どうし] n3 wanikani19
+袖 [そで] n3
+灰 [はい] n3 wanikani33
+秒 [びょう] n3 wanikani11
+県 [けん] n3 wanikani9
+帯 [おび たらし] n3 wanikani31
+名字 [みょうじ] n2 wanikani4 wanikani51
+在る [ある] n3 n2 n5 wanikani6
+其の [その そん] n3 n5
+言う [いう ゆう] n3 n5 wanikani5
+出来る [できる] n3 n5 wanikani6
+良い [よい えい] n3 n1 n5 wanikani11
+下さい [ください] n5 wanikani1
+見る [みる] n5 wanikani4 wanikani22
+此の [この こん] n3 n1 n5
+自分 [じぶん] n5 wanikani5
+知る [しる] n5 wanikani6
+持つ [もつ] n5 wanikani9
+何 [なに ナニ] n3 n5 wanikani5
+車 [くるま クルマ] n5 wanikani4
+話す [はなす] n5 wanikani8
+今 [いま] n5 wanikani3
+今日 [きょう こんにち こんち こんじつ] n3 n5 wanikani3
+買う [かう] n5 wanikani8
+読む [よむ] n5 wanikani10
+皆 [みんな みな] n4 n3 n5
+新しい [あたらしい] n5 wanikani9
+話 [はなし] n5 wanikani10
+明日 [あした あす みょうにち] n4 n5 wanikani8
+昨日 [きのう さくじつ] n5 wanikani15
+出る [でる] n5 wanikani2
+勉強 [べんきょう] n3 n5 wanikani12 wanikani14
+取る [とる] n5 wanikani16
+誰 [だれ だあれ たれ た] n1 n5 wanikani43
+お金 [おかね] n5 wanikani5
+男 [おとこ おっこ] n5 wanikani4
+犬 [いぬ イヌ] n5 wanikani2
+使う [つかう] n5 wanikani9 wanikani37
+大変 [たいへん] n5 wanikani15
+待つ [まつ] n5 wanikani12
+作る [つくる] n2 n1 n5 wanikani5 wanikani26
+後ろ [うしろ] n3 n5 wanikani6
+町 [まち ちょう] n3 n5 wanikani4
+駅 [えき] n5 wanikani13
+少し [すこし] n5 wanikani3
+貴方-1 [あなた] n1 n5
+欲しい [ほしい] n5 wanikani32
+行く [いく ゆく] n1 n5 wanikani5
+乗る [のる ノる] n5 wanikani9
+大きな [おおきな] n5
+医者 [いしゃ] n5 wanikani8
+終わる [おわる] n1 n5 wanikani10
+学生 [がくせい] n5 wanikani5
+長い [ながい] n2 n5 wanikani6
+何の [どの] n1 n5
+又 [また] n3 n5 wanikani2
+国 [くに] n5 wanikani6
+高い [たかい] n5 wanikani7
+余り [あまり あんまり] n3 n1 n5
+難しい [むずかしい むつかしい] n5 wanikani20
+友達 [ともだち] n5 wanikani18
+一つ [ひとつ] n5 wanikani1
+本当 [ほんとう ほんと ホント ホントー ホントウ] n3 n5 wanikani5
+寝る [ねる] n5 wanikani22
+生徒 [せいと] n5 wanikani19
+忙しい [いそがしい] n5 wanikani19
+両親 [りょうしん ふたおや] n5
+泳ぐ [およぐ] n5 wanikani9
+出す [だす] n5 wanikani2
+立つ [たつ] n2 n5 wanikani2
+早い [はやい] n5 wanikani4 wanikani10
+楽しい [たのしい] n5 wanikani8
+面白い [おもしろい] n1 n5 wanikani16
+絵 [え が] n5 wanikani8
+女の子 [おんなのこ おんなのコ] n5 wanikani2
+着る [きる] n5 wanikani12
+上手 [じょうず じょうて じょうしゅ] n5 wanikani2
+古い [ふるい] n5 wanikani3
+強い [つよい] n5 wanikani7
+全部 [ぜんぶ] n5 wanikani9
+呼ぶ [よぶ] n5 wanikani23
+午後 [ごご] n5 wanikani6
+掛ける [かける] n4 n5 wanikani25 wanikani38
+辞書 [じしょ] n5 wanikani16
+天気 [てんき] n5 wanikani4
+体 [からだ] n3 n1 n5 wanikani5 wanikani8
+大きい [おおきい] n5 wanikani1
+夕べ [ゆうべ さくや ゆんべ] n3 n5 wanikani2
+質問 [しつもん] n5 wanikani24
+有名 [ゆうめい] n5 wanikani6
+兄 [あに] n5 wanikani5
+歌う [うたう] n5 wanikani12 wanikani60
+上る [のぼる] n3 n2 n5 wanikani1 wanikani12 wanikani27
+鳥 [とり トリ] n5 wanikani7
+服 [ふく] n5 wanikani9
+時々 [ときどき] n5 wanikani11
+妹 [いもうと] n5 wanikani6
+二つ [ふたつ] n5 wanikani1
+頼む [たのむ] n5 wanikani36
+お父さん [おとうさん おとっさん] n5 wanikani3
+今朝 [けさ こんちょう] n5 wanikani10
+遅い [おそい] n5 wanikani37
+借りる [かりる] n5 wanikani18
+薬 [くすり クスリ] n5 wanikani17
+庭 [にわ] n5 wanikani12
+外国 [がいこく そとぐに] n5 wanikani6
+元気 [げんき] n5 wanikani4
+小さい [ちいさい] n5 wanikani2
+弟 [おとうと てい] n1 n5 wanikani5
+今年 [ことし こんねん] n5 wanikani6
+魚 [さかな うお] n3 n5 wanikani7
+お母さん [おかあさん] n5 wanikani3
+男の子 [おとこのこ おとこのコ] n5 wanikani5
+飛ぶ [とぶ] n2 n5 wanikani20 wanikani37
+売る [うる] n5 wanikani9
+静か [しずか] n5 wanikani18
+休む [やすむ] n5 wanikani4
+食べ物 [たべもの] n5 wanikani11
+大切 [たいせつ たいせち] n5 wanikani3
+来週 [らいしゅう] n5 wanikani7
+警官 [けいかん] n5 wanikani19
+建物 [たてもの] n5 wanikani17
+暖かい [あたたかい あったかい] n3 n5 wanikani12 wanikani32
+降りる [おりる] n4 n5 wanikani36
+止まる [とまる] n2 n5 wanikani3
+一緒 [いっしょ] n5 wanikani38
+切り [きり] n1
+先週 [せんしゅう] n5 wanikani7
+白い [しろい] n5 wanikani4
+二 [に ふた ふ ふう] n5 wanikani1
+少ない [すくない] n5 wanikani3
+赤い [あかい] n5 wanikani4
+洗う [あらう] n5 wanikani18
+嫌い [きらい] n5 wanikani20
+立派 [りっぱ] n3 n5 wanikani21
+暇 [ひま いとま ヒマ] n1 n5 wanikani27
+お茶 [おちゃ] n5 wanikani6
+広い [ひろい] n5 wanikani3
+去年 [きょねん こぞ] n5 wanikani4
+隣 [となり] n5 wanikani40
+大好き [だいすき] n5 wanikani13
+女 [おんな おみな おうな うみな おな] n5 wanikani1
+多分 [たぶん] n3 n5 wanikani5
+切る [きる] n5 wanikani3
+毎朝 [まいあさ まいちょう] n5 wanikani8
+嫌 [いや や イヤ] n5 wanikani20
+荷物 [にもつ] n5 wanikani16
+番号 [ばんごう] n5 wanikani8
+返す [かえす] n5 wanikani9
+来年 [らいねん] n5 wanikani5
+明るい [あかるい] n1 n5 wanikani6
+近い [ちかい] n5 wanikani5
+向こう [むこう] n5 wanikani8
+始め [はじめ] n1 n5
+痛い [いたい] n5 wanikani27
+休み [やすみ] n5 wanikani4
+練習 [れんしゅう] n3 n5 wanikani13 wanikani15
+十 [じゅう とお と] n3 n5 wanikani1
+先月 [せんげつ] n5 wanikani4
+上着 [うわぎ じょうい] n5
+結構 [けっこう] n5 wanikani25
+兄弟 [きょうだい けいてい] n5 wanikani5
+兄弟 [きょうだい けいてい] n5 wanikani5
+来月 [らいげつ] n5 wanikani5
+五 [ご いつ い] n5 wanikani2
+飲み物 [のみもの] n5 wanikani12
+弱い [よわい] n5 wanikani7
+牛乳 [ぎゅうにゅう] n5 wanikani23
+三 [さん み] n1 n5 wanikani1
+大丈夫 [だいじょうぶ だいじょぶ] n5 wanikani18
+黒い [くろい] n5 wanikani7
+半分 [はんぶん] n5 wanikani3
+皆さん [みなさん] n5 wanikani13
+押す [おす] n5 wanikani30
+勤める [つとめる] n2 n5 wanikani21 wanikani34
+熱い [あつい] n5 wanikani13
+三つ [みっつ みつ] n5 wanikani1
+果物 [くだもの かぶつ] n5 wanikani17
+今週 [こんしゅう] n5 wanikani7
+右 [みぎ] n5 wanikani2
+甘い [あまい] n5 wanikani36
+晩 [ばん] n5 wanikani15
+幾つ [いくつ] n3 n5 wanikani31
+階段 [かいだん] n5 wanikani27
+大勢 [おおぜい たいぜい] n5 wanikani22
+張る [はる] n3 n5 wanikani23 wanikani48
+夕方 [ゆうがた] n5
+低い [ひくい] n5 wanikani11
+左 [ひだり] n5 wanikani2
+毎週 [まいしゅう] n5
+下手-2 [へた ヘタ] n5 wanikani2
+千 [せん ち] n5 wanikani2
+渡す [わたす] n5 wanikani25
+午前 [ごぜん] n5 wanikani6
+便利 [べんり] n5 wanikani11
+丸い [まるい まろい] n3 n2 n5 wanikani2
+今月 [こんげつ] n5 wanikani3
+浴びる [あびる] n3 n5 wanikani16
+半 [はん] n5 wanikani3
+洋服 [ようふく] n5 wanikani11
+撮る [とる] n5 wanikani30
+締める [しめる] n5 wanikani27
+文章 [ぶんしょう もんじょう もんぞう] n5 wanikani12
+八 [はち や] n5 wanikani1
+薄い [うすい] n5 wanikani40
+横 [よこ ヨコ] n5 wanikani10
+六 [ろく む むう] n1 n5 wanikani2
+四つ [よっつ よつ] n5 wanikani4
+丈夫 [じょうぶ] n5 wanikani15
+東-1 [ひがし ひむかし ひんがし] n5 wanikani6
+毎晩 [まいばん] n5 wanikani15
+五つ [いつつ] n5 wanikani2
+晴れ [はれ] n5 wanikani15
+細い [ほそい] n5 wanikani17
+廊下 [ろうか] n5 wanikani31
+太い [ふとい] n5 wanikani3
+縦 [たて タテ] n3 n5 wanikani34
+七つ [ななつ] n5 wanikani1
+九つ [ここのつ] n5 wanikani1
+留学生 [りゅうがくせい] n5 wanikani18
+一昨年 [おととし いっさくねん] n2 n5
+人-2 [ひと ヒト] n5 wanikani1
+居る [いる] n5 wanikani25
+其れ [それ] n3 n1 n5
+物 [もの もん] n5 wanikani9
+家 [いえ] n5
+本 [ほん] n5 wanikani2
+迚も [とても とっても] n1 n5
+会う [あう] n2 n5 wanikani5 wanikani52
+好き [すき] n5 wanikani11
+分かる [わかる] n2 n5 wanikani3
+此れ [これ] n1 n5 wanikani55
+聞く [きく] n5 wanikani10 wanikani37
+所 [ところ とこ] n5 wanikani8
+先 [さき] n5 wanikani4
+何時も [いつも] n3 n1 n5
+書く [かく] n5 wanikani16
+沢山 [たくさん] n1 n5 wanikani23
+入る-1 [はいる] n5 wanikani1
+置く [おく] n5 wanikani22
+何処 [どこ いどこ いずこ いずく いづこ] n1 n5
+住む [すむ] n5 wanikani8
+食べる [たべる] n5 wanikani6
+歩く [あるく] n5 wanikani6
+働く [はたらく] n5 wanikani11
+着く [つく] n5 wanikani12
+上 [うえ] n5 wanikani1
+悪い [わるい] n5 wanikani12
+教える [おしえる] n5 wanikani7
+降る [ふる] n5 wanikani34
+死ぬ [しぬ] n5 wanikani6
+帰る [かえる] n5 wanikani15
+忘れる [わすれる] n5 wanikani18
+多い [おおい] n5 wanikani5
+出掛ける [でかける] n2 n5 wanikani4
+若い [わかい] n5 wanikani19
+掛かる [かかる] n3 n5 wanikani27 wanikani40
+同じ [おなじ おんなじ] n5 wanikani5
+起きる [おきる] n5 wanikani10
+座る [すわる] n5 wanikani18
+店 [みせ] n5 wanikani6
+入れる [いれる] n5 wanikani1
+何方-1 [どなた] n1 n5
+一寸-1 [ちょっと ちょと チョット ちょいと チョッと] n1 n5
+疲れる [つかれる] n5 wanikani45
+開ける [あける] n3 n5 wanikani10
+何故 [なぜ なにゆえ] n1 n5 wanikani26
+一日 [いちにち いちじつ] n1 n5
+寒い [さむい さぶい] n5 wanikani12
+見せる [みせる] n5 wanikani4
+違う [ちがう] n5 wanikani24
+如何して [どうして] n1 n5
+付ける [つける] n3 n2 n5 wanikani7 wanikani14
+覚える [おぼえる] n5 wanikani19
+風 [かぜ] n5 wanikani7
+近く [ちかく] n5 wanikani7
+困る [こまる] n5 wanikani20
+生まれる [うまれる] n5 wanikani3
+丁度 [ちょうど] n1 n5 wanikani9
+初めて [はじめて] n5 wanikani13
+始まる [はじまる] n5 wanikani12
+貸す [かす] n5 wanikani27
+奇麗 [きれい キレイ] n1 n5 wanikani29
+幾ら [いくら] n3 n5 wanikani31
+空-1 [そら] n5 wanikani5
+弾く-1 [ひく] n5 wanikani39
+暑い [あつい] n5 wanikani12
+遊ぶ [あそぶ あすぶ] n5 wanikani30
+然し [しかし] n1 n5
+無くす [なくす] n2 n5
+色々 [いろいろ] n1 n5 wanikani5
+渡る [わたる] n5 wanikani25
+暗い [くらい] n5 wanikani13
+此方 [こちら こっち こち] n5
+重い [おもい] n5 wanikani9
+今晩 [こんばん] n5
+美味しい [おいしい] n1 n5 wanikani15
+消す [けす] n5 wanikani12
+易しい [やさしい] n5 wanikani19
+閉める [しめる] n5 wanikani33
+安い [やすい] n5 wanikani6
+遠い [とおい] n5 wanikani16
+短い [みじかい] n5 wanikani12
+曲がる [まがる] n1 n5 wanikani8
+消える [きえる] n5 wanikani14
+晴れる [はれる] n5 wanikani15
+冷たい [つめたい つべたい] n5 wanikani28
+青い [あおい] n5 wanikani5
+吹く [ふく] n5 wanikani40
+頁 [ページ] n5
+奥さん [おくさん] n2 n5 wanikani38
+引く [ひく] n5 wanikani3
+段々 [だんだん] n1 n5 wanikani27
+習う [ならう] n5 wanikani10
+彼処 [あそこ あすこ かしこ あしこ あこ アソコ] n1 n5
+狭い [せまい] n5 wanikani24
+軽い [かるい かろい] n5 wanikani10
+脱ぐ [ぬぐ] n5 wanikani22
+万-1 [まん よろず] n5 wanikani3
+煩い [うるさい ウルサイ うっさい] n1 n5 wanikani60
+並ぶ [ならぶ] n5 wanikani28
+吸う [すう] n5 wanikani22
+詰らない [つまらない] n1 n5
+閉まる [しまる] n5 wanikani29 wanikani35
+咲く [さく] n5 wanikani48
+真っ直ぐ [まっすぐ] n3 n5
+一 [いち] n5 wanikani1
+お祖母さん [おばあさん おばーさん] n1 n5 wanikani47
+其方 [そちら そっち そなた そち] n1 n5
+涼しい [すずしい] n5 wanikani46
+厚い [あつい] n5 wanikani20
+お兄さん [おにいさん] n5 wanikani7
+お姉さん [おねえさん] n5 wanikani6
+汚い [きたない] n5 wanikani36
+並べる [ならべる] n5 wanikani30
+危ない [あぶない] n5 wanikani16
+お腹 [おなか] n3 n5 wanikani29
+不味い [まずい マズイ マズい] n1 n5 wanikani17
+ご飯 [ごはん] n5 wanikani15 wanikani39
+曇る [くもる] n5 wanikani45
+磨く [みがく] n5 wanikani45
+お菓子 [おかし] n5 wanikani26
+お菓子 [おかし] n5 wanikani26
+賑やか [にぎやか] n5
+鳴く [なく] n5 wanikani10
+夕飯 [ゆうはん ゆうめし] n5
+葉書 [はがき ハガキ] n5 wanikani18
+Ｙシャツ [ワイシャツ] n5
+朝ご飯 [あさごはん] n5 wanikani8 wanikani17
+六つ [むっつ むつ] n5 wanikani2
+お手洗い [おてあらい] n1 n5 wanikani22
+お巡りさん [おまわりさん] n1 n5
+差す [さす] n5 wanikani24
+零 [れい] n5 wanikani46
+二十日 [はつか にじゅうにち] n5 wanikani4
+粁 [キロメートル] n5
+八つ [やっつ やつ] n5 wanikani1
+再来年 [さらいねん] n2 n5 wanikani26
+燐寸 [マッチ] n5
+彼-1 [かれ] n4 wanikani35
+良く [よく] n5
+其処 [そこ] n1 n5
+小さな [ちいさな] n5
+答える [こたえる] n5 wanikani8
+もう一度 [もういちど] n5
+要る [いる] n5 wanikani9
+背-1 [せ] n5 wanikani30
+お弁当 [おべんとう] n5
+昼ご飯 [ひるごはん] n5 wanikani17
+晩御飯 [ばんごはん] n5 wanikani17
+客 [きゃく かく] n4
+祖父 [そふ じじ じい おおじ おじ そぶ] n4 wanikani32
+高校 [こうこう] n4 wanikani7
+近所 [きんじょ] n4 wanikani10
+農場 [のうじょう] n1 wanikani10
+番組 [ばんぐみ] n4 wanikani8
+見物 [けんぶつ] n4 wanikani11
+惑星 [わくせい] n1
+尾 [お] n1 wanikani20
+矢 [や さ] n1 wanikani3
+資料 [しりょう] n2 wanikani21
+面接 [めんせつ] n2 wanikani26 wanikani28
+解放 [かいほう] n2
+群れ [むれ] n2 wanikani39
+望遠鏡 [ぼうえんきょう] n2
+唇 [くちびる] n2 wanikani47
+書店 [しょてん] n2
+温泉 [おんせん] n2 wanikani12
+液体 [えきたい] n2 wanikani32
+井戸 [いど] n2 wanikani45
+通勤 [つうきん] n2 wanikani34
+演劇 [えんげき] n2
+煙突 [えんとつ] n2
+広場 [ひろば] n2
+垣根 [かきね] n2 wanikani43
+過失 [かしつ] n2
+果実 [かじつ] n2
+乾燥 [かんそう] n2 wanikani51
+乾杯 [かんぱい] n2 wanikani29
+電池 [でんち] n2 wanikani8
+皮膚 [ひふ] n2 wanikani51
+宣伝 [せんでん] n2 wanikani33
+電池 [でんち] n2 wanikani8
+矛盾 [むじゅん] n2 wanikani48
+競馬 [けいば] n2
+観念 [かんねん] n2 wanikani22
+回転 [かいてん] n2 wanikani10 wanikani14
+車庫 [しゃこ] n2 wanikani28
+吹雪 [ふぶき] n2
+虹 [にじ] n2 wanikani47
+火山 [かざん] n2 wanikani2
+水素 [すいそ] n2
+中世 [ちゅうせい] n2
+相撲 [すもう すまい] n2 wanikani43
+花火 [はなび] n2 wanikani4
+通貨 [つうか] n2 wanikani31
+基礎 [きそ] n2 wanikani49
+枕 [まくら] n2 wanikani30
+商業 [しょうぎょう] n2
+鐘 [かね] n2 wanikani45
+空想 [くうそう] n2
+停電 [ていでん] n2 wanikani23
+政党 [せいとう] n2 wanikani32
+公害 [こうがい] n2 wanikani20
+角度 [かくど] n2 wanikani9
+商業 [しょうぎょう] n2
+鐘 [かね] n2 wanikani45
+足跡 [あしあと そくせき] n2 wanikani39
+公共 [こうきょう] n2 wanikani11
+名所 [めいしょ などころ] n2 wanikani8
+公式 [こうしき] n2
+百科事典 [ひゃっかじてん] n2 n1
+牧場 [ぼくじょう まきば] n2 wanikani43
+地獄 [じごく] n1 wanikani35
+血液 [けつえき] n2 wanikani32
+紅葉 [こうよう もみじ] n2
+死体 [したい] n2 wanikani6
+強化 [きょうか] n2
+姿勢 [しせい] n2 wanikani22
+蒸気 [じょうき] n2 wanikani33
+車輪 [しゃりん] n2 wanikani13
+薬局 [やっきょく] n2
+消化 [しょうか] n2 wanikani12 wanikani14
+文体 [ぶんたい] n2
+磁石 [じしゃく じせき] n2 wanikani34
+神話 [しんわ] n2
+寺院 [じいん] n2
+乗り換え [のりかえ] n2 n1
+薬局 [やっきょく] n2
+看板 [かんばん] n2 wanikani29
+大工 [だいく] n2
+滝 [たき] n2 wanikani45
+面積 [めんせき] n2 wanikani29
+寮 [りょう] n2 wanikani46
+撮影 [さつえい] n2 wanikani30
+電力 [でんりょく] n2 wanikani8
+家屋 [かおく] n2
+酢 [す] n2 wanikani35
+顕微鏡 [けんびきょう] n2
+方言 [ほうげん] n2 wanikani6
+東洋 [とうよう] n2
+刺身 [さしみ] n2 wanikani28
+刺身 [さしみ] n2 wanikani28
+継続 [けいぞく] n2
+将棋 [しょうぎ] n2 wanikani39
+直線 [ちょくせん] n2
+伝記 [でんき] n2 wanikani11
+国籍 [こくせき] n2 wanikani43
+風船 [ふうせん] n2 wanikani7
+楽器 [がっき] n2 wanikani13
+血圧 [けつあつ] n2 wanikani20
+反省 [はんせい] n2 wanikani21
+給与 [きゅうよ] n2 wanikani27
+無限 [むげん] n2 wanikani25
+津波 [つなみ] n1 wanikani36
+香水 [こうすい] n2 wanikani37
+銅 [どう あか あかがね] n2 n1
+噴火 [ふんか] n2 wanikani52
+明け方 [あけがた] n2
+手首 [てくび] n2 wanikani6
+彫刻 [ちょうこく] n2 wanikani35
+包装 [ほうそう] n2
+倉庫 [そうこ] n2 wanikani31
+銅 [どう あか あかがね] n2 n1
+手前 [てまえ] n2
+引き分け [ひきわけ] n2 n1 wanikani4
+表紙 [ひょうし] n2
+先祖 [せんぞ] n2 wanikani32
+煮る [にる] n2 wanikani49
+深夜 [しんや] n2 wanikani12
+商社 [しょうしゃ] n2
+園芸 [えんげい] n2
+包丁 [ほうちょう] n2 wanikani41
+統一 [とういつ] n2
+電柱 [でんちゅう] n2 wanikani40
+太鼓 [たいこ] n2 wanikani57
+和服 [わふく] n2 wanikani9
+学年 [がくねん] n2 wanikani5
+分布 [ぶんぷ] n2
+行列 [ぎょうれつ] n2
+竹 [たけ タケ] n2 wanikani4
+記号 [きごう] n2
+古典 [こてん] n2
+農産物 [のうさんぶつ] n2
+漁師 [りょうし] n2 wanikani37
+宴会 [えんかい] n2 wanikani29
+算数 [さんすう] n2 wanikani10
+電球 [でんきゅう] n2
+親指 [おやゆび] n2 wanikani13
+編集 [へんしゅう] n2 wanikani31 wanikani33
+温室 [おんしつ] n2
+口紅 [くちべに] n2 wanikani36
+中年 [ちゅうねん] n2
+原理 [げんり] n2
+集合 [しゅうごう] n2
+測定 [そくてい] n2
+通路 [つうろ] n2
+光線 [こうせん] n2
+平日 [へいじつ ひらび] n2 wanikani4
+淡水 [たんすい] n2 wanikani49
+体操 [たいそう] n2 wanikani33
+複数 [ふくすう] n2 wanikani32
+餅 [もち もちい かちん あも] n2
+電波 [でんぱ デムパ デンパ] n2 wanikani11
+垂直 [すいちょく] n2 wanikani33
+水平 [すいへい] n2
+摩擦 [まさつ] n2 wanikani43
+売買 [ばいばい] n2
+性別 [せいべつ] n2
+皇居 [こうきょ こうぎょ] n1
+水分 [すいぶん] n2
+税関 [ぜいかん] n2
+確率 [かくりつ] n2 wanikani20
+歯磨き [はみがき] n2 n1
+複数 [ふくすう] n2 wanikani32
+交流 [こうりゅう] n2
+俳句 [はいく] n2 wanikani23
+自然科学 [しぜんかがく] n2
+大学院 [だいがくいん] n2 wanikani10
+湿度 [しつど] n2
+文房具 [ぶんぼうぐ] n2
+役所 [やくしょ] n2
+洗剤 [せんざい] n2 wanikani40
+随筆 [ずいひつ] n2 wanikani53
+名刺 [めいし] n2 wanikani26
+漁業 [ぎょぎょう] n2 wanikani37
+灯台 [とうだい] n2
+会館 [かいかん] n2
+吐き気 [はきけ はきげ] n2 wanikani36
+歯車 [はぐるま] n2
+仏像 [ぶつぞう] n1 wanikani16
+祝日 [しゅくじつ] n2 wanikani24
+観測 [かんそく] n2 wanikani35
+紫 [むらさき] n2 wanikani49
+貨物 [かもつ かぶつ] n2 wanikani31
+透明 [とうめい] n2 wanikani40
+車掌 [しゃしょう] n2 wanikani47
+電流 [でんりゅう] n2
+幼稚園 [ようちえん] n2 wanikani30
+工夫 [くふう] n2
+代名詞 [だいめいし] n2
+冠 [かんむり かん かむり かんぶり] n2 n1 wanikani54
+灯台 [とうだい] n2
+観測 [かんそく] n2 wanikani35
+電流 [でんりゅう] n2
+幼稚園 [ようちえん] n2 wanikani30
+気圧 [きあつ] n2
+真空 [しんくう] n2
+半島 [はんとう] n2
+発電 [はつでん] n2
+農薬 [のうやく] n2
+圧縮 [あっしゅく] n2
+郡 [ぐん こおり] n2 wanikani51
+流域 [りゅういき] n2
+頂点 [ちょうてん] n2
+転々 [てんてん] n2 n1
+官庁 [かんちょう] n2 wanikani24
+司会 [しかい] n2
+名物 [めいぶつ] n2 wanikani9
+社説 [しゃせつ] n2
+接続 [せつぞく] n2
+学部 [がくぶ] n2
+気圧 [きあつ] n2
+圧縮 [あっしゅく] n2
+為替 [かわせ かわし] n2
+学会 [がっかい] n2
+社会科学 [しゃかいかがく] n2
+西暦 [せいれき] n2 wanikani45
+杉 [すぎ スギ] n2 wanikani35
+輸血 [ゆけつ] n2 wanikani24
+浴衣 [ゆかた よくい] n2 wanikani43
+献立 [こんだて] n2
+測量 [そくりょう] n2
+炭鉱 [たんこう] n2 wanikani41
+筆記 [ひっき] n2
+紙幣 [しへい] n2 wanikani47
+自治 [じち] n2
+工芸 [こうげい] n2
+改札 [かいさつ] n2
+保健 [ほけん] n2
+峠 [とうげ] n2 wanikani59
+機関車 [きかんしゃ] n2
+機関車 [きかんしゃ] n2
+西暦 [せいれき] n2 wanikani45
+水源 [すいげん] n1
+海運 [かいうん] n1
+踏切 [ふみきり] n2
+曖昧 [あいまい] n2 n1
+梯子 [はしご ていし ハシゴ] n2 n1
+肘 [ひじ ヒジ] n2
+絨毯 [じゅうたん ジュータン ジュウタン] n2 n1
+編み物 [あみもの] n2
+釘 [くぎ クギ] n2
+茹でる [ゆでる うでる] n2 n1
+包帯 [ほうたい] n2
+気体 [きたい] n2
+胡椒 [こしょう コショウ コショー] n2
+飢饉 [ききん] n2
+煉瓦 [れんが レンガ] n2
+直角 [ちょっかく] n2
+錆 [さび] n2 n1
+迷信 [めいしん] n2 wanikani27
+失恋 [しつれん] n2 wanikani17
+櫛 [くし クシ] n2
+待合室 [まちあいしつ] n2 wanikani16
+名詞 [めいし なことば] n2 wanikani19
+省略 [しょうりゃく] n2 wanikani29
+蒸発 [じょうはつ] n2
+回り道 [まわりみち] n2
+扇風機 [せんぷうき] n2 wanikani47
+形容詞 [けいようし] n2 wanikani19
+裁縫 [さいほう] n2 wanikani56
+屑 [くず クズ] n2
+正方形 [せいほうけい] n2
+副詞 [ふくし] n2 wanikani22
+蕎麦 [そば そばむぎ そまむぎ] n2
+人差し指 [ひとさしゆび] n2 wanikani26
+消防署 [しょうぼうしょ] n2
+蛍光灯 [けいこうとう] n2
+定規 [じょうぎ] n2
+長方形 [ちょうほうけい] n2
+人文科学 [じんぶんかがく] n2
+敬語 [けいご] n2 wanikani33
+経度 [けいど] n2
+長方形 [ちょうほうけい] n2
+箒 [ほうき] n2
+海水浴 [かいすいよく] n2
+体積 [たいせき] n2 wanikani29
+矢印 [やじるし] n2 wanikani28
+人文科学 [じんぶんかがく] n2
+時間割 [じかんわり] n2
+肌着 [はだぎ はだぎぬ] n2
+薬指 [くすりゆび] n2
+水筒 [すいとう] n2
+便所 [べんじょ] n2 wanikani11
+温帯 [おんたい] n2
+下駄 [げた] n2 wanikani50
+噴水 [ふんすい] n2 wanikani52
+風呂敷 [ふろしき] n2
+障子 [しょうじ] n2 wanikani26
+複写 [ふくしゃ] n2 wanikani32
+手洗い [てあらい] n2 wanikani20
+と [と] n3 n1
+亜米利加 [アメリカ] n4
+螺子 [ねじ らし ネジ] n2 n1
+彼女 [かのじょ] n4 wanikani37
+思う [おもう] n4 wanikani6
+僕-1 [ぼく] n4 wanikani12
+必要 [ひつよう] n4 wanikani9
+見える [みえる] n4 wanikani4
+考える [かんがえる] n4 wanikani5
+為 [ため] n4
+黄金 [おうごん] n1
+始める [はじめる] n4 wanikani10
+受ける [うける ウケる] n4 wanikani9 wanikani29
+美しい [うつくしい] n4 wanikani9
+試験 [しけん] n4 wanikani9
+親切 [しんせつ] n4 wanikani10
+失敗 [しっぱい] n4 wanikani17
+以上 [いじょう] n4 wanikani7
+意見 [いけん] n4 wanikani11
+決して [けっして けして] n4
+十分 [じゅうぶん] n4
+試合 [しあい] n4 wanikani14
+一生懸命 [いっしょうけんめい] n4 wanikani40
+子 [こ] n4 n1 wanikani2
+探す [さがす] n4 n2 wanikani25 wanikani31
+急ぐ [いそぐ] n4 wanikani16
+選ぶ [えらぶ] n4 wanikani13
+送る [おくる] n4 wanikani9
+必ず [かならず] n4 wanikani7
+怒る [おこる いかる] n4 n1 wanikani27
+最近 [さいきん] n4 wanikani10
+払う [はらう] n4 wanikani35
+合う [あう おう] n4 wanikani12
+点-1 [てん] n4 wanikani6
+決める [きめる] n4 wanikani8
+笑う [わらう] n4 wanikani16
+最初 [さいしょ] n4 wanikani11
+反対 [はんたい] n4 wanikani8
+妻 [つま] n4 wanikani20
+嬢 [じょう] n1
+娘 [むすめ] n4 wanikani29
+理由 [りゆう わけ] n4 wanikani7
+喜ぶ [よろこぶ] n4 n2 wanikani17
+振り [ふり] n1
+昔 [むかし] n4 wanikani11
+約束 [やくそく] n4 wanikani14 wanikani16
+思い出す [おもいだす] n4 wanikani8
+変わる [かわる] n4 wanikani17
+正しい [ただしい] n4 wanikani2
+落ちる [おちる] n4 n1 wanikani10
+場所 [ばしょ] n4 wanikani8
+楽しむ [たのしむ] n4 n1 wanikani10
+利用 [りよう] n4
+間に合う [まにあう] n4 wanikani14
+今度 [こんど] n4 wanikani9
+予定 [よてい] n4 wanikani9
+訪ねる [たずねる] n4 wanikani27
+赤ん坊 [あかんぼう あかんぼ] n4 n2 wanikani22
+進む [すすむ] n4 wanikani10
+最後 [さいご] n4 wanikani10
+向かう [むかう] n4 n2
+興味 [きょうみ] n4 wanikani32
+通る [とおる] n4 wanikani7
+時代 [じだい] n4 wanikani7
+気持ち [きもち] n4 wanikani11
+途中 [とちゅう] n4 n1 wanikani27
+返事 [へんじ] n4 wanikani9
+簡単 [かんたん] n4 wanikani33
+深い [ふかい] n4 wanikani12
+起こす [おこす] n4 n1 wanikani14
+夫 [おっと] n4 wanikani15
+一度 [いちど ひとたび] n4
+場合 [ばあい] n4 wanikani14
+運ぶ [はこぶ] n4 wanikani10
+今夜 [こんや] n4 wanikani6
+死 [し] n1 wanikani6
+盗む [ぬすむ] n4 wanikani30
+習慣 [しゅうかん] n4 wanikani25
+大抵 [たいてい] n4 n3 wanikani37
+残る [のこる] n4 wanikani14
+残る [のこる] n4 wanikani14
+席 [せき] n4 wanikani17
+値段 [ねだん] n4 n3 wanikani27
+将来 [しょうらい] n4 wanikani36
+優しい [やさしい] n4 wanikani23
+致す [いたす] n4 wanikani38
+空気 [くうき] n4 wanikani5
+逃げる [にげる] n4 wanikani38
+役に立つ [やくにたつ] n4 wanikani8
+答え [こたえ] n4 n1 wanikani8
+予約 [よやく] n4 wanikani14
+機会 [きかい] n4 wanikani22
+原因 [げんいん げいいん] n4 wanikani17
+火事 [かじ] n4 wanikani9
+泥棒 [どろぼう ドロボー どろぼー] n4 wanikani33
+髪 [かみ] n4 wanikani44
+規則 [きそく] n4 wanikani23
+行う [おこなう] n4 wanikani5
+説得 [せっとく] n1 wanikani19 wanikani21
+助言 [じょげん じょごん] n1 wanikani8
+見つかる [みつかる] n4 n2
+代わり [かわり] n4 wanikani6
+打つ [うつ] n4 wanikani4
+厳しい [きびしい] n4 wanikani32
+増える [ふえる] n4 n2 wanikani21 wanikani40
+迎える [むかえる] n4 wanikani32
+理論 [りろん] n1 wanikani20
+怖い [こわい] n4 wanikani29 wanikani31
+紹介 [しょうかい] n4 wanikani35 wanikani37
+社長 [しゃちょう] n4 wanikani6
+集める [あつめる] n4 wanikani10
+怒り [いかり] n1 wanikani29
+星 [ほし] n4 wanikani6
+事務所 [じむしょ じムしょ] n4 wanikani21
+特に [とくに] n4 wanikani11
+集まる [あつまる] n4 n1 wanikani12
+比べる [くらべる] n4 wanikani19
+無理 [むり ムリ] n4 wanikani17
+用意 [ようい] n4 wanikani11
+落とす [おとす] n4 n1 wanikani12
+具合 [ぐあい ぐわい] n4 wanikani14
+壊れる [こわれる] n4 wanikani31
+倒れる [たおれる] n4 wanikani22
+味 [あじ] n4 wanikani11
+紳士 [しんし] n1 wanikani56
+秘書 [ひしょ] n1
+安全 [あんぜん あんせん] n4 wanikani6
+変 [へん] n4 wanikani15
+連絡 [れんらく] n4 wanikani19
+祖母 [そぼ ばば おおば おば うば] n4 wanikani32
+証拠 [しょうこ] n1 wanikani41
+大事 [だいじ] n4 n1 wanikani9
+壊す [こわす] n4 wanikani29
+下がる [さがる] n4 n1 wanikani1
+決まる [きまる キマる] n4 n1 wanikani10
+選挙 [せんきょ] n1 wanikani21 wanikani23
+楽しみ [たのしみ] n4 wanikani10
+汽車 [きしゃ] n4 wanikani18
+確か [たしか] n4
+隅 [すみ すま] n4 wanikani51
+可笑しい [おかしい] n4 n1
+運命 [うんめい] n1 wanikani11
+競争 [きょうそう] n4 wanikani11
+入院 [にゅういん] n4 wanikani10
+世 [よ] n1 wanikani4
+形 [かたち よう] n4 n3 wanikani7
+富 [とみ] n1 wanikani31
+天才 [てんさい] n1 wanikani2
+留守 [るす] n4 wanikani16
+景色 [けしき けいしょく] n4 wanikani25
+仕方 [しかた] n4 wanikani4
+首 [くび クビ] n4 wanikani6
+取引 [とりひき] n1
+君 [きみ] n4 wanikani8
+階 [かい] n1 wanikani12
+血 [ち] n4 wanikani6
+以内 [いない] n4
+危機 [きき] n1 wanikani20
+例えば [たとえば] n4 wanikani14
+交渉 [こうしょう] n1 wanikani17
+勝利 [しょうり] n1
+別れる [わかれる] n4 wanikani13
+予想 [よそう] n1 wanikani13
+棚 [たな] n4 wanikani44
+政策 [せいさく] n1 wanikani22
+距離 [きょり] n1 wanikani43
+引っ越す [ひっこす ひきこす] n4 wanikani34
+申し上げる [もうしあげる] n4
+複雑 [ふくざつ] n4 wanikani32
+品物 [しなもの] n4 wanikani18
+洪水 [こうずい] n1 wanikani56
+幽霊 [ゆうれい] n1 wanikani46
+同情 [どうじょう] n1
+技術 [ぎじゅつ] n4 wanikani16
+ご存じ [ごぞんじ] n4
+草 [くさ] n4 wanikani5
+航海 [こうかい] n1
+破壊 [はかい] n1 wanikani35
+以下 [いか いげ] n4 wanikani7
+自信 [じしん] n1 wanikani15
+両方 [りょうほう] n4 wanikani6
+倍 [ばい] n4 wanikani12
+港 [みなと] n4 wanikani12
+世代 [せだい] n1
+安心 [あんしん] n4 wanikani6
+大体 [だいたい] n4 wanikani5
+治療 [ちりょう じりょう] n1 wanikani36
+投資 [とうし] n1 wanikani21
+資格 [しかく] n1 wanikani21
+線 [せん] n4 wanikani10
+殺人 [さつじん] n1 wanikani13
+下げる [さげる] n4 wanikani1
+虫 [むし] n4 wanikani4
+小切手 [こぎって] n1
+小鳥 [ことり] n4
+高校生 [こうこうせい] n4 wanikani9
+反応 [はんのう はんおう] n1 wanikani22
+企画 [きかく] n1 wanikani21
+乗り換える [のりかえる] n4 wanikani38
+制服 [せいふく] n1 wanikani21
+報道 [ほうどう] n1 wanikani18
+賃金 [ちんぎん ちんきん] n1
+枝 [えだ] n4 wanikani34
+権力 [けんりょく] n1
+名誉 [めいよ] n1 wanikani40
+暴力 [ぼうりょく] n1 wanikani19
+貧困 [ひんこん] n1
+美 [び] n1
+寺 [てら] n4 wanikani15
+保険 [ほけん] n1 wanikani16
+店員 [てんいん ていいん] n4 wanikani12
+着物 [きもの] n4 wanikani14
+聖書 [せいしょ] n1 wanikani34
+孤独 [こどく] n1 wanikani52
+通う [かよう] n4 wanikani11
+妥協 [だきょう] n1 wanikani14 wanikani16
+終わり [おわり] n4 wanikani12
+帰り [かえり] n4
+昆虫 [こんちゅう] n1
+柔らかい [やわらかい] n4 n2 wanikani43
+柔らかい [やわらかい] n4 n2 wanikani43
+踏む [ふむ] n4 wanikani36
+丁寧 [ていねい] n4 wanikani46
+古代 [こだい] n1
+牧師 [ぼくし] n1 wanikani43
+保護 [ほご] n1 wanikani23
+判決 [はんけつ] n1
+向き [むき] n1
+規制 [きせい] n1
+真ん中 [まんなか] n4 n1
+裏 [うら] n4 wanikani33
+着陸 [ちゃくりく] n1
+倒産 [とうさん] n1 wanikani20
+冷える [ひえる] n4 wanikani32
+遠慮 [えんりょ] n4 n3 wanikani38 wanikani40
+飾る [かざる] n4 wanikani30
+表 [おもて] n4 wanikani9
+偏見 [へんけん] n1 wanikani52
+入浴 [にゅうよく] n1
+報酬 [ほうしゅう] n1 wanikani54
+財政 [ざいせい] n1
+報酬 [ほうしゅう] n1 wanikani54
+都合 [つごう] n4 wanikani12
+祈り [いのり] n1
+動機 [どうき] n1
+決断 [けつだん] n1
+暮れる [くれる] n4 wanikani35
+予言 [よげん] n1
+自己 [じこ] n1 wanikani35
+人民 [じんみん] n1
+革命 [かくめい] n1 wanikani23
+昼間 [ひるま ちゅうかん] n4 n1
+部長 [ぶちょう] n4
+改革 [かいかく] n1
+移民 [いみん] n1 wanikani28
+暴動 [ぼうどう] n1
+妊娠 [にんしん] n1 wanikani38
+真珠 [しんじゅ] n1 wanikani49
+爆弾 [ばくだん バクダン] n1 wanikani37
+死刑 [しけい] n1 wanikani37
+久しぶり [ひさしぶり] n4 n1 wanikani34
+実業家 [じつぎょうか] n1
+妊娠 [にんしん] n1 wanikani38
+引き出し [ひきだし] n4
+真珠 [しんじゅ] n1 wanikani49
+燃料 [ねんりょう] n1 wanikani24
+承諾 [しょうだく] n1 wanikani36
+権威 [けんい] n1 wanikani43
+民族 [みんぞく] n1 wanikani12
+人格 [じんかく] n1 wanikani14
+伝説 [でんせつ] n1 wanikani17
+定義 [ていぎ] n1 wanikani21
+網 [あみ] n1 wanikani42
+悪 [あく] n1
+会場 [かいじょう] n4
+植民地 [しょくみんち] n1
+体力 [たいりょく] n1 wanikani5
+孤児 [こじ みなしご] n1 wanikani52
+電灯 [でんとう] n4 wanikani48
+踊り [おどり] n4 wanikani48
+地理 [ちり] n4 wanikani7
+反乱 [はんらん] n1
+認識 [にんしき] n1
+物体 [ぶったい] n1
+圧力 [あつりょく] n1 wanikani20
+孤児 [こじ みなしご] n1 wanikani52
+脳 [のう] n1 wanikani18
+体力 [たいりょく] n1 wanikani5
+品質 [ひんしつ] n1 wanikani24
+宮殿 [きゅうでん] n1
+適当 [てきとう テキトー] n4 wanikani30
+芝 [しば] n1 wanikani42
+海峡 [かいきょう] n1 wanikani57
+福祉 [ふくし ふくち] n1 wanikani39
+細かい [こまかい] n4 wanikani19
+文書 [ぶんしょ もんじょ ぶんじょ] n1
+戦闘 [せんとう] n1 wanikani37
+探検 [たんけん] n1
+火星 [かせい] n1
+課長 [かちょう] n4 wanikani13
+理性 [りせい] n1 wanikani14
+盛ん [さかん] n4
+真理 [しんり] n1
+正義 [せいぎ] n1 wanikani21
+預金 [よきん] n1 wanikani30
+柱 [はしら] n1 wanikani40
+闇 [やみ] n1 wanikani48
+割合 [わりあい] n4 wanikani23
+出血 [しゅっけつ] n1 wanikani6
+声明 [せいめい] n1
+暖房 [だんぼう] n4 wanikani38
+日焼け [ひやけ] n1 wanikani18
+職員 [しょくいん] n1 wanikani23
+条約 [じょうやく] n1 wanikani21
+関税 [かんぜい] n1
+引き出す [ひきだす] n4 n2
+内閣 [ないかく] n1
+形態 [けいたい] n1
+固定 [こてい] n1
+憎しみ [にくしみ] n1 wanikani49
+固定 [こてい] n1
+思考 [しこう] n1
+尿 [にょう ゆばり いばり ゆまり ばり しい しし しと] n1 wanikani55
+良心 [りょうしん] n1
+視野 [しや] n1
+進化 [しんか] n1 wanikani10
+比例 [ひれい] n1 wanikani19
+概念 [がいねん] n1 wanikani49
+見積もり [みつもり] n1
+申す [もうす] n4 wanikani4
+退院 [たいいん] n4 n2 wanikani27
+売り場 [うりば] n4
+資産 [しさん] n1
+負債 [ふさい] n1
+独占 [どくせん] n1 wanikani26
+恋愛 [れんあい] n1 wanikani17
+面会 [めんかい] n1
+根源 [こんげん] n1 wanikani12
+転勤 [てんきん] n1
+看護 [かんご] n1
+不便 [ふべん] n4 wanikani11
+電線 [でんせん] n1
+運賃 [うんちん] n1
+乱用 [らんよう] n1
+権限 [けんげん] n1
+苦い [にがい] n4 wanikani9
+受付 [うけつけ] n4 wanikani11
+講堂 [こうどう] n4
+疲労 [ひろう] n1 wanikani45
+下宿 [げしゅく] n4
+在庫 [ざいこ] n1
+食料品 [しょくりょうひん] n4 wanikani16
+貴族 [きぞく] n1 wanikani34
+新聞社 [しんぶんしゃ] n4
+家出 [いえで] n1
+腐敗 [ふはい] n1 wanikani34
+遺跡 [いせき] n1 wanikani37
+山脈 [さんみゃく] n1 wanikani31
+与党 [よとう] n1
+奉仕 [ほうし] n1 wanikani55
+山脈 [さんみゃく] n1 wanikani31
+捕虜 [ほりょ] n1 wanikani55
+固体 [こたい] n1
+写す [うつす] n4 wanikani4
+天国 [てんごく] n1 wanikani6
+湯 [ゆ] n4 wanikani12
+腐敗 [ふはい] n1 wanikani34
+扉 [とびら] n1 wanikani47
+救済 [きゅうさい] n1
+定年 [ていねん] n1
+退学 [たいがく] n1
+人体 [じんたい] n1
+統制 [とうせい] n1
+実践 [じっせん] n1 wanikani54
+戦術 [せんじゅつ] n1
+原子 [げんし] n1 wanikani17
+設定 [せってい] n1 wanikani21
+収益 [しゅうえき] n1
+気質 [きしつ かたぎ] n1
+介護 [かいご] n1
+分裂 [ぶんれつ] n1 wanikani43
+得点 [とくてん] n1
+人体 [じんたい] n1
+実践 [じっせん] n1 wanikani54
+人質 [ひとじち] n1
+喜劇 [きげき] n1 wanikani17
+設定 [せってい] n1 wanikani21
+模型 [もけい] n1 wanikani25
+脅迫 [きょうはく] n1 wanikani48
+感染 [かんせん] n1 wanikani32
+証人 [しょうにん] n1 wanikani16
+政権 [せいけん] n1
+神秘 [しんぴ] n1
+家畜 [かちく] n1 wanikani48
+工業 [こうぎょう] n4 wanikani10
+屋上 [おくじょう] n4 wanikani11
+斜面 [しゃめん] n1 wanikani48
+主人公 [しゅじんこう] n1
+反発 [はんぱつ] n1
+堤防 [ていぼう] n1 wanikani50
+証人 [しょうにん] n1 wanikani16
+模型 [もけい] n1 wanikani25
+暗殺 [あんさつ] n1 wanikani13
+冷房 [れいぼう] n4 wanikani38
+下着 [したぎ] n4 wanikani14
+同調 [どうちょう] n1
+織物 [おりもの] n1 wanikani29
+本質 [ほんしつ] n1 wanikani24
+君主 [くんしゅ] n1
+襟 [えり] n1 wanikani51
+無効 [むこう] n1
+脂肪 [しぼう] n1 wanikani51
+天体 [てんたい] n1
+貨幣 [かへい] n1 wanikani47
+回路 [かいろ] n1
+抑圧 [よくあつ] n1 wanikani38
+詐欺 [さぎ] n1 wanikani47
+中立 [ちゅうりつ] n1
+清算 [せいさん] n1
+刃 [は] n1 wanikani44
+基金 [ききん] n1
+貨幣 [かへい] n1 wanikani47
+強制 [きょうせい] n1 wanikani21
+漁船 [ぎょせん] n1 wanikani37
+教員 [きょういん] n1
+畳-1 [たたみ] n4 wanikani47
+調理 [ちょうり] n1
+世帯 [せたい しょたい] n1
+前提 [ぜんてい] n1
+下痢 [げり] n1 wanikani60
+仕様 [しよう] n1
+墓地 [ぼち はかち] n1 wanikani31
+視覚 [しかく] n1 wanikani24
+解除 [かいじょ] n1
+枠 [わく] n1 wanikani39
+戯曲 [ぎきょく] n1 wanikani58
+作戦 [さくせん] n1 wanikani11
+利子 [りし] n1
+照明 [しょうめい] n1 wanikani30
+官僚 [かんりょう] n1 wanikani29
+お嬢さん [おじょうさん] n4 wanikani47
+発作 [ほっさ] n1
+小売 [こうり] n1
+驚異 [きょうい] n1
+均衡 [きんこう] n1 wanikani57
+沸かす [わかす] n4 wanikani53
+装飾 [そうしょく] n1
+結晶 [けっしょう] n1
+麻酔 [ますい] n1 wanikani48
+分子 [ぶんし] n1
+蜜 [みつ みち] n1 wanikani41
+反響 [はんきょう] n1 wanikani25
+映像 [えいぞう] n1 wanikani13
+財 [ざい] n1
+鉛 [なまり] n1 wanikani26
+街道 [かいどう] n1 wanikani29
+聴覚 [ちょうかく] n1
+反射 [はんしゃ] n1 wanikani34
+僧 [そう] n1
+義理 [ぎり] n1 wanikani21
+棄権 [きけん] n1
+兵器 [へいき] n1 wanikani17
+地形 [ちけい じぎょう] n1
+戸籍 [こせき] n1 wanikani43
+繊維 [せんい] n1 wanikani53
+音色 [ねいろ おんしょく] n1
+共鳴 [きょうめい] n1
+旅客 [りょかく りょきゃく] n1
+工学 [こうがく] n1 wanikani5
+融資 [ゆうし] n1 wanikani31
+農地 [のうち] n1
+怪獣 [かいじゅう] n1 wanikani26
+国土 [こくど くにつち] n1
+差異 [さい] n1
+化石 [かせき] n1
+行政 [ぎょうせい] n1
+迫害 [はくがい] n1 wanikani27
+株式 [かぶしき] n1 wanikani24
+錯覚 [さっかく] n1 wanikani56
+処罰 [しょばつ] n1
+化石 [かせき] n1
+迫害 [はくがい] n1 wanikani27
+炒める [いためる] n1
+株式 [かぶしき] n1 wanikani24
+同志 [どうし] n1
+脚本 [きゃくほん] n1 wanikani45
+沼 [ぬま] n1 wanikani43
+共感 [きょうかん] n1
+炭素 [たんそ] n1 wanikani41
+格 [かく] n1
+軍事 [ぐんじ] n1
+衛生 [えいせい] n1 wanikani32
+封鎖 [ふうさ] n1 wanikani52
+没収 [ぼっしゅう] n1 wanikani52
+茎 [くき] n1 wanikani54
+血管 [けっかん] n1 wanikani24
+漬ける [つける] n4 n2 wanikani57
+花粉 [かふん] n1
+刑罰 [けいばつ] n1 wanikani37
+軌範 [きはん] n1
+修士 [しゅうし] n1 wanikani28
+炭素 [たんそ] n1 wanikani41
+漬ける [つける] n4 n2 wanikani57
+軌範 [きはん] n1
+楽譜 [がくふ] n1 wanikani58
+刑罰 [けいばつ] n1 wanikani37
+演出 [えんしゅつ] n1
+給食 [きゅうしょく] n1
+拡散 [かくさん] n1
+岩石 [がんせき] n1
+手錠 [てじょう] n1 wanikani58
+窒息 [ちっそく] n1 wanikani56
+特急 [とっきゅう] n4 wanikani16
+偽造 [ぎぞう] n1 wanikani41
+捕鯨 [ほげい] n1 wanikani54
+星座 [せいざ] n1
+鳥居 [とりい] n1
+衆議院 [しゅうぎいん] n1 wanikani28
+品種 [ひんしゅ] n1
+動力 [どうりょく] n1
+語源 [ごげん] n1
+結核 [けっかく] n1
+動力 [どうりょく] n1
+捕鯨 [ほげい] n1 wanikani54
+根回し [ねまわし] n1
+鳥居 [とりい] n1
+地主 [じぬし] n1
+定食 [ていしょく] n1
+織り [おり] n1
+舗装 [ほそう] n1 wanikani53
+光沢 [こうたく] n1
+多数決 [たすうけつ] n1
+混血 [こんけつ] n1 wanikani19
+再建 [さいけん] n1 wanikani26
+保守 [ほしゅ] n1
+粥 [かゆ しゅく かい] n1
+味覚 [みかく] n1
+品種 [ひんしゅ] n1
+三味線 [しゃみせん さみせん] n1
+衆議院 [しゅうぎいん] n1 wanikani28
+品種 [ひんしゅ] n1
+書評 [しょひょう] n1 wanikani21
+語源 [ごげん] n1
+自我 [じが] n1
+定食 [ていしょく] n1
+主権 [しゅけん] n1
+風俗 [ふうぞく フーゾク] n1
+執着 [しゅうちゃく しゅうじゃく] n1 wanikani37
+偽造 [ぎぞう] n1 wanikani41
+呉れる [くれる] n4 n1
+過ぎる [すぎる] n4 wanikani22
+積もり [つもり] n4 n1
+殆ど [ほとんど] n4 n1
+止める [とめる] n4 n3 wanikani3
+酷い [ひどい] n4 n1 wanikani54
+遅れる [おくれる] n4 wanikani35
+続ける [つづける] n4 wanikani21
+手伝う [てつだう] n4 wanikani13
+見付ける [みつける みっける] n4 n2 wanikani9
+驚く [おどろく] n4 wanikani31
+開く [ひらく] n4
+眠る [ねむる ねぶる] n4 wanikani29
+勝つ [かつ] n4 wanikani9
+聞こえる [きこえる] n4 wanikani12
+尋ねる [たずねる] n4 wanikani31
+慣れる [なれる] n4 n2 wanikani25
+泣く [なく] n4 wanikani15
+屹度 [きっと キッと] n4 n1
+似る [にる] n4 wanikani31
+戻る [もどる] n4 wanikani37
+調べる [しらべる] n4 wanikani10
+伝える [つたえる] n4 wanikani11
+筈 [はず] n4 n1
+無くなる [なくなる] n4
+動く [うごく] n4 wanikani12
+知らせる [しらせる] n4
+続く [つづく] n4 wanikani19
+別 [べつ べち] n4 wanikani11
+鳴る [なる] n4 wanikani12
+市-1 [し] n4 wanikani3
+負ける [まける] n4 wanikani9
+悲しい [かなしい] n4 wanikani19
+亡くなる [なくなる] n4 wanikani6
+以外 [いがい] n4 wanikani7
+治す [なおす] n4 n2 wanikani6 wanikani16
+暫く [しばらく] n4 n1 wanikani42
+間違える [まちがえる] n4 wanikani28
+回る [まわる] n4 wanikani5
+確り [しっかり] n4 n1
+捨てる [すてる] n4 n2 wanikani32
+育てる [そだてる] n4 wanikani13
+褒める [ほめる] n4 n3 wanikani40
+石 [いし] n4 wanikani4
+恥ずかしい [はずかしい] n4 wanikani35
+塗る [ぬる] n4 wanikani48
+泊まる [とまる] n4 wanikani42
+片付ける [かたづける] n4
+止む [やむ] n4
+遠く [とおく] n4 wanikani18
+済む [すむ] n4 wanikani21
+到頭 [とうとう] n4
+捕まえる [つかまえる] n4
+新 [しん] n1
+踊る [おどる] n4 wanikani48
+足りる [たりる] n4 wanikani4
+治る [なおる] n4 wanikani6
+為さる [なさる] n4 n1
+硬い [かたい] n4 n3 n2 wanikani14 wanikani42 wanikani45
+建てる [たてる] n4 wanikani15
+角 [かく] n1
+凄い [すごい スゴイ スゴい] n4 n3
+謝る [あやまる] n4 wanikani13
+此れから [これから] n4
+立てる [たてる] n4 wanikani2
+寂しい [さびしい さみしい] n4 wanikani56
+濡れる [ぬれる] n4 n3
+投げる [なげる] n4 wanikani8
+太る [ふとる] n4 wanikani3
+寄る [よる] n4 wanikani29
+歯医者 [はいしゃ] n4 wanikani12
+召し上がる [めしあがる] n4 wanikani53
+参る [まいる] n4 wanikani14
+珍しい [めずらしい] n4 wanikani43
+揺れる [ゆれる] n4 wanikani44
+祈る [いのる] n4 wanikani18
+硝子 [ガラス しょうし] n4
+込む [こむ] n4 n1 wanikani21 wanikani32
+折る [おる] n4 wanikani14
+眠い [ねむい] n4 wanikani27
+お礼 [おれい おんれい] n4 wanikani4
+大学生 [だいがくせい] n4 wanikani7
+それ程 [それほど] n4 n1
+偶に [たまに] n4 n1 wanikani50
+痩せる [やせる] n4
+噛む [かむ] n4
+触る [さわる] n4 wanikani24
+億 [おく] n4 wanikani13
+瓦斯 [ガス] n4
+掏摸 [すり スリ] n4 n2
+無知 [むち] n1 wanikani17
+成程 [なるほど] n4 wanikani30
+焼く [やく] n4 wanikani18
+拾う [ひろう] n4 wanikani11
+割れる [われる] n4 wanikani25
+滑る [すべる] n4 n2 wanikani42
+些とも [ちっとも] n4 n1
+お宅 [おたく] n4
+折れる [おれる] n4 wanikani16
+移る [うつる] n4 wanikani30
+光る [ひかる] n4 wanikani7
+植える [うえる] n4 wanikani12
+字-1 [じ] n4 wanikani4
+差し上げる [さしあげる] n4 wanikani26
+崖 [がけ] n1 wanikani47
+焼ける [やける] n4 wanikani20
+取り替える [とりかえる] n4 wanikani27
+お祝い [おいわい] n4 wanikani26
+釣る [つる] n4 wanikani44
+乾く [かわく] n4 wanikani29
+嫉妬 [しっと] n1
+用事 [ようじ] n4 wanikani9
+混同 [こんどう] n1
+成るべく [なるべく] n4 n1
+顎 [あご がく アゴ] n1
+届ける [とどける] n4 wanikani26
+浅い [あさい] n4 wanikani15
+苛める [いじめる] n4 n1
+お土産 [おみやげ おみあげ] n4 wanikani22
+床屋 [とこや] n4 n2
+拝見 [はいけん] n4 n2 wanikani34
+お釣り [おつり] n4
+予習 [よしゅう] n4
+足す [たす] n4 wanikani6
+寝坊 [ねぼう] n4 wanikani22 wanikani24
+無口 [むくち] n1
+蕾 [つぼみ] n1
+蜂蜜 [はちみつ はつみつ ハチミツ] n1 wanikani41
+藁 [わら ワラ] n1
+夕焼け [ゆうやけ] n1 wanikani18
+語彙 [ごい] n1
+夕焼け [ゆうやけ] n1 wanikani18
+麻痺 [まひ マヒ] n1
+沸く [わく] n4 wanikani51
+忘れ物 [わすれもの] n4 wanikani20
+現像 [げんぞう] n1
+片思い [かたおもい] n1
+直感 [ちょっかん] n1
+復習 [ふくしゅう] n4 wanikani26
+逆立ち [さかだち] n1
+満月 [まんげつ] n1 wanikani25
+貝殻 [かいがら] n1
+班 [はん] n1 wanikani48
+元素 [げんそ] n1
+畜生 [ちくしょう ちきしょう チクショー] n1 wanikani48
+裸足 [はだし せんそく] n1 wanikani47
+近視 [きんし] n1 wanikani24
+名札 [なふだ] n1
+模倣 [もほう] n1
+滴 [しずく] n1
+器官 [きかん] n1
+助詞 [じょし] n1 wanikani19
+ご主人 [ごしゅじん] n4
+炬燵 [こたつ コタツ] n1
+再来週 [さらいしゅう] n4 n2 wanikani26
+再来月 [さらいげつ] n4 n2 wanikani26
+海流 [かいりゅう] n1
+略語 [りゃくご] n1 wanikani29
+暗示 [あんじ] n1
+外出 [がいしゅつ そとで] n3
+当時 [とうじ] n3
+案内 [あんない あない] n3 wanikani22
+地方 [ちほう] n3
+一方 [いっぽう] n3
+発展 [はってん] n3 wanikani24
+双子 [ふたご そうし] n3 wanikani42
+団体 [だんたい] n3
+夜中 [よなか] n3
+中央 [ちゅうおう] n3 wanikani4
+共同 [きょうどう] n3 wanikani11
+付く [つく] n4 wanikani9
+変える [かえる] n4 wanikani15
+阿弗利加 [アフリカ] n4
+斯う [こう] n4
+壷 [つぼ つほ つふ ツボ] n1
+時刻表 [じこくひょう] n1 wanikani34
+刺繍 [ししゅう] n1
+看護師 [かんごし] n4 wanikani23
+香辛料 [こうしんりょう] n1 wanikani44
+通り [とおり] n3 wanikani9
+埃 [ほこり あい ホコリ] n3
+でも [でも] n3 n5
+日-1 [にち] n3
+等 [など] n3 n5
+主語 [しゅご] n2 wanikani10
+零点 [れいてん] n2 wanikani46
+事 [こと こん] n3 wanikani9
+欧羅巴 [ヨーロッパ] n3
+クラス [クラス] n5
+プール [プール] n5
+彼ら [かれら] n3 wanikani35
+我々 [われわれ] n3 wanikani28
+方-1 [ほう] n3 wanikani3
+成功 [せいこう] n3 wanikani11
+何か [なにか なんか] n3
+尻 [しり] n3
+出発 [しゅっぱつ] n3 wanikani9
+起こる [おこる] n3 wanikani12
+考え [かんがえ] n3 wanikani7
+何も [なにも] n3 n1
+友人 [ゆうじん] n3 wanikani3
+努力 [どりょく] n3 wanikani11
+終える [おえる] n3
+最も [もっとも もとも] n3 wanikani10
+素晴らしい [すばらしい すんばらしい] n3 wanikani23
+運転 [うんてん] n3 wanikani10
+重要 [じゅうよう] n3 wanikani9
+助ける [たすける] n3 wanikani8
+幸せ [しあわせ しやわせ] n3 wanikani16
+心配 [しんぱい] n3 wanikani10 wanikani12
+感じる [かんじる] n3 wanikani13
+提案 [ていあん] n3 wanikani22 wanikani24
+出席 [しゅっせき] n3 wanikani17
+他人 [たにん ひと あだびと] n3 n1 wanikani4
+以前 [いぜん] n3 wanikani7
+価値 [かち] n3 wanikani22
+間違い [まちがい] n3 wanikani26
+突然 [とつぜん] n3 wanikani26
+賛成 [さんせい] n3 n1 wanikani32 wanikani34
+老人 [ろうじん] n3 wanikani11
+愛する [あいする] n3
+到着 [とうちゃく] n3 wanikani42
+満足 [まんぞく] n3 wanikani25
+氏-1 [し] n3 wanikani7
+守る [まもる] n3 wanikani16
+失う [うしなう] n3 wanikani7
+只 [ただ タダ] n3 n2 wanikani49
+下さる [くださる] n3
+方法 [ほうほう] n3 wanikani15
+無駄 [むだ ムダ] n3 wanikani50
+援助 [えんじょ] n3 wanikani22 wanikani24
+合格 [ごうかく] n3 wanikani14
+許す [ゆるす] n3 wanikani18
+世話 [せわ] n3
+帰宅 [きたく] n3
+会合 [かいごう] n3
+事件 [じけん] n3 wanikani21
+お前 [おまえ おまい] n3 wanikani8
+議論 [ぎろん] n3 wanikani20
+困難 [こんなん] n3 wanikani20
+決心 [けっしん] n3 wanikani8
+要求 [ようきゅう] n3 wanikani10 wanikani12
+駄目 [だめ ダメ] n3 wanikani50
+休暇 [きゅうか] n3 wanikani27
+年間 [ねんかん] n3
+受け取る [うけとる] n3
+結局 [けっきょく] n3 wanikani17
+激しい [はげしい] n3 wanikani26
+尊敬 [そんけい] n3 wanikani33 wanikani35
+準備 [じゅんび] n3 wanikani23 wanikani25
+大いに [おおいに] n3 wanikani2
+滞在 [たいざい] n3
+全然 [ぜんぜん] n3 wanikani13
+参加 [さんか] n3 wanikani19 wanikani21
+現れる [あらわれる] n3 n1 wanikani23
+扱う [あつかう] n3 wanikani38
+実行 [じっこう] n3
+離れる [はなれる] n3 wanikani31
+貧しい [まずしい] n3 wanikani30
+出来るだけ [できるだけ] n3
+偉大 [いだい] n3 wanikani51
+望む [のぞむ] n3 wanikani14
+修理 [しゅうり しゅり すり] n3 wanikani28
+誤り [あやまり] n3 wanikani36
+目的 [もくてき] n3 wanikani14
+感謝 [かんしゃ] n3 wanikani13
+示す [しめす] n3 wanikani22
+教師 [きょうし] n3 wanikani23
+全員 [ぜんいん ぜいいん] n3 wanikani12
+相手 [あいて] n3 wanikani9
+人気 [にんき] n3 wanikani4
+招待 [しょうたい しょうだい] n3 wanikani27
+黙る [だまる] n3 wanikani46
+完全 [かんぜん] n3 wanikani14
+出会う [であう] n3 n1 wanikani10
+実際 [じっさい] n3 wanikani21
+辺り [あたり] n3 n1 wanikani7
+冗談 [じょうだん ぎだん げだん] n3 wanikani16
+歌手 [かしゅ] n3 wanikani10
+能力 [のうりょく] n3 wanikani14
+才能 [さいのう] n3 wanikani14
+敵-1 [てき] n3
+自慢 [じまん] n3 wanikani52
+選手 [せんしゅ] n3 wanikani13
+欠点 [けってん] n3 wanikani7
+一体 [いったい] n3 wanikani7
+素敵 [すてき ステキ] n3 n1 wanikani21
+更に [さらに] n3 wanikani30
+回復 [かいふく] n3 wanikani26 wanikani28
+熱心 [ねっしん] n3 wanikani13
+判断 [はんだん] n3 wanikani21 wanikani23
+訪問 [ほうもん] n3 wanikani27
+態度 [たいど] n3 wanikani22
+給料 [きゅうりょう] n3 wanikani27
+注文 [ちゅうもん] n3 wanikani11 wanikani13
+既に [すでに すんでに] n3 wanikani31
+決定 [けってい] n3 wanikani9 wanikani11
+次第 [しだい] n3
+影響 [えいきょう] n3 wanikani25
+年齢 [ねんれい] n3 wanikani38
+正確 [せいかく] n3 wanikani20
+主張 [しゅちょう] n3
+便り [たより だより] n3
+延期 [えんき] n3 wanikani30
+土地 [とち どおじ どじ どち] n3 wanikani6
+信用 [しんよう] n3 wanikani15
+旅 [たび] n3 wanikani12
+喜び [よろこび] n3 n2 wanikani19
+苦労 [くろう] n3 wanikani11
+商売 [しょうばい] n3 wanikani12
+奪う [うばう] n3 wanikani39
+提出 [ていしゅつ] n3 wanikani22
+姿 [すがた] n3 wanikani22
+回 [かい] n3 wanikani5
+状況 [じょうきょう] n3 wanikani25
+追いつく [おいつく] n3 wanikani13
+話し合う [はなしあう] n3
+好む [このむ] n3 wanikani15
+明らか [あきらか] n3
+不足 [ふそく] n3 wanikani4
+書類 [しょるい] n3 wanikani18
+単語 [たんご] n3 wanikani15
+邪魔 [じゃま] n3 wanikani50
+万一 [まんいち ばんいち まんいつ ばんいつ] n3
+変化 [へんか] n3 wanikani15
+恐れる [おそれる] n3 wanikani31
+最高 [さいこう] n3 wanikani10
+幸運 [こううん] n3 wanikani16
+越える [こえる] n3 n2 wanikani30
+種類 [しゅるい] n3 wanikani18
+事態 [じたい] n3
+越える [こえる] n3 n2 wanikani30
+状態 [じょうたい] n3 wanikani22
+調子 [ちょうし] n3 wanikani10
+得意 [とくい] n3 wanikani19
+以来 [いらい] n3
+成長 [せいちょう] n3
+必ずしも [かならずしも] n3
+隠す [かくす] n3 wanikani25
+恐ろしい [おそろしい] n3 wanikani29
+残す [のこす] n3 wanikani16
+光景 [こうけい] n3 wanikani25
+頼る [たよる] n3 wanikani38
+実は [じつは] n3
+戦う [たたかう] n3 wanikani13 wanikani37
+常に [つねに] n3 wanikani17
+誇り [ほこり] n3
+性格 [せいかく] n3 wanikani14
+借金 [しゃっきん] n3 wanikani18
+中止 [ちゅうし] n3 wanikani3
+達する [たっする] n3
+容易 [ようい] n3 wanikani19
+性格 [せいかく] n3 wanikani14
+勝ち [かち] n3 wanikani11
+乗客 [じょうきゃく じょうかく] n3 n1
+天候 [てんこう] n3 wanikani25
+罪 [つみ] n3 wanikani20
+地位 [ちい] n3
+一層 [いっそう] n3 wanikani24
+再び [ふたたび] n3 wanikani26
+立場 [たちば] n3
+備える [そなえる] n3 n2 wanikani23
+命 [いのち] n3 wanikani11
+職 [しょく そく] n3
+欠席 [けっせき] n3 wanikani17
+不思議 [ふしぎ] n3 wanikani20
+環境 [かんきょう] n3 wanikani24
+傾向 [けいこう] n3 wanikani38
+是非 [ぜひ] n3 wanikani17
+燃える [もえる] n3 wanikani26
+覆う [おおう] n3 wanikani51
+覆う [おおう] n3 wanikani51
+供給 [きょうきゅう] n3 wanikani27
+手段 [しゅだん] n3
+不幸 [ふこう] n3 wanikani16
+断る [ことわる] n3 wanikani21
+感動 [かんどう] n3 wanikani13
+乗せる [のせる] n3 n2 wanikani9 wanikani26
+先日 [せんじつ] n3 wanikani4
+感じ [かんじ] n3 wanikani13
+表現 [ひょうげん] n3 wanikani23
+無視 [むし] n3 wanikani24
+閉じる [とじる] n3 wanikani35
+奇妙 [きみょう] n3 wanikani29
+明かり [あかり] n3 wanikani48
+支払う [しはらう] n3
+余裕 [よゆう] n3 wanikani20
+変更 [へんこう] n3 wanikani30
+違い [ちがい] n3 wanikani24
+美人 [びじん] n3 wanikani9
+合わせる [あわせる] n3 wanikani14
+実現 [じつげん] n3
+無事 [ぶじ] n3 wanikani17
+仲間 [なかま] n3 wanikani11
+成績 [せいせき] n3 wanikani32
+雇う [やとう] n3 wanikani39
+殺す [ころす] n3 wanikani13
+様々 [さまざま] n3 wanikani13
+発表 [はっぴょう] n3 wanikani9
+許可 [きょか] n3 wanikani18
+恐らく [おそらく] n3 n1 wanikani31
+全体 [ぜんたい] n3
+製品 [せいひん] n3 wanikani24
+歓迎 [かんげい] n3 wanikani34
+疑う [うたがう] n3
+大部分 [だいぶぶん] n3
+通す [とおす] n3 wanikani9
+女優 [じょゆう] n3 wanikani25
+最終 [さいしゅう] n3 wanikani10
+想像 [そうぞう] n3 wanikani13
+動かす [うごかす] n3 wanikani14
+動かす [うごかす] n3 wanikani14
+増加 [ぞうか] n3 wanikani21
+経営 [けいえい] n3
+物事 [ものごと] n3
+便 [びん] n3
+横断 [おうだん] n3
+救う [すくう] n3 wanikani31
+唯一 [ゆいいつ ゆいつ ゆういつ] n3 wanikani49
+関心 [かんしん] n3 wanikani16
+育つ [そだつ] n3 wanikani11
+現代 [げんだい] n3
+支払い [しはらい] n3 wanikani37
+際-1 [さい] n3
+婦人 [ふじん] n3 wanikani28
+相談 [そうだん] n3 wanikani9
+王 [おう] n3 wanikani2
+活動 [かつどう] n3 wanikani12
+考慮 [こうりょ] n3 wanikani38
+貯金 [ちょきん] n3 wanikani26
+出来事 [できごと] n3
+恋 [こい] n3 wanikani17
+命じる [めいじる] n3
+結論 [けつろん] n3
+劇 [げき] n3 wanikani17
+人類 [じんるい] n3 wanikani18
+見送り [みおくり] n3
+分ける [わける] n3 wanikani3
+文句 [もんく] n3 wanikani18
+桜 [さくら サクラ] n3 wanikani32
+人物 [じんぶつ] n3
+協力 [きょうりょく] n3 wanikani14
+食料 [しょくりょう] n3
+望み [のぞみ] n3 wanikani14
+略 [ほぼ] n3
+食物 [しょくもつ] n3
+確かめる [たしかめる] n3 wanikani22
+一生 [いっしょう] n3 wanikani5
+処理 [しょり] n3 wanikani28
+癖 [くせ へき クセ] n3 wanikani46
+加える [くわえる] n3 wanikani19
+愛情 [あいじょう] n3 wanikani17
+確認 [かくにん] n3 wanikani21 wanikani23
+処理 [しょり] n3 wanikani28
+部分 [ぶぶん] n3 wanikani9
+当てる [あてる] n3 wanikani8
+日曜 [にちよう] n3
+同様 [どうよう] n3
+報告 [ほうこく] n3 wanikani18
+直ちに [ただちに] n3
+可能 [かのう] n3 wanikani18
+眺める [ながめる] n3 wanikani45
+画家 [がか] n3
+禁止 [きんし] n3 wanikani18
+様子 [ようす] n3
+自身 [じしん] n3
+高価 [こうか] n3
+深刻 [しんこく] n3 wanikani34
+穴 [あな] n3 wanikani20
+夫婦 [ふうふ めおと みょうと] n3 wanikani28
+警告 [けいこく] n3 wanikani18
+傷 [きず キズ] n3 n1 wanikani32
+警告 [けいこく] n3 wanikani18
+誘う [さそう いざなう] n3 wanikani27
+頂上 [ちょうじょう] n3
+穴 [あな] n3 wanikani20
+専攻 [せんこう] n3 wanikani28
+被害 [ひがい] n3 wanikani20
+評判 [ひょうばん] n3 wanikani21
+暮らし [くらし] n3 wanikani35
+慎重 [しんちょう] n3 wanikani39
+抱える [かかえる] n3
+用いる [もちいる] n3 wanikani3
+重大 [じゅうだい] n3
+繰り返す [くりかえす] n3 wanikani40
+目標 [もくひょう] n3 wanikani13
+犯人 [はんにん] n3 wanikani20
+味方 [みかた] n3 wanikani11
+夫人 [ふじん ぶにん はしかし] n3
+瓶 [びん ビン] n3 wanikani51
+損害 [そんがい] n3 wanikani34 wanikani36
+交換 [こうかん] n3
+好み [このみ] n3
+親しい [したしい] n3 wanikani10
+今回 [こんかい] n3 wanikani5
+限る [かぎる] n3 wanikani25
+例 [れい] n3
+相当 [そうとう] n3
+語る [かたる] n3 wanikani10
+骨-1 [ほね] n3 wanikani14
+演奏 [えんそう] n3 wanikani38
+世の中 [よのなか] n3 wanikani6
+料金 [りょうきん] n3 wanikani13
+幸い [さいわい] n3 wanikani18
+戦い [たたかい] n3 wanikani11
+内容 [ないよう] n3 wanikani19
+事情 [じじょう] n3 wanikani13
+列 [れつ] n3 wanikani15
+有効 [ゆうこう] n3
+破る [やぶる] n3 wanikani35
+有能 [ゆうのう] n3
+内容 [ないよう] n3 wanikani19
+有能 [ゆうのう] n3
+減る [へる] n3 n2 wanikani19
+本物 [ほんもの] n3 wanikani11
+次々 [つぎつぎ] n3 wanikani8
+役-1 [やく] n3 wanikani8
+数える [かぞえる] n3 wanikani8
+程度 [ていど] n3 wanikani28
+言わば [いわば] n3
+不満 [ふまん] n3
+従って [したがって] n3 n1
+岩 [いわ] n3 wanikani15
+貴重 [きちょう] n3 wanikani34
+区別 [くべつ] n3
+都会 [とかい] n3 wanikani12
+会員 [かいいん] n3 wanikani12
+回す [まわす] n3 wanikani8
+芝生 [しばふ] n3 wanikani42
+豊か [ゆたか] n3 wanikani25
+急速 [きゅうそく] n3
+計る [はかる] n3 n2 wanikani24 wanikani35
+組織 [そしき そしょく] n3 wanikani27
+豊か [ゆたか] n3 wanikani25
+面倒 [めんどう] n3 wanikani20
+失望 [しつぼう] n3 wanikani14
+裏切る [うらぎる] n3 wanikani33
+製造 [せいぞう] n3 wanikani26
+検査 [けんさ] n3 wanikani21 wanikani23
+加わる [くわわる] n3
+残り [のこり] n3 wanikani14
+批判 [ひはん] n3 wanikani21 wanikani23
+現場 [げんば げんじょう] n3 n1 wanikani23
+構う [かまう] n3 wanikani25
+税金 [ぜいきん] n3 wanikani21
+今後 [こんご] n3
+塀 [へい] n3 wanikani47
+手伝い [てつだい] n3
+有利 [ゆうり] n3
+豊富 [ほうふ] n3
+比較 [ひかく] n3 wanikani26 wanikani28
+願い [ねがい] n3
+有利 [ゆうり] n3
+豊富 [ほうふ] n3
+比較 [ひかく] n3 wanikani26 wanikani28
+構成 [こうせい] n3 wanikani25
+働き [はたらき] n3 n1
+直接 [ちょくせつ] n3 wanikani26
+結ぶ [むすぶ] n3
+息 [いき おき] n3 wanikani12
+快適 [かいてき] n3 wanikani30
+勘定 [かんじょう] n3 wanikani51
+囲む [かこむ かごむ] n3 wanikani14
+謎 [なぞ] n3 wanikani44
+絶対 [ぜったい] n3 wanikani28
+検討 [けんとう] n3 wanikani26
+組む [くむ] n3
+追う [おう] n3 wanikani11
+解釈 [かいしゃく] n3 wanikani51
+応じる [おうじる] n3 wanikani22
+詳しい [くわしい] n3 wanikani17
+解釈 [かいしゃく] n3 wanikani51
+友 [とも] n3
+刈る [かる] n3 wanikani49
+囲む [かこむ かごむ] n3 wanikani14
+需要 [じゅよう] n3 wanikani38
+共に [ともに] n3
+魅力 [みりょく] n3 wanikani30
+撃つ [うつ] n3 n2 wanikani28
+選択 [せんたく せんだく] n3 wanikani38 wanikani40
+減らす [へらす] n3 wanikani21
+害 [がい] n3
+握る [にぎる] n3 wanikani42
+思想 [しそう] n3 wanikani13
+冷静 [れいせい] n3 wanikani28
+確実 [かくじつ] n3
+飛び出す [とびだす] n3
+髪の毛 [かみのけ] n3 wanikani44
+適切 [てきせつ] n3
+悲しむ [かなしむ] n3 wanikani17
+汚染 [おせん] n3 wanikani32
+悩む [なやむ] n3 wanikani27
+作物-1 [さくもつ] n3
+時期 [じき] n3 wanikani12
+祝う [いわう] n3 wanikani24
+鋭い [するどい] n3 wanikani40
+支配 [しはい] n3
+注目 [ちゅうもく] n3
+休憩 [きゅうけい] n3 wanikani47
+姉妹 [しまい きょうだい] n3 n1 wanikani6
+答案 [とうあん] n3
+覚悟 [かくご] n3 wanikani49
+観察 [かんさつ] n3
+主要 [しゅよう] n3
+不利 [ふり] n3
+周囲 [しゅうい] n3 wanikani14
+可哀相 [かわいそう] n3 n1 wanikani47
+換える [かえる] n3 n2 wanikani6 wanikani25 wanikani36
+何で [なんで] n3
+集中 [しゅうちゅう] n3 wanikani10 wanikani11
+代表 [だいひょう] n3
+集中 [しゅうちゅう] n3 wanikani10 wanikani11
+注ぐ [そそぐ] n3
+嫌う [きらう] n3
+何で [なんで] n3
+試す [ためす] n3 wanikani11
+順調 [じゅんちょう] n3
+小包 [こづつみ] n3 wanikani45
+優秀 [ゆうしゅう] n3 wanikani23
+配達 [はいたつ はいだつ] n3 wanikani18
+混雑 [こんざつ] n3
+永久 [えいきゅう とこしえ とわ] n3 wanikani32
+軍 [ぐん] n3 wanikani15
+印-1 [しるし] n3 wanikani26
+分野 [ぶんや] n3
+玉 [たま] n3 wanikani2 wanikani37
+書物 [しょもつ] n3
+混乱 [こんらん] n3 wanikani19 wanikani21
+多少 [たしょう] n3
+一家 [いっか いっけ] n3
+景気 [けいき] n3
+混乱 [こんらん] n3 wanikani19 wanikani21
+就職 [しゅうしょく] n3 wanikani27
+講演 [こうえん] n3 wanikani35
+親友 [しんゆう] n3 wanikani10
+時刻 [じこく] n3
+衣服 [いふく] n3 wanikani41
+納得 [なっとく] n3 wanikani35
+外す [はずす] n3
+記入 [きにゅう] n3
+主義 [しゅぎ] n3 wanikani21
+国会 [こっかい] n3
+適用 [てきよう] n3
+合計 [ごうけい] n3 wanikani15
+承知 [しょうち] n3 wanikani34
+尊重 [そんちょう] n3
+食卓 [しょくたく] n3 wanikani45
+身長 [しんちょう] n3
+大半 [たいはん] n3
+制限 [せいげん] n3
+質 [しつ] n3 wanikani24
+制限 [せいげん] n3
+要素 [ようそ] n3
+管理 [かんり] n3 wanikani24
+布 [ぬの ふ にの にぬ] n3 wanikani19
+大半 [たいはん] n3
+論争 [ろんそう] n3
+苦痛 [くつう] n3
+皮 [かわ] n3 wanikani5
+穏やか [おだやか] n3 wanikani46
+範囲 [はんい] n3 wanikani42
+障害 [しょうがい] n3 wanikani26
+肌 [はだ はだえ] n3 wanikani45
+感心 [かんしん] n3 wanikani13
+克服 [こくふく] n3 wanikani42 wanikani44
+効果 [こうか] n3 wanikani25
+別れ [わかれ] n3
+維持 [いじ] n3 wanikani36 wanikani38
+承認 [しょうにん] n3 wanikani34
+移動 [いどう] n3 wanikani28
+年代 [ねんだい] n3
+科目 [かもく] n3 wanikani8
+貢献 [こうけん] n3 wanikani43
+年代 [ねんだい] n3
+試し [ためし] n3
+脇 [わき] n3 wanikani48
+度々 [たびたび] n3 n1
+順番 [じゅんばん] n3 wanikani19
+要するに [ようするに] n3
+陽気 [ようき] n3 wanikani12
+金銭 [きんせん] n3
+著者 [ちょしゃ] n3 wanikani33
+記者 [きしゃ] n3
+気温 [きおん] n3 wanikani12
+経由 [けいゆ けいゆう] n3
+底 [そこ] n3 wanikani17
+緊張 [きんちょう] n3 wanikani29 wanikani31
+巨大 [きょだい] n3 wanikani28
+風景 [ふうけい] n3
+軒 [のき] n3 wanikani51
+引っ張る [ひっぱる] n3
+保存 [ほぞん] n3 wanikani16
+軒 [のき] n3 wanikani51
+風景 [ふうけい] n3
+期間 [きかん] n3 wanikani12
+見舞い [みまい] n3 n1
+引退 [いんたい] n3 wanikani27
+損 [そん] n3 wanikani34
+代金 [だいきん] n3
+日光 [にっこう] n3 wanikani5
+表面 [ひょうめん] n3
+家賃 [やちん] n3 wanikani33
+開始 [かいし] n3 wanikani10
+同僚 [どうりょう] n3 wanikani29
+一般 [いっぱん] n3 wanikani36
+発達 [はったつ] n3
+関連 [かんれん] n3 wanikani19
+意思 [いし] n3
+技師 [ぎし] n3
+小麦 [こむぎ] n3
+通過 [つうか] n3
+通過 [つうか] n3
+後者 [こうしゃ] n3
+思わず [おもわず] n3 wanikani10
+付き合い [つきあい] n3
+食糧 [しょくりょう] n3 wanikani52
+泳ぎ [およぎ] n3 wanikani9
+請求 [せいきゅう] n3 wanikani29
+九 [きゅう く ここの この ここ] n3 wanikani1
+真っ赤 [まっか] n3
+温暖 [おんだん] n3 wanikani32
+差 [さ] n3
+住民 [じゅうみん] n3 wanikani9
+男子 [だんし] n3
+女子 [じょし おなご おみなご] n3 n1 wanikani2
+救助 [きゅうじょ] n3
+予測 [よそく] n3 wanikani35
+単に [たんに] n3 wanikani15
+非常 [ひじょう] n3 wanikani17
+王子 [おうじ] n3 wanikani2
+化粧 [けしょう けわい けそう] n3 wanikani47
+王子 [おうじ] n3 wanikani2
+見解 [けんかい] n3
+前進 [ぜんしん] n3
+予測 [よそく] n3 wanikani35
+徹夜 [てつや] n3 wanikani41
+支度 [したく] n3 wanikani11
+棒 [ぼう] n3 wanikani31
+意外 [いがい] n3 wanikani11
+抵抗 [ていこう] n3 wanikani37
+笑顔 [えがお] n3 wanikani16
+単なる [たんなる] n3
+印象 [いんしょう] n3
+積極的 [せっきょくてき] n3
+流す [ながす] n3 wanikani12
+虫歯 [むしば うし くし] n3 wanikani12
+普段 [ふだん] n3 wanikani31
+単純 [たんじゅん] n3 wanikani34
+破産 [はさん] n3 wanikani35
+適度 [てきど] n3
+疲れ [つかれ] n3 wanikani47
+意外 [いがい] n3 wanikani11
+金額 [きんがく] n3
+重視 [じゅうし] n3
+両替 [りょうがえ] n3 wanikani27
+妙 [みょう] n3 wanikani28
+勤め [つとめ] n3 wanikani36
+指導 [しどう] n3 wanikani23
+苦しい [くるしい] n3 wanikani9
+雰囲気 [ふんいき ふいんき] n3 wanikani14
+前者 [ぜんしゃ] n3
+場面 [ばめん] n3 wanikani16
+夜明け [よあけ] n3
+宿泊 [しゅくはく] n3 wanikani42
+刺激 [しげき] n3 wanikani26
+物理 [ぶつり] n3
+一瞬 [いっしゅん] n3 wanikani46
+操作 [そうさ] n3 wanikani33
+連続 [れんぞく] n3 wanikani19
+実施 [じっし] n3
+倒す [たおす] n3 wanikani20
+苦しい [くるしい] n3 wanikani9
+一時-1 [いちじ] n3 wanikani7
+半ば [なかば] n3
+担当 [たんとう] n3 wanikani24
+入場 [にゅうじょう] n3 wanikani8
+設計 [せっけい] n3
+粗末 [そまつ] n3
+欠陥 [けっかん] n3 wanikani52
+悲劇 [ひげき] n3 wanikani17
+死亡 [しぼう] n3 wanikani6
+演技 [えんぎ] n3 wanikani23
+清潔 [せいけつ] n3 wanikani28
+限界 [げんかい] n3 wanikani25
+材料 [ざいりょう] n3 wanikani14
+交際 [こうさい] n3
+症状 [しょうじょう] n3 wanikani27
+成人 [せいじん] n3
+格好 [かっこう かっこ カッコ] n3 wanikani14
+支出 [ししゅつ] n3
+主婦 [しゅふ] n3 wanikani28
+症状 [しょうじょう] n3 wanikani27
+進学 [しんがく] n3
+不正 [ふせい] n3 wanikani4
+住宅 [じゅうたく] n3 wanikani23
+特徴 [とくちょう] n3 wanikani26
+農民 [のうみん] n3 wanikani10
+活気 [かっき] n3 wanikani6
+委員 [いいん] n3 wanikani21
+礼儀 [れいぎ] n3 wanikani41
+審判 [しんぱん しんばん] n3 n1 wanikani21
+急激 [きゅうげき] n3
+推薦 [すいせん] n3 wanikani34
+生き物 [いきもの] n3
+党 [とう] n3
+最低 [さいてい] n3 wanikani11
+依頼 [いらい] n3 wanikani36
+支店 [してん] n3 wanikani8
+地区 [ちく] n3 wanikani15
+生地 [きじ] n3 wanikani8
+完了 [かんりょう] n3 wanikani14
+幅 [はば] n3 wanikani36
+生地 [きじ] n3 wanikani8
+整理 [せいり] n3 wanikani13 wanikani15
+厄介 [やっかい] n3 wanikani35
+拡大 [かくだい] n3 wanikani33
+支給 [しきゅう] n3
+課 [か] n3
+装置 [そうち] n3 wanikani33
+基本 [きほん] n3 wanikani14
+刑事 [けいじ] n3 wanikani37
+記念 [きねん] n3
+収める [おさめる] n3 n2 wanikani25 wanikani33
+予期 [よき] n3
+全国 [ぜんこく] n3 wanikani6
+設備 [せつび] n3
+発行 [はっこう] n3
+本人 [ほんにん] n3
+土曜 [どよう] n3
+手間 [てま] n3
+読み [よみ] n3
+豪華 [ごうか] n3 wanikani31
+正式 [せいしき] n3
+長期 [ちょうき] n3
+級 [きゅう] n3
+掲示 [けいじ] n3 wanikani37
+迎え [むかえ] n3 wanikani34
+券 [けん] n3 wanikani28
+微妙 [びみょう ビミョー] n3 wanikani28
+年月 [としつき ねんげつ] n3
+決まり [きまり] n3
+続き [つづき] n3
+水準 [すいじゅん] n3
+向い [むかい] n3
+敬意 [けいい] n3
+愉快 [ゆかい] n3 wanikani55
+強力 [きょうりょく] n3 wanikani7
+幕 [まく] n3 n1 wanikani34
+大気 [たいき] n3 wanikani4
+裁判 [さいばん] n3 wanikani23
+迷惑 [めいわく] n3 wanikani27
+迷惑 [めいわく] n3 wanikani27
+向い [むかい] n3
+予防 [よぼう] n3 wanikani20
+集まり [あつまり] n3 wanikani12
+図 [ず] n3 wanikani5
+飛行 [ひこう] n3
+出会い [であい] n3
+孫 [まご] n3 wanikani31
+陸 [りく おか] n3
+騒ぎ [さわぎ] n3
+輪-1 [わ] n3 wanikani13
+地 [ち] n3 wanikani6
+年中 [ねんじゅう ねんちゅう ねんぢゅう] n3 wanikani4
+組 [くみ] n3 wanikani7
+盛り [さかり] n3
+係 [かかり] n3 n1
+方々 [かたがた] n3
+心理 [しんり] n3 wanikani7
+問い [とい] n3
+違反 [いはん] n3 wanikani26
+中学 [ちゅうがく] n3
+通信 [つうしん] n3
+勢い [いきおい いきよい] n3 wanikani22
+順 [じゅん ずん] n3
+負け [まけ] n3
+事務 [じむ] n3
+野 [の や ぬ] n3
+稲 [いね イネ] n3 wanikani39
+金曜 [きんよう] n3
+宿 [やど] n3 wanikani13
+移す [うつす] n3 wanikani28
+始まり [はじまり] n3
+革 [かわ] n3 wanikani23
+天然 [てんねん] n3
+通行 [つうこう] n3
+候補 [こうほ] n3
+予報 [よほう] n3 wanikani18
+日常 [にちじょう] n3 wanikani17
+気味 [きみ きび] n3
+沖 [おき] n3
+互い [たがい] n3 wanikani35
+近代 [きんだい] n3
+徹底 [てってい] n3 wanikani41
+沖 [おき] n3
+木曜 [もくよう] n3
+境 [さかい きょう] n3 wanikani24
+恩 [おん] n3
+題 [だい] n3
+注 [ちゅう] n3
+自動 [じどう] n3 wanikani14
+連れ [つれ ツレ] n3
+名人 [めいじん] n3 wanikani4
+機関 [きかん] n3
+機嫌 [きげん] n3 wanikani20
+中古 [ちゅうこ ちゅうぶる] n3 wanikani3
+誠に [まことに しんに] n3 n1 wanikani43
+典型 [てんけい] n3
+束 [たば] n3 wanikani14
+嫁 [よめ] n3 wanikani45
+見当 [けんとう] n3
+嫁 [よめ] n3 wanikani45
+学 [がく] n3
+典型 [てんけい] n3
+祝い [いわい ゆわい] n3
+定期 [ていき] n3
+高速 [こうそく] n3
+加減 [かげん] n3
+作法 [さほう さくほう] n3
+参考 [さんこう] n3
+泉 [いずみ] n3 wanikani12
+段 [だん] n3
+図書 [としょ ずしょ] n3
+宅 [たく] n3 wanikani23
+火曜 [かよう] n3
+同時 [どうじ] n3 wanikani7
+局 [きょく] n3 wanikani8
+来 [らい] n3
+現れ [あらわれ] n3 n1
+不可 [ふか] n3
+老い [おい] n3
+老い [おい] n3
+下り [くだり] n3
+大戦 [たいせん] n3
+今に [いまに] n3
+勘 [かん] n3 wanikani49
+長所 [ちょうしょ] n2
+休息 [きゅうそく] n2
+湿気 [しっけ しっき] n2 wanikani45
+勝負 [しょうぶ] n2 wanikani9
+相互 [そうご] n2 wanikani35
+役人 [やくにん] n2 wanikani8
+引っ越し [ひっこし] n2
+海洋 [かいよう] n2
+上り [のぼり] n2
+関西 [かんさい かんせい かんぜい] n2 wanikani16
+正門 [せいもん] n2
+切っ掛け [きっかけ キッカケ] n2 n1
+南米 [なんべい] n2 wanikani8
+連合 [れんごう] n2
+下町 [したまち] n2 wanikani5
+一応 [いちおう] n2 wanikani22
+大小 [だいしょう] n2
+仕舞う [しまう] n3 n1
+様-2 [よう] n3
+貰う [もらう] n3
+全て [すべて] n3 wanikani6
+行けない [いけない] n3
+全く [まったく] n3 wanikani8
+履く [はく] n3 wanikani19
+信じる [しんじる] n3 wanikani15
+与える [あたえる] n3 wanikani25
+分-2 [ぶん] n3 wanikani3
+頃 [ころ ごろ] n3 wanikani45
+知らせ [しらせ] n3
+求める [もとめる] n3 wanikani10
+得る-1 [える] n3 wanikani19
+者 [もの もん] n3
+嬉しい [うれしい] n3
+可也 [かなり] n3 n1 wanikani45
+学ぶ [まなぶ] n3 wanikani5
+過ごす [すごす] n3 wanikani26
+位 [くらい] n3
+認める-1 [みとめる] n3 wanikani21
+気付く [きづく] n3 wanikani11
+頂く [いただく] n3 wanikani51
+遂に [ついに] n3
+先ず [まず] n3 wanikani4
+有らゆる [あらゆる] n3 n1
+宜しい [よろしい] n3 wanikani38
+暮らす [くらす] n3 wanikani33
+丸で [まるで] n3 n1
+数-1 [すう] n3
+如何しても [どうしても] n3 n1
+気に入る [きにいる] n3 wanikani4
+解く [とく] n3 wanikani23
+喋る [しゃべる] n3 n1
+寧ろ [むしろ] n3 wanikani46
+優れる [すぐれる] n3 wanikani25
+遅刻 [ちこく] n3 wanikani35
+何時でも [いつでも なんどきでも] n3 n1
+従う [したがう] n3 wanikani26
+例え [たとえ] n3 n1
+怪我 [けが ケガ] n3
+回り [まわり] n3
+益々 [ますます] n3 n1
+済みません [すみません] n3 n1
+現す [あらわす] n3 wanikani9 wanikani25
+少しも [すこしも] n3
+描く [えがく かく] n3 wanikani38
+丸 [まる マル] n3 wanikani2
+述べる [のべる] n3 wanikani24
+切れる [きれる] n3 wanikani3
+当たる [あたる] n3 wanikani5
+会-1 [かい] n3 wanikani5
+或 [ある] n3 n1
+向ける [むける] n3 wanikani8
+効く [きく] n3 wanikani11 wanikani25
+中中 [なかなか] n3 wanikani2
+約 [やく] n3 wanikani14
+避ける [さける よける] n3 wanikani38
+避ける [さける よける] n3 wanikani38
+賢い [かしこい] n3 wanikani48
+正に [まさに] n3 n1
+経つ [たつ] n3 wanikani20
+勿論 [もちろん] n3
+夢中 [むちゅう] n3 wanikani20
+諦める [あきらめる] n3
+掴む [つかむ] n3
+床-1 [ゆか] n3 wanikani42
+異なる [ことなる] n3 wanikani33
+随分 [ずいぶん] n3 wanikani53
+伸ばす [のばす] n3 n2 wanikani30 wanikani38
+飼う [かう] n3 wanikani32
+去る [さる] n3
+沈む [しずむ] n3 wanikani43
+輝く [かがやく] n3 wanikani48
+願う [ねがう] n3
+利口 [りこう] n3
+取れる [とれる] n3 wanikani16
+叩く [たたく] n3
+似合う [にあう] n3 wanikani33
+匂い [におい] n3
+偶々 [たまたま] n3
+招く [まねく] n3 wanikani27
+お喋り [おしゃべり] n3 n1
+任せる [まかせる] n3
+割る [わる] n3 wanikani23
+凝乎と [じっと じいっと じーっと じーと] n3
+触れる [ふれる] n3 wanikani26
+届く [とどく] n3 wanikani24
+所謂 [いわゆる] n3 n1
+解ける [とける] n3 wanikani21
+文-1 [ぶん] n3 wanikani2
+立ち上がる [たちあがる] n3
+不平 [ふへい] n3
+大した [たいした] n3 wanikani1
+腐る [くさる] n3 wanikani34
+宜しく [よろしく] n3 n1 wanikani40
+軈て [やがて] n3 n1
+伺う [うかがう] n3 wanikani41
+通じる [つうじる] n3
+罹る [かかる] n3
+稼ぐ [かせぐ] n3 wanikani45
+辞める [やめる] n3 wanikani16
+微笑む [ほほえむ] n3
+含む [ふくむ くくむ] n3 wanikani25
+苦しむ [くるしむ] n3 wanikani11
+種-1 [たね] n3
+近頃 [ちかごろ] n3 wanikani45
+詰まり [つまり] n3 n1
+叱る [しかる] n3 wanikani44
+基づく [もとづく] n3
+兎に角 [とにかく] n3 n1
+勧める [すすめる] n3 wanikani34 wanikani39
+責める [せめる] n3 wanikani21
+済ませる [すませる] n3
+苛々 [いらいら イライラ] n3 n1
+面-2 [めん] n3
+案 [あん] n3
+就く [つく] n3 wanikani27
+捕まる [つかまる] n3 wanikani25
+欠ける [かける] n3 wanikani7
+向く [むく] n3 wanikani6
+精々 [せいぜい] n3
+従兄弟 [いとこ じゅうけいてい] n3 wanikani28
+横切る [よこぎる] n3
+転ぶ [ころぶ まろぶ] n3 wanikani12
+下ろす [おろす] n3 wanikani38
+生まれ [うまれ] n3 wanikani5
+強調 [きょうちょう] n3 wanikani10
+生じる [しょうじる] n3
+其の儘 [そのまま そのまんま] n3 n1
+轢く [ひく] n3
+劣る [おとる] n3 wanikani49
+法 [ほう] n3
+隠れる [かくれる] n3 wanikani27
+度-1 [ど] n3 wanikani9
+吠える [ほえる] n3
+訴える [うったえる] n3 wanikani25
+繋ぐ [つなぐ] n3
+震える [ふるえる] n3 wanikani22
+怠ける [なまける] n3 wanikani54
+広がる [ひろがる] n3 wanikani33
+伸びる [のびる] n3 n2 wanikani36
+凍る [こおる] n3 wanikani28
+悪戯 [いたずら いたづら イタズラ] n3 n1 wanikani60
+罰する [ばっする] n3
+堪らない [たまらない] n3 n1
+生憎 [あいにく] n3
+飽きる [あきる] n3 wanikani56
+酔う [よう えう] n3 wanikani35
+濃い [こい] n3 wanikani27
+態と [わざと] n3 n1 wanikani22
+除く [のぞく] n3 wanikani31
+支える [ささえる] n3 wanikani8
+論じる [ろんじる] n3
+抜く [ぬく] n3 wanikani25
+満ちる [みちる] n3
+何時までも [いつまでも] n3 n1
+直に [じかに] n3
+直に [じかに] n3
+適する [てきする] n3
+陰-1 [かげ] n3 wanikani45
+若しも [もしも] n3 n1
+臭い [くさい] n3 wanikani20
+振る [ふる] n3 wanikani26
+途端 [とたん] n3
+通り過ぎる [とおりすぎる] n3
+真似 [まね マネ] n3 wanikani31
+喉 [のど のんど のみと のみど ノド] n3
+止す [よす] n3
+幼い [おさない いとけない] n3 wanikani28
+性-1 [せい] n3 wanikani14
+凡そ [およそ] n3 n1
+防ぐ [ふせぐ] n3 wanikani20
+行儀 [ぎょうぎ] n3
+抜ける [ぬける] n3 wanikani27
+不図 [ふと] n3 n1
+用心 [ようじん] n3
+物音 [ものおと] n3
+等しい [ひとしい] n3 wanikani18
+熱中 [ねっちゅう] n3
+省く [はぶく] n3 wanikani21
+上達 [じょうたつ] n3
+放す [はなす] n3 wanikani11
+取り上げる [とりあげる] n3
+諺 [ことわざ] n3
+逆らう [さからう] n3 wanikani28
+眺め [ながめ] n3 wanikani47
+気の毒 [きのどく] n3
+譲る [ゆずる] n3 wanikani39
+占める [しめる] n3 wanikani26
+増す [ます] n3 wanikani25
+申し込む [もうしこむ] n3 wanikani34
+即ち [すなわち] n3 n1
+詰める [つめる] n3 wanikani29
+可愛らしい [かわいらしい] n3 n1
+一人一人 [ひとりひとり ひとりびとり] n3
+一度に [いちどに] n3
+その内 [そのうち] n3 n1
+我が儘 [わがまま] n3 n1
+札 [さつ] n3 wanikani7
+狂う [くるう] n3 wanikani45
+頂戴 [ちょうだい] n3 wanikani53
+象-1 [ぞう ゾウ] n3 wanikani24
+迷子 [まいご] n3 wanikani27
+真剣 [しんけん] n3 wanikani35
+生-1 [なま] n3 wanikani3
+売れる [うれる] n3 wanikani9
+頻りに [しきりに] n3 n1 wanikani40
+食う [くう] n3
+飛ばす [とばす] n3 wanikani22
+指す [さす] n3 wanikani11
+要点 [ようてん] n3 wanikani9
+とんでも無い [とんでもない] n3
+至る [いたる] n3 wanikani41
+贅沢 [ぜいたく] n3 wanikani23
+居眠り [いねむり] n3 wanikani29
+真逆 [まさか] n3
+発車 [はっしゃ] n3
+最中 [さいちゅう さなか] n3
+停留所 [ていりゅうじょ] n3
+親戚 [しんせき] n3
+余分 [よぶん] n3
+反抗 [はんこう] n3 wanikani37
+進める [すすめる] n3
+上等 [じょうとう] n3
+今にも [いまにも] n3
+離す [はなす] n3 wanikani33
+越す [こす] n3 n2 wanikani32 wanikani38
+平ら [たいら] n3 wanikani4
+手品 [てじな] n3
+包み [つつみ] n3 wanikani43
+積もる [つもる] n3 wanikani29
+率 [りつ] n3
+覚める [さめる] n3
+哀れ [あわれ あはれ] n3 wanikani47
+綿 [めん] n3 wanikani46
+及ぼす [およぼす] n3 wanikani38
+稍 [やや] n3 n1
+稍 [やや] n3 n1
+咳 [せき しわぶき] n3
+切れ [きれ] n3
+器用 [きよう] n3 wanikani13
+説 [せつ] n3
+唸る [うなる] n3 n1
+粗い [あらい] n3 n2 wanikani55
+大屋 [おおや] n3
+節-2 [ふし] n3
+覚ます [さます] n3
+関する [かんする] n3
+原-1 [はら] n3
+違いない [ちがいない] n3
+銅貨 [どうか] n3
+仕舞った [しまった] n3 n1
+矢張り [やはり] n3
+頂きます [いただきます] n3 n1
+中-1 [ちゅう] n3
+御免 [ごめん ゴメン] n2 wanikani39
+一旦 [いったん] n2 wanikani55
+麓 [ふもと] n2
+生け花 [いけばな せいか] n2
+欧米 [おうべい] n2 wanikani29
+稽古 [けいこ] n2
+隙間 [すきま] n2 wanikani48
+箪笥 [たんす タンス] n2 n1
+瀬戸物 [せともの セトモノ] n2
+これ等 [これら] n3 n1
+旨い [うまい] n3 n1 wanikani43 wanikani50
+急に [きゅうに] n3 wanikani16
+番 [ばん] n3
+人ごみ [ひとごみ] n3 wanikani34
+持ち上げる [もちあげる] n3
+お昼 [おひる] n3
+小 [しょう] n3
+男の人 [おとこのひと] n3 wanikani5
+降り出す [ふりだす] n4
+自転 [じてん] n1
+葦 [あし よし アシ ヨシ] n1
+絶版 [ぜっぱん] n1
+年鑑 [ねんかん] n1
+風車 [ふうしゃ かざぐるま カザグルマ] n1
+手芸 [しゅげい] n1
+映写 [えいしゃ] n1
+浮力 [ふりょく] n1
+聴診器 [ちょうしんき] n1
+暗算 [あんざん] n1
+合流 [ごうりゅう] n2
+中 [なか] n5 wanikani2
+けど [けど けれど けれども けども けんど] n4 n2 n1
+テレビ [テレビ] n5
+コーヒー [コーヒー] n5
+ホテル [ホテル] n5
+ニュース [ニュース ニューズ] n5
+テーブル [テーブル] n5
+カメラ [カメラ キャメラ] n5
+タクシー [タクシー] n5
+スポーツ [スポーツ] n5
+ラジオ [ラジオ ラヂオ] n5
+ペン [ペン] n2 n5
+レストラン [レストラン レストラント] n5
+テスト [テスト] n5
+ベッド [ベッド] n5
+パン [パン] n5
+ナイフ [ナイフ] n5
+シャツ [シャツ] n5
+ネクタイ [ネクタイ] n5
+ギター [ギター] n5
+セーター [セーター スエーター セエター] n5
+米 [メートル] n5
+アパート [アパート] n5
+ポケット [ポケット] n5
+バター [バター] n5
+キロ [キロ] n3 n5
+スカート [スカート] n5
+レコード [レコード] n5
+エレベーター [エレベーター エレベータ] n5
+ズボン [ズボン] n5
+ポスト [ポスト] n5
+コピー [コピー] n3 n5
+シャワー [シャワー] n5
+ハンカチ [ハンカチ ハンケチ] n5
+一昨日 [おととい おとつい いっさくじつ] n2 n5 wanikani17
+テープ [テープ] n5
+ストーブ [ストーブ] n5
+カップ [カップ] n5
+テープレコーダー [テープレコーダー テープレコーダ テープ・レコーダー テープ・レコーダ] n5
+スプーン [スプーン スプン] n5
+ボールペン [ボールペン ボール・ペン] n5
+スリッパ [スリッパ] n5
+醤油 [しょうゆ しょうゆう しょゆ しょゆう] n2 n5 wanikani35
+はい [はい] n5
+日 [ひ] n4 wanikani2
+大分 [だいぶ だいぶん] n4 n2
+ペット [ペット] n5
+下る [くだる] n2
+間もなく [まもなく] n2 n1 wanikani8
+耐える [たえる] n2 n1 wanikani48 wanikani59
+上司 [じょうし] n1 wanikani15
+少なくとも [すくなくとも] n2 n1
+押さえる [おさえる] n2 n1
+知り合い [しりあい] n2 n1 wanikani14
+相変わらず [あいかわらず] n2 n1 wanikani17
+率直 [そっちょく] n2 n1
+努める [つとめる] n2
+殴る [なぐる] n2 n1 wanikani48
+慌てる [あわてる] n2 n1
+診る [みる] n2 wanikani29
+何とも [なんとも] n2 n1
+稀 [まれ] n2
+狙う [ねらう] n2 wanikani39
+迫る [せまる せる] n2 wanikani27
+預かる [あずかる] n2
+浮かべる [うかべる] n2
+交代 [こうたい] n2
+枯れる [かれる] n2 wanikani51
+当たり前 [あたりまえ] n2 n1 wanikani8
+外れる [はずれる] n2 wanikani3
+広げる [ひろげる] n2
+取り消す [とりけす] n2
+見送る [みおくる] n2 wanikani11
+伝わる [つたわる] n2 wanikani11
+分かれる [わかれる] n2
+刺す [さす] n2 wanikani26
+接する [せっする] n2
+売り上げ [うりあげ] n2 wanikani11
+配る [くばる] n2 wanikani10
+属する [ぞくする] n2
+作成 [さくせい] n2
+呼び出す [よびだす] n2
+手元 [てもと] n1
+積む [つむ] n2 wanikani31
+飢える [うえる かつえる] n2 wanikani48
+性質 [せいしつ] n2
+懐かしい [なつかしい] n2 wanikani30
+話し合い [はなしあい] n2 n1
+方針 [ほうしん] n2
+建つ [たつ] n2 wanikani17
+一切 [いっさい] n1
+兼ねる [かねる] n2 wanikani40
+一切 [いっさい] n1
+解散 [かいさん] n2 wanikani31
+生き生き [いきいき] n2
+余計 [よけい] n2 wanikani20
+夫妻 [ふさい] n2 wanikani20
+法則 [ほうそく] n2 wanikani23
+発揮 [はっき] n2 wanikani34
+女房 [にょうぼう にょうぼ にゅうぼう] n2
+国王 [こくおう] n2 wanikani6
+手続き [てつづき] n2 wanikani21
+本来 [ほんらい] n2 wanikani5
+実力 [じつりょく] n2 wanikani9
+日差し [ひざし] n2
+原稿 [げんこう] n2 wanikani53
+登場 [とうじょう] n2
+締め切り [しめきり] n2 n1 wanikani29
+通知 [つうち] n2
+別荘 [べっそう] n2 wanikani54
+幼児 [ようじ] n2 wanikani28
+一流 [いちりゅう] n2 wanikani12
+一流 [いちりゅう] n2 wanikani12
+動作 [どうさ] n2
+例外 [れいがい] n2 wanikani14
+傑作 [けっさく] n2 wanikani58
+絞る [しぼる] n2 wanikani25 wanikani56
+蚊 [か カ] n2 wanikani48
+集会 [しゅうかい] n2
+幼児 [ようじ] n2 wanikani28
+以降 [いこう] n2 wanikani34
+皮肉 [ひにく] n2 wanikani5
+身分 [みぶん] n2
+余る [あまる] n2 wanikani20
+不運 [ふうん] n2
+侵入 [しんにゅう] n2 wanikani41
+校舎 [こうしゃ] n2
+全身 [ぜんしん] n2 wanikani8
+狙い [ねらい] n2 wanikani37
+増大 [ぞうだい] n2
+低下 [ていか] n2
+仲良し [なかよし] n2 wanikani13
+身分 [みぶん] n2
+余る [あまる] n2 wanikani20
+周辺 [しゅうへん] n2
+食器 [しょっき] n2 wanikani13
+一定 [いってい いちじょう] n2 n1
+手入れ [ていれ] n2
+郵送 [ゆうそう] n2
+地点 [ちてん] n2
+分類 [ぶんるい] n2 wanikani18
+不当 [ふとう] n1
+特定 [とくてい] n2
+公正 [こうせい] n2
+高度 [こうど] n2
+改正 [かいせい] n2 wanikani19
+満点 [まんてん] n2 wanikani25
+小遣い [こづかい こずかい] n2 wanikani39
+項目 [こうもく] n2 wanikani39
+利害 [りがい] n2
+苦情 [くじょう] n2
+王女 [おうじょ おうにょ] n2 wanikani2
+見舞う [みまう] n2
+調整 [ちょうせい] n2
+利害 [りがい] n2
+項目 [こうもく] n2 wanikani39
+日の出 [ひので] n2
+高める [たかめる] n2
+刻む [きざむ] n2 wanikani34
+判事 [はんじ] n2
+標識 [ひょうしき] n2
+接近 [せっきん] n2
+乱暴 [らんぼう] n2 wanikani19
+統計 [とうけい] n2
+展開 [てんかい] n2 wanikani24
+学科 [がっか] n2
+時速 [じそく] n2
+手ごろ [てごろ] n2 wanikani45
+段階 [だんかい] n2 wanikani27
+教養 [きょうよう] n2
+娯楽 [ごらく] n2 wanikani44
+役目 [やくめ] n2 wanikani8
+素直 [すなお] n2
+総理大臣 [そうりだいじん] n2 wanikani31
+解答 [かいとう] n2
+往復 [おうふく] n2 wanikani26
+見本 [みほん] n2
+知人 [ちじん] n2
+役目 [やくめ] n2 wanikani8
+段階 [だんかい] n2 wanikani27
+頭脳 [ずのう] n2
+挟む [はさむ] n2 wanikani51
+崩れる [くずれる] n2 wanikani39
+娯楽 [ごらく] n2 wanikani44
+派手 [はで] n2 wanikani21
+前後 [ぜんご] n2
+無数 [むすう] n2
+反映 [はんえい] n2
+弱点 [じゃくてん] n2 wanikani7
+満員 [まんいん] n2 wanikani25
+箇所 [かしょ] n2 n1
+基準 [きじゅん] n2 wanikani23 wanikani24
+中身 [なかみ] n2
+祖先 [そせん] n2
+早口 [はやくち はやぐち] n2 wanikani6
+相違 [そうい] n2
+箇所 [かしょ] n2 n1
+空中 [くうちゅう] n2
+温まる [あたたまる あったまる ぬくまる] n2
+花嫁 [はなよめ] n2
+争う [あらそう] n2 wanikani11
+延長 [えんちょう] n2 wanikani30 wanikani32
+先頭 [せんとう] n2
+活躍 [かつやく] n2 wanikani39
+応援 [おうえん] n2 wanikani22 wanikani24
+調節 [ちょうせつ] n2
+分解 [ぶんかい] n2 wanikani21
+塊 [かたまり] n2 wanikani45
+輸送 [ゆそう] n2 wanikani24
+油断 [ゆだん] n2 wanikani35
+生存 [せいぞん] n2 wanikani16
+停車 [ていしゃ] n2
+停止 [ていし ちょうじ] n2 wanikani23
+箇所 [かしょ] n2 n1
+寄せる [よせる] n2
+受話器 [じゅわき] n2
+期限 [きげん] n2 wanikani25
+修繕 [しゅうぜん] n2
+終了 [しゅうりょう] n2 wanikani10
+冷やす [ひやす] n2 wanikani30
+寒気 [さむけ かんき] n1
+心得る [こころえる] n2 wanikani23
+干す [ほす] n2 wanikani17
+推定 [すいてい] n2 wanikani34
+防止 [ぼうし] n2 wanikani20
+割引 [わりびき] n2 n1 wanikani25
+葬式 [そうしき] n2 wanikani37
+賞金 [しょうきん] n2 wanikani13
+直後 [ちょくご] n2
+口実 [こうじつ] n2
+過程 [かてい] n2 wanikani28
+応対 [おうたい] n2
+過程 [かてい] n2 wanikani28
+直後 [ちょくご] n2
+開拓 [かいたく] n1 wanikani49
+標準 [ひょうじゅん] n2
+受験 [じゅけん] n2 wanikani9
+部品 [ぶひん] n2
+防止 [ぼうし] n2 wanikani20
+賞金 [しょうきん] n2 wanikani13
+見学 [けんがく] n2
+出迎える [でむかえる] n2
+純粋 [じゅんすい] n2 wanikani34
+短期 [たんき] n2 wanikani12
+上下-1 [じょうげ] n2
+申請 [しんせい] n2
+素質 [そしつ] n2
+気配 [けはい きはい] n2 n1
+月給 [げっきゅう] n2
+恩恵 [おんけい] n2
+直径 [ちょっけい] n2 wanikani31
+間隔 [かんかく] n2 wanikani49
+気配 [けはい きはい] n2 n1
+間隔 [かんかく] n2 wanikani49
+行事 [ぎょうじ] n2
+素質 [そしつ] n2
+見直す [みなおす] n2 wanikani8
+改める [あらためる] n2
+生る [なる] n2
+発売 [はつばい] n2 wanikani9
+恨み [うらみ] n2 wanikani49
+膨らむ [ふくらむ] n2 wanikani54
+不通 [ふつう] n2
+形式 [けいしき] n2
+神様 [かみさま] n2 wanikani13
+指定 [してい] n2 wanikani11
+活力 [かつりょく] n2
+発射 [はっしゃ] n2 wanikani34
+出迎える [でむかえる] n2
+純粋 [じゅんすい] n2 wanikani34
+商店 [しょうてん] n2
+英文 [えいぶん] n2 wanikani15
+真っ暗 [まっくら] n2
+親類 [しんるい] n2 wanikani18
+性能 [せいのう] n2
+休養 [きゅうよう] n2
+過剰 [かじょう] n2 wanikani53
+削る [けずる] n2 wanikani37
+英文 [えいぶん] n2 wanikani15
+窓口 [まどぐち] n2 wanikani33
+謙虚 [けんきょ] n2 wanikani39
+長男 [ちょうなん] n2
+一々 [いちいち] n2 n1
+未満 [みまん] n2
+公表 [こうひょう] n2
+売れ行き [うれゆき] n2 n1
+過半数 [かはんすう] n2
+日時 [にちじ] n2
+田園 [でんえん でんおん] n1
+裏口 [うらぐち] n2 wanikani33
+消極的 [しょうきょくてき] n2
+縮小 [しゅくしょう] n2 wanikani34
+過半数 [かはんすう] n2
+日時 [にちじ] n2
+田園 [でんえん でんおん] n1
+採点 [さいてん] n2
+筆者 [ひっしゃ] n2
+産物 [さんぶつ] n1
+次ぐ [つぐ] n2
+実物 [じつぶつ] n2
+受取り [うけとり] n2 n1
+未満 [みまん] n2
+縮小 [しゅくしょう] n2 wanikani34
+出迎え [でむかえ] n2
+来日 [らいにち] n2
+膨大 [ぼうだい] n2 wanikani52
+両側 [りょうがわ りょうそく] n2 wanikani17
+書留 [かきとめ] n2
+真っ先 [まっさき] n2
+功績 [こうせき] n2 wanikani32
+就任 [しゅうにん] n2
+整備 [せいび] n2
+夕日 [ゆうひ せきじつ せきよう] n2
+書留 [かきとめ] n2
+公衆 [こうしゅう] n2
+缶詰 [かんづめ] n2
+日陰 [ひかげ] n2
+混合 [こんごう] n2
+手帳 [てちょう] n2 wanikani48
+開会 [かいかい] n2
+綱 [つな] n2 wanikani42
+破片 [はへん] n2 wanikani41
+来日 [らいにち] n2
+理科 [りか] n2
+削除 [さくじょ] n2 wanikani37 wanikani39
+講師 [こうし] n2 wanikani35
+看病 [かんびょう] n2
+隔てる [へだてる] n2 wanikani49
+鑑賞 [かんしょう] n2
+兵隊 [へいたい] n2 wanikani28
+心身 [しんしん しんじん] n2 wanikani8
+膨大 [ぼうだい] n2 wanikani52
+綱 [つな] n2 wanikani42
+寿命 [じゅみょう] n2 wanikani35
+功績 [こうせき] n2 wanikani32
+栓 [せん] n2 wanikani55
+基盤 [きばん] n2 wanikani38
+循環 [じゅんかん] n2 wanikani55
+膨らます [ふくらます] n2
+民間 [みんかん] n2
+規律 [きりつ] n2 wanikani23
+直前 [ちょくぜん] n2
+強引 [ごういん] n2
+当日 [とうじつ] n2
+真っ白 [まっしろ ましろ] n2
+創作 [そうさく] n2
+先端 [せんたん] n2 wanikani27
+四季 [しき] n2 wanikani14
+有料 [ゆうりょう] n2
+用語 [ようご] n2
+在学 [ざいがく] n2
+交通機関 [こうつうきかん] n2
+盗難 [とうなん] n2
+工事 [こうじ] n2 wanikani9
+日程 [にってい] n2 wanikani28
+四季 [しき] n2 wanikani14
+雑音 [ざつおん] n2 wanikani32
+臨時 [りんじ] n2 wanikani37
+敷地 [しきち] n2
+民間 [みんかん] n2
+危うい [あやうい] n2
+有料 [ゆうりょう] n2
+膨らます [ふくらます] n2
+碁 [ご] n2 wanikani46
+材木 [ざいもく] n2 wanikani14
+問い合わせ [といあわせ] n2
+実例 [じつれい] n2
+重量 [じゅうりょう] n2
+循環 [じゅんかん] n2 wanikani55
+規律 [きりつ] n2 wanikani23
+夜間 [やかん] n2
+栓 [せん] n2 wanikani55
+意義 [いぎ] n2
+開放 [かいほう] n2 wanikani11
+斜め [ななめ なのめ] n2 wanikani48
+深まる [ふかまる] n2
+薄暗い [うすぐらい] n2
+寸法 [すんぽう] n2 wanikani44
+方面 [ほうめん] n2
+警備 [けいび] n2
+月末 [げつまつ つきずえ] n2 wanikani7
+対照 [たいしょう] n2
+貸家 [かしや かしいえ] n2
+高級 [こうきゅう] n2 wanikani11
+冷凍 [れいとう] n2
+容器 [ようき] n2
+限度 [げんど] n2 wanikani25
+区域 [くいき] n2 wanikani22
+休業 [きゅうぎょう] n2
+外部 [がいぶ] n2
+響き [ひびき] n2
+加速 [かそく] n2
+特殊 [とくしゅ] n2 wanikani52
+区域 [くいき] n2 wanikani22
+響き [ひびき] n2
+日用品 [にちようひん] n2
+回数 [かいすう] n2
+快晴 [かいせい] n2
+外部 [がいぶ] n2
+文脈 [ぶんみゃく] n2
+特色 [とくしょく] n2
+子孫 [しそん] n2 wanikani31
+改造 [かいぞう] n2 wanikani26
+学級 [がっきゅう] n2
+児童 [じどう] n2 wanikani28
+植木 [うえき] n2
+夕刊 [ゆうかん] n2 wanikani38
+方面 [ほうめん] n2
+以後 [いご] n2 wanikani7
+順序 [じゅんじょ] n2 wanikani32
+育児 [いくじ] n2
+架空 [かくう がくう] n2
+架空 [かくう がくう] n2
+水曜 [すいよう] n2
+成分 [せいぶん] n2
+正面 [しょうめん] n2
+青少年 [せいしょうねん] n2
+鉄砲 [てっぽう] n2
+屋外 [おくがい] n2
+欄 [らん] n2 wanikani54
+写る [うつる] n2 wanikani4
+何しろ [なにしろ] n2 n1
+長女 [ちょうじょ] n2
+片道 [かたみち] n2 wanikani39
+出勤 [しゅっきん] n2
+校庭 [こうてい] n2
+定期券 [ていきけん] n2
+出入り [でいり ではいり] n2
+感想 [かんそう] n2 wanikani13
+岬 [みさき] n2 wanikani23 wanikani59
+瞳 [ひとみ] n2 wanikani46
+全集 [ぜんしゅう] n2
+絵の具 [えのぐ] n2
+再三 [さいさん] n2
+閉会 [へいかい] n2
+厳重 [げんじゅう げんじょう げんちょう] n2
+付近 [ふきん] n2 wanikani9
+活字 [かつじ] n2
+岬 [みさき] n2 wanikani23 wanikani59
+持参 [じさん] n2
+実感 [じっかん] n2 wanikani13
+貝 [かい] n2 wanikani4
+実用 [じつよう] n2
+感想 [かんそう] n2 wanikani13
+主役 [しゅやく] n2
+以後 [いご] n2 wanikani7
+力強い [ちからづよい] n2
+基地 [きち] n2
+順序 [じゅんじょ] n2 wanikani32
+制作 [せいさく] n2
+鈴 [すず りん れい] n2 wanikani39
+原始 [げんし] n2
+地味 [じみ] n2
+人命 [じんめい] n2
+驚かす [おどろかす] n2 wanikani33
+募集 [ぼしゅう] n2 wanikani37
+粒 [つぶ りゅう つび つぼ] n2 wanikani44
+研修 [けんしゅう] n2 wanikani28
+地名 [ちめい] n2
+下車 [げしゃ] n2
+芯 [しん] n2 wanikani47
+後輩 [こうはい] n2 wanikani25
+的確 [てきかく てっかく] n2
+各自 [かくじ] n2 wanikani22
+効力 [こうりょく] n2 wanikani25
+氏名 [しめい うじな] n2 wanikani7
+売店 [ばいてん] n2
+重体 [じゅうたい] n2
+日帰り [ひがえり] n2
+定員 [ていいん] n2
+上級 [じょうきゅう] n2 wanikani11
+標本 [ひょうほん] n2
+貸し出し [かしだし] n2
+各自 [かくじ] n2 wanikani22
+外科 [げか] n2
+標本 [ひょうほん] n2
+評論 [ひょうろん] n2 wanikani21
+不規則 [ふきそく] n2 wanikani25
+定員 [ていいん] n2
+下車 [げしゃ] n2
+当番 [とうばん] n2
+物置 [ものおき] n2 n1
+酸性 [さんせい] n2
+重体 [じゅうたい] n2
+私立 [しりつ わたくしりつ] n2 wanikani6
+脂 [あぶら] n2
+発想 [はっそう] n2
+免税 [めんぜい] n2 wanikani39
+入社 [にゅうしゃ] n2 wanikani5
+実績 [じっせき] n2
+振興 [しんこう] n1
+終点 [しゅうてん] n2 wanikani10
+下旬 [げじゅん] n2 wanikani37
+生年月日 [せいねんがっぴ] n2
+肯定 [こうてい] n2 wanikani51
+系統 [けいとう] n2
+開通 [かいつう] n2
+円満 [えんまん] n1
+区分 [くぶん] n2 wanikani15
+飾り [かざり] n2 wanikani32
+無線 [むせん] n1
+断定 [だんてい] n2
+体系 [たいけい] n2
+執筆 [しっぴつ] n2 wanikani37
+下水 [げすい] n2
+地質 [ちしつ] n2
+留守番 [るすばん] n2 wanikani18
+中旬 [ちゅうじゅん] n2 wanikani37
+出入り口 [でいりぐち] n2 n1
+定価 [ていか] n2
+艶 [つや ツヤ] n2
+公務 [こうむ] n2
+執筆 [しっぴつ] n2 wanikani37
+定価 [ていか] n2
+公務 [こうむ] n2
+都心 [としん] n2
+東西 [とうざい ひがしにし] n2
+課程 [かてい] n2
+内線 [ないせん] n2
+断定 [だんてい] n2
+強気 [つよき] n2
+解説 [かいせつ] n2 wanikani21
+円満 [えんまん] n1
+催し [もよおし] n2
+街角 [まちかど] n2
+殻 [から] n2 wanikani58
+別々 [べつべつ] n2 wanikani11
+文献 [ぶんけん] n2
+市街 [しがい] n1
+清掃 [せいそう] n2
+暴れる [あばれる] n2 wanikani19
+本部 [ほんぶ] n2
+円満 [えんまん] n1
+暴れる [あばれる] n2 wanikani19
+本部 [ほんぶ] n2
+盆地 [ぼんち] n2
+乾電池 [かんでんち] n2
+開通 [かいつう] n2
+寝台 [しんだい ねだい] n2
+感激 [かんげき] n2
+薬品 [やくひん] n2
+直通 [ちょくつう] n2
+巡査 [じゅんさ] n2 wanikani40
+客席 [きゃくせき] n2
+賞品 [しょうひん] n2
+食塩 [しょくえん] n2
+並木 [なみき] n2
+金魚 [きんぎょ キンギョ] n2 wanikani7
+要旨 [ようし] n2 wanikani43
+送料 [そうりょう] n2
+安易 [あんい] n2
+孝行 [こうこう] n2 wanikani40
+初級 [しょきゅう] n2 wanikani11
+締め切る [しめきる] n2
+灯油 [とうゆ] n2
+分量 [ぶんりょう] n2
+攻める [せめる] n2 wanikani28
+孝行 [こうこう] n2 wanikani40
+盆 [ぼん] n2
+内科 [ないか] n2
+南北 [なんぼく] n2
+安易 [あんい] n2
+日課 [にっか] n2
+年度 [ねんど] n2
+高等 [こうとう] n2 wanikani18
+紺 [こん] n2 wanikani57
+拡充 [かくじゅう] n2
+格別 [かくべつ かくべち] n2
+物指 [ものさし] n2
+学術 [がくじゅつ] n2
+学力 [がくりょく] n2
+坊さん [ぼうさん] n2 wanikani22
+名作 [めいさく] n2
+加熱 [かねつ] n2
+有無 [うむ ゆうむ] n2
+用途 [ようと] n2
+製作 [せいさく] n2 wanikani24
+勝敗 [しょうはい] n2 wanikani17
+国立 [こくりつ] n2
+消耗 [しょうもう しょうこう] n2 n1
+付属 [ふぞく] n2 n1
+書道 [しょどう] n2
+助教授 [じょきょうじゅ] n2
+全般 [ぜんぱん] n2
+余所 [よそ] n2 wanikani8
+話しかける [はなしかける] n2
+巡る [めぐる] n2 wanikani40
+騙す [だます] n2 n1
+付き合う [つきあう] n2 n1
+落ち着く [おちつく] n2 wanikani14
+振る舞う [ふるまう] n2
+当てはまる [あてはまる] n2 n1
+浮かぶ [うかぶ] n2 n1
+思い付く [おもいつく] n2
+矢っ張り [やっぱり] n2 n1
+目印 [めじるし] n2
+為す [なす] n2
+引き受ける [ひきうける] n2 n1
+その上 [そのうえ] n2 n1
+捕らえる [とらえる] n2 n1 wanikani27
+追いかける [おいかける] n2 wanikani13
+替わる [かわる] n2 n1 wanikani4 wanikani25
+溢れる-1 [あふれる] n2 n1
+零れる [こぼれる] n2 n1
+零す [こぼす] n2 n1 wanikani46
+漸く [ようやく] n2 wanikani60
+恵まれる [めぐまれる] n2
+取り出す [とりだす] n2 wanikani18
+誓う [ちかう] n2
+飛び込む [とびこむ] n2
+酸っぱい [すっぱい] n2 n1 wanikani32
+蝋燭 [ろうそく ローソク ロウソク] n2
+蝋燭 [ろうそく ローソク ロウソク] n2
+目指す [めざす] n2
+立ち止まる [たちどまる たちとまる] n2
+掘る [ほる] n2 wanikani42
+係わる [かかわる] n2 wanikani16
+却って [かえって] n2 wanikani38
+例える [たとえる] n2
+嫌がる [いやがる] n2
+生える [はえる] n2 wanikani5
+寄越す [よこす] n2 n1
+躊躇う [ためらう] n2 n1
+妨げる [さまたげる] n2 wanikani20
+点く [つく] n2
+拭く [ふく] n2
+繋がる [つながる] n2
+怠る [おこたる] n2 wanikani52
+目立つ [めだつ] n2
+纏める [まとめる] n2
+儲ける [もうける] n2
+蹴る [ける] n2
+蹴る [ける] n2
+流行る [はやる] n2
+騒がしい [さわがしい] n2
+有難い [ありがたい] n2
+助かる [たすかる] n2 wanikani10
+訳す [やくす] n2 wanikani32
+潰す [つぶす] n2
+銘々 [めいめい] n2 wanikani50
+溶ける [とける] n2 wanikani50
+憎む [にくむ] n2 wanikani47
+大して [たいして] n2
+絶えず [たえず] n2
+存じる [ぞんじる] n2 wanikani16
+殖やす [ふやす] n2 wanikani23
+大層 [たいそう] n2
+惨め [みじめ] n2 n1 wanikani53
+味わう [あじわう] n2
+温める [あたためる あっためる] n2 wanikani14
+幾分 [いくぶん] n2
+一休み [ひとやすみ] n2
+是非とも [ぜひとも] n2 n1
+足る [たる] n2
+怪しい [あやしい] n2 wanikani26
+鳴らす [ならす] n2
+遡る [さかのぼる] n2 n1
+泊める [とめる] n2 wanikani44
+溜まる [たまる] n2
+平気 [へいき] n2 wanikani4
+掻く [かく] n2
+折角 [せっかく] n2 wanikani14
+物凄い [ものすごい] n2
+独りでに [ひとりでに] n2 n1
+塞ぐ [ふさぐ] n2
+仲直り [なかなおり] n2 wanikani11
+引っ掛かる [ひっかかる] n2
+空っぽ [からっぽ カラッポ] n2
+遠足 [えんそく] n2 wanikani16
+比較的 [ひかくてき] n2 wanikani28
+見下ろす [みおろす] n2
+大人しい [おとなしい] n2 n1 wanikani3
+混ぜる [まぜる] n2 wanikani5 wanikani19
+偉い [えらい エライ エラい] n2 wanikani51
+憧れる [あこがれる] n2 wanikani59
+空っぽ [からっぽ カラッポ] n2
+比較的 [ひかくてき] n2 wanikani28
+照らす [てらす] n2 wanikani30
+忽ち [たちまち] n2 n1
+申し訳ない [もうしわけない] n2
+兎も角 [ともかく] n2 n1
+尻尾 [しっぽ しりお] n2 n1 wanikani22
+覗く [のぞく] n2
+突く [つく] n2 wanikani26
+燃やす [もやす もす] n2 wanikani24
+巻く [まく] n2 wanikani25
+剃る [そる する] n2 n1
+詫びる [わびる] n2
+醜い [みにくい] n2 wanikani60
+怒鳴る [どなる] n2 n1 wanikani27
+裏返す [うらがえす] n2
+遠方 [えんぽう おちかた] n1
+厚かましい [あつかましい] n2
+撒く [まく] n2
+怒鳴る [どなる] n2 n1 wanikani27
+崩す [くずす] n2 wanikani37
+突っ込む [つっこむ ツッコむ] n2
+裏返す [うらがえす] n2
+思いがけない [おもいがけない] n2
+可愛がる [かわいがる] n2 n1
+恋しい [こいしい] n2
+揃える [そろえる] n2
+組み立てる [くみたてる] n2
+敷く [しく] n2 wanikani40
+冷める [さめる] n2
+縫う [ぬう] n2 wanikani56
+意地悪 [いじわる] n2 wanikani14
+水平線 [すいへいせん] n2
+補う [おぎなう] n2 wanikani25
+曲げる [まげる] n2 wanikani8
+映る [うつる] n2 wanikani13
+傾く [かたむく かたぶく] n2 n1 wanikani38
+住まい [すまい] n2
+済まない [すまない] n2 n1
+編む [あむ] n2 wanikani31
+独り言 [ひとりごと] n2 wanikani28
+水平線 [すいへいせん] n2
+真っ青 [まっさお] n2
+甘やかす [あまやかす] n2
+嗅ぐ [かぐ] n2
+傾く [かたむく かたぶく] n2 n1 wanikani38
+意地悪 [いじわる] n2 wanikani14
+生意気 [なまいき] n2
+爽やか [さわやか] n2 n1 wanikani47
+だらし無い [だらしない] n2
+至急 [しきゅう] n2
+砕ける [くだける] n2
+散らかる [ちらかる] n2
+捕る [とる] n2
+図々しい [ずうずうしい ずーずーしい] n2 n1
+含める [ふくめる] n2
+承る [うけたまわる] n2 wanikani34
+承る [うけたまわる] n2 wanikani34
+蒸し暑い [むしあつい] n2 wanikani35
+早速 [さっそく] n2 wanikani10
+固まる [かたまる] n2 wanikani18
+焦げる [こげる] n2 wanikani42
+改めて [あらためて] n2
+必需品 [ひつじゅひん] n2 wanikani38
+浮く [うく] n2 wanikani30
+敬う [うやまう] n2
+返る [かえる] n2 n1 wanikani11
+目覚まし [めざまし] n2
+這う [はう] n2
+近寄る [ちかよる] n2
+青白い [あおじろい] n2
+出来上がる [できあがる] n2 wanikani8
+欠伸 [あくび けんしん] n2 wanikani38
+下らない [くだらない] n2 n1
+妥当 [だとう] n2
+引き返す [ひきかえす] n2
+険しい [けわしい] n2
+何分 [なにぶん] n2
+行き成り [いきなり ゆきなり] n2 n1
+目茶苦茶 [めちゃくちゃ メチャクチャ めっちゃくちゃ] n2 n1
+転がる [ころがる] n2 wanikani10
+お早う [おはよう] n2 n1
+各地 [かくち] n2 wanikani22
+言い出す [いいだす] n2
+引き返す [ひきかえす] n2
+背負う [せおう しょう] n2 n1
+勿体ない [もったいない] n2 n1
+照る [てる] n2
+静まる [しずまる] n2 wanikani57
+畳む [たたむ] n2
+恐縮 [きょうしゅく] n2
+甦る [よみがえる] n2
+澄む [すむ] n2 wanikani45
+呉れ呉れも [くれぐれも] n2 n1
+但し [ただし] n2
+先ほど [さきほど] n2 wanikani30
+跳ねる [はねる] n2 wanikani39
+勿体ない [もったいない] n2 n1
+落第 [らくだい] n2
+甦る [よみがえる] n2
+呉れ呉れも [くれぐれも] n2 n1
+災難 [さいなん] n2 wanikani20
+裂く [さく] n2 wanikani43
+姪 [めい] n2
+澄む [すむ] n2 wanikani45
+儲かる [もうかる] n2
+揃う [そろう] n2
+痒い [かゆい かいい] n2 n1
+睨む [にらむ] n2
+お代わり [おかわり] n2
+逃がす [にがす] n2 wanikani42
+重なる [かさなる] n2
+花壇 [かだん] n1 wanikani49
+威張る [いばる えばる] n2 wanikani43
+薬缶 [やかん] n2
+思い込む [おもいこむ] n2
+平凡 [へいぼん] n2 wanikani56
+通用 [つうよう] n2
+いつの間にか [いつのまにか] n2 n1
+ご無沙汰 [ごぶさた] n2 n1 wanikani59
+謎々 [なぞなぞ] n2 wanikani44
+耕す [たがやす] n2 wanikani51
+元々 [もともと] n2
+腰掛ける [こしかける] n2
+思い込む [おもいこむ] n2
+担ぐ [かつぐ] n2 wanikani24
+溶け込む [とけこむ] n2
+目眩 [めまい げんうん] n2 n1
+お休み [おやすみ] n2 n1
+何となく [なんとなく なにとなく] n2 n1
+乾かす [かわかす] n2 wanikani33
+羊毛 [ようもう] n2 wanikani6
+実る [みのる] n2
+溜める [ためる] n2
+受け持つ [うけもつ] n2
+脱線 [だっせん] n2 wanikani22
+惜しい [おしい] n2 wanikani57
+信ずる [しんずる] n2
+真似る [まねる] n2
+引力 [いんりょく] n2
+尖る [とがる とんがる] n2
+塩辛い [しおからい からい] n2
+速達 [そくたつ] n2
+惜しい [おしい] n2 wanikani57
+出鱈目 [でたらめ デタラメ] n2 n1
+騒々しい [そうぞうしい] n2
+更ける [ふける] n2
+熱する [ねっする] n2
+若しかしたら [もしかしたら] n2 n1
+目上 [めうえ] n2
+掃く [はく] n2 wanikani31
+ため息 [ためいき] n2
+下品-1 [げひん] n2 wanikani16
+引き止める [ひきとめる] n2
+交ざる [まざる] n2 wanikani19
+因る [よる] n2 wanikani41
+重たい [おもたい] n2
+濡らす [ぬらす] n2
+探る [さぐる] n2
+短所 [たんしょ] n2
+交ざる [まざる] n2 wanikani19
+着せる [きせる] n2
+広める [ひろめる] n2
+散らかす [ちらかす] n2 wanikani33
+護謨 [ゴム] n2
+溶かす [とかす] n2 wanikani48
+巫山戯る [ふざける] n2 n1
+御洒落 [おしゃれ オシャレ] n2 n1
+整う [ととのう] n2
+戸棚 [とだな] n2 wanikani44
+酔っ払い [よっぱらい] n2 wanikani37
+偶数 [ぐうすう] n2
+末っ子 [すえっこ] n2
+当てはめる [あてはめる] n2 n1
+売り切れ [うりきれ] n2 wanikani11
+見っともない [みっともない] n2 n1
+交じる [まじる] n2 wanikani8 wanikani21
+当てはめる [あてはめる] n2 n1
+針金 [はりがね] n2 wanikani28
+釣り合う [つりあう] n2
+売り切れる [うりきれる] n2
+交じる [まじる] n2 wanikani8 wanikani21
+被せる [かぶせる] n2
+錆びる [さびる] n2
+煮える [にえる] n2
+始終 [しじゅう] n2
+湧く [わく] n2 wanikani60
+茂る [しげる] n2 wanikani40
+末っ子 [すえっこ] n2
+取り入れる [とりいれる] n2
+剥く [むく] n2
+縮む [ちぢむ ちじむ] n2
+お手伝いさん [おてつだいさん] n2
+引っ込む [ひっこむ] n2
+濁る [にごる] n2 wanikani60
+所々 [ところどころ しょしょ] n2 n1
+毛糸 [けいと] n2 wanikani5
+彫る [ほる える] n2
+吊るす [つるす] n2 n1
+交差 [こうさ] n2
+好き嫌い [すききらい] n2
+特売 [とくばい] n2
+大ざっぱ [おおざっぱ] n2 n1
+剥がす [はがす へがす] n2 n1
+突き当たる [つきあたる] n2
+流石 [さすが] n2
+散る [ちる] n2 wanikani31
+お手伝いさん [おてつだいさん] n2
+片付く [かたづく] n2
+治める [おさめる] n2
+毛糸 [けいと] n2 wanikani5
+貸間 [かしま] n2
+所々 [ところどころ しょしょ] n2 n1
+夕立 [ゆうだち] n2
+眩しい [まぶしい まぼしい] n2 n1
+凸凹 [でこぼこ とつおう だくぼく] n2 wanikani59
+拵える [こしらえる こさえる] n2 n1
+瞼 [まぶた まなぶた] n2 n1
+帰す [かえす] n2
+熟語 [じゅくご] n2 wanikani33
+若々しい [わかわかしい] n2 wanikani19
+諄い [くどい クドい] n2 n1
+恨む [うらむ] n2 wanikani47
+採る [とる] n2 wanikani32
+人通り [ひとどおり] n2
+炊く [たく] n2 wanikani47
+待ち合わせる [まちあわせる] n2
+不潔 [ふけつ] n2 wanikani28
+月日 [つきひ] n2
+謙遜 [けんそん] n2 wanikani41
+真っ黒 [まっくろ] n2 wanikani16
+お帰り [おかえり] n2
+追い越す [おいこす] n2 wanikani34
+鉄橋 [てっきょう] n2
+衣食住 [いしょくじゅう] n2
+転がす [ころがす] n2
+方角 [ほうがく] n2

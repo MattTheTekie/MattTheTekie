@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=WorldsPlayer
+Exec=${WORLDSDIR}/launch.sh
+Comment=
+Terminal=false
+Icon=${WORLDSDIR}/icon.png
+Type=Application
+Hidden=false
+NoDisplay=false
