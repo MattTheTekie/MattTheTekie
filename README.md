@@ -66,18 +66,18 @@
 [![NetroCorp](https://tinyurl.com/bdffr5tr)](https://netrocorp.net/users/61)<br>
 ### 🛸 You can check out my website's below&nbsp;
 
-> 📡 [[**MattTheTekie**]](https://mattthetekie.github.io/homepage/)
+> 📡 [[**MattTheTekie**]](https://test72.eu.org/)
 
 My new homepage on the corner of the internet.&nbsp;
 
-> 🔭 [[**MattTheTekie's Blog**]](https://mattthetekie.github.io/MattTheTekie)
+> 🔭 [[**MattTheTekie's Blog**]](https://test72.eu.org/blog/)
 
 My new blogging corner on the world wide web.&nbsp;
 
 
-> 🧪 [[**Tsuka's Homelab**]](https://tsukashomelab.netlify.app/)
+> 🧪 [[**Tsuka's Homelab**]](https://hackerlab.venith.net/)
 
-My new homelab on the corner of the internet.&nbsp;
+My new hackerlab on the corner of the internet.&nbsp;
 
 > 🐧 [[**CrazyHellTechnologies**]](https://github.com/CrazyHellTechnologies/)
 
