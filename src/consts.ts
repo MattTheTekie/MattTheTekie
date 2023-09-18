@@ -14,21 +14,21 @@ export const SOCIAL = [
     link: 'https://nerdculture.de/@ASTAFATHERSATAN',
     name: 'Mastodon'
   },
+    {
+    link: 'https://social.venith.net/u/MattTheTekie',
+    name: 'Lemmy'
+  },
+    {
+    link: 'https://odysee.com/@mattdoestech726:5',
+    name: 'Odysee'
+    },
   {
     link: 'https://www.linkedin.com/in/matthew-pitsicalis',
     name: 'Linkedin'
   },
   {
-    link: 'https://social.venith.net/u/MattTheTekie',
-    name: 'Lemmy'
-  },
-  {
     link: 'mailto:mattfromspace@protonmail.com',
     name: 'Email'
-  },
-  {
-    link: 'https://odysee.com/@mattdoestech726:5',
-    name: 'Odysee'
   }
 ]
 export const OTHER_LINKS = [
