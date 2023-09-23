@@ -3,7 +3,6 @@
   
   <h2>MattTheTekie 🐱‍💻</h2>
   [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=courier+new&color=0BF700&lines=Hello!+My+name+is+Matt!;A.K.A+MattTheTekie+or+Matthew_Pitsicalis)](https://git.io/typing-svg)
-  [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=courier+new&color=0BF700&lines=Hello!+My+name+is+Chris!;A.K.A+Aquinas+or+aquinas_nz)](https://git.io/typing-svg)
   <blockquote>Working with electronics, and backends.</blockquote>
 
   <a href='https://discord.com/users/846112982772613171' target='_blank'><img alt="discord status" src="https://api.statusbadges.me/badge/status/846112982772613171" /></a>
