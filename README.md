@@ -1,7 +1,7 @@
 <div align="center">
     <img alt='pfp res' src='https://avatars.githubusercontent.com/u/94870997?v=4' />  
   <h2>MattTheTekie 🐱‍💻</h2>
-[![Typing SVG](https://tinyurl.com/mhthnhsu)](https://git.io/typing-svg)
+  [![Typing SVG](https://tinyurl.com/mhthnhsu)](https://git.io/typing-svg)
   <blockquote>Working with electronics, and backends.</blockquote>
 
   <a href='https://discord.com/users/846112982772613171' target='_blank'><img alt="discord status" src="https://api.statusbadges.me/badge/status/846112982772613171" /></a>
