@@ -74,7 +74,6 @@ My new homepage on the corner of the internet.&nbsp;
 
 My new blogging corner on the world wide web.&nbsp;
 
-
 > 🧪 [[**Tsuka's Homelab**]](https://hackerlab.venith.net/)
 
 My new hackerlab on the corner of the internet.&nbsp;
@@ -90,16 +89,3 @@ We're a simple development group, focusing on DSiPaint, Linux, and Android.&nbsp
 > 🕹️ [[**TheBestBros**]](https://thebestbros.surge.sh)
 
 My old website that holds memories beyond imagination.&nbsp;
-
-### 💾 You can check some of my favourite webpages here
-> 🌎 [[**Cameron's World**]](https://www.cameronsworld.net/)
-
-It's a collection of archived Geocities websites. It's pretty cool.&nbsp;
-
-> 🔗 [[**CyberSpaceAndTime**]](http://cyberspaceandtime.com/)
-
-This is a really awesome Amiga OS like web operating system complete with a web chat room, and a video player.&nbsp;
-
-> 🖥️ [[**Daedal OS**]](https://dustinbrett.com/)
-
-A full on complete open source Windows 10 like experience including DOOM, 3D pinball, and much more.
