@@ -7,7 +7,8 @@ import {
   FaYoutube,
   FaEnvelope,
   FaTiktok,
-  FaMastodon,
+  FaMastodon
+  FaDiscord,
 } from 'react-icons/fa';
 
 import {
@@ -27,6 +28,7 @@ import {
       <span class:list={["p-1 rounded-md", {
         "bg-blue-800": item.name.toLowerCase().includes('email'),
         "bg-blue-800": item.name.toLowerCase().includes('mastodon'),
+        "bg-blue-800": item.name.toLowerCase().includes('discord'),
         "bg-orange-800": item.name.toLowerCase().includes('odysee'),
         "bg-grey-800": item.name.toLowerCase().includes('lemmy'),
         "bg-gray-700": item.name.toLowerCase().includes('github'),
