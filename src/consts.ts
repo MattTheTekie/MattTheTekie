@@ -11,6 +11,10 @@ export const SOCIAL = [
     name: 'GitHub'
   },
   {
+    link: 'https://discord.gg/VhfM3UncBB',
+    name: 'Discord'
+  },
+  {
     link: 'https://nerdculture.de/@ASTAFATHERSATAN',
     name: 'Mastodon'
   },
