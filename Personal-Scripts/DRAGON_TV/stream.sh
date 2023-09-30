@@ -552,7 +552,7 @@ for url in "${input_urls[@]}"; do
     echo "Downloading video from URL: $url"
     
     # Use yt-dlp with the specified options and directly pipe the output to ffmpeg
-    yt-dlp -f 'mp4[height<=?480][fps<=?25]+bestaudio/best' -o - "$url" | ffmpeg -re -i - -c:v libx264 -c:a aac -strict experimental -f flv "$streaming_url"
+    yt-dlp -f 'mp4[height<=?480][fps<=?25]+bestaudio/best' -o - "$url" | ffmpeg -re -i - -c:v libx264 -preset ultrafast -tune zerolatency -s 640x360 -c:a aac -strict experimental -f flv "$streaming_url"
     
     # Check the exit status of ffmpeg to see if the processing and streaming were successful
     if [ $? -eq 0 ]; then
