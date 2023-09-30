@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# MattTheTekie's DRAGON TV!
 # Streaming URL
 streaming_url="rtmp://stream.odysee.com/live/REDACTED"
 
@@ -547,11 +547,17 @@ input_urls=(
     "https://youtube.com/c/thejerrymobile"
 )
 
-# yt-dlp options
-yt-dlp_options="-f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'"
-
-# Start streaming loop
+# Loop through the input URLs and download/process the videos
 for url in "${input_urls[@]}"; do
-    echo "Streaming: $url"
-    yt-dlp $yt-dlp_options -o - "$url" | ffmpeg -re -i - -c:v copy -c:a aac -strict experimental -f flv "$streaming_url"
+    echo "Downloading video from URL: $url"
+    
+    # Use yt-dlp with the specified options and directly pipe the output to ffmpeg
+    yt-dlp -f 'bestvideo[height<=720][fps<=25]+bestaudio/best' -o - "$url" | ffmpeg -re -i - -c:v libx264 -c:a aac -strict experimental -f flv "$streaming_url"
+    
+    # Check the exit status of ffmpeg to see if the processing and streaming were successful
+    if [ $? -eq 0 ]; then
+        echo "Processing and streaming completed successfully."
+    else
+        echo "Processing and streaming failed for video from URL: $url"
+    fi
 done
