@@ -550,18 +550,27 @@ input_urls=(
     "https://youtube.com/c/thejerrymobile"
 )
 
-# Loop through the input URLs and download/process the videos
+# Loop through the input URLs and download the videos
 for url in "${input_urls[@]}"; do
     echo "Downloading video from URL: $url"
-    
-    # Use yt-dlp with the specified options and directly pipe the output to ffmpeg
-    yt-dlp $yt-dlp_options -o - "$url" | \
-    ffmpeg -i pipe:0 -c:v libx264 -preset superfast -maxrate 1000k -bufsize 4000k -pix_fmt yuv420p -g 50 -c:a aac -b:a 160k -ac 2 -f flv "$streaming_url"
-    
-    # Check the exit status of ffmpeg to see if the processing and streaming were successful
+
+    # Download the video using yt-dlp
+    yt-dlp $yt-dlp_options -o "/path/to/output/%(title)s.%(ext)s" "$url"
+
+    # Check the exit status of yt-dlp to see if the download was successful
     if [ $? -eq 0 ]; then
-        echo "Processing and streaming completed successfully."
+        echo "Download completed successfully."
+
+        # Use ffmpeg to process and stream the video
+        ffmpeg -i "/path/to/output/$(basename "$url").mp4" -c:v libx264 -preset superfast -maxrate 1000k -bufsize 4000k -pix_fmt yuv420p -g 50 -c:a aac -b:a 160k -ac 2 -f flv "$streaming_url"
+
+        # Check the exit status of ffmpeg to see if the processing and streaming were successful
+        if [ $? -eq 0 ]; then
+            echo "Processing and streaming completed successfully."
+        else
+            echo "Processing and streaming failed for video from URL: $url"
+        fi
     else
-        echo "Processing and streaming failed for video from URL: $url"
+        echo "Download failed for URL: $url"
     fi
 done
