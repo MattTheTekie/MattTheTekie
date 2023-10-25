@@ -21,12 +21,12 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: 1.xml
-        path: /home/runner/work/fictional-pancake/fictional-pancake/.wg++/1.xml
+        path: /home/runner/work/MattTheTekie/MattTheTekie/.wg++/1.xml
     - name: Stage 3
       run: |
         echo Processing Stage 3
         exec 3>&1 &>/dev/null
-        cd /home/runner/work/fictional-pancake/fictional-pancake/.wg++/
+        cd /home/runner/work/MattTheTekie/MattTheTekie/.wg++/
         git init
         git config --local user.name "actions"
         git config --local user.email "action@github.com"
@@ -317,12 +317,12 @@ jobs:
         mkdir 1 && cd 1
         wget ${{ secrets.YAY }}
         unzip site.zip
-        cp /home/runner/work/fictional-pancake/fictional-pancake/0/combined.m3u /home/runner/work/fictional-pancake/fictional-pancake/0/1/SATANSLAYER666_666_hehehe_combined.m3u
-        cp /home/runner/work/fictional-pancake/fictional-pancake/0/merge.xml /home/runner/work/fictional-pancake/fictional-pancake/0/1/SATANSLAYER666_666_hehehe_merge.xml
+        cp /home/runner/work/MattTheTekie/MattTheTekie/0/combined.m3u /home/runner/work/MattTheTekie/MattTheTekie/0/1/SATANSLAYER666_666_hehehe_combined.m3u
+        cp /home/runner/work/MattTheTekie/MattTheTekie/0/merge.xml /home/runner/work/MattTheTekie/MattTheTekie/0/1/SATANSLAYER666_666_hehehe_merge.xml
     - name: Push
       uses: dswistowski/surge-sh-action@v1
       with:
          domain: ${{ secrets.surge_domain }}
-         project: '/home/runner/work/fictional-pancake/fictional-pancake/0/1'
+         project: '/home/runner/work/MattTheTekie/MattTheTekie/0/1'
          login: ${{ secrets.surge_login }}
          token: ${{ secrets.surge_token }}
