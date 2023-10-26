@@ -132,7 +132,7 @@ worlds () {
 }
 
 launchscript () {
-	wget -O"$WORLDSDIR/launch.sh" "https://github.com/MattTheTekie/MattTheTekie/raw/main/Personal-Scripts/WorldsOnlineLinux/launch.sh"
+	wget -O"$WORLDSDIR/launch.sh" "https://github.com/MattTheTekie/MattTheTekie/raw/master/Personal-Scripts/WorldsOnlineLinux/launch.sh"
 	wget -qO- "http://www.worlds.net/favicon.ico" | convert - "$WORLDSDIR/icon.png"
 	rm "$WORLDSDIR/wrldslinux"
 	echo "# Configuration for Worlds on Linux." > "$WORLDSDIR/wrldslinux"
