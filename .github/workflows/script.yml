@@ -11,7 +11,7 @@ jobs:
       uses: actions/upload-artifact@master
       with:
         name: 1.xml
-        path: /home/runner/work/MattTheTekie/MattTheTekie/.wg++/1.xml
+        path: /home/runner/work/MattTheTekie/MattTheTekie/
     - name: Stage 3
       run: |
         echo Processing Stage 3
