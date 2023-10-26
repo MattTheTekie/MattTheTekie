@@ -322,12 +322,12 @@ jobs:
         mkdir 1 && cd 1
         wget ${{ secrets.YAY }}
         unzip site.zip
-        cp /home/runner/work/fictional-pancake/fictional-pancake/0/combined.m3u /home/runner/work/fictional-pancake/fictional-pancake/0/1/SATANSLAYER666_666_hehehe_combined.m3u
-        cp /home/runner/work/fictional-pancake/fictional-pancake/0/merge.xml /home/runner/work/fictional-pancake/fictional-pancake/0/1/SATANSLAYER666_666_hehehe_merge.xml
+        cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/combined.m3u /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/1/SATANSLAYER666_666_hehehe_combined.m3u
+        cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/merge.xml /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/1/SATANSLAYER666_666_hehehe_merge.xml
     - name: Push
       uses: dswistowski/surge-sh-action@v1
       with:
          domain: ${{ secrets.surge_domain }}
-         project: '/home/runner/work/fictional-pancake/fictional-pancake/0/1'
+         project: '/home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/1'
          login: ${{ secrets.surge_login }}
          token: ${{ secrets.surge_token }}
