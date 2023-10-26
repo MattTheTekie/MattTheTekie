@@ -43,7 +43,7 @@ jobs:
     - name: Stage 4
       run: |
         echo Processing Stage 4
-        exec 3>&1 &>/dev/null
+        
         go install github.com/aquilax/m3u-combine@latest
         cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/1      
         openvpn vpn.ovpn --auth-user-pass <(echo -e ${{ secrets.VPN_USERNAME }}"\n"${{ secrets.VPN_PASSWORD }}) &
