@@ -12,19 +12,7 @@ jobs:
       with:
         name: 1.xml
         path: /home/runner/work/MattTheTekie/MattTheTekie/
-    - name: Stage 3
-      run: |
-        echo Processing Stage 3
-        
-        cd /home/runner/work/MattTheTekie/MattTheTekie/
-        git init
-        git config --local user.name "actions"
-        git config --local user.email "action@github.com"
-        git checkout -b main
-        git add .
-        git commit -m "The dragon is hunting."
-        git remote add origin "https://${{ github.actor }}:${{ secrets.JAPAN }}@github.com/${{ github.repository }}"
-        git push -f -u origin main
+  
     - name: Stage 4
       run: |
         echo Processing Stage 4
