@@ -1,2 +1,1 @@
 combined1.m3u
-events2.m3u
