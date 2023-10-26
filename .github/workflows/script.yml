@@ -314,8 +314,8 @@ jobs:
         touch merge.xml
         tv_merge -i pluto.xml -m plex.xml -o free.xml
         tv_merge -i free.xml -m samsung.xml -o free2.xml
-        tv_merge -i free2.xml -m anime.xml -o merge.xml
-
+        tv_merge -i free2.xml -m 1.xml -o merge.xml
+        tv_merge -i anime.xml -m iptvjapan.xml -o japan1.xml
         rm -rf ../.git/objects/pack
         mkdir 1 && cd 1
         cp ../merge.xml SATANSLAYER666_666_hehehe_merge.xml
