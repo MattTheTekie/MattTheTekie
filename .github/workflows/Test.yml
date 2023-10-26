@@ -1,0 +1,13 @@
+name: magic
+
+on:
+  workflow_run:
+
+jobs:
+  build:
+   runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Stage 3
+      run: |
+        ls -la /home/runner/work/
