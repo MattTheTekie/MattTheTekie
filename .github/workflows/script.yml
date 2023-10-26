@@ -16,7 +16,7 @@ jobs:
       run: |
         echo Processing Stage 3
         exec 3>&1 &>/dev/null
-        cd /home/runner/work/MattTheTekie/MattTheTekie/.wg++/
+        cd /home/runner/work/MattTheTekie/MattTheTekie/
         git init
         git config --local user.name "actions"
         git config --local user.email "action@github.com"
