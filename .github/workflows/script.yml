@@ -11,7 +11,6 @@ jobs:
     - name: Stage 1
       run: |
         echo Processing Stage 1
-        exec 3>&1 &>/dev/null
         sudo apt update
         sudo apt -y install xmltv retry
         wget http://webgrabplus.com/sites/default/files/download/SW/V3.2.0/WebGrabPlus_V3.2_install.tar.gz
