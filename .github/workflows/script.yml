@@ -312,8 +312,6 @@ jobs:
         sed 's/",/" group-title="Japanese TV", \[JAPAN\] /' -i 'jp_org.m3u'
         cat linux.txt | ~/go/bin/m3u-combine > combined.m3u
         touch merge.xml
-        tv_merge -i 1.xml -m iptvjapan.xml -o japan1.xml
-        tv_merge -i japan1.xml -m anime.xml -o japan2.xml
         tv_merge -i pluto.xml -m plex.xml -o free.xml
         tv_merge -i free.xml -m samsung.xml -o free2.xml
         tv_merge -i free2.xml -m japan2.xml -o merge.xml
