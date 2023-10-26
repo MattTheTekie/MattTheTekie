@@ -183,7 +183,7 @@ cache () {
 }
 
 update () {
-	NEWLAUNCHFILE="https://github.com/MattTheTekie/MattTheTekie/raw/main/Personal-Scripts/WorldsOnlineLinux/launch.sh"
+	NEWLAUNCHFILE="https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/master/Personal-Scripts/WorldsOnlineLinux/worlds.desktop"
 	UPDATEFILE="$WORLDSDIR/.update.sh"
 	touch "$UPDATEFILE"
 	echo "wget -N -O\"$WORLDSDIR/launch.sh\" \"$NEWLAUNCHFILE\"" >> "$UPDATEFILE"
