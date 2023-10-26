@@ -6,7 +6,7 @@ You don't need to clone this repository. Simply download `worlds-installer.sh` a
 
 ```
 $ mkdir Worlds
-$ wget https://github.com/MattTheTekie/MattTheTekie/raw/main/Personal-Scripts/WorldsOnlineLinux/worlds-installer.sh
+$ wget https://github.com/MattTheTekie/MattTheTekie/raw/master/Personal-Scripts/WorldsOnlineLinux/worlds-installer.sh
 $ chmod +x worlds-installer.sh
 $ ./worlds-installer.sh
 ```
