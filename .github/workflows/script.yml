@@ -1,3 +1,5 @@
+# REMOVE PAID EPG. IT COULD BE PART OF THE NULL ERROR
+
 name: Script
 on:
   schedule:    
