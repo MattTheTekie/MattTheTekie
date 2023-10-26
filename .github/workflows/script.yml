@@ -1,5 +1,3 @@
-# MOVE AROUND EPG
-
 name: Script
 on:
   schedule:    
@@ -316,8 +314,8 @@ jobs:
         touch merge.xml
         tv_merge -i 1.xml -m iptvjapan.xml -o japan1.xml
         tv_merge -i japan1.xml -m pluto.xml -o free1.xml
-        tv_merge -i pluto.xml -m anime.xml -o free2.xml
-        tv_merge -i free2.xml -m plex.xml -o free3.xml
+        tv_merge -i pluto.xml -m plex.xml -o free2.xml
+        tv_merge -i free2.xml -m anime.xml -o free3.xml
         tv_merge -i free3.xml -m samsung.xml -o free4.xml
         tv_merge -i free4.xml -m free1.xml -o merge.xml
         rm -rf ../.git/objects/pack
