@@ -1,13 +1,11 @@
-name: magic
-
+name: test
 on:
-  workflow_run:
-
+  workflow_dispatch:
 jobs:
   build:
-   runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Stage 3
+    - name: Stage 1
       run: |
-        ls -la /home/runner/work/
+        ls /home/runner/work/MattTheTekie/MattTheTekie/
