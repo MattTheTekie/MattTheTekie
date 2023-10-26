@@ -318,14 +318,14 @@ jobs:
 
         rm -rf ../.git/objects/pack
         mkdir 1 && cd 1
+        cp ../merge.xml SATANSLAYER666_666_hehehe_merge.xml
+        cp ../combined.m3u SATANSLAYER666_666_hehehe_combined.m3u
         wget ${{ secrets.YAY }}
         unzip site.zip
-        cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/0/combined.m3u /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/1/SATANSLAYER666_666_hehehe_combined.m3u
-        cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/0/merge.xml /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/1/SATANSLAYER666_666_hehehe_merge.xml
     - name: Push
       uses: dswistowski/surge-sh-action@v1
       with:
          domain: ${{ secrets.surge_domain }}
-         project: '/home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/1'
+         project: '/home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/0'
          login: ${{ secrets.surge_login }}
          token: ${{ secrets.surge_token }}
