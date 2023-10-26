@@ -8,25 +8,35 @@ on:
     branches: [master]
     types:
       - completed
-
 jobs:
   build:
-    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Stage 1
       run: |
+        echo Processing Stage 1
+        exec 3>&1 &>/dev/null
+        sudo apt update
+        sudo apt -y install xmltv retry
+        wget http://webgrabplus.com/sites/default/files/download/SW/V3.2.0/WebGrabPlus_V3.2_install.tar.gz
+        tar -zxvf WebGrabPlus_V3.2_install.tar.gz
+        cd .wg++
+        ./install.sh
+        cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/1.xml WebGrab++.config.xml
+        cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/2.xml WebGrab++.config2.xml
+        retry ./run.sh || mv WebGrab++.config.xml WebGrab++.config_og.xml && mv WebGrab++.config2.xml WebGrab++.config.xml && ./run.sh
+        mv /home/runner/work/MattTheTekie/MattTheTekie/.wg++/guide.xml /home/runner/work/MattTheTekie/MattTheTekie/.wg++/1.xml
     - name: Stage 2
       uses: actions/upload-artifact@master
       with:
         name: 1.xml
-        path: /home/runner/work/fictional-pancake/fictional-pancake/.wg++/1.xml
+        path: /home/runner/work/MattTheTekie/MattTheTekie/.wg++/1.xml
     - name: Stage 3
       run: |
         echo Processing Stage 3
         exec 3>&1 &>/dev/null
-        cd /home/runner/work/fictional-pancake/fictional-pancake/.wg++/
+        cd /home/runner/work/MattTheTekie/MattTheTekie/.wg++/
         git init
         git config --local user.name "actions"
         git config --local user.email "action@github.com"
@@ -40,7 +50,7 @@ jobs:
         echo Processing Stage 4
         exec 3>&1 &>/dev/null
         go install github.com/aquilax/m3u-combine@latest
-        cd 0        
+        cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/0      
         openvpn vpn.ovpn --auth-user-pass <(echo -e ${{ secrets.VPN_USERNAME }}"\n"${{ secrets.VPN_PASSWORD }}) &
         wget -O 0_1.m3u https://github.com/iptv-org/iptv/raw/master/streams/us_samsung.m3u
         wget -O 0_2.m3u https://i.mjh.nz/PlutoTV/us.m3u8
@@ -87,7 +97,7 @@ jobs:
       run: |
         echo Processing Final Stage
         exec 3>&1 &>/dev/null
-        cd 0
+        cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/0
         cat zoro.txt | ~/go/bin/m3u-combine > zoro.m3u
         sed 's/.png", /.png" group-title="Free TV", /' -i zoro.m3u
         cat luffy.txt | ~/go/bin/m3u-combine > 0.m3u
@@ -307,22 +317,19 @@ jobs:
         sed 's/",/" group-title="Japanese TV", \[JAPAN\] /' -i 'jp_org.m3u'
         cat linux.txt | ~/go/bin/m3u-combine > combined.m3u
         touch merge.xml
-        tv_merge -i 1.xml -m iptvjapan.xml -o japan1.xml
-        tv_merge -i japan1.xml -m pluto.xml -o free1.xml
-        tv_merge -i pluto.xml -m anime.xml -o free2.xml
-        tv_merge -i free2.xml -m plex.xml -o free3.xml
-        tv_merge -i free3.xml -m samsung.xml -o free4.xml
-        tv_merge -i free4.xml -m free1.xml -o merge.xml
+        tv_merge -i pluto.xml -m plex.xml -o free.xml
+        tv_merge -i free.xml -m samsung.xml -o free2.xml
+        tv_merge -i anime.xml -m iptvjapan.xml -o merge.xml
         rm -rf ../.git/objects/pack
         mkdir 1 && cd 1
+        cp ../merge.xml SATANSLAYER666_666_hehehe_merge.xml
+        cp ../combined.m3u SATANSLAYER666_666_hehehe_combined.m3u
         wget ${{ secrets.YAY }}
         unzip site.zip
-        cp /home/runner/work/fictional-pancake/fictional-pancake/0/combined.m3u /home/runner/work/fictional-pancake/fictional-pancake/0/1/SATANSLAYER666_666_hehehe_combined.m3u
-        cp /home/runner/work/fictional-pancake/fictional-pancake/0/merge.xml /home/runner/work/fictional-pancake/fictional-pancake/0/1/SATANSLAYER666_666_hehehe_merge.xml
     - name: Push
       uses: dswistowski/surge-sh-action@v1
       with:
          domain: ${{ secrets.surge_domain }}
-         project: '/home/runner/work/fictional-pancake/fictional-pancake/0/1'
+         project: '/home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/0'
          login: ${{ secrets.surge_login }}
          token: ${{ secrets.surge_token }}
