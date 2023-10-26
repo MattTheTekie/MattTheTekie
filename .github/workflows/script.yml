@@ -18,20 +18,20 @@ jobs:
         tar -zxvf WebGrabPlus_V3.2_install.tar.gz
         cd .wg++
         ./install.sh
-        mv ../1.xml WebGrab++.config.xml
-        mv ../2.xml WebGrab++.config2.xml
+        cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/1.xml WebGrab++.config.xml
+        cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/2.xml WebGrab++.config2.xml
         retry ./run.sh || mv WebGrab++.config.xml WebGrab++.config_og.xml && mv WebGrab++.config2.xml WebGrab++.config.xml && ./run.sh
-        mv /home/runner/work/fictional-pancake/fictional-pancake/.wg++/guide.xml /home/runner/work/fictional-pancake/fictional-pancake/.wg++/1.xml
+        mv /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/.wg++/guide.xml /home/runner/work/MattTheTekie/MattTheTekie/.wg++/1.xml
     - name: Stage 2
       uses: actions/upload-artifact@master
       with:
         name: 1.xml
-        path: /home/runner/work/fictional-pancake/fictional-pancake/.wg++/1.xml
+        path: /home/runner/work/MattTheTekie/MattTheTekie/.wg++/1.xml
     - name: Stage 3
       run: |
         echo Processing Stage 3
         exec 3>&1 &>/dev/null
-        cd /home/runner/work/fictional-pancake/fictional-pancake/.wg++/
+        cd /home/runner/work/MattTheTekie/MattTheTekie/.wg++/
         git init
         git config --local user.name "actions"
         git config --local user.email "action@github.com"
@@ -45,7 +45,7 @@ jobs:
         echo Processing Stage 4
         exec 3>&1 &>/dev/null
         go install github.com/aquilax/m3u-combine@latest
-        cd 0        
+        cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV        
         openvpn vpn.ovpn --auth-user-pass <(echo -e ${{ secrets.VPN_USERNAME }}"\n"${{ secrets.VPN_PASSWORD }}) &
         wget -O 0_1.m3u https://github.com/iptv-org/iptv/raw/master/streams/us_samsung.m3u
         wget -O 0_2.m3u https://i.mjh.nz/PlutoTV/us.m3u8
@@ -92,7 +92,7 @@ jobs:
       run: |
         echo Processing Final Stage
         exec 3>&1 &>/dev/null
-        cd 0
+        cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV
         cat zoro.txt | ~/go/bin/m3u-combine > zoro.m3u
         sed 's/.png", /.png" group-title="Free TV", /' -i zoro.m3u
         cat luffy.txt | ~/go/bin/m3u-combine > 0.m3u
