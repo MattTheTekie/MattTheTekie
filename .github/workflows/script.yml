@@ -92,7 +92,7 @@ jobs:
       run: |
         echo Processing Final Stage
         
-        cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV
+        cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/0
         cat zoro.txt | ~/go/bin/m3u-combine > zoro.m3u
         sed 's/.png", /.png" group-title="Free TV", /' -i zoro.m3u
         cat luffy.txt | ~/go/bin/m3u-combine > 0.m3u
