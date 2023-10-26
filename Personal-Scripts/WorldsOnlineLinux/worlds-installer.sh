@@ -147,7 +147,7 @@ launchscript () {
 }
 
 menufile () {
-    wget -O"$WORLDSDIR/worlds.desktop" "https://github.com/MattTheTekie/MattTheTekie/raw/main/Personal-Scripts/WorldsOnlineLinux/worlds.desktop"
+    wget -O"$WORLDSDIR/worlds.desktop" "https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/master/Personal-Scripts/WorldsOnlineLinux/worlds.desktop"
     echo "" > "$HOME/.local/share/applications/worlds.desktop" #Making sure the file is clear.
     while read line 
     do
