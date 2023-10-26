@@ -7,20 +7,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Stage 1
-      run: |
-        echo Processing Stage 1
-        sudo apt update
-        sudo apt -y install xmltv retry
-        wget http://webgrabplus.com/sites/default/files/download/SW/V3.2.0/WebGrabPlus_V3.2_install.tar.gz
-        tar -zxvf WebGrabPlus_V3.2_install.tar.gz
-        cd .wg++
-        ./install.sh
-        mv ../1.xml WebGrab++.config.xml
-        mv ../2.xml WebGrab++.config2.xml
-        retry ./run.sh || mv WebGrab++.config.xml WebGrab++.config_og.xml && mv WebGrab++.config2.xml WebGrab++.config.xml && ./run.sh
-        mv /home/runner/work/MattTheTekie/MattTheTekie/.wg++/guide.xml /home/runner/work/MattTheTekie/MattTheTekie/.wg++/1.xml
     - name: Stage 2
       uses: actions/upload-artifact@master
       with:
