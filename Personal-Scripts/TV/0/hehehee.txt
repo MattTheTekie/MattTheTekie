@@ -1,4 +1,2 @@
 combined1.m3u
 events2.m3u
-vod3.m3u
-TV.m3u
