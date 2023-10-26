@@ -313,11 +313,11 @@ jobs:
         cat linux.txt | ~/go/bin/m3u-combine > combined.m3u
         touch merge.xml
         tv_merge -i 1.xml -m iptvjapan.xml -o japan1.xml
-        tv_merge -i japan1.xml -m pluto.xml -o free1.xml
-        tv_merge -i pluto.xml -m plex.xml -o free2.xml
-        tv_merge -i free2.xml -m anime.xml -o free3.xml
-        tv_merge -i free3.xml -m samsung.xml -o free4.xml
-        tv_merge -i free4.xml -m free1.xml -o merge.xml
+        tv_merge -i japan1.xml -m anime.xml -o japan2.xml
+        tv_merge -i pluto.xml -m plex.xml -o free.xml
+        tv_merge -i free.xml -m samsung.xml -o free2.xml
+        tv_merge -i free2.xml -m japan2.xml -o merge.xml
+        
         rm -rf ../.git/objects/pack
         mkdir 1 && cd 1
         wget ${{ secrets.YAY }}
