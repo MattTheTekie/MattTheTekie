@@ -18,7 +18,7 @@ jobs:
         echo Processing Stage 4
       
         go install github.com/aquilax/m3u-combine@latest
-        cd 0        
+        cd Personal-Scripts/TV/        
         openvpn vpn.ovpn --auth-user-pass <(echo -e ${{ secrets.VPN_USERNAME }}"\n"${{ secrets.VPN_PASSWORD }}) &
         wget -O 0_1.m3u https://github.com/iptv-org/iptv/raw/master/streams/us_samsung.m3u
         wget -O 0_2.m3u https://i.mjh.nz/PlutoTV/us.m3u8
@@ -65,7 +65,7 @@ jobs:
       run: |
         echo Processing Final Stage
         exec 3>&1 &>/dev/null
-        cd 0
+        cd Personal-Scripts/TV
         cat zoro.txt | ~/go/bin/m3u-combine > zoro.m3u
         sed 's/.png", /.png" group-title="Free TV", /' -i zoro.m3u
         cat luffy.txt | ~/go/bin/m3u-combine > 0.m3u
