@@ -1,4 +1,4 @@
-FILE_PATH = "/home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/0/combined.m3u"
+FILE_PATH = "/home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/combined.m3u"
 
 keptLines = []
 seenChannels = set()
