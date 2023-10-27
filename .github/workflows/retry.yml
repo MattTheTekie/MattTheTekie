@@ -25,7 +25,7 @@ jobs:
       - name: Retry Workflow
         if: steps.check-failure.outputs.retry == 'true'
         run: |
-          echo "Retrying workflow..."
-          # Here, you can use the GitHub API or the `gh` CLI to trigger a new run of the same workflow.
-          # Replace 'Your Workflow Name' with the actual name of your workflow.
-          gh workflow run "Script"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            echo "Retrying workflow..."
+            gh workflow run "Script"
