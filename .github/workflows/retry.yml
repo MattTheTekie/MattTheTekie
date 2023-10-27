@@ -8,7 +8,7 @@ jobs:
   restart_when_failed:
     name: Restart the scheduled run on failure
     runs-on: ubuntu-latest
-    if: failure()
+    if: failure() && cancelled()
 
     needs: [build, build_pwsh, build_cmd]
 
