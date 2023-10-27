@@ -25,7 +25,7 @@ jobs:
       - name: Retry Workflow
         if: steps.check-failure.outputs.retry == 'true'
         run: |
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             echo "Retrying workflow..."
             gh workflow run "Script"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
