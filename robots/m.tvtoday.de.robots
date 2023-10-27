@@ -1,0 +1,5 @@
+﻿User-agent: *
+Allow: /
+Disallow: /rss/
+Sitemap: https://www.tvtoday.de/sitemap.xml
+

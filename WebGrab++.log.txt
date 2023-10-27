@@ -1,0 +1,43 @@
+﻿[        ] 
+[        ]            WebGrab+Plus/w MDB & REX Postprocess -- version  V3.2.0.0            
+[        ] 
+[        ]                                 Jan van Straaten                                
+[        ]                              Francis De Paemeleere                              
+[        ] 
+[        ]             thanks to Paul Weterings and all the contributing users             
+[        ] --------------------------------------------------------------------------------
+[        ] 
+[        ] Job started at 27/10/2023 13:53:23
+[  Debug ] 
+[  Debug ] Running  on: Unix 6.2.0.1015
+[  Debug ] Environment: 4.0.30319.42000
+[  Debug ] Mono version: 6.12.0.200 (tarball Tue Jul 11 21:37:50 UTC 2023)
+[  Debug ] 
+[  Debug ] Loading timezone data
+[  Debug ] Embedded timezones source: timezone.timezonesdata.txt
+[  Debug ] Reading config file: /home/runner/work/MattTheTekie/MattTheTekie/.wg++/./WebGrab++.config.xml
+[  Info  ] Checking License ..
+[  Info  ] For License request/update data, see WGLicense.log.txt
+[  Debug ] 
+[  Info  ] found: /home/runner/work/MattTheTekie/MattTheTekie/.wg++/./siteini.pack/Germany/m.tvtoday.de.ini -- Revision 10
+[  Info  ] input file /home/runner/work/MattTheTekie/MattTheTekie/.wg++/guide.xml not found   ... created a new one ... 
+[  Info  ] 
+[  Info  ] 
+[  Info  ]       i=index  .=same  c=change  g=gab  r=replace  n=new
+[  Info  ] 
+[  Info  ] 
+[  Info  ] Group (0) :
+[  Info  ] update requested for - 0 - out of - 1 - channels for 3 day(s)
+[  Info  ] 
+[  Info  ] Group (1) :
+[  Info  ] update requested for - 1 - out of - 1 - channels for 3 day(s)
+[  Debug ] 
+[  Info  ] (   1/1   ) M.TVTODAY.DE -- chan. (xmltv_id=ANIXE) -- mode Force
+[  Info  ] 
+[  Debug ] 
+[  Debug ] 110 shows in 1 channels
+[  Debug ] 0 updated shows
+[  Debug ] 110 new shows added
+[  Info  ] 
+[  Info  ] 
+[        ] Job finished at 27/10/2023 13:54:45 done in 1m 22s

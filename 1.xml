@@ -1,0 +1,803 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version  V3.2.0.0 -- Jan van Straaten" generator-info-url="http://www.webgrabplus.com">
+  <channel id="ANIXE">
+    <display-name lang="de">ANIXE</display-name>
+    <url>http://www.m.tvtoday.de</url>
+  </channel>
+  <programme start="20231027040000 +0000" stop="20231027043000 +0000" channel="ANIXE">
+    <title lang="de">Entdecke die Welt</title>
+    <desc lang="de">Kommen Sie mit und lass uns die Welt entdecken! Wir besuchen die verschiedensten Orte dieser Welt und bestaunen die faszinierende Vielfalt an Schauplätzen und Kulturen. Gehen wir auf Reise mit "Entdecke die Welt".(n)</desc>
+    <category lang="de">Dokumentationsreihe</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027043000 +0000" stop="20231027053000 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027053000 +0000" stop="20231027060000 +0000" channel="ANIXE">
+    <title lang="de">So schmeckt die Welt</title>
+    <desc lang="de">Was Andrew Zimmern beruflich macht, ist nichts für schwache Mägen. Er ist Essenstester und reist als solcher rund um den Globus. Sein wichtigstes Handwerkzeug: Geschmacksnerven aus Stahl.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027060000 +0000" stop="20231027070000 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027070000 +0000" stop="20231027072500 +0000" channel="ANIXE">
+    <title lang="de">VIP Trip</title>
+    <title lang="xx">VIP Trip, ANIXE auf Reisen, VIP Trip – Prominente auf Reisen</title>
+    <desc lang="de">Mit der beliebten Schauspielerin Eva Habermann begibt sich Anixe zunächst auf eine kurzweilige Tour durch Taipeh, das wirtschaftliche und politische Herz Taiwans. In der Hauptstadt der Republik – wie im ganzen Land – treffen jahrtausendealte chinesische Traditionen und japanische Kultur auf modernes Hightech-Zeitalter. Zahlreiche Tempel, Klöster und Märkte prägen die Stadt, in Taipeh pulsiert das Leben. Anders als in China sind in Taiwan zahllose religiöse Bauten erhalten geblieben. Religion und Spiritualität gehören hier seit jeher zum Alltag, eine Kulturrevolution wie in der Volksrepublik hat es nicht gegeben. So ist es nicht verwunderlich, dass Eva Habermann ihre Reise mit einem Besuch in einem der ältesten Tempel des Landes beginnt. Die Insel besticht aber nicht nur durch kulturellen Reichtum, sondern auch durch landschaftliche und kulinarische Vielseitigkeit. Die Schauspielerin wandert auf einsamen Wegen über Hängebrücken durch die Taroko-Schlucht und unternimmt eine Fahrradtour am Sonne-Mond-See. Begleiten Sie Eva Habermann auf ihren Streifzügen über die bunten Straßen- und Nachtmärkte Taiwans. Tauchen Sie ein in die Welt der japanischen Baderkultur und lassen Sie sich in die Jahrtausende alte chinesische Kunst der Kalligraphie einführen.(n)</desc>
+    <credits>
+      <director>Michael Stroh</director>
+    </credits>
+    <date>2015</date>
+    <category lang="de">Reportagereihe</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027072500 +0000" stop="20231027075500 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027075500 +0000" stop="20231027082500 +0000" channel="ANIXE">
+    <title lang="de">Kochen mit Anixe</title>
+    <desc lang="de">Neben fettem Fisch ist Knochenmark von Tieren aus Weidehaltung eine ausgezeichnete Quelle für wichtige Fette, da Knochenmark zu einem großen Teil aus Omega-3-Fettsäuren besteht. In Kombination mit Rinderfilet ist es jedoch nicht nur gesund, sondern auch extrem schmackhaft. Unser TV Koch hat mal wieder eine pfiffige Überraschung für Sie im Gepäck.(n)</desc>
+    <category lang="de">Show</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027082500 +0000" stop="20231027084000 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027084000 +0000" stop="20231027091000 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027091000 +0000" stop="20231027093000 +0000" channel="ANIXE">
+    <title lang="de">Reisen mit Kreta.de</title>
+    <desc lang="de">Informative Beiträge rund um das Thema Kreta. Ein bunter Mix aus den neusten Nachrichten, interessanten Reportagen, Dokumentationen und attraktiven Hotelvorschlägen. Das Team von kreta.de ist vor Ort und hat die passenden Insider Tipps für Ihre nächste Kreta Reise. Eine Zusammenarbeit von Anixe und Kreta.de – Ihr Infoportal für Ihren perfekten Kreta-Urlaub.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027093000 +0000" stop="20231027100000 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027100000 +0000" stop="20231027101500 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027101500 +0000" stop="20231027102000 +0000" channel="ANIXE">
+    <title lang="de">Reisen mit Kreta.de</title>
+    <desc lang="de">Informative Beiträge rund um das Thema Kreta. Ein bunter Mix aus den neusten Nachrichten, interessanten Reportagen, Dokumentationen und attraktiven Hotelvorschlägen. Das Team von kreta.de ist vor Ort und hat die passenden Insider Tipps für Ihre nächste Kreta Reise. Eine Zusammenarbeit von Anixe und Kreta.de – Ihr Infoportal für Ihren perfekten Kreta-Urlaub.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027102000 +0000" stop="20231027105000 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027105000 +0000" stop="20231027114500 +0000" channel="ANIXE">
+    <title lang="de">Entdecke die Welt</title>
+    <desc lang="de">Es sind oft die unscheinbaren Wesen die Einen plötzlich überraschen. Das ist bei Menschen nicht anders wie bei Städten. Bayreuth in Oberfranken ist so eine Stadt. Sie ist wie ein schüchternes Mädchen das sich generiert ihre Schönheit zu zeigen. Sei es Prunk und Farbenpracht, Architektur und Bauwerke, Kunst und Kultur.(n)</desc>
+    <category lang="de">Dokumentationsreihe</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027114500 +0000" stop="20231027121500 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027121500 +0000" stop="20231027131000 +0000" channel="ANIXE">
+    <title lang="de">Unsere Schule ist die beste</title>
+    <desc lang="de">Frau Knauer (Pia Hänggi), Sekretärin des Schuldirektors, erzählt Werner von einem schlimmen Verdacht. Sie hat die Schülerin Ruth Angerer (Nanni Herrmann) im Duschraum gesehen, übersät mit blauen Flecken. Frau Knauer vermutet, dass Ruths Vater (Roland Paulus) das Kind schlägt. Seit der Automechaniker seinen Job verloren hat, lässt er seinen Groll offensichtlich an Ruth aus. Werner sucht den Grobian auf, stellt ihn zur Rede und bekommt dessen Faust zu spüren ..(n)</desc>
+    <credits>
+      <director>Harald Leipnitz</director>
+      <actor>Elmar Wepper</actor>
+      <actor>Michaela May</actor>
+      <actor>Harald Leipnitz</actor>
+      <actor>Horst Sachtleben</actor>
+      <actor>Andrea Wildner</actor>
+      <writer>Eva Kummeth</writer>
+      <writer>Horst Kummeth</writer>
+    </credits>
+    <date>1995</date>
+    <category lang="de">Familienserie</category>
+    <country lang="de">D</country>
+    <episode-num system="onscreen">S1 E12/16</episode-num>
+  </programme>
+  <programme start="20231027131000 +0000" stop="20231027142000 +0000" channel="ANIXE">
+    <title lang="de">Reisen mit Kreta.de</title>
+    <desc lang="de">Informative Beiträge rund um das Thema Kreta. Ein bunter Mix aus den neusten Nachrichten, interessanten Reportagen, Dokumentationen und attraktiven Hotelvorschlägen. Das Team von kreta.de ist vor Ort und hat die passenden Insider Tipps für Ihre nächste Kreta Reise. Eine Zusammenarbeit von Anixe und Kreta.de – Ihr Infoportal für Ihren perfekten Kreta-Urlaub.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027142000 +0000" stop="20231027145000 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027145000 +0000" stop="20231027150000 +0000" channel="ANIXE">
+    <title lang="de">Reisen mit Kreta.de</title>
+    <desc lang="de">Informative Beiträge rund um das Thema Kreta. Ein bunter Mix aus den neusten Nachrichten, interessanten Reportagen, Dokumentationen und attraktiven Hotelvorschlägen. Das Team von kreta.de ist vor Ort und hat die passenden Insider Tipps für Ihre nächste Kreta Reise. Eine Zusammenarbeit von Anixe und Kreta.de – Ihr Infoportal für Ihren perfekten Kreta-Urlaub.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027150000 +0000" stop="20231027153000 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027153000 +0000" stop="20231027163000 +0000" channel="ANIXE">
+    <title lang="de">Unsere Schule ist die beste</title>
+    <desc lang="de">Außerirdische bringen Unruhe ins Internat: der Schüler Rainer Zirl (Christian Lösel) will über dem Chiemsee ein Ufo gesehen haben. Die örtliche Presse berichtet von dem Vorfall. Unter den Lehrern entzündet sich eine kontroverse Diskussion. Außer Uschi und ihrem Kollegen Oliver Strühle will keiner an fliegende Untertassen glauben. Rainers Mitschüler beschließen eine nächtliche Ufo-Beobachtung. Uschi, Werner, Pater Clemens und Oliver Strühler nehmen an dem intergalaktischen Abenteuer teil ..(n)</desc>
+    <credits>
+      <director>Klaus Merkel</director>
+      <actor>Elmar Wepper</actor>
+      <actor>Michaela May</actor>
+      <actor>Harald Leipnitz</actor>
+      <actor>Horst Sachtleben</actor>
+      <actor>Andrea Wildner</actor>
+      <actor>Rainer Goernemann</actor>
+      <writer>Eva Kummeth</writer>
+      <writer>Horst Kummeth</writer>
+    </credits>
+    <date>1995</date>
+    <category lang="de">Familienserie</category>
+    <country lang="de">D</country>
+    <episode-num system="onscreen">S1 E13/16</episode-num>
+  </programme>
+  <programme start="20231027163000 +0000" stop="20231027170000 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027170000 +0000" stop="20231027173000 +0000" channel="ANIXE">
+    <title lang="de">Kochen mit Anixe</title>
+    <desc lang="de">Im deutschsprachigen Raum ursprünglich als Rauke bekannt, aber in Vergessenheit geraten, wurden die Pflanzen unter ihrem italienischen Namen Rucola wieder populär. Ebenso populär sind Spaghetti und Aufläufe. Aber unser TV Koch lässt sich natürlich etwas Besonderes einfallen und verfeinert das Ganze mit Chorizo, Spaniens scharfer Delikatesse. Unsere Moderatorin Tanja Götemann hat dazu wieder interessante Informationen für Sie.(n)</desc>
+    <category lang="de">Show</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027173000 +0000" stop="20231027180000 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027180000 +0000" stop="20231027181500 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027181500 +0000" stop="20231027184500 +0000" channel="ANIXE">
+    <title lang="de">Initiative Gold</title>
+    <desc lang="de">Informativ und immer verbunden mit aktuellen Themen zum Weltgeschehen – in der Initiative Gold dreht sich alles um das schönste Edelmetall der Welt: natürlich Gold! Die Münz-Experten von Reppa präsentieren exklusive Gold-Produkte, beantworten spannende Zuschauerfragen und geben wertvolle Tipps rund ums Sparen und Anlegen. Hochwertig, hilfreich und stets mit einer Prise Humor – dieses Informationsmagazin sollte man sich nicht entgehen lassen. Aus dem Hause Reppa.(n)</desc>
+    <category lang="de">Magazin</category>
+  </programme>
+  <programme start="20231027184500 +0000" stop="20231027191000 +0000" channel="ANIXE">
+    <title lang="de">Bauen und Wohnen</title>
+    <desc lang="de">Smart Home oder intelligente Haussteuerung? Glas, Keramik oder Naturstein für die neue Küche? Fertighaus oder Massivhaus? Echtholzparkett oder Teppichboden? Spezieller Putz oder große Motivfliesen im neuen Bad? Fragen über Fragen, die wir uns immer wieder stellen, wenn es um unser Zuhause, unseren ganz persönlichen Rückzugsort geht. Genau hier setzt die Sendung BAUEN &amp; WOHNEN an. Ziel der Sendung BAUEN &amp; WOHNEN ist es, den Zuschauern echte Mehrwerte für das tägliche Leben zu geben. "Wir wollen mit vertrauensvollen und ehrlichen Informationen das Leben der Menschen einfacher, schöner und besser machen und Sie mit spannenden Beiträgen inspirieren", erklärt Tobias Baunach, Teamleiter und Moderator BAUEN &amp; WOHEN. "Die Menschen wollen konstruktive Ideen und Anregungen bekommen und nicht nur hören, warum etwas nicht oder was alles schief geht." Unser TV-Magazin "BAUEN &amp; WOHNEN" richtet sich an alle, die das Leben schöner gestalten. Dazu sind wir im Gespräch mit den Menschen vor Ort: den Häuslebauern, Handwerkern und Herstellern. Gerne mitten aus der Werkstatt oder von der Baustelle um Trends und Neuigkeiten auszutauschen. Die Experten in der Sendung sind Handwerker, Unternehmer, Rechtsanwälte, Architekten und Interior-Designer aus dem deutschsprachigen Raum.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027191000 +0000" stop="20231027191500 +0000" channel="ANIXE">
+    <title lang="de">Reisen mit Kreta.de</title>
+    <desc lang="de">Informative Beiträge rund um das Thema Kreta. Ein bunter Mix aus den neusten Nachrichten, interessanten Reportagen, Dokumentationen und attraktiven Hotelvorschlägen. Das Team von kreta.de ist vor Ort und hat die passenden Insider Tipps für Ihre nächste Kreta Reise. Eine Zusammenarbeit von Anixe und Kreta.de – Ihr Infoportal für Ihren perfekten Kreta-Urlaub.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027191500 +0000" stop="20231027194500 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027194500 +0000" stop="20231027201500 +0000" channel="ANIXE">
+    <title lang="de">Kochen mit Anixe</title>
+    <desc lang="de">Wenn man an Schweden denkt, dann kommen einem Seen, Wälder und pure Natur in den Sinn. In dieser Folge von "Kochen mit Anixe" zeigt uns Jörg Guhmann, wie man einen frischen Lachs zubereitet und selbst beizt. Unsere Moderatorin löchert unseren TV Koch mit Fragen zu seiner Reise nach Schweden und Sie profitieren von den Tipps und Tricks aus der Welt der Kulinarik.(n)</desc>
+    <date>2022</date>
+    <category lang="de">Show</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027201500 +0000" stop="20231027211500 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027211500 +0000" stop="20231027214500 +0000" channel="ANIXE">
+    <title lang="de">Bauen und Wohnen</title>
+    <desc lang="de">Smart Home oder intelligente Haussteuerung? Glas, Keramik oder Naturstein für die neue Küche? Fertighaus oder Massivhaus? Echtholzparkett oder Teppichboden? Spezieller Putz oder große Motivfliesen im neuen Bad? Fragen über Fragen, die wir uns immer wieder stellen, wenn es um unser Zuhause, unseren ganz persönlichen Rückzugsort geht. Genau hier setzt die Sendung BAUEN &amp; WOHNEN an. Ziel der Sendung BAUEN &amp; WOHNEN ist es, den Zuschauern echte Mehrwerte für das tägliche Leben zu geben. "Wir wollen mit vertrauensvollen und ehrlichen Informationen das Leben der Menschen einfacher, schöner und besser machen und Sie mit spannenden Beiträgen inspirieren", erklärt Tobias Baunach, Teamleiter und Moderator BAUEN &amp; WOHEN. "Die Menschen wollen konstruktive Ideen und Anregungen bekommen und nicht nur hören, warum etwas nicht oder was alles schief geht." Unser TV-Magazin "BAUEN &amp; WOHNEN" richtet sich an alle, die das Leben schöner gestalten. Dazu sind wir im Gespräch mit den Menschen vor Ort: den Häuslebauern, Handwerkern und Herstellern. Gerne mitten aus der Werkstatt oder von der Baustelle um Trends und Neuigkeiten auszutauschen. Die Experten in der Sendung sind Handwerker, Unternehmer, Rechtsanwälte, Architekten und Interior-Designer aus dem deutschsprachigen Raum.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027214500 +0000" stop="20231027221500 +0000" channel="ANIXE">
+    <title lang="de">VIP Trip</title>
+    <title lang="xx">VIP Trip, ANIXE auf Reisen, VIP Trip – Prominente auf Reisen</title>
+    <desc lang="de">Der bekannte Schauspieler Michael Roll macht sich auf in den berühmten US-Sonnenstaat Florida. Dort erkundet er gleich zwei benachbarte Regionen: Tampa und Anna Maria Island. In der Metropole an der Golfküste erkundet er zunächst die Innenstadt auf einem Wasserfahrrad. Anschließend besucht er das historische kubanische Viertel Ybor City und lernt, wie Zigarren gedreht werden. Weiterhin steht die Erkundung von Busch Gardens auf dem Programm. Der Freizeitpark ist besonders als "El Dorado" für Achterbahn-Freaks bekannt. Auch eine Visite in einem Hospital für verletzte Manatees lässt er sich nicht entgehen. Dort beobachtet er, wie die Seekühe nach der medizinischen Behandlung wieder für die Auswilderung vorbereitet werden.(n)</desc>
+    <category lang="de">Reportagereihe</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027221500 +0000" stop="20231027224500 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027224500 +0000" stop="20231027233000 +0000" channel="ANIXE">
+    <title lang="de">Entdecke die Welt</title>
+    <desc lang="de">Kommen Sie mit und lass uns die Welt entdecken! Wir besuchen die verschiedensten Orte dieser Welt und bestaunen die faszinierende Vielfalt an Schauplätzen und Kulturen. Gehen wir auf Reise mit "Entdecke die Welt".(n)</desc>
+    <category lang="de">Dokumentationsreihe</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027233000 +0000" stop="20231027234500 +0000" channel="ANIXE">
+    <title lang="de">Hyperraum</title>
+    <desc lang="de">HYPERRAUM.TV ist der deutschsprachige Internet-Sender für alle, die mehr über Naturwissenschaft und Technologie wissen möchten. Mit seinem anspruchsvollen Programm mit Reportagen, Talks und Studiosendungen bietet HYPERRAUM.TV ein buntes Themenspektrum, das relevante Forschungsergebnisse und neue Technologien verständlich und kompetent aufbereitet: von der faszinierenden Entschlüsselung der letzten großen Geheimnisse des Universums oder den jüngsten Erkenntnissen der Genforschung bis zu den Perspektiven der Kernfusion als Energiequelle von Übermorgen. Der TV-Sender bringt dem Zuschauer aber nicht nur diese herausragende Grundlagenforschung näher, sondern zeigt auch Neues aus anwendungsnahen Forschungslabors mit Entwicklungen, die schon bald unser Leben verändern werden – von autonomen Fahrzeugen über die Biotechnologie bis zur Wunderwelt der Medien.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231027234500 +0000" stop="20231028040000 +0000" channel="ANIXE">
+    <title lang="de">Anixe Doku – Nachtprogramm</title>
+    <desc lang="de">Das Anixe Doku- Nachtprogramm. Das Beste zu den Themen Technik, Reisen und Kulinarik. Ein wunderbarer Mix aus unseren beliebtesten Dokumentationen.(n)</desc>
+    <category lang="de">Dokumentationsreihe</category>
+  </programme>
+  <programme start="20231028040000 +0000" stop="20231028043000 +0000" channel="ANIXE">
+    <title lang="de">Entdecke die Welt</title>
+    <desc lang="de">Kommen Sie mit und lass uns die Welt entdecken! Wir besuchen die verschiedensten Orte dieser Welt und bestaunen die faszinierende Vielfalt an Schauplätzen und Kulturen. Gehen wir auf Reise mit "Entdecke die Welt".(n)</desc>
+    <category lang="de">Dokumentationsreihe</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028043000 +0000" stop="20231028053000 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028053000 +0000" stop="20231028060000 +0000" channel="ANIXE">
+    <title lang="de">Kochen mit Anixe</title>
+    <desc lang="de">Bei Kochen mit Anixe zeigen wir Ihnen wie frische, saisonale Rezepte ganz einfach nachgekocht werden können. Erleben Sie unseren TV Koch Jörg Guhmann, der nicht nur gut kochen kann, sondern einfache und effektive Tipps für alle "Kochverliebten" in Petto hat. Dazu kommt noch der richtige Wein, die perfekten Zutaten und die Möglichkeit etwas über "Nachhaltigkeit" zu erlernen. Unsere Moderatorin plaudert frisch und frei mit dem "Chef de Cuisine" und entlockt ihm lässig und locker hilfreiche Küchengeheimnisse.(n)</desc>
+    <category lang="de">Show</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028060000 +0000" stop="20231028070000 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028070000 +0000" stop="20231028073000 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028073000 +0000" stop="20231028075500 +0000" channel="ANIXE">
+    <title lang="de">VIP Trip</title>
+    <title lang="xx">VIP Trip, ANIXE auf Reisen, VIP Trip – Prominente auf Reisen</title>
+    <desc lang="de">Das Ziel dieser "ANIXE auf Reisen" Reportage ist die im Mittelmeer liegende Inselrepublik Malta. Der beliebte Schauspieler Florian Fitz möchte das kleine und doch geschichtsträchtige Land erkunden. Er beginnt seine Rundreise in der Hauptstadt Valetta und lernt dort einen echten Malteserritter kennen. Außerdem auf dem Programm: Der Besuch des Manoel Theaters, der drittältesten Spielstätte der Welt. Die archäologischen Stätten geben dann dem Schauspieler einen Eindruck, welche Bedeutung die Insel bereits vor Jahrtausenden hatte. Aktiv geht es dann bei einer Mountainbike Tour die Küste entlang und mit dem Speedboot auf dem Meer weiter. Besonders beeindruckt ist Florian Fitz von einem Spaziergang durch den pittoresken Fischerort Marsaxlokk. Nach einem typischen maltesischen Abendessen stürzt er sich dann in das Nachtleben. Zum Abschluß geht es für Florian Fitz auf die kleine Schwesterinsel Gozo. Dort unternimmt er einen Tauchgang zum legendären "Blue Hole" und besichtigt die eindrucksvollen Salzfelder.(n)</desc>
+    <category lang="de">Reportagereihe</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028075500 +0000" stop="20231028082500 +0000" channel="ANIXE">
+    <title lang="de">Kochen mit Anixe</title>
+    <desc lang="de">Leberknödel und Rinderbrühe sind echte Klassiker der deutschen Küche. Doch die meisten von uns kaufen diese Lebensmittel bereits vorgekocht. Unser TV Koch zeigt unserer Moderatorin, wie man sie selbst frisch zubereitet. Das Rezept für deftige Leberknödel gibt Kraft und schmeckt. Und Rinderbrühe ist ein echter "Alleskönner" und wärmt von innen.(n)</desc>
+    <category lang="de">Show</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028082500 +0000" stop="20231028085500 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028085500 +0000" stop="20231028093000 +0000" channel="ANIXE">
+    <title lang="de">Anixe auf Rädern</title>
+    <desc lang="de">Herzlich willkommen zu einer neuen Sendung von Anixe auf Rädern. Mit einem bunten Mix an neuen Modellen mit interessanten, sparsamen und umweltschonenden Antrieben geht's weiter voran. Mazda zeigt den überarbeiteten Mazda CX5 Homura und den Mazda 3, Audi gab einen Ausblick auf den A6 E-tron und Lexus beweist warum sie derzeit sehr erfolgreich mit dem Lexus NX sind. Wir beginnen mit einem Plug-In von Mitsubishi, hier ist der neue Eclipse..(n)</desc>
+    <category lang="de">Dokumentationsreihe</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028093000 +0000" stop="20231028100000 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028100000 +0000" stop="20231028101500 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028101500 +0000" stop="20231028102000 +0000" channel="ANIXE">
+    <title lang="de">Reisen mit Kreta.de</title>
+    <desc lang="de">Informative Beiträge rund um das Thema Kreta. Ein bunter Mix aus den neusten Nachrichten, interessanten Reportagen, Dokumentationen und attraktiven Hotelvorschlägen. Das Team von kreta.de ist vor Ort und hat die passenden Insider Tipps für Ihre nächste Kreta Reise. Eine Zusammenarbeit von Anixe und Kreta.de – Ihr Infoportal für Ihren perfekten Kreta-Urlaub.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028102000 +0000" stop="20231028103500 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028103500 +0000" stop="20231028111500 +0000" channel="ANIXE">
+    <title lang="de">Bauen und Wohnen</title>
+    <desc lang="de">Smart Home oder intelligente Haussteuerung? Glas, Keramik oder Naturstein für die neue Küche? Fertighaus oder Massivhaus? Echtholzparkett oder Teppichboden? Spezieller Putz oder große Motivfliesen im neuen Bad? Fragen über Fragen, die wir uns immer wieder stellen, wenn es um unser Zuhause, unseren ganz persönlichen Rückzugsort geht. Genau hier setzt die Sendung BAUEN &amp; WOHNEN an. Ziel der Sendung BAUEN &amp; WOHNEN ist es, den Zuschauern echte Mehrwerte für das tägliche Leben zu geben. "Wir wollen mit vertrauensvollen und ehrlichen Informationen das Leben der Menschen einfacher, schöner und besser machen und Sie mit spannenden Beiträgen inspirieren", erklärt Tobias Baunach, Teamleiter und Moderator BAUEN &amp; WOHEN. "Die Menschen wollen konstruktive Ideen und Anregungen bekommen und nicht nur hören, warum etwas nicht oder was alles schief geht." Unser TV-Magazin "BAUEN &amp; WOHNEN" richtet sich an alle, die das Leben schöner gestalten. Dazu sind wir im Gespräch mit den Menschen vor Ort: den Häuslebauern, Handwerkern und Herstellern. Gerne mitten aus der Werkstatt oder von der Baustelle um Trends und Neuigkeiten auszutauschen. Die Experten in der Sendung sind Handwerker, Unternehmer, Rechtsanwälte, Architekten und Interior-Designer aus dem deutschsprachigen Raum.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028111500 +0000" stop="20231028114500 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028114500 +0000" stop="20231028121500 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028121500 +0000" stop="20231028131000 +0000" channel="ANIXE">
+    <title lang="de">Unsere Schule ist die beste</title>
+    <desc lang="de">Außerirdische bringen Unruhe ins Internat: der Schüler Rainer Zirl (Christian Lösel) will über dem Chiemsee ein Ufo gesehen haben. Die örtliche Presse berichtet von dem Vorfall. Unter den Lehrern entzündet sich eine kontroverse Diskussion. Außer Uschi und ihrem Kollegen Oliver Strühle will keiner an fliegende Untertassen glauben. Rainers Mitschüler beschließen eine nächtliche Ufo-Beobachtung. Uschi, Werner, Pater Clemens und Oliver Strühler nehmen an dem intergalaktischen Abenteuer teil ..(n)</desc>
+    <credits>
+      <director>Klaus Merkel</director>
+      <actor>Elmar Wepper</actor>
+      <actor>Michaela May</actor>
+      <actor>Harald Leipnitz</actor>
+      <actor>Horst Sachtleben</actor>
+      <actor>Andrea Wildner</actor>
+      <actor>Rainer Goernemann</actor>
+      <writer>Eva Kummeth</writer>
+      <writer>Horst Kummeth</writer>
+    </credits>
+    <date>1995</date>
+    <category lang="de">Familienserie</category>
+    <country lang="de">D</country>
+    <episode-num system="onscreen">S1 E13/16</episode-num>
+  </programme>
+  <programme start="20231028131000 +0000" stop="20231028132500 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028132500 +0000" stop="20231028135500 +0000" channel="ANIXE">
+    <title lang="de">Entdecke die Welt – Kompakt</title>
+    <desc lang="de">Das Gebirge ruft! Das Montafon bietet nicht nur eine tolle Aussicht, sondern auch Gleitschirm fliegen und einige Leckereien.(n)</desc>
+    <category lang="de">Dokumentationsreihe</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028135500 +0000" stop="20231028141000 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028141000 +0000" stop="20231028144000 +0000" channel="ANIXE">
+    <title lang="de">Anixe auf Rädern</title>
+    <desc lang="de">Die umfassende Domumentation rund um Autos. Wir testen für Sie die sportlichsten Autos und stellen Ihnen die Highlights verschiedener Messen und Shows vor.(n)</desc>
+    <category lang="de">Dokumentationsreihe</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028144000 +0000" stop="20231028145500 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028145500 +0000" stop="20231028150000 +0000" channel="ANIXE">
+    <title lang="de">Reisen mit Kreta.de</title>
+    <desc lang="de">Informative Beiträge rund um das Thema Kreta. Ein bunter Mix aus den neusten Nachrichten, interessanten Reportagen, Dokumentationen und attraktiven Hotelvorschlägen. Das Team von kreta.de ist vor Ort und hat die passenden Insider Tipps für Ihre nächste Kreta Reise. Eine Zusammenarbeit von Anixe und Kreta.de – Ihr Infoportal für Ihren perfekten Kreta-Urlaub.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028150000 +0000" stop="20231028153000 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028153000 +0000" stop="20231028163000 +0000" channel="ANIXE">
+    <title lang="de">Unsere Schule ist die beste</title>
+    <desc lang="de">Werner unterläuft ein folgenschwerer Fehler. Er hat den Hochzeitstag vergessen. Dirk Hollmann ergreift die Gelegenheit und lädt Uschi zum Abendessen ein. In einer Blitzaktion versucht Werner den Haussegen zu retten: er organisiert zwei Karten für die Oper "La Traviata" und bucht ein Wochenende in einem Münchner Luxus-Hotel. Ob Uschi sich umstimmen lässt.(n)</desc>
+    <credits>
+      <director>Klaus Merkel</director>
+      <actor>Elmar Wepper</actor>
+      <actor>Michaela May</actor>
+      <actor>Harald Leipnitz</actor>
+      <actor>Horst Sachtleben</actor>
+      <actor>Andrea Wildner</actor>
+      <actor>Rainer Goernemann</actor>
+      <writer>Eva Kummeth</writer>
+      <writer>Horst Kummeth</writer>
+    </credits>
+    <date>1995</date>
+    <category lang="de">Familienserie</category>
+    <country lang="de">D</country>
+    <episode-num system="onscreen">S1 E14/16</episode-num>
+  </programme>
+  <programme start="20231028163000 +0000" stop="20231028170000 +0000" channel="ANIXE">
+    <title lang="de">Angebot des Monats</title>
+    <desc lang="de">Immer samstags haben die Münz-Experten von Reppa auf Anixe HD und Anixe Plus ein ganz besonderes Schmankerl für Sie auf Lager: das Angebot des Monats. Ob Gold, Silber oder eines der anderen Top-Edelmetalle, ob kostbar veredelt oder pures Investment – jedes Stück ist nur begrenzt verfügbar! Um was es sich in diesem Monat handelt? Finden Sie es heraus – schalten Sie ein.(n)</desc>
+    <date>2023</date>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028170000 +0000" stop="20231028173000 +0000" channel="ANIXE">
+    <title lang="de">Kochen mit Anixe</title>
+    <desc lang="de">Bei Kochen mit Anixe zeigen wir Ihnen wie frische, saisonale Rezepte ganz einfach nachgekocht werden können. Erleben Sie unseren TV Koch Jörg Guhmann, der nicht nur gut kochen kann, sondern einfache und effektive Tipps für alle "Kochverliebten" in Petto hat. Dazu kommt noch der richtige Wein, die perfekten Zutaten und die Möglichkeit etwas über "Nachhaltigkeit" zu erlernen. Unsere Moderatorin plaudert frisch und frei mit dem "Chef de Cuisine" und entlockt ihm lässig und locker hilfreiche Küchengeheimnisse.(n)</desc>
+    <category lang="de">Show</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028173000 +0000" stop="20231028180000 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028180000 +0000" stop="20231028181500 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028181500 +0000" stop="20231028194500 +0000" channel="ANIXE">
+    <title lang="de">Klinik unter Palmen</title>
+    <desc lang="de">Sein herausragendes medizinisches Können und die richtige Portion menschlicher Herzenswärme haben Chefarzt Dr. Frank Hofmann zum allseits geachteten Insel-Einwohner der Dominikanischen Republik gemacht. Ein frisch verliebtes Paar amtiert an seiner Seite: Dr. Peter Sander (M. Lesch), ein exzellenter Chirurg, und Anja Franke (E. Lanz), ein bezaubernde Krankenschwester, stehen dem lebensfrohen Aussteiger-Arzt hilfreich bei. Die "Klinik unter Palmen" ist bei den Patienten derart beliebt geworden, dass die überlastete Ärzte-Crew ein übermenschliches Arbeitspensum zu verrichten hat.(n)</desc>
+    <credits>
+      <director>Otto Retzer</director>
+      <actor>Klausjürgen Wussow</actor>
+      <actor>Michael Lesch</actor>
+      <actor>Anja Kruse</actor>
+      <actor>Elisabeth Lanz</actor>
+      <actor>Joan Faulkner</actor>
+      <actor>Michele Oliveri</actor>
+      <writer>Rolf René Schneider</writer>
+      <producer>Karl Spiehs</producer>
+      <composer>Klaus Pruenster</composer>
+    </credits>
+    <date>1999</date>
+    <category lang="de">Arztserie</category>
+    <country lang="de">D</country>
+    <episode-num system="onscreen">S4 E1/3</episode-num>
+  </programme>
+  <programme start="20231028194500 +0000" stop="20231028201500 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028201500 +0000" stop="20231028211500 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028211500 +0000" stop="20231028221500 +0000" channel="ANIXE">
+    <title lang="de">Unsere Schule ist die beste</title>
+    <desc lang="de">Werner unterläuft ein folgenschwerer Fehler. Er hat den Hochzeitstag vergessen. Dirk Hollmann ergreift die Gelegenheit und lädt Uschi zum Abendessen ein. In einer Blitzaktion versucht Werner den Haussegen zu retten: er organisiert zwei Karten für die Oper "La Traviata" und bucht ein Wochenende in einem Münchner Luxus-Hotel. Ob Uschi sich umstimmen lässt.(n)</desc>
+    <credits>
+      <director>Klaus Merkel</director>
+      <actor>Elmar Wepper</actor>
+      <actor>Michaela May</actor>
+      <actor>Harald Leipnitz</actor>
+      <actor>Horst Sachtleben</actor>
+      <actor>Andrea Wildner</actor>
+      <actor>Rainer Goernemann</actor>
+      <writer>Eva Kummeth</writer>
+      <writer>Horst Kummeth</writer>
+    </credits>
+    <date>1995</date>
+    <category lang="de">Familienserie</category>
+    <country lang="de">D</country>
+    <episode-num system="onscreen">S1 E14/16</episode-num>
+  </programme>
+  <programme start="20231028221500 +0000" stop="20231028224500 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028224500 +0000" stop="20231028233000 +0000" channel="ANIXE">
+    <title lang="de">Entdecke die Welt</title>
+    <desc lang="de">Kommen Sie mit und lass uns die Welt entdecken! Wir besuchen die verschiedensten Orte dieser Welt und bestaunen die faszinierende Vielfalt an Schauplätzen und Kulturen. Gehen wir auf Reise mit "Entdecke die Welt".(n)</desc>
+    <category lang="de">Dokumentationsreihe</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028233000 +0000" stop="20231028234500 +0000" channel="ANIXE">
+    <title lang="de">Hyperraum</title>
+    <desc lang="de">HYPERRAUM.TV ist der deutschsprachige Internet-Sender für alle, die mehr über Naturwissenschaft und Technologie wissen möchten. Mit seinem anspruchsvollen Programm mit Reportagen, Talks und Studiosendungen bietet HYPERRAUM.TV ein buntes Themenspektrum, das relevante Forschungsergebnisse und neue Technologien verständlich und kompetent aufbereitet: von der faszinierenden Entschlüsselung der letzten großen Geheimnisse des Universums oder den jüngsten Erkenntnissen der Genforschung bis zu den Perspektiven der Kernfusion als Energiequelle von Übermorgen. Der TV-Sender bringt dem Zuschauer aber nicht nur diese herausragende Grundlagenforschung näher, sondern zeigt auch Neues aus anwendungsnahen Forschungslabors mit Entwicklungen, die schon bald unser Leben verändern werden – von autonomen Fahrzeugen über die Biotechnologie bis zur Wunderwelt der Medien.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231028234500 +0000" stop="20231029050000 +0000" channel="ANIXE">
+    <title lang="de">Anixe Doku – Nachtprogramm</title>
+    <desc lang="de">Das Anixe Doku- Nachtprogramm. Das Beste zu den Themen Technik, Reisen und Kulinarik. Ein wunderbarer Mix aus unseren beliebtesten Dokumentationen.(n)</desc>
+    <category lang="de">Dokumentationsreihe</category>
+  </programme>
+  <programme start="20231029050000 +0000" stop="20231029053000 +0000" channel="ANIXE">
+    <title lang="de">Kochen mit Anixe</title>
+    <desc lang="de">Bei Kochen mit Anixe zeigen wir Ihnen wie frische, saisonale Rezepte ganz einfach nachgekocht werden können. Erleben Sie unseren TV Koch Jörg Guhmann, der nicht nur gut kochen kann, sondern einfache und effektive Tipps für alle "Kochverliebten" in Petto hat. Dazu kommt noch der richtige Wein, die perfekten Zutaten und die Möglichkeit etwas über "Nachhaltigkeit" zu erlernen. Unsere Moderatorin plaudert frisch und frei mit dem "Chef de Cuisine" und entlockt ihm lässig und locker hilfreiche Küchengeheimnisse.(n)</desc>
+    <category lang="de">Show</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029053000 +0000" stop="20231029063000 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029063000 +0000" stop="20231029070000 +0000" channel="ANIXE">
+    <title lang="de">Anixe Update</title>
+    <desc lang="de">Erleben Sie UPDATE, das Magazin mit abwechslungsreichen Neuigkeiten zu den Themen e Mobilität und erneuerbare Energien. Die E Mobilität ist in den vergangenen Jahren immer wichtiger geworden. Auch große Konzerne setzen auf Elektroantrieb und umweltschonende Energieoptionen. Aber auch junge Start UPs überzeugen mit unglaublichen Innovationen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029070000 +0000" stop="20231029080000 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029080000 +0000" stop="20231029081500 +0000" channel="ANIXE">
+    <title lang="de">Reisen mit Kreta.de</title>
+    <desc lang="de">Informative Beiträge rund um das Thema Kreta. Ein bunter Mix aus den neusten Nachrichten, interessanten Reportagen, Dokumentationen und attraktiven Hotelvorschlägen. Das Team von kreta.de ist vor Ort und hat die passenden Insider Tipps für Ihre nächste Kreta Reise. Eine Zusammenarbeit von Anixe und Kreta.de – Ihr Infoportal für Ihren perfekten Kreta-Urlaub.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029081500 +0000" stop="20231029084500 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029084500 +0000" stop="20231029093000 +0000" channel="ANIXE">
+    <title lang="de">Die Stunde des Höchsten</title>
+    <desc lang="de">Seit nunmehr zehn Jahren gibt es den Fernsehgottesdienst "Stunde des Höchsten" mit Pfarrer Heiko Bräuning. Im Jahre 2018 wurde die Sendung ausgezeichnet. Sie erhielt den Aloys-Henhöfer-Preis.(n)</desc>
+    <date>2023</date>
+    <category lang="de">Gottesdienst</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029093000 +0000" stop="20231029100000 +0000" channel="ANIXE">
+    <title lang="de">Arche TV Fernsehkanzel</title>
+    <desc lang="de">Die Arche TV Fernsehkanzel.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029100000 +0000" stop="20231029103000 +0000" channel="ANIXE">
+    <title lang="de">city church Karlsruhe</title>
+    <desc lang="de">Kurzpredigt der City Gemeinde Karlsruhe.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029103000 +0000" stop="20231029110000 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029110000 +0000" stop="20231029111500 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029111500 +0000" stop="20231029112000 +0000" channel="ANIXE">
+    <title lang="de">Reisen mit Kreta.de</title>
+    <desc lang="de">Informative Beiträge rund um das Thema Kreta. Ein bunter Mix aus den neusten Nachrichten, interessanten Reportagen, Dokumentationen und attraktiven Hotelvorschlägen. Das Team von kreta.de ist vor Ort und hat die passenden Insider Tipps für Ihre nächste Kreta Reise. Eine Zusammenarbeit von Anixe und Kreta.de – Ihr Infoportal für Ihren perfekten Kreta-Urlaub.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029112000 +0000" stop="20231029115000 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029115000 +0000" stop="20231029124500 +0000" channel="ANIXE">
+    <title lang="de">Unsere Schule ist die beste</title>
+    <desc lang="de">Werner unterläuft ein folgenschwerer Fehler. Er hat den Hochzeitstag vergessen. Dirk Hollmann ergreift die Gelegenheit und lädt Uschi zum Abendessen ein. In einer Blitzaktion versucht Werner den Haussegen zu retten: er organisiert zwei Karten für die Oper "La Traviata" und bucht ein Wochenende in einem Münchner Luxus-Hotel. Ob Uschi sich umstimmen lässt.(n)</desc>
+    <credits>
+      <director>Klaus Merkel</director>
+      <actor>Elmar Wepper</actor>
+      <actor>Michaela May</actor>
+      <actor>Harald Leipnitz</actor>
+      <actor>Horst Sachtleben</actor>
+      <actor>Andrea Wildner</actor>
+      <actor>Rainer Goernemann</actor>
+      <writer>Eva Kummeth</writer>
+      <writer>Horst Kummeth</writer>
+    </credits>
+    <date>1995</date>
+    <category lang="de">Familienserie</category>
+    <country lang="de">D</country>
+    <episode-num system="onscreen">S1 E14/16</episode-num>
+  </programme>
+  <programme start="20231029124500 +0000" stop="20231029142000 +0000" channel="ANIXE">
+    <title lang="de">Klinik unter Palmen</title>
+    <desc lang="de">Tonis Leben hängt am seidenen Faden. Gegen Staufers Anordnung testet Dr. Wolters an Toni das Medikament und der Junge stirbt. Agnes gibt Hoffmann die Schuld am Tod ihres Sohnes. Ihre Beziehung zu Staufer wird enger. Erst als sie zufällig Wolters Tonbandaufnahmen zum Testprogramm hört, erkennt sie die Wahrheit. Als Mitwisserin schwebt Agnes in Lebensgefahr..(n)</desc>
+    <credits>
+      <director>Otto Retzer</director>
+      <actor>Klausjürgen Wussow</actor>
+      <actor>Karin Thaler</actor>
+      <actor>Raimund Harmstorf</actor>
+      <actor>Christine Schuberth</actor>
+      <actor>Claudia Wenzel</actor>
+      <writer>Thomas Nippold</writer>
+      <producer>Karl Spiehs</producer>
+      <composer>Michael Hofmann de Boer</composer>
+    </credits>
+    <date>1996</date>
+    <category lang="de">Arztserie</category>
+    <country lang="de">D</country>
+    <episode-num system="onscreen">S2 E2/3</episode-num>
+  </programme>
+  <programme start="20231029142000 +0000" stop="20231029143500 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029143500 +0000" stop="20231029150500 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029150500 +0000" stop="20231029151000 +0000" channel="ANIXE">
+    <title lang="de">Reisen mit Kreta.de</title>
+    <desc lang="de">Informative Beiträge rund um das Thema Kreta. Ein bunter Mix aus den neusten Nachrichten, interessanten Reportagen, Dokumentationen und attraktiven Hotelvorschlägen. Das Team von kreta.de ist vor Ort und hat die passenden Insider Tipps für Ihre nächste Kreta Reise. Eine Zusammenarbeit von Anixe und Kreta.de – Ihr Infoportal für Ihren perfekten Kreta-Urlaub.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029151000 +0000" stop="20231029152500 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029152500 +0000" stop="20231029155500 +0000" channel="ANIXE">
+    <title lang="de">Bauen und Wohnen</title>
+    <desc lang="de">Smart Home oder intelligente Haussteuerung? Glas, Keramik oder Naturstein für die neue Küche? Fertighaus oder Massivhaus? Echtholzparkett oder Teppichboden? Spezieller Putz oder große Motivfliesen im neuen Bad? Fragen über Fragen, die wir uns immer wieder stellen, wenn es um unser Zuhause, unseren ganz persönlichen Rückzugsort geht. Genau hier setzt die Sendung BAUEN &amp; WOHNEN an. Ziel der Sendung BAUEN &amp; WOHNEN ist es, den Zuschauern echte Mehrwerte für das tägliche Leben zu geben. "Wir wollen mit vertrauensvollen und ehrlichen Informationen das Leben der Menschen einfacher, schöner und besser machen und Sie mit spannenden Beiträgen inspirieren", erklärt Tobias Baunach, Teamleiter und Moderator BAUEN &amp; WOHEN. "Die Menschen wollen konstruktive Ideen und Anregungen bekommen und nicht nur hören, warum etwas nicht oder was alles schief geht." Unser TV-Magazin "BAUEN &amp; WOHNEN" richtet sich an alle, die das Leben schöner gestalten. Dazu sind wir im Gespräch mit den Menschen vor Ort: den Häuslebauern, Handwerkern und Herstellern. Gerne mitten aus der Werkstatt oder von der Baustelle um Trends und Neuigkeiten auszutauschen. Die Experten in der Sendung sind Handwerker, Unternehmer, Rechtsanwälte, Architekten und Interior-Designer aus dem deutschsprachigen Raum.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029155500 +0000" stop="20231029160000 +0000" channel="ANIXE">
+    <title lang="de">Reisen mit Kreta.de</title>
+    <desc lang="de">Informative Beiträge rund um das Thema Kreta. Ein bunter Mix aus den neusten Nachrichten, interessanten Reportagen, Dokumentationen und attraktiven Hotelvorschlägen. Das Team von kreta.de ist vor Ort und hat die passenden Insider Tipps für Ihre nächste Kreta Reise. Eine Zusammenarbeit von Anixe und Kreta.de – Ihr Infoportal für Ihren perfekten Kreta-Urlaub.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029160000 +0000" stop="20231029163000 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029163000 +0000" stop="20231029170000 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029170000 +0000" stop="20231029173000 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029173000 +0000" stop="20231029180000 +0000" channel="ANIXE">
+    <title lang="de">Das Barren Magazin</title>
+    <desc lang="de">In dieser Sendung widmen sich die Münz-Experten von Reppa einer Form, die lange Zeit als Synonym für Standard-Investment stand: dem Barren. Doch mittlerweile gibt es ihn in den unterschiedlichsten Stückelungen, in den verschiedensten Edelmetallen und sogar als kostbar geprägte Sammler-Raritäten. Wussten Sie eigentlich schon, dass es auch eckige Münzen gibt? Nein? Dann lassen Sie sich im Barrenmagazin doch einfach mal überraschen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029180000 +0000" stop="20231029183000 +0000" channel="ANIXE">
+    <title lang="de">Anixe Update</title>
+    <desc lang="de">Erleben Sie UPDATE, das Magazin mit abwechslungsreichen Neuigkeiten zu den Themen e Mobilität und erneuerbare Energien. Die E Mobilität ist in den vergangenen Jahren immer wichtiger geworden. Auch große Konzerne setzen auf Elektroantrieb und umweltschonende Energieoptionen. Aber auch junge Start UPs überzeugen mit unglaublichen Innovationen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029183000 +0000" stop="20231029190000 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029190000 +0000" stop="20231029191500 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029191500 +0000" stop="20231029194500 +0000" channel="ANIXE">
+    <title lang="de">Initiative Gold</title>
+    <desc lang="de">Informativ und immer verbunden mit aktuellen Themen zum Weltgeschehen – in der Initiative Gold dreht sich alles um das schönste Edelmetall der Welt: natürlich Gold! Die Münz-Experten von Reppa präsentieren exklusive Gold-Produkte, beantworten spannende Zuschauerfragen und geben wertvolle Tipps rund ums Sparen und Anlegen. Hochwertig, hilfreich und stets mit einer Prise Humor – dieses Informationsmagazin sollte man sich nicht entgehen lassen. Aus dem Hause Reppa.(n)</desc>
+    <category lang="de">Magazin</category>
+  </programme>
+  <programme start="20231029194500 +0000" stop="20231029204500 +0000" channel="ANIXE">
+    <title lang="de">Unsere Schule ist die beste</title>
+    <desc lang="de">Biologie-Lehrer Heinz Ruhland ist begeistert, als er erfährt, dass der Schüler Markus Heckmann am Wettbewerb "Jugend forscht" teilnimmt. Sein Thema: "Die übersinnliche Wahrnehmung der Pflanzen". Markus findet bei den Lehrern vollste Unterstützung. Von seinen Mitschülern jedoch erntet Markus nur Spott. Bis auf eine Ausnahme: Werner konstruiert ihm für seine Versuchsreihe ein spezielles Galvanometer. Mit diesem Gerät kann Markus selbst feinste Widerstands-Veränderungen bei den Pflanzen messen.(n)</desc>
+    <credits>
+      <director>Klaus Merkel</director>
+      <actor>Elmar Wepper</actor>
+      <actor>Michaela May</actor>
+      <actor>Harald Leipnitz</actor>
+      <actor>Horst Sachtleben</actor>
+      <actor>Andrea Wildner</actor>
+      <actor>Rainer Goernemann</actor>
+      <writer>Eva Kummeth</writer>
+      <writer>Horst Kummeth</writer>
+    </credits>
+    <date>1995</date>
+    <category lang="de">Familienserie</category>
+    <country lang="de">D</country>
+    <episode-num system="onscreen">S1 E15/16</episode-num>
+  </programme>
+  <programme start="20231029204500 +0000" stop="20231029211500 +0000" channel="ANIXE">
+    <title lang="de">Reppa Münzengalerie</title>
+    <desc lang="de">Als Hobby der Könige gilt Münzensammeln schon seit Jahrhunderten. Der Reiz, seltene, schöne und kostbare Münzen zu besitzen, ist bis heute ungebrochen. In der Münzengalerie Reppa stellen Ihnen unsere Münzexperten herausragende Münzausgaben vor: von historischen Originalen mit zertifizierter Echtheit bis zu brandaktuellen Ausgaben, die durch innovative Prägetechniken oder spektakuläre Veredelungen glänzen.(n)</desc>
+    <category lang="de">Magazin</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029211500 +0000" stop="20231029221500 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029221500 +0000" stop="20231029231500 +0000" channel="ANIXE">
+    <title lang="de">Unsere Schule ist die beste</title>
+    <desc lang="de">Biologie-Lehrer Heinz Ruhland ist begeistert, als er erfährt, dass der Schüler Markus Heckmann am Wettbewerb "Jugend forscht" teilnimmt. Sein Thema: "Die übersinnliche Wahrnehmung der Pflanzen". Markus findet bei den Lehrern vollste Unterstützung. Von seinen Mitschülern jedoch erntet Markus nur Spott. Bis auf eine Ausnahme: Werner konstruiert ihm für seine Versuchsreihe ein spezielles Galvanometer. Mit diesem Gerät kann Markus selbst feinste Widerstands-Veränderungen bei den Pflanzen messen.(n)</desc>
+    <credits>
+      <director>Klaus Merkel</director>
+      <actor>Elmar Wepper</actor>
+      <actor>Michaela May</actor>
+      <actor>Harald Leipnitz</actor>
+      <actor>Horst Sachtleben</actor>
+      <actor>Andrea Wildner</actor>
+      <actor>Rainer Goernemann</actor>
+      <writer>Eva Kummeth</writer>
+      <writer>Horst Kummeth</writer>
+    </credits>
+    <date>1995</date>
+    <category lang="de">Familienserie</category>
+    <country lang="de">D</country>
+    <episode-num system="onscreen">S1 E15/16</episode-num>
+  </programme>
+  <programme start="20231029231500 +0000" stop="20231029234500 +0000" channel="ANIXE">
+    <title lang="de">Infomercial</title>
+    <desc lang="de">Infomercial. Bestellen Sie das Produkt Ihrer Wahl bequem per Telefon, Fax, Onlineshop oder E-Mail.(n)</desc>
+    <category lang="de">Nachrichten</category>
+    <country lang="de">D</country>
+  </programme>
+  <programme start="20231029234500 +0000" stop="20231030003000 +0000" channel="ANIXE">
+    <title lang="de">Entdecke die Welt</title>
+    <desc lang="de">Kommen Sie mit und lass uns die Welt entdecken! Wir besuchen die verschiedensten Orte dieser Welt und bestaunen die faszinierende Vielfalt an Schauplätzen und Kulturen. Gehen wir auf Reise mit "Entdecke die Welt".(n)</desc>
+    <category lang="de">Dokumentationsreihe</category>
+    <country lang="de">D</country>
+  </programme>
+</tv>
