@@ -32,15 +32,16 @@ jobs:
             mv WebGrab++.config2.xml WebGrab++.config.xml
           fi
           
-          mv /home/runner/work/MattTheTekie/MattTheTekie/.wg++/guide.xml /home/runner/work/MattTheTekie/MattTheTekie/.wg++/1.xml
-          
           if [[ $success == false ]]; then
             echo "Stage 1 failed, retrying..."
             ((retries++))
             sleep 5  # Add a delay before retrying
           fi
         done
-        if [[ $success == false ]]; then
+        
+        if [[ $success == true ]]; then
+          mv /home/runner/work/MattTheTekie/MattTheTekie/.wg++/guide.xml /home/runner/work/MattTheTekie/MattTheTekie/.wg++/1.xml
+        else
           echo "Stage 1 failed after $max_retries retries."
           exit 1
         fi
