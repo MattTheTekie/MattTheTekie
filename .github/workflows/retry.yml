@@ -1,4 +1,4 @@
-name: Restart On Schedule Failure
+name: Restart On Failure
 
 on:
   workflow_run:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   restart_when_failed:
-    name: Restarts the scheduled run when it fails
+    name: Restarts the run when it fails
     runs-on: ubuntu-latest
     if: failure()
     
