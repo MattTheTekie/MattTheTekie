@@ -2,7 +2,9 @@ name: Retry Failed Workflow
 
 on:
   workflow_run:
-
+    workflows: ["Script"]
+    types:
+      - completed
 
 jobs:
   retry:
