@@ -10,48 +10,6 @@ jobs:
     - uses: actions/checkout@v2
     - name: Stage 1
       run: |
-        echo Processing Stage 1
-        retries=0
-        max_retries=3
-        success=false
-
-        while [[ $retries -lt $max_retries && $success == false ]]; do
-          sudo apt update
-          sudo apt -y install xmltv retry
-          wget http://webgrabplus.com/sites/default/files/download/SW/V3.2.0/WebGrabPlus_V3.2_install.tar.gz
-          tar -zxvf WebGrabPlus_V3.2_install.tar.gz
-          cd .wg++
-          ./install.sh
-          cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/1.xml WebGrab++.config.xml
-          cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/2.xml WebGrab++.config2.xml
-          
-          if ./run.sh; then
-            success=true
-          else
-            mv WebGrab++.config.xml WebGrab++.config_og.xml
-            mv WebGrab++.config2.xml WebGrab++.config.xml
-          fi
-          
-          if [[ $success == false ]]; then
-            echo "Stage 1 failed, retrying..."
-            ((retries++))
-            sleep 5  # Add a delay before retrying
-          fi
-        done
-        
-        if [[ $success == true ]]; then
-          mv /home/runner/work/MattTheTekie/MattTheTekie/.wg++/guide.xml /home/runner/work/MattTheTekie/MattTheTekie/.wg++/1.xml
-        else
-          echo "Stage 1 failed after $max_retries retries."
-          exit 1
-        fi
-    - name: Stage 2
-      uses: actions/upload-artifact@master
-      with:
-        name: 1.xml
-        path: /home/runner/work/MattTheTekie/MattTheTekie/.wg++/1.xml
-    - name: Stage 3
-      run: |
         echo Processing Stage 3
         exec 3>&1 &>/dev/null
         cd /home/runner/work/MattTheTekie/MattTheTekie/.wg++/
@@ -63,7 +21,7 @@ jobs:
         git commit -m "The dragon is hunting."
         git remote add origin "https://${{ github.actor }}:${{ secrets.JAPAN }}@github.com/${{ github.repository }}"
         git push -f -u origin main
-    - name: Stage 4
+    - name: Stage 2
       run: |
         echo Processing Stage 4
         exec 3>&1 &>/dev/null
@@ -104,10 +62,6 @@ jobs:
         wget -O plex.xml https://i.mjh.nz/Plex/us.xml
         wget -O samsung.xml https://i.mjh.nz/SamsungTVPlus/all.xml
         wget -O pluto.xml https://i.mjh.nz/PlutoTV/us.xml
-        curl -H "Authorization: token ${{ secrets.JAPAN }}" \
-        -H 'Accept: application/vnd.github.v3.raw' \
-        -o 1.xml \
-        -L ${{ secrets.ONE_EPG }}
         wget -O anime.xml.gz https://epgshare01.online/epgshare01/epg_ripper_ID1.xml.gz
         gunzip anime.xml.gz
         wget -O iptvjapan.xml https://www.bevy.be/bevyfiles/japan.xml
