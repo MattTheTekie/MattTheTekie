@@ -320,7 +320,8 @@ jobs:
         cp ../combined.m3u SATANSLAYER666_666_hehehe_combined.m3u
         wget ${{ secrets.YAY }}
         unzip -o site.zip
-        ls
+        rm site.zip
+        wget ${{ secrets.YAY }}
     - name: Push
       uses: dswistowski/surge-sh-action@v1
       with:
