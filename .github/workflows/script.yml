@@ -91,7 +91,6 @@ jobs:
     - name: Final Stage
       run: |
         echo Processing Final Stage
-        exec 3>&1 &>/dev/null
         cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/0
         cat zoro.txt | ~/go/bin/m3u-combine > zoro.m3u
         sed 's/.png", /.png" group-title="Free TV", /' -i zoro.m3u
@@ -325,6 +324,6 @@ jobs:
       uses: dswistowski/surge-sh-action@v1
       with:
          domain: ${{ secrets.surge_domain }}
-         project: '/home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/0'
+         project: '/home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/0/1'
          login: ${{ secrets.surge_login }}
          token: ${{ secrets.surge_token }}
