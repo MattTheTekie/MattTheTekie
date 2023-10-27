@@ -10,22 +10,21 @@ jobs:
     - uses: actions/checkout@v2
     - name: Stage 1
       run: |
-        echo Processing Stage 1
-        exec 3>&1 &>/dev/null
-        retries=0
-        until [[ $retries -ge 3 ]]; do
-        sudo apt update
-        sudo apt -y install xmltv retry
-        wget http://webgrabplus.com/sites/default/files/download/SW/V3.2.0/WebGrabPlus_V3.2_install.tar.gz
-        tar -zxvf WebGrabPlus_V3.2_install.tar.gz
-        cd .wg++
-        ./install.sh
-        cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/1.xml WebGrab++.config.xml
-        cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/2.xml WebGrab++.config2.xml
-        retry ./run.sh || mv WebGrab++.config.xml WebGrab++.config_og.xml && mv WebGrab++.config2.xml WebGrab++.config.xml && ./run.sh
-        mv /home/runner/work/MattTheTekie/MattTheTekie/.wg++/guide.xml /home/runner/work/MattTheTekie/MattTheTekie/.wg++/1.xml
-        retries=$((retries+1))
-            sleep 60  # Add a delay before retrying
+          echo "Processing Stage 1"
+          retries=0
+          until [[ $retries -ge 3 ]]; do
+            sudo apt update
+            sudo apt -y install xmltv retry
+            wget http://webgrabplus.com/sites/default/files/download/SW/V3.2.0/WebGrabPlus_V3.2_install.tar.gz
+            tar -zxvf WebGrabPlus_V3.2_install.tar.gz
+            cd .wg++
+            ./install.sh
+            cp $GITHUB_WORKSPACE/Personal-Scripts/TV/1.xml WebGrab++.config.xml
+            cp $GITHUB_WORKSPACE/Personal-Scripts/TV/2.xml WebGrab++.config2.xml
+            retry ./run.sh || (mv WebGrab++.config.xml WebGrab++.config_og.xml && mv WebGrab++.config2.xml WebGrab++.config.xml && ./run.sh)
+            mv $GITHUB_WORKSPACE/.wg++/guide.xml $GITHUB_WORKSPACE/.wg++/1.xml
+            retries=$((retries+1))
+            sleep 60
           done
     - name: Stage 2
       uses: actions/upload-artifact@master
