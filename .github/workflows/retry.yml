@@ -15,16 +15,6 @@ jobs:
         id: check-failure
         run: |
           if [ "${{ github.event.workflow_run.conclusion }}" == "failure" ]; then
-            echo "Workflow failed, retrying..."
-            echo "::set-output name=retry::true"
-          else
-            echo "Workflow succeeded."
-            echo "::set-output name=retry::false"
-          fi
-
-      - name: Retry Workflow
-        if: steps.check-failure.outputs.retry == 'true'
-        run: |
             echo "Retrying workflow..."
             gh workflow run "Script"
         env:
