@@ -1,17 +1,20 @@
-##################################
-### Run when a schedule failed ###
-##################################
+name: Restart On Schedule Failure
+
 on:
-  name: Restarts the scheduled run when it failed
-  runs-on: ubuntu-latest
-  if: github.event_name == 'schedule' && failure()
-  needs: [build, build_pwsh, build_cmd]
-  steps:
-    - name: Retry the workflow
-      run: |
-        curl -i \
-        -X POST \
-        -H "Accept: application/vnd.github.v3+json" \
-        -H "Authorization: token ${{ secrets.ACTIONS_PAT }}" \
-        https://api.github.com/repos/MattTheTekie/MattTheTekie/actions/workflows/73900970/dispatches \
-        -d '{"ref": "${{ github.ref }}" }'
+  schedule:
+
+jobs:
+  restart_when_failed:
+    name: Restarts the scheduled run when it failed
+    runs-on: ubuntu-latest
+    if: failure()
+    
+    steps:
+      - name: Retry the workflow
+        run: |
+          curl -i \
+            -X POST \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Authorization: token ${{ secrets.ACTIONS_PAT }}" \
+            https://api.github.com/repos/MattTheTekie/MattTheTekie/actions/workflows/73900970/dispatches \
+            -d '{"ref": "${{ github.ref }}" }'
