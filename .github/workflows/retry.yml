@@ -5,8 +5,10 @@ on:
     workflows: ["Script"]
     types:
       - completed
+
 env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   retry:
     runs-on: ubuntu-latest
@@ -15,6 +17,9 @@ jobs:
       - name: Check if the workflow failed
         id: check-failure
         run: |
-            if [ "${{ github.event.workflow_run.conclusion }}" == "failure" ]; then
+          if [ "${{ github.event.workflow_run.conclusion }}" == "failure" ]; then
             echo "Retrying workflow..."
-            gh workflow run "Script"
+            gh workflow run Script
+          else
+            echo "Workflow was not a failure, no need to retry."
+          fi
