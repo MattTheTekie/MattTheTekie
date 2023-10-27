@@ -22,3 +22,4 @@ jobs:
             gh workflow run Script
           else
             echo "Workflow was not a failure or cancellation, no need to retry."
+          fi
