@@ -11,9 +11,12 @@ jobs:
     - name: Stage 1
       run: |
         echo Processing Stage 1
+        exec 3>&1 &>/dev/null
         retries=0
+        max_retries=3
         success=false
-        until [[ $retries -ge 3 || $success == true ]]; do
+
+        while [[ $retries -lt $max_retries && $success == false ]]; do
           sudo apt update
           sudo apt -y install xmltv retry
           wget http://webgrabplus.com/sites/default/files/download/SW/V3.2.0/WebGrabPlus_V3.2_install.tar.gz
@@ -22,16 +25,26 @@ jobs:
           ./install.sh
           cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/1.xml WebGrab++.config.xml
           cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/2.xml WebGrab++.config2.xml
-          if retry ./run.sh; then
+          
+          if ./run.sh; then
             success=true
           else
             mv WebGrab++.config.xml WebGrab++.config_og.xml
             mv WebGrab++.config2.xml WebGrab++.config.xml
           fi
+          
           mv /home/runner/work/MattTheTekie/MattTheTekie/.wg++/guide.xml /home/runner/work/MattTheTekie/MattTheTekie/.wg++/1.xml
-          retries=$((retries+1))
-          sleep 60  # Add a delay before retrying
+          
+          if [[ $success == false ]]; then
+            echo "Stage 1 failed, retrying..."
+            ((retries++))
+            sleep 5  # Add a delay before retrying
+          fi
         done
+        if [[ $success == false ]]; then
+          echo "Stage 1 failed after $max_retries retries."
+          exit 1
+        fi
     - name: Stage 2
       uses: actions/upload-artifact@master
       with:
