@@ -319,7 +319,7 @@ jobs:
         cp ../merge.xml SATANSLAYER666_666_hehehe_merge.xml
         cp ../combined.m3u SATANSLAYER666_666_hehehe_combined.m3u
         wget ${{ secrets.YAY }}
-        unzip site.zip
+        unzip -o site.zip
     - name: Push
       uses: dswistowski/surge-sh-action@v1
       with:
