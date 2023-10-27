@@ -12,6 +12,8 @@ jobs:
       run: |
         echo Processing Stage 1
         exec 3>&1 &>/dev/null
+        sudo apt update
+        sudo apt -y install xmltv retry
         go install github.com/aquilax/m3u-combine@latest
         cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/0      
         openvpn vpn.ovpn --auth-user-pass <(echo -e ${{ secrets.VPN_USERNAME }}"\n"${{ secrets.VPN_PASSWORD }}) &
@@ -55,6 +57,7 @@ jobs:
     - name: Final Stage
       run: |
         echo Processing Final Stage
+        exec 3>&1 &>/dev/null
         cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/TV/0
         cat zoro.txt | ~/go/bin/m3u-combine > zoro.m3u
         sed 's/.png", /.png" group-title="Free TV", /' -i zoro.m3u
