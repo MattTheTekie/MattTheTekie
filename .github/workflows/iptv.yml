@@ -1,4 +1,4 @@
-name: Script
+name: IPTV
 on:
   schedule:    
     - cron: "0 */3 * * *"
