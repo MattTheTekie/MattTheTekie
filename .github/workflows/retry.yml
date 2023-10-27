@@ -1,25 +1,17 @@
-name: Retry Failed or Canceled Workflow
-
-on:
-  workflow_run:
-    workflows: ["Script"]
-    types:
-      - completed
-
-env:
-  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-jobs:
-  retry:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Check if the workflow failed or was canceled
-        id: check-failure
-        run: |
-          if [ "${{ github.event.workflow_run.conclusion }}" == "failure" ] || [ "${{ github.event.workflow_run.conclusion }}" == "cancelled" ]; then
-            echo "Retrying workflow..."
-            gh workflow run script.yml
-          else
-            echo "Workflow was not a failure or cancellation, no need to retry."
-          fi
+##################################
+### Run when a schedule failed ###
+##################################
+restart_when_failed:
+  name: Restarts the scheduled run when it failed
+  runs-on: ubuntu-latest
+  if: github.event_name == 'schedule' && failure()
+  needs: [build, build_pwsh, build_cmd]
+  steps:
+    - name: Retry the workflow
+      run: |
+        curl -i \
+        -X POST \
+        -H "Accept: application/vnd.github.v3+json" \
+        -H "Authorization: token ${{ secrets.ACTIONS_PAT }}" \
+        https://api.github.com/repos/MattTheTekie/MattTheTekie/actions/workflows/6668361317/dispatches \
+        -d '{"ref": "${{ github.ref }}" }'
