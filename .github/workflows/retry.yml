@@ -1,11 +1,14 @@
 name: Restart On Schedule Failure
 
 on:
-  schedule:
+  workflow_run:
+    workflows: ["Script"]
+    types:
+      - completed
 
 jobs:
   restart_when_failed:
-    name: Restarts the scheduled run when it failed
+    name: Restarts the scheduled run when it fails
     runs-on: ubuntu-latest
     if: failure()
     
