@@ -1,7 +1,7 @@
 ##################################
 ### Run when a schedule failed ###
 ##################################
-restart_when_failed:
+on:
   name: Restarts the scheduled run when it failed
   runs-on: ubuntu-latest
   if: github.event_name == 'schedule' && failure()
