@@ -1,15 +1,39 @@
-# Open the M3U file and read its content
-with open('jp_org.m3u', 'r') as file:
-    lines = file.readlines()
+FILE_PATH = "jp_org.m3u"
 
-# Remove duplicates
-lines_seen = set()
-new_lines = []
-for line in lines:
-    if line not in lines_seen:
-        new_lines.append(line)
-        lines_seen.add(line)
+keptLines = []
+seenChannels = set()
 
-# Write the non-duplicate content back to the file
-with open('jp_org.m3u', 'w') as file:
-    file.writelines(new_lines)
+with open(FILE_PATH, "r") as file:
+    while True:
+        line = file.readline()
+        if not line: break
+        
+        if not line.startswith("#EXTINF") or "group-title=\"Japanese TV\", " not in line:
+            keptLines.append(line)
+            continue
+        
+        channelName = line.split("group-title=\"Japanese TV\", ")[1]
+        
+        if not channelName:
+            print("Unable to find channel name for line", line)
+            exit()
+            
+        url = file.readline()
+        if not url:
+            print("Unable to find url after line", line)
+        
+        # If the channel has been seen, drop both the channel line and the url
+        if channelName in seenChannels:
+            continue
+        
+        # Update seen channels
+        seenChannels.add(channelName)
+        
+        keptLines.append(line)
+        keptLines.append(url)
+    
+# Write output
+with open(FILE_PATH, "w") as file:
+    file.writelines(keptLines)
+
+print("Processed file:", FILE_PATH)
