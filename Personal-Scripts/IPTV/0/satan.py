@@ -1,4 +1,4 @@
-FILE_PATH = "jp_org.m3u"
+FILE_PATH = "combined.m3u"
 keptLines = []
 seenChannels = set()
 
