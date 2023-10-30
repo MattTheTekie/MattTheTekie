@@ -283,6 +283,8 @@ jobs:
         sed -s 's/(720p)//' -i 'jp_org.m3u'
         sed -s 's/(1080p)//' -i 'jp_org.m3u'
         sed -s 's/Not 24\/7//' -i 'jp_org.m3u'
+        sed -s 's/[]//' -i 'jp_org.m3u'
+        sed -i 's/(YouTube)//' -i 'jp_org.m3u'
         cat linux.txt | ~/go/bin/m3u-combine > combined.m3u
         touch merge.xml
         tv_merge -i pluto.xml -m plex.xml -o free.xml
