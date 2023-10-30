@@ -276,10 +276,13 @@ jobs:
         sed -i 's/group-title="Free TV", /group-title="Free TV", \[FREE\] /' combined.m3u
         mv combined.m3u combined_draft.m3u
         sed 's/",/" group-title="Japanese TV", \[JAPAN\] /' -i 'jp_org.m3u'
+        sed -s 's/(360p)//' -i 'jp_org.m3u'
+        sed -s 's/(576p)//' -i 'jp_org.m3u'
         sed -s 's/(540p)//' -i 'jp_org.m3u'
         sed -s 's/(480p)//' -i 'jp_org.m3u'
         sed -s 's/(720p)//' -i 'jp_org.m3u'
         sed -s 's/(1080p)//' -i 'jp_org.m3u'
+        sed -s 's/Not 24\/7//' -i 'jp_org.m3u'
         cat linux.txt | ~/go/bin/m3u-combine > combined.m3u
         touch merge.xml
         tv_merge -i pluto.xml -m plex.xml -o free.xml
