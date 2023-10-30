@@ -285,9 +285,9 @@ jobs:
         sed -s 's/Not 24\/7//' -i 'jp_org.m3u'
         sed -s 's/[[]]//' -i 'jp_org.m3u'
         sed -i 's/(YouTube)//' -i 'jp_org.m3u'
-        sed -s 's/(French Subs)//' -i combined.m3u
-        sed -s 's/(Spanish Subs)//' -i combined.m3u
-        sed -s 's/(Portuguese Subs)//' -i combined.m3u
+        sed -s 's/(French Subs)//' -i jp_org.m3u
+        sed -s 's/(Spanish Subs)//' -i jp_org.m3u
+        sed -s 's/(Portuguese Subs)//' -i jp_org.m3u
         sed -i 's/(Youtube)//' -i 'jp_org.m3u'
         cat linux.txt | ~/go/bin/m3u-combine > combined.m3u
         touch merge.xml
