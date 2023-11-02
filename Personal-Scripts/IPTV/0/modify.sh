@@ -1,6 +1,5 @@
         cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0
-        cat zoro.txt | ~/go/bin/m3u-combine > zoro.m3u
-        sed 's/.png", /.png" group-title="Free TV", /' -i zoro.m3u
+        sed 's/.png", /.png" group-title="Free TV", /' -i plex.m3u
         cat luffy.txt | ~/go/bin/m3u-combine > 0.m3u
         sed 's/\( group-title="\)[^"]*/\1Free TV/' -i 0.m3u
         sed 's/status="online", /status="online", group-title="Free TV" '/ -i 0.m3u
