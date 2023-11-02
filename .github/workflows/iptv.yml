@@ -11,12 +11,20 @@ jobs:
     - name: Downloading Files...
       run: |
         echo Downloading Files...
-
+        cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/
+        openssl aes-256-cbc -in keys.txt.enc -out keys.txt -d -pass pass:${{ secrets.KEY }}
+        base64 --decode keys.txt > keys.txt.1
+        rm keys.txt && mv keys.txt.1 keys.txt
+        cat keys.txt download.sh > temp.txt && mv temp.txt file2.txt && rm download.sh && mv file2.txt download.sh && chmod +x download.sh
         /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/download.sh
     - name: Making IPTV...
       run: |
         echo Making IPTV...
-        
+        cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/
+        openssl aes-256-cbc -in keys.txt.enc -out keys.txt -d -pass pass:${{ secrets.KEY }}
+        base64 --decode keys.txt > keys.txt.1
+        rm keys.txt && mv keys.txt.1 keys.txt
+        cat keys.txt modify.sh > temp.txt && mv temp.txt file2.txt && rm modify.sh && mv file2.txt modify.sh && chmod +x modify.sh
         /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/modify.sh        
     - name: Pushing Artifacts...
       uses: dswistowski/surge-sh-action@v1
