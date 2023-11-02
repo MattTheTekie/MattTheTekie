@@ -28,10 +28,10 @@
         wget -O au_samsung.m3u https://raw.githubusercontent.com/iptv-org/iptv/master/streams/au_samsung.m3u 
         wget -O jp.m3u https://raw.githubusercontent.com/iptv-org/iptv/master/streams/jp.m3u 
         wget -O jp_org.m3u https://raw.githubusercontent.com/iptv-org/iptv/master/streams/jp.m3u 
-        curl -H "Authorization: token $secrets.JAPAN" \
+        curl -H "Authorization: token $JAPAN" \
         -H 'Accept: application/vnd.github.v3.raw' \
         -o 1.m3u \
-        -L $secrets.JP3
+        -L $JP3
         wget -O plex.xml https://i.mjh.nz/Plex/us.xml
         wget -O samsung.xml https://i.mjh.nz/SamsungTVPlus/all.xml
         wget -O pluto.xml https://i.mjh.nz/PlutoTV/us.xml
