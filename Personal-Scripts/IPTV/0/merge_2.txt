@@ -1,3 +1,2 @@
 0.m3u
 1.m3u
-zoro.m3u
