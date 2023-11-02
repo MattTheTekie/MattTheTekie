@@ -6,7 +6,7 @@
         sed 's/status="blocked", /status="blocked", group-title="Free TV" '/ -i 0.m3u
         sed 's/status="timeout", /status="timeout", group-title="Free TV" '/ -i 0.m3u
         sed 's/status="error", /status="error", group-title="Free TV" '/ -i 0.m3u
-        cat merge_1.txt | ~/go/bin/m3u-combine > combined.m3u
+        cat merge_2.txt | ~/go/bin/m3u-combine > combined.m3u
         sed 's/group-title="Free TV", group-title="Free TV"/group-title="Free TV",'/ -i combined.m3u
         awk '/En Español|en español|En español|en Español|español|Español|Espanol|espanol|Latino|latino|spain|Spain|Spanish|spanish|Latin|Latin|Latido|latido| con| la| Sony Canal| Perfecto| perfecto| Mundo| amigos| escándalos| Estrella | nosotras| noticias| Cine| ViX| Tu Cine| Telemundo| Séptimo| Saber Mas| RCN Mas| RCN Más| PrendeTV| Niños| MMC| misterios sin resolver| Mi obsesión favorita| MegaNoticias| La corriente| Juntos| Investiga| Foodies| Éxitos|Crímenes imperfectos| Corazón|CNN RESUMEN|Chiquilines|Canela|Badass novelas| Amantes / {while (/En Español|en español|En español|en Español|español|Español|Espanol|espanol|Latino|latino|spain|Spain|Spanish|spanish|Latin|Latin|Latido|latido| con| la| Sony Canal| Perfecto| perfecto| Mundo| amigos| escándalos| Estrella | nosotras| noticias| Cine| ViX| Tu Cine| Telemundo| Séptimo| Saber Mas| RCN Mas| RCN Más| PrendeTV| Niños| MMC| misterios sin resolver| Mi obsesión favorita| MegaNoticias| La corriente| Juntos| Investiga| Foodies| Éxitos|Crímenes imperfectos| Corazón|CNN RESUMEN|Chiquilines|Canela|Badass novelas| Amantes / && getline>0) ; next} 1' combined.m3u > FREE.m3u        
         mv FREE.m3u combined.m3u
