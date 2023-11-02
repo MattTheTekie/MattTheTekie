@@ -4,7 +4,6 @@
         cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0
         wget -O 0_1.m3u https://github.com/iptv-org/iptv/raw/master/streams/us_samsung.m3u
         wget -O 0_2.m3u https://i.mjh.nz/PlutoTV/us.m3u8
-        wget -O 0_3.m3u ${{ secrets.TV2 }}
         wget -O plex.m3u https://i.mjh.nz/Plex/us.m3u8
         wget -O uk_samsung.m3u https://github.com/iptv-org/iptv/raw/master/streams/uk_samsung.m3u 
         wget -O uk_rakuten.m3u https://raw.githubusercontent.com/iptv-org/iptv/master/streams/uk_rakuten.m3u 
