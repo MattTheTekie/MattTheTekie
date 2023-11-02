@@ -225,7 +225,7 @@
         sed -s 's/(Spanish Subs)//' -i jp_org.m3u
         sed -s 's/(Portuguese Subs)//' -i jp_org.m3u
         sed -i 's/(Youtube)//' -i 'jp_org.m3u'
-        cat linux.txt | ~/go/bin/m3u-combine > combined.m3u
+        cat merge_3.txt | ~/go/bin/m3u-combine > combined.m3u
         touch merge.xml
         tv_merge -i pluto.xml -m plex.xml -o free.xml
         tv_merge -i free.xml -m samsung.xml -o free2.xml
