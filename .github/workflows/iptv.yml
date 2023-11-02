@@ -8,17 +8,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Stage 1
+    - name: Downloading Files...
       run: |
         echo Processing Stage 1
         exec 3>&1 &>/dev/null
         /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/download.sh
-    - name: Final Stage
+    - name: Making IPTV...
       run: |
         echo Processing Final Stage
         exec 3>&1 &>/dev/null
         /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/modify.sh        
-    - name: Push
+    - name: Pushing Artifacts...
       uses: dswistowski/surge-sh-action@v1
       with:
          domain: ${{ secrets.surge_domain }}
