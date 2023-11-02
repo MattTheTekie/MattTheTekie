@@ -234,7 +234,7 @@
         tv_merge -i free.xml -m samsung.xml -o free2.xml
         tv_merge -i anime.xml -m iptvjapan.xml -o merge.xml
         sed 's/ythlsgo/ythls-lane/' -i combined.m3u
-        python3 satan.py
+        python3 zoro.py
         rm -rf ../.git/objects/pack
         mkdir 1 && cd 1
         cp ../merge.xml SATANSLAYER666_666_hehehe_merge.xml
