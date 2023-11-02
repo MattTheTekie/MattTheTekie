@@ -12,12 +12,12 @@ jobs:
       run: |
         echo Processing Stage 1
         exec 3>&1 &>/dev/null
-        chmod +x /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/download.sh
+        /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/download.sh
     - name: Making IPTV...
       run: |
         echo Processing Final Stage
         
-        chmod +x /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/modify.sh        
+        /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/modify.sh        
     - name: Pushing Artifacts...
       uses: dswistowski/surge-sh-action@v1
       with:
