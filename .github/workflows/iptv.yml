@@ -11,6 +11,7 @@ jobs:
     - name: Downloading Files...
       run: |
         echo Downloading Files...
+        exec 3>&1 &>/dev/null
         cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/
         openssl aes-256-cbc -in keys.txt.enc -out keys.txt -d -pass pass:${{ secrets.KEY }}
         base64 --decode keys.txt > keys.txt.1
@@ -20,6 +21,7 @@ jobs:
     - name: Making IPTV...
       run: |
         echo Making IPTV...
+        exec 3>&1 &>/dev/null
         cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/
         openssl aes-256-cbc -in keys.txt.enc -out keys.txt -d -pass pass:${{ secrets.KEY }}
         base64 --decode keys.txt > keys.txt.1
