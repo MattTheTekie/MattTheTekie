@@ -207,7 +207,6 @@
         mv combined.m3u combined1.m3u
         cat hehehee.txt | ~/go/bin/m3u-combine > combined.m3u
         python3 rem_dup_1.py
-        python3 new_world_order.py
         sed -i 's/group-title="Japanese TV", \[JAPAN\] JAPAN/group-title="Japanese TV", \[JAPAN\]/' combined.m3u
         sed -i 's/group-title="24\/7 Anime", \[ANIME\] ANIME/group-title="24\/7 Anime", \[ANIME\]/' combined.m3u
         sed -i 's/group-title="24\/7 Cartoon",/group-title="24\/7 Cartoon", \[TOON\]/' combined.m3u
