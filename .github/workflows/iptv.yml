@@ -10,17 +10,14 @@ jobs:
     - uses: actions/checkout@v2
     - name: Downloading Files...
       run: |
-        echo Processing Stage 1
+        echo Downloading Files...
 
-        sh /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/download.sh
-      env:
-        ENVIRONMENT_VARIABLE_NAME: ${{ secrets.ENVIRONMENT_VARIABLE_NAME }}
-
+        /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/download.sh
     - name: Making IPTV...
       run: |
-        echo Processing Final Stage
+        echo Making IPTV...
         
-        bash -eux /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/modify.sh        
+        /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/modify.sh        
     - name: Pushing Artifacts...
       uses: dswistowski/surge-sh-action@v1
       with:
