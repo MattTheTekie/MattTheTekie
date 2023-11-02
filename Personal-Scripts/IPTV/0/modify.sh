@@ -236,7 +236,7 @@
         mkdir 1 && cd 1
         cp ../merge.xml SATANSLAYER666_666_hehehe_merge.xml
         cp ../combined.m3u SATANSLAYER666_666_hehehe_combined.m3u
-        wget $secrets.YAY
+        wget $YAY
         unzip -o site.zip
         rm site.zip
-        wget $secrets.YAY
+        wget $YAY
