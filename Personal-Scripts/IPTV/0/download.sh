@@ -1,8 +1,7 @@
         sudo apt update
         sudo apt -y install xmltv retry
         go install github.com/aquilax/m3u-combine@latest
-        cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0      
-        openvpn vpn.ovpn --auth-user-pass <(echo -e ${{ secrets.VPN_USERNAME }}"\n"${{ secrets.VPN_PASSWORD }}) &
+        cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0
         wget -O 0_1.m3u https://github.com/iptv-org/iptv/raw/master/streams/us_samsung.m3u
         wget -O 0_2.m3u https://i.mjh.nz/PlutoTV/us.m3u8
         wget -O 0_3.m3u ${{ secrets.TV2 }}
