@@ -11,8 +11,11 @@ jobs:
     - name: Downloading Files...
       run: |
         echo Processing Stage 1
-        
-        bash -eux /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/download.sh
+
+        sh /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/download.sh
+      env:
+        ENVIRONMENT_VARIABLE_NAME: ${{ secrets.ENVIRONMENT_VARIABLE_NAME }}
+
     - name: Making IPTV...
       run: |
         echo Processing Final Stage
