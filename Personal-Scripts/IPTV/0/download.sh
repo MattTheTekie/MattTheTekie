@@ -37,4 +37,6 @@
         wget -O pluto.xml https://i.mjh.nz/PlutoTV/us.xml
         wget -O anime.xml.gz https://epgshare01.online/epgshare01/epg_ripper_ID1.xml.gz
         gunzip anime.xml.gz
+        wget -O japan_bk.xml.gz https://epgshare01.online/epgshare01/epg_ripper_JP1.xml.gz
+        gunzip japan_bk.xml.gz
         wget -O iptvjapan.xml https://www.bevy.be/bevyfiles/japan.xml
