@@ -226,11 +226,6 @@
         sed -s 's/(Portuguese Subs)//' -i jp_org.m3u
         sed -i 's/(Youtube)//' -i 'jp_org.m3u'
         cat merge_3.txt | ~/go/bin/m3u-combine > combined.m3u
-        touch merge.xml
-        tv_merge -i pluto.xml -m plex.xml -o free.xml
-        tv_merge -i free.xml -m samsung.xml -o free2.xml
-        tv_merge -i anime.xml -m iptvjapan.xml -o merge1.xml
-        tv_merge -i merge1.xml -m japan_bk.xml -o merge.xml
         sed 's/ythlsgo/ythls-lane/' -i combined.m3u
         python3 zoro.py
         sed -s 's/\[JAPAN\] JAPAN /\[JAPAN\] /' -i 'combined.m3u'
@@ -247,7 +242,12 @@
         sed 's/WOWOWCinema.jp/歌謡ポップスチャンネル.jp/' -i combined.m3u
         sed 's/WOWOWLive.jp/ＷＯＷＯＷライブ.jp/' -i combined.m3u
         sed 's/WOWOWPrime.jp/ＷＯＷＯＷプライム.jp/' -i combined.m3u
-        sed 's/"pluto-/"/' -i combined.m3u
+        touch merge.xml
+        tv_merge -i pluto.xml -m plex.xml -o free.xml
+        tv_merge -i free.xml -m samsung.xml -o free2.xml
+        tv_merge -i anime.xml -m iptvjapan.xml -o merge1.xml
+        tv_merge -i merge1.xml -m japan_bk.xml -o merge2.xml
+        tv_merge -i merge2.xml -m free2.xml -o merge.xml
         rm -rf ../.git/objects/pack
         mkdir 1 && cd 1
         cp ../merge.xml SATANSLAYER666_666_hehehe_merge.xml
