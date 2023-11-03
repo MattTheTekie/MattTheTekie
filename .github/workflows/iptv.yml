@@ -20,10 +20,7 @@ jobs:
     - name: Making IPTV...
       run: |
         echo Making IPTV...
-        exec 3>&1 &>/dev/null
         cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/
-        openssl aes-256-cbc -in keys.txt.enc -out keys.txt -d -pass pass:${{ secrets.KEY }}
-        base64 --decode keys.txt > keys.txt
         cat keys.txt modify.sh > temp.txt && rm modify.sh && mv temp.txt modify.sh && chmod +x modify.sh
         /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/modify.sh        
     - name: Pushing Artifacts...
