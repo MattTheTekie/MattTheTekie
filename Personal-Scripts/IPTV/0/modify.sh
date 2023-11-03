@@ -229,7 +229,8 @@
         touch merge.xml
         tv_merge -i pluto.xml -m plex.xml -o free.xml
         tv_merge -i free.xml -m samsung.xml -o free2.xml
-        tv_merge -i anime.xml -m iptvjapan.xml -o merge.xml
+        tv_merge -i anime.xml -m iptvjapan.xml -o merge1.xml
+        tv_merge -i merge1.xml -m japan_bk.xml -o merge.xml
         sed 's/ythlsgo/ythls-lane/' -i combined.m3u
         python3 zoro.py
         sed -s 's/\[JAPAN\] JAPAN /\[JAPAN\] /' -i 'combined.m3u'
