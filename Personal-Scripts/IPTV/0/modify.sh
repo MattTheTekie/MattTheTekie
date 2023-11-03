@@ -247,6 +247,7 @@
         sed 's/WOWOWCinema.jp/歌謡ポップスチャンネル.jp/' -i combined.m3u
         sed 's/WOWOWLive.jp/ＷＯＷＯＷライブ.jp/' -i combined.m3u
         sed 's/WOWOWPrime.jp/ＷＯＷＯＷプライム.jp/' -i combined.m3u
+        sed 's/"pluto-/"/' -i combined.m3u
         rm -rf ../.git/objects/pack
         mkdir 1 && cd 1
         cp ../merge.xml SATANSLAYER666_666_hehehe_merge.xml
