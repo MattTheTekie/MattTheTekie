@@ -234,6 +234,19 @@
         sed 's/ythlsgo/ythls-lane/' -i combined.m3u
         python3 zoro.py
         sed -s 's/\[JAPAN\] JAPAN /\[JAPAN\] /' -i 'combined.m3u'
+        sed 's/NHKBS1.jp/ＮＨＫＢＳ１.jp/' -i combined.m3u
+        sed 's/NHKBSPremium.jp/ＮＨＫＢＳプレミアム.jp/' -i combined.m3u
+        sed 's/NHKEducationalTV.jp/NHK東京　教育.jp/' -i combined.m3u
+        sed 's/NHKGeneralTV.jp/NHK東京　総合.jp/' -i combined.m3u
+        sed 's/JOAKDTV.jp/NHK東京　総合.jp/' -i combined.m3u
+        sed 's/BSAsahi.jp/ＢＳ朝日１.jp/' -i combined.m3u
+        sed 's/BSFuji.jp/ＢＳフジ・181.jp/' -i combined.m3u
+        sed 's/BSNipponTV.jp/ＢＳ日テレ.jp/' -i combined.m3u
+        sed 's/BSTBS.jp/ＢＳ－ＴＢＳ.jp/' -i combined.m3u
+        sed 's/BSTVTokyo.jp/BSテレ東.jp/' -i combined.m3u
+        sed 's/WOWOWCinema.jp/歌謡ポップスチャンネル.jp/' -i combined.m3u
+        sed 's/WOWOWLive.jp/ＷＯＷＯＷライブ.jp/' -i combined.m3u
+        sed 's/WOWOWPrime.jp/ＷＯＷＯＷプライム.jp/' -i combined.m3u
         rm -rf ../.git/objects/pack
         mkdir 1 && cd 1
         cp ../merge.xml SATANSLAYER666_666_hehehe_merge.xml
