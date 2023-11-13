@@ -1,5 +1,11 @@
 // ... Other imports and code
 
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+}
+
 const Head = ({ title, description, image = '/blog-placeholder-1.png' }: Props) => {
   const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
