@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
 import '../styles/global.css';
 
 interface Props {
@@ -32,6 +33,9 @@ const { title, description, image = 'https://avatars.githubusercontent.com/u/948
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Features -->
+<ViewTransitions />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
