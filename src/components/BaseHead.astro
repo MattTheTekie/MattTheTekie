@@ -11,7 +11,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const { title, description, image = 'https://avatars.githubusercontent.com/u/94870997?s=32' } = Astro.props;
 const discordFaviconMetaTag = `
-<meta property="og:image" content="https://test72.eu.org" + image} />
+<meta property="og:image" content={"https://test72.eu.org" + image} />
 <meta property="og:type" content="website" />
   `;
 ---
