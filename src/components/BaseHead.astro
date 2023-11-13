@@ -11,7 +11,7 @@ const Head = ({ title, description, image = '/blog-placeholder-1.png' }: Props) 
 
   // Discord Favicon
   const discordFaviconMetaTag = `
-    <meta property="og:image" content="https://test72.eu.org${image}" />
+    <meta property="og:image" content="https://test72.eu.org{image}" />
     <meta property="og:type" content="website" />
   `;
 
@@ -20,32 +20,32 @@ const Head = ({ title, description, image = '/blog-placeholder-1.png' }: Props) 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="icon" type="image/svg" href="/icon.svg" />
-    <meta name="generator" content="${Astro.generator}" />
+    <meta name="generator" content="{Astro.generator}" />
     
     <!-- Font preloads -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="${canonicalURL}" />
+    <link rel="canonical" href="{canonicalURL}" />
     
     <!-- Primary Meta Tags -->
-    <title>${title}</title>
-    <meta name="title" content="${title}" />
-    <meta name="description" content="${description}" />
+    <title>{title}</title>
+    <meta name="title" content="{title}" />
+    <meta name="description" content="{description}" />
     
     <!-- Open Graph / Facebook -->
-    <meta property="og:url" content="${Astro.url}" />
-    <meta property="og:title" content="${title}" />
-    <meta property="og:description" content="${description}" />
-    ${discordFaviconMetaTag}
+    <meta property="og:url" content="{Astro.url}" />
+    <meta property="og:title" content="{title}" />
+    <meta property="og:description" content="{description}" />
+    {discordFaviconMetaTag}
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="${Astro.url}" />
-    <meta name="twitter:title" content="${title}" />
-    <meta name="twitter:description" content="${description}" />
-    <meta name="twitter:image" content="https://test72.eu.org${image}" />
+    <meta name="twitter:url" content="{Astro.url}" />
+    <meta name="twitter:title" content="{title}" />
+    <meta name="twitter:description" content="{description}" />
+    <meta name="twitter:image" content="https://test72.eu.org{image}" />
   `;
 
   return headContent;
