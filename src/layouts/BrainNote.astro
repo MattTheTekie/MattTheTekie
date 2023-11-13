@@ -19,15 +19,13 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
-		<main class="flex sm:flex-row flex-col mb-12 max-w-6xl mx-auto px-4 min-h-[80vh] sm:my-8 my-4">
+		<main class="flex lg:flex-row flex-col mb-12 max-w-3xl lg:max-w-fit mx-auto px-4 min-h-[80vh] sm:my-8 my-4">
       <Sidebar/>
-      <section class="sm:max-w-3xl max-w-full mx-auto min-h-[80vh] sm:mt-0 mt-4">
-        <div class="flex flex-col space-y-2">
+      <section class="flex flex-col space-y-2">
         <h1 class="text-4xl font-bold bg-blue-600 px-4 py-2 mb-6" transition:animate="slide">
-            {title}
-          </h1>
-        </div>
-        <article class="prose prose-quoteless prose-neutral dark:prose-invert text-lg text-justify mb-8">
+          {title}
+        </h1>
+        <article class="prose xl:prose-lg prose-quoteless prose-neutral dark:prose-invert prose-p:text-justify mb-8">
           <slot />
         </article>
       </section>
