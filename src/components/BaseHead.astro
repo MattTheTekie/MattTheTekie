@@ -1,7 +1,15 @@
+// ... Other imports and code
+
+const { title, description, image = '/blog-placeholder-1.png' } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+// Discord Favicon
 const discordFaviconMetaTag = `
   <meta property="og:image" content="https://test72.eu.org${image}" />
   <meta property="og:type" content="website" />
 `;
+
+// Global Metadata
 const headContent = `
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -20,9 +28,6 @@ const headContent = `
   <meta name="title" content="${title}" />
   <meta name="description" content="${description}" />
   
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
-  
   <!-- Open Graph / Facebook -->
   <meta property="og:url" content="${Astro.url}" />
   <meta property="og:title" content="${title}" />
@@ -36,3 +41,5 @@ const headContent = `
   <meta name="twitter:description" content="${description}" />
   <meta name="twitter:image" content="https://test72.eu.org${image}" />
 `;
+
+export default headContent;
