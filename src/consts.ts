@@ -1,5 +1,5 @@
 export const SITE_TITLE = 'MattTheTekie'
-export const SITE_DESCRIPTION = 'Welcome to my personal website!'
+export const SITE_DESCRIPTION = 'Welcome to my homepage. I'm a cybersecurity geek, and Linux user.'
 
 export const NAME = 'MattTheTekie'
 export const ROLE = 'Linux geek'
