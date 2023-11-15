@@ -38,7 +38,7 @@ export const SOCIAL = [
 export const OTHER_LINKS = [
   {
     name: 'Resume',
-    link: 'MATTHEW-PITSICALIS-EN.pdf'
+    link: 'MATTHEW_PITSICALIS-EN.pdf'
   },
   {
     link: 'https://github.com/sponsors/mattthetekie',
