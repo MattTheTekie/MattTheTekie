@@ -66,12 +66,12 @@
 [![Bilibili](https://bilistats.lonelyion.com/followers?uid=1500079337&style=flat)](https://space.bilibili.com/1500079337)<br>
 [![NicoNico](https://img.shields.io/badge/%40CrazyHellTech-0088cc?style=flat&logo=niconico&logoColor=ffffff)](https://www.nicovideo.jp/user/126721048)<br>
 [![NetroCorp](https://tinyurl.com/bdffr5tr)](https://netrocorp.net/users/61)<br>
-### 🛸 You can check out my website's below&nbsp;
+### 🛸 Extras&nbsp;
 
-> 🔭 [[**MattTheTekie's Blog**]](https://test72.eu.org/blog/)
+> 🔭 [[**Personal Blog**]](https://test72.eu.org/blog/)
 
 My new blogging corner on the world wide web.&nbsp;
 
 > 🐱‍💻 [[**VENITH NETWORK**]](https://venith.net/)
 
-My new infrastructure project on the internet.&nbsp;
+My infrastructure project on the internet.&nbsp;
