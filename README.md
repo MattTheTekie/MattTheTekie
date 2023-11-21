@@ -58,13 +58,10 @@
 
 ### 📫 Get in touch
 [![Discord](https://tinyurl.com/yw2am5ah)](https://discord.gg/VhfM3UncBB)<br>
-[![Odysee](https://img.shields.io/badge/CrazyHellTechnologies-EF1970?style=flat&logo=Odysee&logoColor=white)](https://odysee.com/@mattdoestech726:5)<br>
+[![Odysee](https://img.shields.io/badge/MattTheTekie-EF1970?style=flat&logo=Odysee&logoColor=white)](https://odysee.com/@mattdoestech726:5)<br>
 [![Mastodon](https://img.shields.io/badge/%40ASTAFATHERSATAN-0088cc?style=flat&logo=mastodon&logoColor=ffffff)](https://nerdculture.de/@ASTAFATHERSATAN)<br>
 [![Telegram](https://img.shields.io/badge/%40Knight666_666-0088cc?style=flat&logo=telegram&logoColor=ffffff)](https://t.me/Knight666_666)<br>
 [![DSiPaint](https://img.shields.io/badge/%F0%9F%8E%A8%20MattFromSpace-blue.svg?style=flat)](https://dsipaint.com/member/?id=152737)<br>
-[![KOOKAPP](https://tinyurl.com/yhpv9vt9)](https://kookapp.cn/widget?id=2477159536848951&theme=dark)<br>
-[![Bilibili](https://bilistats.lonelyion.com/followers?uid=1500079337&style=flat)](https://space.bilibili.com/1500079337)<br>
-[![NicoNico](https://img.shields.io/badge/%40CrazyHellTech-0088cc?style=flat&logo=niconico&logoColor=ffffff)](https://www.nicovideo.jp/user/126721048)<br>
 [![NetroCorp](https://tinyurl.com/bdffr5tr)](https://netrocorp.net/users/61)<br>
 ### 🛸 Extras&nbsp;
 
