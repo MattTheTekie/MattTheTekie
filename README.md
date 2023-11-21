@@ -33,7 +33,7 @@
 
 ### 🤔 What I'm doing
  - Reverse engineering. 💻
- - Maintaining the VENITH network & the CrazyHellTechnologies organization. 🌐
+ - Maintaining the VENITH network. 🌐
  - Maintaining scripts for various projects. ⌨️
  - Living on Kepler-186F. 🌌
 
