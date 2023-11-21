@@ -68,26 +68,10 @@
 [![NetroCorp](https://tinyurl.com/bdffr5tr)](https://netrocorp.net/users/61)<br>
 ### 🛸 You can check out my website's below&nbsp;
 
-> 📡 [[**MattTheTekie**]](https://test72.eu.org/)
-
-My new homepage on the corner of the internet.&nbsp;
-
 > 🔭 [[**MattTheTekie's Blog**]](https://test72.eu.org/blog/)
 
 My new blogging corner on the world wide web.&nbsp;
 
-> 🧪 [[**Tsuka's Homelab**]](https://hackerlab.venith.net/)
-
-My new hackerlab on the corner of the internet.&nbsp;
-
 > 🐱‍💻 [[**VENITH NETWORK**]](https://venith.net/)
 
 My new infrastructure project on the internet.&nbsp;
-
-> 🐧 [[**CrazyHellTechnologies**]](https://github.com/CrazyHellTechnologies/)
-
-We're a simple development group, focusing on DSiPaint, Linux, and Android.&nbsp;
-
-> 🕹️ [[**TheBestBros**]](https://thebestbros.surge.sh)
-
-My old website that holds memories beyond imagination.&nbsp;
