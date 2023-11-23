@@ -19,10 +19,6 @@
       <img src='https://skillicons.dev/icons?i=kotlin,go,react,ts,tailwind,docker,cloudflare,git,k8s,nodejs,postgres,redis,nextjs,prometheus,grafana,discord,vue,bots,java,gatsby,graphql,idea,js,linux,md,sass,workers,ktor,bash,electron' />
     </a>
   </p>
-  
-  <a href="https://discord.com/users/846112982772613171">
-    <img src="https://lanyard.cnrad.dev/api/846112982772613171?bg=333333&borderRadius=10px" />
-  </a>
 </div>
 
 
