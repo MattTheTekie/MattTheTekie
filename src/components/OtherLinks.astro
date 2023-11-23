@@ -1,6 +1,6 @@
 ---
 import {
-  FaHeart,
+  FaPodcast,
 } from 'react-icons/fa';
 import { CgFileDocument } from 'react-icons/cg';
 import { GiCoffeeCup } from 'react-icons/gi';
@@ -22,11 +22,11 @@ import {
         target="_blank"
         rel="noopener noreferrer"
       >
-        {item.name.toLowerCase().includes('curriculum')
+        {item.name.toLowerCase().includes('resume')
           ? <CgFileDocument size={24} />
           : item.name.toLowerCase().includes('coffee')
             ? <GiCoffeeCup size={24} />
-            : <FaHeart size={24} />
+            : <FaPodcast size={24} />
         }
         <span>{item.name}</span>
       </a>
