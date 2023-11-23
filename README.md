@@ -31,10 +31,10 @@
 
 ## ❓ About Me
   I'm a 21-year-old Linux geek based in America with a strong focus in reverse engineering. I maintain scripts for various projects, and work on infrastructure. In my free time, I indulge in maintaining infrastructure, ricing, hardware mods, gaming, creating Odysee exclusive content, and coding personal projects. I'm dedicated to becoming a pentester, and I am currently exploring more around the stacks in persuit of my goal. 
- - Reverse engineering. 💻
- - Maintaining the VENITH network. 🌐
- - Maintaining scripts for various projects. ⌨️
- - Living on Kepler-186F. 🌌
+ - 💻 Reverse engineering.
+ - 🌐 Maintaining the VENITH network.
+ - ⌨️ Maintaining scripts for various projects.
+ - 🌌 Living on Kepler-186F.
 
 ## 📈 Stats
 <p><img align="center" src="https://github-readme-stats.vercel.app/api?username=MattTheTekie&count_private=true&show_icons=true&theme=chartreuse-dark" alt="MattTheTekie" /></p>
