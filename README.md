@@ -36,31 +36,31 @@
  - Maintaining scripts for various projects. ⌨️
  - Living on Kepler-186F. 🌌
 
-### 📈 Stats
+## 📈 Stats
 <p><img align="center" src="https://github-readme-stats.vercel.app/api?username=MattTheTekie&count_private=true&show_icons=true&theme=chartreuse-dark" alt="MattTheTekie" /></p>
 <br>
 
 <p><img src="/github-metrics.svg" alt="Metrics"></p>
 
-### 💻 Working environment
+## 💻 Working environment
 [![Android 14](https://img.shields.io/badge/Android%2014-3ddc84?style=flat&logo=android&logoColor=ffffff)](https://www.android.com/android-14/)<br>
 [![Windows 10](https://img.shields.io/badge/Windows%2010-00adef?style=flat&logo=windows&logoColor=ffffff)](https://www.teamos.xyz/threads/windows-10-x-lite-redstone-redux.193627/)<br>
 [![Linux Mint 21.1](https://img.shields.io/badge/Linux%20Mint-Mint?logo=linux-mint&logoColor=fff&style=flat)](https://linuxmint.com/)<br>
 [![Arch](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=flat)](https://archlinux.org/)<br>
 
-### 📱 Devices in use
+## 📱 Devices in use
 
 [![Xiaomi Redmi Pad](https://img.shields.io/badge/Xiaomi%20Redmi%20Pad-fd4900?style=flat&logo=Xiaomi&logoColor=ffffff)](https://MattTheTekie.surge.sh/redmi.html)<br>
 [![Samsung S21+ 5G](https://img.shields.io/badge/Samsung%20S21+%205G-fd4900?style=flat&logo=Samsung&logoColor=ffffff&color=blue)](https://icecat.biz/en/p/samsung/sm-g996bzvgeue/galaxy-smartphones-8806090882357-sm-g996b-88009632.html)<br>
 
-### 📫 Get in touch
+## 📫 Get in touch
 [![Discord](https://tinyurl.com/3b9s4sz7)](https://discord.gg/VhfM3UncBB)<br>
 [![Odysee](https://img.shields.io/badge/MattTheTekie-EF1970?style=flat&logo=Odysee&logoColor=white)](https://odysee.com/@mattdoestech726:5)<br>
 [![Mastodon](https://img.shields.io/badge/%40ASTAFATHERSATAN-0088cc?style=flat&logo=mastodon&logoColor=ffffff)](https://nerdculture.de/@ASTAFATHERSATAN)<br>
 [![Telegram](https://img.shields.io/badge/%40Knight666_666-0088cc?style=flat&logo=telegram&logoColor=ffffff)](https://t.me/Knight666_666)<br>
 [![DSiPaint](https://img.shields.io/badge/%F0%9F%8E%A8%20MattFromSpace-blue.svg?style=flat)](https://dsipaint.com/member/?id=152737)<br>
 [![NetroCorp](https://tinyurl.com/bdffr5tr)](https://netrocorp.net/users/61)<br>
-### 🛸 Extras&nbsp;
+## 🛸 Extras&nbsp;
 
 > 🔭 [[**Personal Blog**]](https://test72.eu.org/blog/)
 
