@@ -33,13 +33,13 @@
 <a href="https://spotify-github-profile.vercel.app/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&redirect=true"><img align="right" src="https://spotify-github-profile.vercel.app/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false" /></a>
  - You can call me Matt or 宇宙飛行士.
 
-### 🤔 What I'm doing
+### ❓ About Me
  - Reverse engineering. 💻
  - Maintaining the VENITH network. 🌐
  - Maintaining scripts for various projects. ⌨️
  - Living on Kepler-186F. 🌌
 
-### 📃 GitHub Stats
+### 📈 Stats
 <p><img align="center" src="https://github-readme-stats.vercel.app/api?username=MattTheTekie&count_private=true&show_icons=true&theme=chartreuse-dark" alt="MattTheTekie" /></p>
 <br>
 
