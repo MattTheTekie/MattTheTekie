@@ -41,11 +41,11 @@ export const OTHER_LINKS = [
     link: 'MATTHEW_PITSICALIS-EN.pdf'
   },
   {
-    link: 'https://github.com/sponsors/mattthetekie',
-    name: 'Sponsor me on GitHub'
-  },
-  {
     link: 'https://ko-fi.com/mattthetekie',
     name: 'Buy me a coffee'
+  },
+  {
+    link: 'http://venith.net/podcast.html',
+    name: 'Venith Podcasts'
   }
 ]
