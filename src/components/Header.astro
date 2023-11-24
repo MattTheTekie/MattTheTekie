@@ -7,32 +7,49 @@ const { title } = Astro.props;
 ---
 <header class="flex items-center justify-between py-4 max-w-3xl mx-auto px-4">
   <h1 class="text-2xl font-bold">
-    <a href="/" class="hover:no-underline">{title}</a>
+    <a href="/" class="hover:no-underline" aria-label={title} title={title}>{title}</a>
   </h1>
   <nav>
     <HeaderWrapper>
       <ul class="flex-col sm:flex-row sm:items-center justify-between sm:space-x-2 space-x-0 space-y-2 sm:space-y-0 mr-4 sm:mr-0">
         <li>
-          <HeaderLink href="/projects" class="font-medium p-2 data-[active]:bg-blue-600 hover:underline">
+          <HeaderLink
+            href="/projects"
+            class="font-medium p-2 data-[active]:bg-blue-600 hover:underline"
+            aria-label="Projects"
+            title="Projects"
+          >
             Projects
           </HeaderLink>
         </li>
         <li>
-          <HeaderLink href="/blog" class="font-medium p-2 data-[active]:bg-blue-600">
+          <HeaderLink
+            href="/blog"
+            class="font-medium p-2 data-[active]:bg-blue-600"
+            aria-label="Blog"
+            title="Blog"
+          >
             Blog
           </HeaderLink>
         </li>
         <li>
-          <HeaderLink href="/brain" class="font-medium p-2 data-[active]:bg-blue-600">
+          <HeaderLink
+            href="/brain"
+            class="font-medium p-2 data-[active]:bg-blue-600"
+            aria-label="Brain"
+            title="Brain"
+          >
             Brain
           </HeaderLink>
         </li>
         <li>
           <a
-            href="https://github.com/MattTheTekie/MattTheTekie"
+            href="https://github.com/mattthetekie/mattthetekie"
             class="font-medium p-2 flex items-center space-x-2"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Source"
+            title="Source"
           >
             <FaGithub size={18} />
             <span>Source</span>
