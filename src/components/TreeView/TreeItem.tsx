@@ -3,7 +3,7 @@ import { tv } from 'tailwind-variants'
 
 const treeItem = tv({
   slots: {
-    item: 'first:mt-2 text-stone-300'
+    item: 'text-stone-300'
   }
 })
 

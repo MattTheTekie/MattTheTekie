@@ -21,12 +21,19 @@ const RecursiveRender = ({
   tree,
   pathname
 }: RecursiveRenderProps): ReactNode => {
+  const retrieveOpenedNodes = pathname.split('/').filter(Boolean)
   const [openNodes, setOpenNodes] = useState<Set<string>>(new Set())
   const sortedTree = sortTree(tree)
 
   return sortedTree.map(([key, value]) => {
     const isMap = value instanceof Map
     const slug = isMap ? undefined : value.slug
+
+    useEffect(() => {
+      if (retrieveOpenedNodes.includes(key)) {
+        setOpenNodes(prev => new Set(prev.add(key)))
+      }
+    }, [pathname])
 
     return (
       <Tree.Item key={key}>

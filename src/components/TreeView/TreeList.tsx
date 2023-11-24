@@ -4,8 +4,8 @@ import { tv, type VariantProps } from 'tailwind-variants'
 const treeList = tv({
   variants: {
     type: {
-      main: 'flex flex-col space-y-2 max-w-[18rem] p-2 -ml-6',
-      simple: 'flex flex-col ml-4 first:ml-0'
+      main: 'flex flex-col max-w-[18rem] [&>*:first-child]:pt-2 [&>*>*:first-child]:py-2',
+      simple: 'flex flex-col pl-4'
     }
   },
   defaultVariants: {

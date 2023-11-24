@@ -5,7 +5,7 @@ const node = tv({
   base: 'flex flex-col',
   variants: {
     type: {
-      folder: 'ml-4 my-1',
+      folder: 'pl-4 py-1',
       file: 'pl-[1.5rem] ml-[0.45rem] py-1 border-l'
     },
     active: {
@@ -41,6 +41,8 @@ export default function Node ({
             .replace(/\/$/, '') === href
         })}
         href={href}
+        aria-label={slug}
+        title={slug}
       >
         {children}
       </a>
