@@ -10,7 +10,7 @@ import rehypeKatex from 'rehype-katex';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://test72.eu.org',
+  site: 'https://home.venith.net',
   integrations: [mdx({
     extendMarkdownConfig: true
   }), sitemap(), react(), tailwind()],
