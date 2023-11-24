@@ -56,17 +56,6 @@ const repositories = new Map(
 				<a href="https://status.venith.net/status/crazyhelltech"> <img class="portal-image" src="https://cht.venith.net/assets/images/stats.png" alt="SERVICE STATUS" width="176" height="176"></a>
 				</center>
             </div>
-      <ul class="grid grid-cols-1 mt-4 sm:grid-cols-2 gap-4">
-        {
-          repositories.size === 0 ? (
-            <li class="text-lg text-red-500 font-semibold">
-              No repositories found
-            </li>
-          ) : Array.from(repositories.values())
-            .sort((a, b) => b.stargazers_count - a.stargazers_count)
-            .filter(repository => repository.stargazers_count >= 0)
-            .map((repository) => (
-              <Card contribution={repository} />
             )
           )
         }

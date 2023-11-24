@@ -4,7 +4,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
 
 export async function get (context: { site: string | URL }): Promise<{ body: string }> {
   const posts = await getCollection('blog')
-  const notes = await getCollection('brain')
   const items = [] as RSSFeedItem[]
   for (const post of posts) {
     items.push({
@@ -13,14 +12,6 @@ export async function get (context: { site: string | URL }): Promise<{ body: str
       pubDate: post.data.publishedAt,
       link: `/blog/${post.slug}/`,
       content: post.body
-    })
-  }
-  for (const note of notes) {
-    items.push({
-      title: note.data.title,
-      link: `/brain/${note.slug}/`,
-      pubDate: note.data.publishedAt !== undefined ? note.data.publishedAt : new Date(),
-      content: note.body
     })
   }
 
