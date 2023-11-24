@@ -1,5 +1,5 @@
 ---
-title: "My Brain dump"
+title: "My Braindump"
 ---
 <div align="center">
 
