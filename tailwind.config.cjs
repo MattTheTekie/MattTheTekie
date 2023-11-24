@@ -1,9 +1,10 @@
-{
-  "extends": "astro/tsconfigs/strictest",
-  "compilerOptions": {
-    "strictNullChecks": true,
-    "jsx": "react-jsx",
-    "jsxImportSource": "react"
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  theme: {
+    extend: {}
   },
-  "include": ["src/**/*", "vitest.config.ts"]
+  plugins: [
+    require('@tailwindcss/typography'),
+  ]
 }
