@@ -1,12 +1,13 @@
-import { type ReactNode, useState, useEffect, useRef } from 'react'
-import { FaBars } from 'react-icons/fa'
+import { type ReactNode, useState, useEffect, useRef, type ElementType } from 'react'
+import * as Icons from 'react-icons/fa'
 
 interface DropdownProps {
   children: ReactNode
+  icon: string
   direction?: 'left' | 'right'
 }
 
-export default function Dropdown ({ children, direction }: DropdownProps): ReactNode {
+export default function Dropdown ({ children, direction, icon }: DropdownProps): ReactNode {
   const [isOpen, setIsOpen] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
   const buttonRef = useRef<HTMLButtonElement>(null)
@@ -25,19 +26,24 @@ export default function Dropdown ({ children, direction }: DropdownProps): React
     }
   }, [])
 
+  // @ts-expect-error - I can use string as index.
+  const Icon = Icons[icon] as ElementType
+
   return (
     <div className='relative inline-block text-left'>
       <div>
         <button
+          id='options-menu'
           type='button'
           className='p-2 bg-neutral-800 rounded-sm hover:brightness-75 transition duration-150 ease-in-out'
-          id='options-menu'
           aria-haspopup='true'
           aria-expanded='true'
           onClick={() => { setIsOpen(!isOpen) }}
           ref={buttonRef}
+          aria-label='Options'
+          name='Options'
         >
-          <FaBars size={18} />
+          <Icon size={18} />
         </button>
       </div>
       <div
