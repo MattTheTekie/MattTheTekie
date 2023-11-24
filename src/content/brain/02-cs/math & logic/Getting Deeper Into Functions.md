@@ -10,7 +10,7 @@ A function is a relation between two sets, where every element of the first set 
 
 - Ex:
 
-![Function Image](assets/02-02-math-function-image.svg)
+![Function Image](/assets/02-02-math-function-image.svg)
 
 > *Notation: $f(x) = x^2 - 6x + 8$*
 
