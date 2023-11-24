@@ -8,7 +8,8 @@ import {
 
 import {
   SiLemmy,
-  SiOdysee
+  SiOdysee,
+  SiDiscord
 } from 'react-icons/si';
 
 const icons = [ FaGithub, FaLinkedinIn, FaMastodon, SiOdysee, SiLemmy ];
@@ -30,6 +31,7 @@ import {
         "bg-grey-800": item.name.toLowerCase().includes('lemmy'),
         "bg-blue-600": item.name.toLowerCase().includes('linkedin'),
         "bg-orange-800": item.name.toLowerCase().includes('odysee'),
+        "bg-blue-800": item.name.toLowerCase().includes('discord'),
       }]}>
         {item.name.toLowerCase() === 'email'
           ? <FaEnvelope size={18} />
