@@ -1,13 +1,14 @@
 ---
 import Dropdown from './Dropdown';
 ---
-<aside class="sm:mr-8 flex-shrink-0 space-y-2">
-  <div class="sm:block hidden">
+<aside class="lg:mr-8 flex-shrink-0 py-2 lg:py-0">
+  <div class="lg:block hidden">
     <slot/>
   </div>
-  <div class="sm:hidden block">
+  <div class="lg:hidden block">
     <Dropdown
-      client:load
+      client:idle
+      icon="FaTree"
     >
       <slot/>
     </Dropdown>
