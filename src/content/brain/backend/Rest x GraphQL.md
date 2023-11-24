@@ -4,7 +4,7 @@ title: "Rest x GraphQL"
 
 ## Rest
 
-![Rest x GraphQL](./assets/backend-rest-x-graphql.svg)
+![Rest x GraphQL](/assets/backend-rest-x-graphql.svg)
 
 Basically, with Rest API's model, you expose endpoints that serves the data for you.
 
