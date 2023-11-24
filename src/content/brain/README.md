@@ -1,9 +1,9 @@
 ---
-title: "Fork My Brain"
+title: "My Brain"
 ---
 <div align="center">
 
-# Fork My Brain
+# My Braindump
 
 [![GitHub stars](https://img.shields.io/github/stars/mattthetekie/mattthetekie.svg)](https://github.com/mattthetekie/mattthetekie/stargazers)
 ![Repository Size](https://img.shields.io/github/repo-size/mattthetekie/mattthetekie.svg)
@@ -24,10 +24,10 @@ Have a good read!
 <table>
     <tr>
         <td align="center">
-            <a href="https://github.com/datsfilipe">
-                <img src="https://github.com/datsfilipe.png" width="100px;" alt="Filipe's Photo"/><br>
+            <a href="https://github.com/mattthetekie">
+                <img src="https://github.com/mattthetekie.png" width="100px;" alt="MattTheTekie's Photo"/><br>
                 <sub>
-                    <b>Filipe Lima</b>
+                    <b>Matthew Pitsicalis</b>
                 </sub>
             </a>
         </td>
