@@ -37,4 +37,4 @@ Have a good read!
 
 ## License
 
-This project is licensed under the [CC BY-NC-SA 4.0](/assets/LICENSE).
+This project is licensed under the [CC BY-NC-SA 4.0](/assets/_LICENSE).
