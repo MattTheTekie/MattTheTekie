@@ -10,30 +10,30 @@ export const SOCIAL = [
     link: 'https://github.com/MattTheTekie',
     name: 'GitHub'
   },
+    {
+    link: 'https://nerdculture.de/@ASTAFATHERSATAN',
+    name: 'Mastodon'
+  },
+    {
+    link: 'https://www.linkedin.com/in/matthew-pitsicalis',
+    name: 'Linkedin'
+  },
   {
     link: 'https://discord.gg/VhfM3UncBB',
     name: 'Discord'
-  },
-  {
-    link: 'https://nerdculture.de/@ASTAFATHERSATAN',
-    name: 'Mastodon'
   },
     {
     link: 'https://social.venith.net/u/MattTheTekie',
     name: 'Lemmy'
   },
     {
-    link: 'https://odysee.com/@mattdoestech726:5',
-    name: 'Odysee'
-    },
-  {
-    link: 'https://www.linkedin.com/in/matthew-pitsicalis',
-    name: 'Linkedin'
-  },
-  {
     link: 'mailto:mattfromspace@protonmail.com',
     name: 'Email'
-  }
+  },
+    {
+    link: 'https://odysee.com/@mattdoestech726:5',
+    name: 'Odysee'
+    }
 ]
 export const OTHER_LINKS = [
   {
