@@ -8,25 +8,25 @@ title: "Graphics and Their Interpretations"
 
 - Notation: $[a, b] = \{ x \in \mathbb{R}: a \leq x \leq b \}$
 
-![Interval Closed on Real Line](./assets/02-02-math-closed-interval.svg)
+![Interval Closed on Real Line](/assets/02-02-math-closed-interval.svg)
 
 ### 1.1. Open Interval on Real Line
 
 - Notation: $]a, b[ = \{ x \in \mathbb{R}: a < x < b \}$
 
-![Interval Closed on Real Line](./assets/02-02-math-open-interval.svg)
+![Interval Closed on Real Line](/assets/02-02-math-open-interval.svg)
 
 ### 1.1. Half-Open Real Half-Line
 
 - Notation: $[a, +\infty[ = \{ x \in \mathbb{R}: x \geq a \}$
 
-![Interval Closed on Real Line](./assets/02-02-math-half-open-line.svg)
+![Interval Closed on Real Line](/assets/02-02-math-half-open-line.svg)
 
 ### 1.1. Open Real Half-Line
 
 - Notation: $]a, +\infty[ = \{ x \in \mathbb{R}: x > a \}$
 
-![Interval Closed on Real Line](./assets/02-02-math-open-line.svg)
+![Interval Closed on Real Line](/assets/02-02-math-open-line.svg)
 
 ### 1.1. Interval Amplitude
 
@@ -35,7 +35,7 @@ title: "Graphics and Their Interpretations"
 
 ## 2. Definitions and Characteristics of a Function
 
-![Cartesian Plane](./assets/02-02-math-cartesian-plane.svg)
+![Cartesian Plane](/assets/02-02-math-cartesian-plane.svg)
 
 - The values that appears in the $x$ axis are the independent variable
 - The values that appears in the $y$ axis are the dependent variable (depend on $x$ value).
