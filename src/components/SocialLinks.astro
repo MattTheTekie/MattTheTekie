@@ -1,12 +1,8 @@
 ---
 import {
   FaGithub,
-  FaTwitter,
   FaLinkedinIn,
-  FaRedditAlien,
-  FaYoutube,
   FaEnvelope,
-  FaTiktok,
   FaMastodon
 } from 'react-icons/fa';
 
@@ -16,27 +12,26 @@ import {
   SiDiscord
 } from 'react-icons/si';
 
-const icons = [ FaGithub, FaTwitter, FaLinkedinIn, FaRedditAlien, FaYoutube, FaTiktok, FaMastodon, SiOdysee, SiLemmy, SiDiscord ];
+const icons = [ FaGithub,, FaLinkedinIn, FaMastodon, SiOdysee, SiLemmy, SiDiscord ];
 import {
   SOCIAL,
 } from '../consts';
 ---
 <ul class="sm:flex-col flex-row flex-wrap sm:flex-nowrap px-4 sm:px-0 mb-4 sm:mb-0 justify-center sm:justify-normal">
   {SOCIAL.map(item => (
-    <li class="flex items-center space-x-2 space-y-2 mr-2 sm:mr-0">
+    <li
+      class="flex items-center space-x-2 space-y-2 mr-2 sm:mr-0"
+      transition:animate="slide"
+    >
       <span>~</span>
       <span class:list={["p-1 rounded-md", {
-        "bg-blue-800": item.name.toLowerCase().includes('email'),
-        "bg-blue-800": item.name.toLowerCase().includes('mastodon'),
-        "bg-blue-800": item.name.toLowerCase().includes('discord'),
-        "bg-orange-800": item.name.toLowerCase().includes('odysee'),
-        "bg-grey-800": item.name.toLowerCase().includes('lemmy'),
         "bg-gray-700": item.name.toLowerCase().includes('github'),
-        "bg-blue-400": item.name.toLowerCase().includes('twitter'),
+        "bg-blue-800": item.name.toLowerCase().includes('mastodon'),
         "bg-blue-600": item.name.toLowerCase().includes('linkedin'),
-        "bg-orange-700": item.name.toLowerCase().includes('reddit'),
-        "bg-red-700": item.name.toLowerCase().includes('youtube'),
-        "bg-stone-800": item.name.toLowerCase().includes('tiktok'),
+        "bg-grey-800": item.name.toLowerCase().includes('lemmy'),
+        "bg-blue-800": item.name.toLowerCase().includes('email'),
+        "bg-orange-800": item.name.toLowerCase().includes('odysee'),
+        "bg-blue-800": item.name.toLowerCase().includes('discord'),
       }]}>
         {item.name.toLowerCase() === 'email'
           ? <FaEnvelope size={18} />
