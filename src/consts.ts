@@ -18,10 +18,6 @@ export const SOCIAL = [
     link: 'https://www.linkedin.com/in/matthew-pitsicalis',
     name: 'Linkedin'
   },
-  {
-    link: 'https://discord.gg/VhfM3UncBB',
-    name: 'Discord'
-  },
     {
     link: 'https://social.venith.net/u/MattTheTekie',
     name: 'Lemmy'
@@ -33,7 +29,11 @@ export const SOCIAL = [
     {
     link: 'https://odysee.com/@mattdoestech726:5',
     name: 'Odysee'
-    }
+    },
+    {
+    link: 'https://discord.gg/VhfM3UncBB',
+    name: 'Discord'
+  }
 ]
 export const OTHER_LINKS = [
   {
