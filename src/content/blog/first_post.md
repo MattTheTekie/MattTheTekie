@@ -1,6 +1,6 @@
 ---
-title: "Welcome to my first post."
-summary: "Welcome to my first post."
+title: "Welcome to my first post"
+summary: "Welcome to my first post"
 publishedAt: "2023-03-13"
 draft: false
 ---
