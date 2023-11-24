@@ -1,9 +1,9 @@
 ---
-title: "My Brain"
+title: "Fork My Brain"
 ---
 <div align="center">
 
-# My Braindump
+# Fork My Brain
 
 [![GitHub stars](https://img.shields.io/github/stars/mattthetekie/mattthetekie.svg)](https://github.com/mattthetekie/mattthetekie/stargazers)
 ![Repository Size](https://img.shields.io/github/repo-size/mattthetekie/mattthetekie.svg)
