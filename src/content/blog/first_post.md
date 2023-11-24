@@ -9,6 +9,6 @@ draft: false
 Welcome to my first blog post.
 Hello there! Let me introduce myself.(https://github.com/MattTheTekie/)
 
-tesI'm Matt, I'm into Opsec, Linux, Networking, and much more. I've done loads of project's over the year's, and am glad to *FINALLY* have a blog after such a long time.
-\
+I'm Matt, I'm into Opsec, Linux, Networking, and much more. I've done loads of project's over the year's, and am glad to *FINALLY* have a blog after such a long time.
+
 That's all for now! - Matt.
