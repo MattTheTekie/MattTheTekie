@@ -25,10 +25,10 @@ import {
     >
       <span>~</span>
       <span class:list={["p-1 rounded-md", {
+        "bg-blue-799": item.name.toLowerCase().includes('discord'),
         "bg-blue-801": item.name.toLowerCase().includes('email'),
         "bg-gray-700": item.name.toLowerCase().includes('github'),
         "bg-blue-800": item.name.toLowerCase().includes('mastodon'),
-        "bg-blue-799": item.name.toLowerCase().includes('discord'),
         "bg-grey-800": item.name.toLowerCase().includes('lemmy'),
         "bg-blue-600": item.name.toLowerCase().includes('linkedin'),
         "bg-orange-800": item.name.toLowerCase().includes('odysee'),
