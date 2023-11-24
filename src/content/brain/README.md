@@ -4,9 +4,9 @@ title: "Brain"
 <div align="center">
 
 # Braindump
-[![GitHub stars](https://img.shields.io/github/stars/datsfilipe/brain.svg)](https://github.com/datsfilipe/brain/stargazers)
-![Repository Size](https://img.shields.io/github/repo-size/datsfilipe/brain.svg)
-![Last Commit](https://img.shields.io/github/last-commit/datsfilipe/brain.svg)
+[![GitHub stars](https://img.shields.io/github/stars/mattthetekie/mattthetekie.svg)](https://github.com/mattthetekie/mattthetekie/stargazers)
+![Repository Size](https://img.shields.io/github/repo-size/mattthetekie/mattthetekie.svg)
+![Last Commit](https://img.shields.io/github/last-commit/mattthetekie/mattthetekie.svg)
 
 </div>
 
