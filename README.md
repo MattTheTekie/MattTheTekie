@@ -25,8 +25,10 @@
 <img align="right" src="https://komarev.com/ghpvc/?username=MattTheTekie" />
 
 ## 👋 Hi there
- - You can call me Matt or 宇宙飛行士.<br>
-<a href="https://spotify-github-profile.vercel.app/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&redirect=true"><img align="right" src="https://spotify-github-profile.vercel.app/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false" /></a> <br>
+
+<a href="https://spotify-github-profile.vercel.app/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&redirect=true"><img align="right" src="https://spotify-github-profile.vercel.app/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false" /></a>
+ - You can call me Matt or 宇宙飛行士.
+
 ## ❓ About Me
    I'm a 21-year-old Linux geek based in America with a strong focus in reverse engineering. I'm the creator of the Venith Network podcast series. I maintain scripts for various projects, and work on infrastructure as a hobby. In my free time, I indulge in maintaining infrastructure, ricing, hardware mods, gaming, creating Odysee exclusive content, and coding personal projects. I'm dedicated to becoming a pentester, and I am currently exploring more around the stacks in persuit of my goal. 
  - 💻 Reverse engineering.
