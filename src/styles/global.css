@@ -28,11 +28,11 @@ html pre, html code {
 
 /* blog post styles */
 .prose ul {
-  @apply flex flex-col space-y-1 list-disc ml-6;
+  @apply flex flex-col;
 }
 
 .prose table {
-  @apply border border-stone-600 bg-neutral-900 text-base my-6;
+  @apply border border-stone-600 bg-neutral-900;
 
   display: block;
   overflow-x: auto;
@@ -48,12 +48,8 @@ html pre, html code {
   @apply p-2 border border-stone-600;
 }
 
-.prose p + p {
-  @apply mt-6;
-}
-
 .prose .anchor {
-  @apply no-underline text-2xl font-bold relative text-white;
+  @apply no-underline font-bold relative text-white;
 
   max-width: 80%;
   line-height: 6rem;
@@ -66,7 +62,7 @@ html pre, html code {
 .prose .anchor:before {
   @apply text-neutral-300 dark:text-neutral-700 invisible hover:visible;
   content: '#';
-  margin-left: -1em;
+  margin-left: -1.2em;
   padding-right: 0.5em;
 }
 
@@ -83,7 +79,7 @@ html pre, html code {
 }
 
 .prose code {
-  @apply px-1 py-0.5 border border-stone-600 rounded-sm bg-neutral-900 text-base;
+  @apply px-1 py-0.5 border border-stone-600 rounded-sm bg-neutral-900;
 }
 
 .prose pre code {
@@ -106,7 +102,7 @@ pre {
 }
 
 pre.astro-code {
-  @apply px-6 py-4 rounded-sm my-6 text-base border border-stone-600 !bg-neutral-900;
+  @apply px-6 py-4 rounded-sm my-6 border border-stone-600 !bg-neutral-900;
 }
 
 /* this one if for the /brain route content to appear right */
