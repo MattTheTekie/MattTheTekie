@@ -1,6 +1,6 @@
 ---
-title: "Starting up my Home Lab."
-summary: "Starting up my Home Lab."
+title: "Starting up my Home Lab"
+summary: "Starting up my Home Lab"
 publishedAt: "2023-05-12"
 draft: false
 categories: ["HomeLab"]
