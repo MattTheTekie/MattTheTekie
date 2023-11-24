@@ -8,38 +8,24 @@ import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeKatex from 'rehype-katex';
 
+// https://astro.build/config
 export default defineConfig({
-  experimental: {
-    viewTransitions: true,
-  },
-  site: 'https://example.com',
-  integrations: [
-    mdx({
-      extendMarkdownConfig: true,
-    }),
-    sitemap(),
-    react(),
-    tailwind(),
-  ],
+  site: 'https://datsfilipe.dev',
+  integrations: [mdx({
+    extendMarkdownConfig: true
+  }), sitemap(), react(), tailwind()],
   markdown: {
     shikiConfig: {
       theme: 'min-dark',
-      wrap: true,
+      wrap: true
     },
     remarkPlugins: [remarkMath],
-    rehypePlugins: [
-      rehypeKatex,
-      rehypeSlug,
-      [
-        rehypeAutolinkHeadings,
-        {
-          behavior: 'wrap',
-          properties: {
-            className: ['anchor'],
-          },
-        },
-      ],
-    ],
-    gfm: true,
+    rehypePlugins: [rehypeKatex, rehypeSlug, [rehypeAutolinkHeadings, {
+      behavior: 'wrap',
+      properties: {
+        className: ['anchor']
+      }
+    }]],
+    gfm: true
   },
 });
