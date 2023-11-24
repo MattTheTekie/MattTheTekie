@@ -25,7 +25,7 @@ const posts = (await getCollection('blog')).sort(
 					{
 						posts.map((post) => (
 							<li class="space-y-2">
-								<a href={`/blog/${post.slug}`}>
+								<a href={`/blog/${post.slug}`} aria-label={`${post.data.title}!`} title={post.data.title}>
 									<h4 class="text-xl font-bold text-justify" transition:animate="slide">
                     {post.data.title}
                   </h4>
