@@ -23,7 +23,7 @@ export const SOCIAL = [
     name: 'Lemmy'
   },
     {
-    link: 'mailto:mattfromspace@protonmail.com',
+    link: 'mailto:mattthetekie@venith.net',
     name: 'Email'
   },
     {
