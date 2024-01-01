@@ -2,7 +2,7 @@
 
 ORG_NAME="VENITHNET"
 README_FILE="README.md"
-GITHUB_TOKEN="$${{ secrets.GITHUB_TOKEN }}"
+GITHUB_TOKEN="${{ secrets.GITHUB_TOKEN }}"
 
 # Get the list of repositories from the GitHub API with your GitHub Access Token
 repositories=$(curl -s -H "Authorization: bearer $GITHUB_TOKEN" "https://api.github.com/orgs/$ORG_NAME/repos?per_page=100" | jq -r '.[].contributors_url')
