@@ -31,7 +31,7 @@ export const SOCIAL = [
     name: 'Odysee'
     },
     {
-    link: 'https://discord.gg/VhfM3UncBB',
+    link: 'https://discord.com/invite/Xjfy4sJpWx',
     name: 'Discord'
   }
 ]
