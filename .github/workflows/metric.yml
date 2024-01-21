@@ -37,3 +37,8 @@ jobs:
           plugin_sponsors: no
           plugin_sponsors_sections: goal, list
           plugin_sponsors_size: 24
+          plugin_habits: yes
+          plugin_habits_from: 400
+          plugin_habits_days: 30
+          plugin_habits_facts: yes
+          plugin_notable: yes
