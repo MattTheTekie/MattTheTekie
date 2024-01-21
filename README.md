@@ -9,7 +9,7 @@
   <a href='https://discord.com/users/846112982772613171' target='_blank'><img alt="discord status" src="https://api.statusbadges.me/badge/status/846112982772613171" /></a>
   <a href="https://api.statusbadges.me/openspotify/846112982772613171"><img alt="what the hell i am listening to" src="https://api.statusbadges.me/badge/spotify/846112982772613171" /></a>
   <img alt="who viewed me owo" src="https://komarev.com/ghpvc/?username=MattTheTekie" />
-  <img alt='Pronouns' src='https://img.shields.io/badge/Pronouns-he/bi-lightgrey' />
+  <img alt='Pronouns' src='https://img.shields.io/badge/pronouns-he/bi-lightgrey' />
   <a href="https://wakatime.com/@MattTheTekie" target='_blank'>
     <img alt='wakatime res' src='https://wakatime.com/badge/user/2f8520ba-7155-4dbf-9965-0a4fc30cdf7f.svg' />
   </a>
