@@ -1,5 +1,5 @@
 <div align="center">
-    <img alt='pfp res' src='https://avatars.githubusercontent.com/u/94870997?v=4' />  
+    <img alt='pfp res' src='https://svg-banners.vercel.app/api?type=rainbow&text1=MattTheTekie%20&width=800&height=400' />  
   <h2>🐱‍💻 MattTheTekie</h2>
   <img src="https://readme-typing-svg.herokuapp.com/?font=courier+new&color=0BF700&lines=Hello!+My+name+is+Matt!;A.K.A+MattTheTekie+or+Matthew%20P." />
   <blockquote>Working with electronics, and backends.</blockquote>
