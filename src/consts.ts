@@ -45,7 +45,7 @@ export const OTHER_LINKS = [
     name: 'Buy me a coffee'
   },
   {
-    link: 'http://venith.net/podcast.html',
+    link: 'https://venith.podcastpage.io',
     name: 'Venith Podcasts'
   }
 ]
