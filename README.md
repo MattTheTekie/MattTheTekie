@@ -60,7 +60,7 @@
 [![NetroCorp](https://tinyurl.com/bdffr5tr)](https://netrocorp.net/users/61)<br>
 ## 🛸 Extras&nbsp;
 
-> 🔭 [[**Personal Blog**]](https://test72.eu.org/blog/)
+> 🔭 [[**Personal Blog**]](https://home.venith.net/blog/)
 
 My blogging corner on the world wide web.&nbsp;
 
