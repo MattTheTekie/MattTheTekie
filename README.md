@@ -15,7 +15,7 @@
   </a>
   
   <p align="center">
-      <img src="https://tag.rc24.xyz/846112982772613171/tag.max.png" style="border-radius: 10px;"/>
+<img src="https://tag.rc24.xyz/846112982772613171/tag.max.png" style="opacity: 0.5; border: 10px solid transparent;" />
       <a href="https://skillicons.dev">
       <img src='https://skillicons.dev/icons?i=kotlin,go,react,ts,tailwind,docker,cloudflare,git,k8s,nodejs,postgres,redis,nextjs,prometheus,grafana,discord,vue,bots,java,gatsby,graphql,idea,js,linux,md,sass,workers,ktor,bash,electron' />
     </a>
