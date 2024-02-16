@@ -15,8 +15,9 @@
   </a>
   
   <p align="center">
-<div style="border-radius: 10px; display: inline-block; overflow: hidden;">
-    <img src="https://tag.rc24.xyz/846112982772613171/tag.max.png" style="width: 100%; height: auto;">
+<div style="border: 10px solid red; border-radius: 15px; display: inline-block; overflow: hidden; position: relative;">
+    <img src="https://tag.rc24.xyz/846112982772613171/tag.max.png" style="width: 100%; height: auto; display: block;">
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 15px; border: 10px solid transparent;"></div>
 </div>
       <a href="https://skillicons.dev">
       <img src='https://skillicons.dev/icons?i=kotlin,go,react,ts,tailwind,docker,cloudflare,git,k8s,nodejs,postgres,redis,nextjs,prometheus,grafana,discord,vue,bots,java,gatsby,graphql,idea,js,linux,md,sass,workers,ktor,bash,electron' />
