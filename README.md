@@ -36,8 +36,6 @@
 
 ## 📈 Stats
 <p><img align="center" src="https://github-readme-stats.vercel.app/api?username=MattTheTekie&count_private=true&show_icons=true&theme=chartreuse-dark" alt="MattTheTekie" /></p>
-<br>
-
 <p><img src="/github-metrics.svg" alt="Metrics"></p>
 
 ## 💻 Working Environment
@@ -57,6 +55,7 @@
 [![Telegram](https://img.shields.io/badge/%40Knight666_666-0088cc?style=flat&logo=telegram&logoColor=ffffff)](https://t.me/Knight666_666)<br>
 [![DSiPaint](https://img.shields.io/badge/%F0%9F%8E%A8%20MattFromSpace-blue.svg?style=flat)](https://dsipaint.com/member/?id=152737)<br>
 [![NetroCorp](https://tinyurl.com/bdffr5tr)](https://netrocorp.net/users/61)<br>
+
 ## 🛸 Extras&nbsp;
 
 > 🔭 [[**Personal Blog**]](https://home.venith.net/blog/)
