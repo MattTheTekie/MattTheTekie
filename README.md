@@ -5,7 +5,6 @@
   <blockquote>Working with electronics, and backends.</blockquote>
 
 📡 [[**MattTheTekie**]](https://home.venith.net/)
-<img src="https://tag.rc24.xyz/846112982772613171/tag.max.png" />
   <a href='https://discord.com/users/846112982772613171' target='_blank'><img alt="discord status" src="https://api.statusbadges.me/badge/status/846112982772613171" /></a>
   <a href="https://api.statusbadges.me/openspotify/846112982772613171"><img alt="what the hell i am listening to" src="https://api.statusbadges.me/badge/spotify/846112982772613171" /></a>
   <img alt="who viewed me owo" src="https://komarev.com/ghpvc/?username=MattTheTekie" />
@@ -15,6 +14,7 @@
   </a>
   
   <p align="center">
+<img src="https://tag.rc24.xyz/846112982772613171/tag.max.png" />
     <a href="https://skillicons.dev">
       <img src='https://skillicons.dev/icons?i=kotlin,go,react,ts,tailwind,docker,cloudflare,git,k8s,nodejs,postgres,redis,nextjs,prometheus,grafana,discord,vue,bots,java,gatsby,graphql,idea,js,linux,md,sass,workers,ktor,bash,electron' />
     </a>
