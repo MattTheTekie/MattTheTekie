@@ -12,8 +12,7 @@
   <img alt='Pronouns' src='https://img.shields.io/badge/pronouns-he/bi-lightgrey' />
   <a href="https://wakatime.com/@MattTheTekie" target='_blank'>
     <img alt='wakatime res' src='https://wakatime.com/badge/user/2f8520ba-7155-4dbf-9965-0a4fc30cdf7f.svg' />
-  </a>
-  
+  </a>  
   <p align="center">
 <img src='https://tag.rc24.xyz/846112982772613171/tag.max.png'>
       <a href="https://skillicons.dev">
