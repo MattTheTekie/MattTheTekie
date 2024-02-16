@@ -23,7 +23,6 @@
 </div>
 
 ## 👋 Hi there
-
 <a href="https://spotify-github-profile.vercel.app/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&redirect=true"><img align="right" src="https://spotify-github-profile.vercel.app/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false" /></a>
  - You can call me Matt or 宇宙飛行士.
 [![Snake Graph](https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/master/github-snake.svg)](https://github.com/MattTheTekie)
@@ -47,8 +46,7 @@
 [![Linux Mint 21.1](https://img.shields.io/badge/Linux%20Mint-Mint?logo=linux-mint&logoColor=fff&style=flat)](https://linuxmint.com/)<br>
 [![Arch](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=flat)](https://archlinux.org/)<br>
 
-## 📱 Devices in use
-
+## 📱 Devices
 [![Xiaomi Pad 6](https://img.shields.io/badge/Xiaomi%20Pad%206-fd4900?style=flat&logo=Xiaomi&logoColor=ffffff)](https://MattTheTekie.surge.sh/redmi.html)<br>
 [![Samsung S21+ 5G](https://img.shields.io/badge/Samsung%20S21+%205G-fd4900?style=flat&logo=Samsung&logoColor=ffffff&color=blue)](https://icecat.biz/en/p/samsung/sm-g996bzvgeue/galaxy-smartphones-8806090882357-sm-g996b-88009632.html)<br>
 
