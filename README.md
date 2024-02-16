@@ -23,7 +23,7 @@
 
 ## 👋 Hi there
 <a href="https://spotify-github-profile.vercel.app/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&redirect=true"><img align="right" src="https://spotify-github-profile.vercel.app/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false" /></a>
- - You can call me Matt or 宇宙飛行士.<br>You can join the action at the Venith Discord server!</br><br> 🐱‍💻 [[**VENITH NETWORK**]](https://venith.net/)</br>
+ - You can call me Matt or 宇宙飛行士.<br>You can join the action at the Venith Discord server!<br> 🐱‍💻 [[**VENITH NETWORK**]](https://venith.net/)</br>
 [![Snake Graph](https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/master/github-snake.svg)](https://github.com/MattTheTekie)
 
 ## ❓ About Me
