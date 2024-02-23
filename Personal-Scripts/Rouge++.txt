@@ -1,0 +1,71 @@
+{
+  "name": "Rogue+ AMOLED",
+  "description": "AMOLED optimized version of Rogue+ with System black theme accents",
+  "authors": [
+    {
+      "name": "Λrtful",
+      "id": "612070016845742083"
+    },
+    {
+      "name": "Mylloon",
+      "id": "158260864623968257"
+    }
+  ],
+  "semanticColors": {
+    "HEADER_PRIMARY": ["#ffffff"],
+    "HEADER_SECONDARY": ["#999999"],
+    "TEXT_NORMAL": ["#ffffff"],
+    "TEXT_MUTED": ["#999999"],
+    "TEXT_LINK": ["#a80820"],
+    "TEXT_DANGER": ["#a80820"],
+    "INTERACTIVE_NORMAL": ["#ffffff"],
+    "INTERACTIVE_ACTIVE": ["#ffffff"],
+    "INTERACTIVE_MUTED": ["#4c4c4c"],
+    "BACKGROUND_PRIMARY": ["#000000"],
+    "BACKGROUND_SECONDARY": ["#000000"],
+    "BACKGROUND_SECONDARY_ALT": ["#000000"],
+    "BACKGROUND_TERTIARY": ["#000000"],
+    "BACKGROUND_ACCENT": ["#08080A"],
+    "BACKGROUND_FLOATING": ["#000000"],
+    "BACKGROUND_MOBILE_PRIMARY": ["#000000"],
+    "BACKGROUND_MOBILE_SECONDARY": ["#000000"],
+    "BACKGROUND_NESTED_FLOATING": ["#000000"],
+    "BACKGROUND_MENTIONED": ["#a8082033"],
+    "BACKGROUND_MODIFIER_ACTIVE": ["#a8082033"],
+    "BACKGROUND_MODIFIER_SELECTED": ["#1a1a1a"],
+    "BACKGROUND_MODIFIER_ACCENT": ["#000000"],
+    "SPOILER_HIDDEN_BACKGROUND": ["#1E1F22"],
+    "SPOILER_REVEALED_BACKGROUND": ["transparent"],
+    "CHANNEL_TEXT_AREA_PLACEHOLDER": ["#999999"],
+    "CHAT_BACKGROUND": ["#000000"],
+    "CHANNELS_DEFAULT": ["#999999"],
+    "TEXT_LINK": ["#a80820"],
+    "CHANNEL_ICON": ["#ffffff"]
+  },
+  "rawColors": {
+    "PRIMARY_100": "#ffffff",
+    "PRIMARY_200": "#ffffff",
+    "PRIMARY_300": "#ffffff",
+    "PRIMARY_360": "#999999",
+    "PRIMARY_500": "#999999",
+    "PRIMARY_600": "#000000",
+    "PRIMARY_630": "#000000",
+    "PRIMARY_660": "#000000",
+    "PRIMARY_700": "#000000",
+    "PRIMARY_800": "#000000",
+    "PLUM_20": "#000000",
+    "BRAND_260": "#a80820",
+    "BRAND_360": "#a80820",
+    "BRAND_500": "#a80820",
+    "BRAND_560": "#ffffff",
+    "WHITE_500": "#ffffff",
+    "BLUE_345": "#a80820",
+    "YELLOW_300": "#a80820",
+    "ORANGE_345": "#a80820",
+    "GREEN_345": "#a80820",
+    "GREEN_360": "#a80820",
+    "RED_560": "#a80820",
+    "RED_400": "#a80820"
+  },
+  "spec": 2
+}
