@@ -14,7 +14,7 @@
     <img alt='wakatime res' src='https://wakatime.com/badge/user/2f8520ba-7155-4dbf-9965-0a4fc30cdf7f.svg' />
   </a>  
   <p align="center">
-<img src='https://tag.rc24.xyz/846112982772613171/tag.max.png'>
+![Spotube Desktop](https://tag.rc24.xyz/846112982772613171/tag.max.png)
       <a href="https://skillicons.dev">
       <img src='https://skillicons.dev/icons?i=kotlin,go,react,ts,tailwind,docker,cloudflare,git,k8s,nodejs,postgres,redis,nextjs,prometheus,grafana,discord,vue,bots,java,gatsby,graphql,idea,js,linux,md,sass,workers,ktor,bash,electron' />
     </a>
