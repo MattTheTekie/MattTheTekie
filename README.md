@@ -21,7 +21,7 @@
   </p>
 </div>
 
-##     <img alt="Wave image" src="https://github.com/MattTheTekie/MattTheTekie/blob/master/218808235-50f91cfa-5ec0-43c3-89f7-abb8d4258621.gif" width="40" height="40"/> Hi there
+##     <img alt="Wave image" src="https://github.com/MattTheTekie/MattTheTekie/blob/master/218808235-50f91cfa-5ec0-43c3-89f7-abb8d4258621-ezgif.com-resize.gif" width="40" height="40"/> Hi there
 <a href="https://spotify-github-profile.vercel.app/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&redirect=true"><img align="right" src="https://spotify-github-profile.vercel.app/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false" /></a>
  - You can call me Matt or 宇宙飛行士.
  - You can join the action at the <br> 🐱‍💻 [[**Venith Discord**]](https://gg.gg/venith_) server!
