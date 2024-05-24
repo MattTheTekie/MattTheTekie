@@ -242,6 +242,12 @@
         sed 's/WOWOWCinema.jp/歌謡ポップスチャンネル.jp/' -i combined.m3u
         sed 's/WOWOWLive.jp/ＷＯＷＯＷライブ.jp/' -i combined.m3u
         sed 's/WOWOWPrime.jp/ＷＯＷＯＷプライム.jp/' -i combined.m3u
+        sed 's/.us", /.us", group-title="Free TV", [FREE] '/ -i combined.m3u
+        sed 's/.ca", /.ca", group-title="Free TV", [FREE] '/ -i combined.m3u
+        sed 's/.nl", /.nl", group-title="Free TV", [FREE] '/ -i combined.m3u
+        sed 's/.uk", /.uk", group-title="Free TV", [FREE] '/ -i combined.m3u
+        sed 's/.fr", /.fr", group-title="Free TV", [FREE] '/ -i combined.m3u
+        sed 's/.au", /.au", group-title="Free TV", [FREE] '/ -i combined.m3u
         touch merge.xml
         tv_merge -i pluto.xml -m plex.xml -o free.xml
         tv_merge -i free.xml -m samsung.xml -o free2.xml
