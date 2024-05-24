@@ -1,5 +1,6 @@
         cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0
         sed 's/.png", /.png" group-title="Free TV", /' -i plex.m3u
+        sed -i -E 's/(#EXTINF:-1)(, .+)/\1 group-title="Free TV"\2/' us_tubi.m3u
         cat merge_1.txt | ~/go/bin/m3u-combine > 0.m3u
         sed 's/\( group-title="\)[^"]*/\1Free TV/' -i 0.m3u
         sed 's/status="online", /status="online", group-title="Free TV" '/ -i 0.m3u
