@@ -32,6 +32,10 @@
         -H 'Accept: application/vnd.github.v3.raw' \
         -o 1.m3u \
         -L $JP3
+        curl -H "Authorization: token $JAPAN" \
+        -H 'Accept: application/vnd.github.v3.raw' \
+        -o 2.m3u \
+        -L $TWO
         wget -O plex.xml https://i.mjh.nz/Plex/us.xml
         wget -O samsung.xml https://i.mjh.nz/SamsungTVPlus/all.xml
         wget -O pluto.xml https://i.mjh.nz/PlutoTV/us.xml
