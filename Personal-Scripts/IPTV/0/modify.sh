@@ -256,7 +256,8 @@
         sed -i 's/group-title="Free TV", //g; s/\[FREE\] \([^\[]*\[ANIME\]\)/\1/g' combined.m3u
         sed -i 's/group-title="Free TV", //g; s/\[FREE\] \([^\[]*\[TOON\]\)/\1/g' combined.m3u
         sed -i 's/group-title="Free TV", //g; s/\[FREE\] \([^\[]*\[JAPAN\]\)/\1/g' combined.m3u
-        sed -i 's/, \[FREE\]/, group-title="Free TV", \[FREE\]/g' combined.m3u
+        sed -i 's/, \[FREE\]/, group-title="Free TV", \[FREE\]/g' combined6.m3u
+        cat merge_4.txt | ~/go/bin/m3u-combine > combined.m3u
         touch merge.xml
         tv_merge -i pluto.xml -m plex.xml -o free.xml
         tv_merge -i free.xml -m samsung.xml -o free2.xml
