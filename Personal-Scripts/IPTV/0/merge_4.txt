@@ -1,2 +1,2 @@
-combined.m3u
+combined6.m3u
 2.m3u
