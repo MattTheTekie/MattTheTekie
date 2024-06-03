@@ -45,7 +45,7 @@
 [![Arch](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=flat)](https://archlinux.org/)<br>
 
 ## 📱 Devices
-[![OnePlus 12R](https://img.shields.io/badge/OnePlus%2012R-fd4900?style=flat&logo=OnePlus&logoColor=ffffff&color=red)](https://icecat.biz/en/p/samsung/sm-g996bzvgeue/galaxy-smartphones-8806090882357-sm-g996b-88009632.html)<br>
+[![OnePlus 12R](https://img.shields.io/badge/OnePlus%2012R-fd4900?style=flat&logo=OnePlus&logoColor=ffffff&color=red)](https://www.gsmarena.com/oneplus_12r-12727.php)<br>
 [![Xiaomi Pad 6](https://img.shields.io/badge/Xiaomi%20Pad%206-fd4900?style=flat&logo=Xiaomi&logoColor=ffffff)](https://MattTheTekie.surge.sh/redmi.html)<br>
 
 ## 📫 Get in touch
