@@ -31,7 +31,7 @@
    I'm a 21-year-old Linux geek based in America with a strong focus in reverse engineering. I'm the creator of the Venith Network podcast series. I maintain scripts for various projects, and work on infrastructure as a hobby. In my free time, I indulge in maintaining infrastructure, ricing, hardware mods, gaming, creating Odysee exclusive content, and coding personal projects. I'm dedicated to becoming a pentester, and I am currently exploring more around the stacks in persuit of my goal. 
  - 💻 Reverse engineering.
  - 🌐 Maintaining the VENITH network.
- - ⌨️ Former Maintainer of the [[**Suyu**]](https://git.suyu.dev) emulator, current maintainer of the [[**ReviiveShop**]](https://ftolnks.xyz) for the Wii, the Homebrew-eShop [Not public yet] for the 3DS, and the former maintainer of the [[**StreetPass-Shop**]](https://github.com/VenithNET/streetpass-shop) project which inspired the [[**NetPass**]](https://gbatemp.net/threads/a-new-way-to-experience-streetpass.653810/) project. I also have contributed along with various other projects. 
+ - ⌨️ Former Maintainer of the [[**Suyu**]](https://git.suyu.dev) emulator, current maintainer of the [[**RiiShop**]](https://discord.gg/5565aDyYBr) for the Wii, the Homebrew-eShop [Not public yet] for the 3DS, and the former maintainer of the [[**StreetPass-Shop**]](https://github.com/VenithNET/streetpass-shop) project which inspired the [[**NetPass**]](https://gbatemp.net/threads/a-new-way-to-experience-streetpass.653810/) project. I also have contributed along with various other projects. 
 
 ## 📈 Stats
 <p><img align="center" src="https://github-readme-stats.vercel.app/api?username=MattTheTekie&count_private=true&show_icons=true&theme=chartreuse-dark" alt="MattTheTekie" /></p>
