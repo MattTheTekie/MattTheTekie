@@ -260,6 +260,7 @@
         sed -i 's/group-title="Japanese TV", \[JAPAN_DOC\]/group-title="Documentary", \[DOC\]/g' combined.m3u
         sed -i 's/\[FREE\]/group-title="Free TV", \[FREE\] '/ -i combined.m3u
         sed -i 's/\[DOC\]/group-title="Documentary", \[DOC\] '/ -i combined.m3u
+        sed -i 's/group-title="Japanese TV", \[JAPAN\] JAPAN_DOC/group-title="Documentary", [DOC]/g' combined.m3u
         touch merge.xml
         tv_merge -i pluto.xml -m plex.xml -o free.xml
         tv_merge -i free.xml -m samsung.xml -o free2.xml
