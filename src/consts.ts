@@ -19,8 +19,8 @@ export const SOCIAL = [
     name: 'Linkedin'
   },
     {
-    link: 'https://social.venith.net/u/MattTheTekie',
-    name: 'Lemmy'
+    link: 'https://bsky.app/profile/mattthetekie.bsky.social',
+    name: 'Bluesky'
   },
     {
     link: 'mailto:mattthetekie@venith.net',
