@@ -49,7 +49,7 @@ export default function Dropdown ({ children, direction, icon }: DropdownProps):
       <div
         data-open={isOpen}
         data-direction={direction ?? 'left'}
-        className='absolute mt-2 data-[open=true]:flex hidden bg-neutral-800 rounded-sm shadow-black shadow-lg p-4 border border-stone-600 min-w-7xl data-[direction=right]:origin-top-right data-[direction=right]:right-0 data-[direction=left]:origin-top-left data-[direction=left]:left-0 z-10'
+        className='absolute mt-2 data-[open=true]:flex hidden bg-neutral-900 rounded-md shadow-black shadow-lg p-4 border border-stone-600 min-w-7xl data-[direction=right]:origin-top-right data-[direction=right]:right-0 data-[direction=left]:origin-top-left data-[direction=left]:left-0 z-10'
         role='menu'
         aria-orientation='vertical'
         aria-labelledby='options-menu'
@@ -61,4 +61,4 @@ export default function Dropdown ({ children, direction, icon }: DropdownProps):
       </div>
     </div>
   )
-}
+}                          
