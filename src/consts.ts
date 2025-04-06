@@ -41,7 +41,7 @@ export const OTHER_LINKS = [
     link: 'MATTHEW_PITSICALIS-EN.pdf'
   },
   {
-    link: 'https://ko-fi.com/mattthetekie',
+    link: 'http://donate.venith.net',
     name: 'Buy me a coffee'
   },
   {
