@@ -45,7 +45,7 @@ export const OTHER_LINKS = [
     name: 'Buy me a coffee'
   },
   {
-    link: 'https://podcast.venith.net',
+    link: 'https://mattthetekie.substack.com/podcast',
     name: 'Venith Podcasts'
   }
 ]
