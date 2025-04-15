@@ -46,6 +46,6 @@ export const OTHER_LINKS = [
   },
   {
     link: 'https://mattthetekie.substack.com/podcast',
-    name: 'Venith Podcasts'
+    name: 'Personal Podcasts'
   }
 ]
