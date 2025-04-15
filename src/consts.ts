@@ -46,6 +46,6 @@ export const OTHER_LINKS = [
   },
   {
     link: 'https://mattthetekie.substack.com/podcast',
-    name: 'Personal Podcasts'
+    name: 'Democracy At Risk Podcast'
   }
 ]
