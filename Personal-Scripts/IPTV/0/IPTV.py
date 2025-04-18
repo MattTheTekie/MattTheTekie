@@ -116,20 +116,10 @@ print(f"\n✅ JP IPTV saved as: {output_file_japan}")
 print(f"✅ Free TV merged as: {output_file_free_tv}")
 print(f"✅ Merged EPG saved as: {merged_epg_file}")
 
-# Step 10: Merge JAPAN and FREE TV into one file
-final_merged_playlist = "SATANSLAYER666_666_hehehe_combined.m3u"
-with open(final_merged_playlist, "w", encoding="utf-8") as outfile:
-    for fname in [output_file_japan, output_file_free_tv]:
-        if os.path.exists(fname):
-            with open(fname, "r", encoding="utf-8") as infile:
-                outfile.write(infile.read() + "\n")
-
-print(f"✅ JAPAN + FREE TV merged into: {final_merged_playlist}")
-
-# Step 11: Merge VENITH into full playlist
-final_full_playlist = "SATANSLAYER666_666_hehehe_full.m3u"
+# Step 10: Merge JAPAN, FREE TV, and VENITH into one file
+final_full_playlist = "SATANSLAYER666_666_hehehe_combined.m3u"
 with open(final_full_playlist, "w", encoding="utf-8") as outfile:
-    for fname in [final_merged_playlist, venith_file]:
+    for fname in [output_file_japan, output_file_free_tv, venith_file]:
         if os.path.exists(fname):
             with open(fname, "r", encoding="utf-8") as infile:
                 outfile.write(infile.read() + "\n")
