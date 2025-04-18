@@ -13,7 +13,13 @@ jobs:
         echo Making IPTV...
         exec 3>&1 &>/dev/null
         cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/
+        rm -rf ../.git/objects/pack
+        mkdir 1 && cd 1
         python3 /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/IPTV.py
+        wget $YAY
+        unzip -o site.zip
+        rm site.zip
+        wget $YAY
     - name: Pushing Artifacts...
       uses: dswistowski/surge-sh-action@v1
       with:
