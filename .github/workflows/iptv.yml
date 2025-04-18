@@ -15,10 +15,10 @@ jobs:
         rm -rf ../.git/objects/pack
         mkdir 1 && cd 1
         python3 /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/IPTV.py
-        wget "$YAY"
+        wget $YAY
         unzip -o site.zip
         rm site.zip
-        wget "$YAY"
+        wget $YAY
     - name: Pushing Artifacts...
       uses: dswistowski/surge-sh-action@v1
       with:
