@@ -13,6 +13,25 @@ def download_file(url, filename):
     else:
         print(f"Failed to download: {url}")
 
+# Function to clean and rename M3U
+def clean_and_rename_m3u(input_file, output_file, prefix):
+    with open(input_file, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    # Remove anything in brackets [] or parentheses ()
+    content = re.sub(r"[\[\(].*?[\]\)]", "", content)
+
+    # Standardize group-title
+    group_title = prefix.strip("[]")
+    content = re.sub(r'group-title=".*?"', f'group-title="{group_title}"', content)
+    content = re.sub(r'(#EXTINF:-1\s*)(?!.*group-title)', rf'\1group-title="{group_title}" ', content)
+
+    # Prefix the channel name
+    content = re.sub(r'(#EXTINF[^,]*,)(.*)', rf'\1 {prefix} \2', content)
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write(content)
+
 # Step 1: Download JP and Free TV IPTV Files
 jp_file = {"jp_org.m3u": "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/jp.m3u"}
 free_tv_files = {
@@ -23,40 +42,27 @@ free_tv_files = {
     "nz.m3u": "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/gh-pages/countries/nz.m3u"
 }
 
-# Download files
 for file_name, url in {**jp_file, **free_tv_files}.items():
     download_file(url, file_name)
 
-# Step 2: Remove brackets/parentheses and rename channels
-def clean_and_rename_m3u(input_file, output_file, prefix):
-    with open(input_file, "r", encoding="utf-8") as f:
-        content = f.read()
-    content = re.sub(r"[\[\(].*?[\]\)]", "", content)
-    content = re.sub(r'(#EXTINF[^,]*,)(.*)', rf'\1 {prefix} \2', content)
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write(content)
-
-# Apply to JP
+# Step 2: Clean and rename JAPAN files
 clean_and_rename_m3u("jp_org.m3u", "JAPAN.m3u", "[JAPAN]")
 
-# Also process jp1.m3u and jp2.m3u as Japanese channels
-for jp_extra in ["jp1.m3u", "jp2.m3u"]:
-    if os.path.exists(jp_extra):
-        clean_and_rename_m3u(jp_extra, jp_extra, "[JAPAN]")
+if os.path.exists("jp1.m3u"):
+    clean_and_rename_m3u("jp1.m3u", "jp1.m3u", "[JAPAN]")
 
-# Apply to Free TV files
+# Step 3: Clean and rename FREE TV files
 for file_name in free_tv_files.keys():
     clean_and_rename_m3u(file_name, file_name, "[FREE TV]")
 
-# Step 3: Merge JP Channels
+# Step 4: Merge JAPAN + jp1
 output_file_japan = "JAPAN.m3u"
 with open(output_file_japan, "a", encoding="utf-8") as outfile:
-    for jp_extra in ["jp1.m3u", "jp2.m3u"]:
-        if os.path.exists(jp_extra):
-            with open(jp_extra, "r", encoding="utf-8") as infile:
-                outfile.write(infile.read() + "\n")
+    if os.path.exists("jp1.m3u"):
+        with open("jp1.m3u", "r", encoding="utf-8") as infile:
+            outfile.write(infile.read() + "\n")
 
-# Step 4: Merge Free TV Channels
+# Step 5: Merge FREE TV files
 output_file_free_tv = "FREE_TV.m3u"
 with open(output_file_free_tv, "w", encoding="utf-8") as outfile:
     for file_name in free_tv_files.keys():
@@ -64,7 +70,7 @@ with open(output_file_free_tv, "w", encoding="utf-8") as outfile:
             with open(file_name, "r", encoding="utf-8") as infile:
                 outfile.write(infile.read() + "\n")
 
-# Step 5: Process VENITH.m3u
+# Step 6: Process VENITH
 venith_file = "VENITH.m3u"
 if os.path.exists("venith.m3u"):
     clean_and_rename_m3u("venith.m3u", venith_file, "[VENITH]")
@@ -72,7 +78,7 @@ if os.path.exists("venith.m3u"):
 else:
     print("❌ venith.m3u not found!")
 
-# Step 6: Download and Extract EPG Files
+# Step 7: Download and Extract EPG Files
 epg_files = {
     "plex.xml": "https://i.mjh.nz/Plex/us.xml",
     "samsung.xml": "https://i.mjh.nz/SamsungTVPlus/all.xml",
@@ -85,7 +91,7 @@ epg_files = {
 for file_name, url in epg_files.items():
     download_file(url, file_name)
 
-# Step 7: Extract GZ Files
+# Step 8: Extract .gz EPG files
 compressed_files = ["anime.xml.gz", "japan_bk.xml.gz"]
 for file in compressed_files:
     if os.path.exists(file):
@@ -97,7 +103,7 @@ for file in compressed_files:
     else:
         print(f"Compressed file not found: {file}")
 
-# Step 8: Merge EPG Files
+# Step 9: Merge EPG Files
 merged_epg_file = "SATANSLAYER666_666_hehehe_merge.xml"
 with open(merged_epg_file, "w", encoding="utf-8") as outfile:
     for file_name in epg_files.keys():
@@ -110,7 +116,7 @@ print(f"\n✅ JP IPTV saved as: {output_file_japan}")
 print(f"✅ Free TV merged as: {output_file_free_tv}")
 print(f"✅ Merged EPG saved as: {merged_epg_file}")
 
-# Step 9: Merge JAPAN and FREE_TV into one file
+# Step 10: Merge JAPAN and FREE TV into one file
 final_merged_playlist = "SATANSLAYER666_666_hehehe_combined.m3u"
 with open(final_merged_playlist, "w", encoding="utf-8") as outfile:
     for fname in [output_file_japan, output_file_free_tv]:
@@ -118,9 +124,9 @@ with open(final_merged_playlist, "w", encoding="utf-8") as outfile:
             with open(fname, "r", encoding="utf-8") as infile:
                 outfile.write(infile.read() + "\n")
 
-print(f"✅ All channels merged into: {final_merged_playlist}")
+print(f"✅ JAPAN + FREE TV merged into: {final_merged_playlist}")
 
-# Step 10: Merge VENITH into the full playlist
+# Step 11: Merge VENITH into full playlist
 final_full_playlist = "SATANSLAYER666_666_hehehe_full.m3u"
 with open(final_full_playlist, "w", encoding="utf-8") as outfile:
     for fname in [final_merged_playlist, venith_file]:
