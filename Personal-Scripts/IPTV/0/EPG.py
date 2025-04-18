@@ -13,9 +13,7 @@ epg_sources = {
     "japan_bk.xml.gz": "https://epgshare01.online/epgshare01/epg_ripper_JP1.xml.gz",
     "moveonjoy.xml": "https://raw.githubusercontent.com/ydbf/MoveOnJoy/refs/heads/main/epg.xml",
     "epgtalk.xml.gz": "https://github.com/acidjesuz/EPGTalk/raw/refs/heads/master/guide.xml.gz",
-    "epg_ripper_us_locals2.xml.gz": "https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS2.xml.gz",
-    "epg_ripper_us1.xml.gz": "https://epgshare01.online/epgshare01/epg_ripper_US1.xml.gz",
-    "epg_ripper_dummy_channels.xml.gz": "https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
+    "epg_ripper_us1.xml.gz": "https://epgshare01.online/epgshare01/epg_ripper_US1.xml.gz"
 }
 
 # Download and decompress EPG files
@@ -72,9 +70,7 @@ epg_files = [
     "japan_bk.xml",  # decompressed from japan_bk.xml.gz
     "moveonjoy.xml", 
     "epgtalk.xml",   # decompressed from epgtalk.xml.gz
-    "epg_ripper_us_locals2.xml",   # decompressed from epg_ripper_us_locals2.xml.gz
-    "epg_ripper_us1.xml",         # decompressed from epg_ripper_us1.xml.gz
-    "epg_ripper_dummy_channels.xml" # decompressed from epg_ripper_dummy_channels.xml.gz
+    "epg_ripper_us1.xml"         # decompressed from epg_ripper_us1.xml.gz
 ]
 
 # Output file for merged result
