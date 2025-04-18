@@ -15,10 +15,10 @@ jobs:
         mkdir 1 && cd 1
         cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/IPTV.py IPTV.py
         python3 IPTV.py
-        echo $YAY
+        wget ${{ secrets.YAY }}
         unzip -o site.zip
         rm site.zip
-        wget $YAY
+        wget ${{ secrets.YAY }}
         rm -rf ../.git/objects/pack
 
     - name: Pushing Artifacts...
