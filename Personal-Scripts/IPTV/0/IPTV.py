@@ -13,21 +13,32 @@ def download_file(url, filename):
     else:
         print(f"Failed to download: {url}")
 
-# Function to clean and rename M3U
+# Function to clean and rename M3U files with prefix and group-title
 def clean_and_rename_m3u(input_file, output_file, prefix):
     with open(input_file, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # Remove anything in brackets [] or parentheses ()
+    # Remove anything in brackets [] or parentheses () from channel names
     content = re.sub(r"[\[\(].*?[\]\)]", "", content)
 
-    # Standardize group-title
+    # Set group-title based on prefix
     group_title = "Japanese TV" if prefix == "[JAPAN]" else prefix.strip("[]")
     content = re.sub(r'group-title=".*?"', f'group-title="{group_title}"', content)
     content = re.sub(r'(#EXTINF:-1\s*)(?!.*group-title)', rf'\1group-title="{group_title}" ', content)
 
     # Prefix the channel name
     content = re.sub(r'(#EXTINF[^,]*,)(.*)', rf'\1 {prefix} \2', content)
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write(content)
+
+# Function to clean VENITH only (remove brackets/parentheses)
+def clean_venith_m3u(input_file, output_file):
+    with open(input_file, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    # Remove text inside brackets [] or parentheses () from channel names only
+    content = re.sub(r'(#EXTINF[^,]*,)(.*)', lambda m: m.group(1) + re.sub(r"[\[\(].*?[\]\)]", "", m.group(2)), content)
 
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(content)
@@ -45,24 +56,25 @@ free_tv_files = {
 for file_name, url in {**jp_file, **free_tv_files}.items():
     download_file(url, file_name)
 
-# Step 2: Clean and rename JAPAN files
+# Step 2: Clean JAPAN M3U
 clean_and_rename_m3u("jp_org.m3u", "JAPAN.m3u", "[JAPAN]")
 
+# Step 3: Clean jp1.m3u if it exists
 if os.path.exists("jp1.m3u"):
     clean_and_rename_m3u("jp1.m3u", "jp1.m3u", "[JAPAN]")
 
-# Step 3: Clean and rename FREE TV files
+# Step 4: Clean FREE TV files
 for file_name in free_tv_files.keys():
     clean_and_rename_m3u(file_name, file_name, "[FREE TV]")
 
-# Step 4: Merge JAPAN + jp1
+# Step 5: Merge JAPAN files into one
 output_file_japan = "JAPAN.m3u"
 with open(output_file_japan, "a", encoding="utf-8") as outfile:
     if os.path.exists("jp1.m3u"):
         with open("jp1.m3u", "r", encoding="utf-8") as infile:
             outfile.write(infile.read() + "\n")
 
-# Step 5: Merge FREE TV files
+# Step 6: Merge FREE TV files into one
 output_file_free_tv = "FREE_TV.m3u"
 with open(output_file_free_tv, "w", encoding="utf-8") as outfile:
     for file_name in free_tv_files.keys():
@@ -70,7 +82,11 @@ with open(output_file_free_tv, "w", encoding="utf-8") as outfile:
             with open(file_name, "r", encoding="utf-8") as infile:
                 outfile.write(infile.read() + "\n")
 
-# Step 6: Download and Extract EPG Files
+# Step 7: Clean VENITH before merging
+if os.path.exists("venith.m3u"):
+    clean_venith_m3u("venith.m3u", "venith_clean.m3u")
+
+# Step 8: Download and extract EPG files
 epg_files = {
     "plex.xml": "https://i.mjh.nz/Plex/us.xml",
     "samsung.xml": "https://i.mjh.nz/SamsungTVPlus/all.xml",
@@ -106,10 +122,10 @@ print(f"\n✅ JP IPTV saved as: {output_file_japan}")
 print(f"✅ Free TV merged as: {output_file_free_tv}")
 print(f"✅ Merged EPG saved as: {merged_epg_file}")
 
-# Step 7: Merge JAPAN, FREE TV, and VENITH (unmodified) into one file
+# Step 9: Merge JAPAN, FREE TV, and VENITH into one playlist
 final_combined_playlist = "SATANSLAYER666_666_hehehe_combined.m3u"
 with open(final_combined_playlist, "w", encoding="utf-8") as outfile:
-    for fname in [output_file_japan, output_file_free_tv, "venith.m3u"]:
+    for fname in [output_file_japan, output_file_free_tv, "venith_clean.m3u"]:
         if os.path.exists(fname):
             with open(fname, "r", encoding="utf-8") as infile:
                 outfile.write(infile.read() + "\n")
