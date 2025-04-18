@@ -14,13 +14,12 @@ jobs:
         exec 3>&1 &>/dev/null
         cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/
         mkdir 1 && cd 1
-        wget ${{ secrets.JP1 }}
-        wget ${{ secrets.VENITH }}
-        wget ${{ secrets.TV }}
+        wget ${{ secrets.JP1 }} -O jp.m3u
+        wget ${{ secrets.VENITH }} -O venith.m3u
+        wget ${{ secrets.TV }} -O tv.m3u
         cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/IPTV.py IPTV.py
         cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/EPG.py EPG.py
         python3 IPTV.py
-        rm SATANSLAYER666_666_hehehe_merge.xml
         python3 EPG.py
         wget ${{ secrets.YAY }}
         unzip -o site.zip
