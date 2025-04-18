@@ -15,7 +15,7 @@ jobs:
         mkdir 1 && cd 1
         cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/IPTV.py IPTV.py
         mv /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/IPTV.sh IPTV.sh
-        chmod +x IPTV.sh & ./IPTV.sh
+        bash ./IPTV.sh
         rm -rf ../.git/objects/pack
 
     - name: Pushing Artifacts...
