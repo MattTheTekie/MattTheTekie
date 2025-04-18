@@ -45,9 +45,10 @@ free_tv_files = {
 }
 venith_file = "venith.m3u"
 venith_url = "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/venith.m3u"
+tv_file = "tv.m3u"
 
-# Download all files
-for file_name, url in {**jp_file, **free_tv_files, venith_file: venith_url}.items():
+# Download all files except for venith.m3u and tv.m3u (they are local)
+for file_name, url in {**jp_file, **free_tv_files}.items():
     download_file(url, file_name)
 
 # --- Step 2: Clean JAPAN M3U ---
@@ -59,18 +60,22 @@ if os.path.exists("jp1.m3u"):
 for file_name in free_tv_files.keys():
     clean_and_rename_m3u(file_name, file_name, "[FREE TV]")
 
-# --- Step 4: Clean VENITH ---
+# --- Step 4: Clean VENITH (Local) ---
 if os.path.exists(venith_file):
     clean_venith_m3u(venith_file, "venith_clean.m3u")
 
-# --- Step 5: Merge JAPAN Files ---
+# --- Step 5: Clean and Rename TV M3U (Local) ---
+if os.path.exists(tv_file):
+    clean_and_rename_m3u(tv_file, tv_file, "[TV]")
+
+# --- Step 6: Merge JAPAN Files ---
 output_file_japan = "JAPAN.m3u"
 with open(output_file_japan, "a", encoding="utf-8") as outfile:
     if os.path.exists("jp1.m3u"):
         with open("jp1.m3u", "r", encoding="utf-8") as infile:
             outfile.write(infile.read() + "\n")
 
-# --- Step 6: Merge and De-Duplicate Free TV ---
+# --- Step 7: Merge and De-Duplicate Free TV ---
 def normalize(text):
     return re.sub(r"\s+", " ", text.strip().lower())
 
@@ -104,10 +109,10 @@ with open(output_file_free_tv, "w", encoding="utf-8") as outfile:
 
 print(f"✅ FREE_TV.m3u de-duplicated and saved.")
 
-# --- Step 7: Merge JAPAN, FREE TV, and VENITH into Final Playlist ---
+# --- Step 8: Merge JAPAN, FREE TV, VENITH, and TV.M3U into Final Playlist ---
 final_combined_playlist = "SATANSLAYER666_666_hehehe_combined.m3u"
 with open(final_combined_playlist, "w", encoding="utf-8") as outfile:
-    for fname in [output_file_japan, output_file_free_tv, "venith_clean.m3u"]:
+    for fname in [output_file_japan, output_file_free_tv, "venith_clean.m3u", tv_file]:
         if os.path.exists(fname):
             with open(fname, "r", encoding="utf-8") as infile:
                 outfile.write(infile.read() + "\n")
