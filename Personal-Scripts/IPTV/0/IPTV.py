@@ -18,10 +18,7 @@ def clean_and_rename_m3u(input_file, output_file, prefix):
     with open(input_file, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # Remove anything in brackets [] or parentheses ()
     content = re.sub(r"[\[\(].*?[\]\)]", "", content)
-
-    # Change group-title based on prefix
     group_title = "Japanese TV" if prefix == "[JAPAN]" else prefix.strip("[]")
     content = re.sub(r'group-title=".*?"', f'group-title="{group_title}"', content)
     content = re.sub(r'(#EXTINF:-1\s*)(?!.*group-title)', rf'\1group-title="{group_title}" ', content)
@@ -45,10 +42,9 @@ free_tv_files = {
     "uk.m3u": "https://github.com/BuddyChewChew/app-m3u-generator/raw/refs/heads/main/playlists/plutotv_all.m3u",
     "us.m3u": "https://github.com/BuddyChewChew/app-m3u-generator/raw/refs/heads/main/playlists/samsungtvplus_all.m3u",
     "au.m3u": "https://github.com/BuddyChewChew/app-m3u-generator/raw/refs/heads/main/playlists/stirr_all.m3u",
-    "nz.m3u": "https://github.com/BuddyChewChew/app-m3u-generator/raw/refs/heads/main/playlists/tubi_all.m3u"
+    "nz.m3u": "https://github.com/BuddyChewChew/app-m3u-generator/raw/refs/heads/main/playlists/tubi_all.m3u",
+    "tv.m3u": "https://iptv-org.github.io/iptv/countries/us.m3u"
 }
-
-# VENITH M3U file
 venith_file = "venith.m3u"
 venith_url = "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/venith.m3u"
 
@@ -78,13 +74,36 @@ with open(output_file_japan, "a", encoding="utf-8") as outfile:
         with open("jp1.m3u", "r", encoding="utf-8") as infile:
             outfile.write(infile.read() + "\n")
 
-# Step 6: Merge Free TV files
+# Step 6: Merge and de-duplicate Free TV files
 output_file_free_tv = "FREE_TV.m3u"
+seen_titles = set()
+unique_lines = []
+
+for file_name in free_tv_files.keys():
+    if os.path.exists(file_name):
+        with open(file_name, "r", encoding="utf-8") as infile:
+            lines = infile.readlines()
+            i = 0
+            while i < len(lines):
+                if lines[i].startswith("#EXTINF"):
+                    title_match = re.search(r"#EXTINF[^,]*,(.*)", lines[i])
+                    if title_match:
+                        title = title_match.group(1).strip()
+                        url = lines[i+1].strip() if i+1 < len(lines) else ""
+                        identifier = f"{title}|{url}"
+                        if identifier not in seen_titles:
+                            seen_titles.add(identifier)
+                            unique_lines.append(lines[i])
+                            if i+1 < len(lines):
+                                unique_lines.append(lines[i+1])
+                    i += 2
+                else:
+                    i += 1
+
 with open(output_file_free_tv, "w", encoding="utf-8") as outfile:
-    for file_name in free_tv_files.keys():
-        if os.path.exists(file_name):
-            with open(file_name, "r", encoding="utf-8") as infile:
-                outfile.write(infile.read() + "\n")
+    outfile.writelines(unique_lines)
+
+print(f"✅ FREE_TV.m3u de-duplicated and saved.")
 
 # Step 7: Download and Extract EPG Files
 epg_files = {
