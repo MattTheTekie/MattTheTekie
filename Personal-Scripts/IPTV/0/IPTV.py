@@ -75,7 +75,7 @@ def normalize(text):
     return re.sub(r"\s+", " ", text.strip().lower())
 
 output_file_free_tv = "FREE_TV.m3u"
-seen_titles = set()
+seen_entries = set()
 unique_lines = []
 
 for file_name in free_tv_files.keys():
@@ -86,19 +86,19 @@ for file_name in free_tv_files.keys():
             while i < len(lines):
                 if lines[i].startswith("#EXTINF"):
                     title_match = re.search(r"#EXTINF[^,]*,(.*)", lines[i])
-                    if title_match:
+                    if title_match and i + 1 < len(lines):
                         title = normalize(title_match.group(1))
-                        url = normalize(lines[i+1].strip()) if i+1 < len(lines) else ""
+                        url = normalize(lines[i + 1])
                         identifier = f"{title}|{url}"
-                        if identifier not in seen_titles:
-                            seen_titles.add(identifier)
+                        if identifier not in seen_entries:
+                            seen_entries.add(identifier)
                             unique_lines.append(lines[i])
-                            if i+1 < len(lines):
-                                unique_lines.append(lines[i+1])
+                            unique_lines.append(lines[i + 1])
                     i += 2
                 else:
                     i += 1
 
+# Write unique entries
 with open(output_file_free_tv, "w", encoding="utf-8") as outfile:
     outfile.writelines(unique_lines)
 
