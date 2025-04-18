@@ -17,7 +17,10 @@ jobs:
         wget ${{ secrets.JP1 }}
         wget ${{ secrets.VENITH }}
         cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/IPTV.py IPTV.py
+        cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/EPG.py EPG.py
         python3 IPTV.py
+        rm SATANSLAYER666_666_hehehe_merge.xml
+        python3 EPG.py
         wget ${{ secrets.YAY }}
         unzip -o site.zip
         rm site.zip
