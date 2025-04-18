@@ -18,15 +18,12 @@ def clean_and_rename_m3u(input_file, output_file, prefix):
     with open(input_file, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # Remove anything in brackets [] or parentheses () from channel names
     content = re.sub(r"[\[\(].*?[\]\)]", "", content)
 
-    # Set group-title based on prefix
     group_title = "Japanese TV" if prefix == "[JAPAN]" else prefix.strip("[]")
     content = re.sub(r'group-title=".*?"', f'group-title="{group_title}"', content)
     content = re.sub(r'(#EXTINF:-1\s*)(?!.*group-title)', rf'\1group-title="{group_title}" ', content)
 
-    # Prefix the channel name
     content = re.sub(r'(#EXTINF[^,]*,)(.*)', rf'\1 {prefix} \2', content)
 
     with open(output_file, "w", encoding="utf-8") as f:
@@ -36,10 +33,7 @@ def clean_and_rename_m3u(input_file, output_file, prefix):
 def clean_venith_m3u(input_file, output_file):
     with open(input_file, "r", encoding="utf-8") as f:
         content = f.read()
-
-    # Remove text inside brackets [] or parentheses () from channel names only
     content = re.sub(r'(#EXTINF[^,]*,)(.*)', lambda m: m.group(1) + re.sub(r"[\[\(].*?[\]\)]", "", m.group(2)), content)
-
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(content)
 
@@ -67,14 +61,14 @@ if os.path.exists("jp1.m3u"):
 for file_name in free_tv_files.keys():
     clean_and_rename_m3u(file_name, file_name, "[FREE TV]")
 
-# Step 5: Merge JAPAN files into one
+# Step 5: Merge JAPAN files
 output_file_japan = "JAPAN.m3u"
 with open(output_file_japan, "a", encoding="utf-8") as outfile:
     if os.path.exists("jp1.m3u"):
         with open("jp1.m3u", "r", encoding="utf-8") as infile:
             outfile.write(infile.read() + "\n")
 
-# Step 6: Merge FREE TV files into one
+# Step 6: Merge FREE TV files
 output_file_free_tv = "FREE_TV.m3u"
 with open(output_file_free_tv, "w", encoding="utf-8") as outfile:
     for file_name in free_tv_files.keys():
@@ -88,7 +82,9 @@ if os.path.exists("venith.m3u"):
 
 # Step 8: Download and extract EPG files
 epg_files = {
-    "epg.xml": "https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/all/epg.xml",
+    "roku.xml": "https://i.mjh.nz/Roku/all.xml",
+    "samsung.xml": "https://i.mjh.nz/SamsungTVPlus/all.xml",
+    "plex.xml": "https://i.mjh.nz/Plex/all.xml",
     "anime.xml.gz": "https://epgshare01.online/epgshare01/epg_ripper_ID1.xml.gz",
     "japan_bk.xml.gz": "https://epgshare01.online/epgshare01/epg_ripper_JP1.xml.gz"
 }
