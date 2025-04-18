@@ -19,11 +19,9 @@ def clean_and_rename_m3u(input_file, output_file, prefix):
         content = f.read()
 
     content = re.sub(r"[\[\(].*?[\]\)]", "", content)
-
     group_title = "Japanese TV" if prefix == "[JAPAN]" else prefix.strip("[]")
     content = re.sub(r'group-title=".*?"', f'group-title="{group_title}"', content)
     content = re.sub(r'(#EXTINF:-1\s*)(?!.*group-title)', rf'\1group-title="{group_title}" ', content)
-
     content = re.sub(r'(#EXTINF[^,]*,)(.*)', rf'\1 {prefix} \2', content)
 
     with open(output_file, "w", encoding="utf-8") as f:
