@@ -16,7 +16,7 @@ jobs:
         cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/IPTV.py IPTV.py
         mv /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/IPTV.sh IPTV.sh
         python3 IPTV.py
-        wget $YAY
+        echo $YAY
         unzip -o site.zip
         rm site.zip
         wget $YAY
