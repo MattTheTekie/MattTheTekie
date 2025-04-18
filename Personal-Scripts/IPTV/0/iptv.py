@@ -85,7 +85,7 @@ for file in compressed_files:
         print(f"Compressed file not found: {file}")
 
 # Step 7: Merge EPG Files
-merged_epg_file = "merged_epg.xml"
+merged_epg_file = "SATANSLAYER666_666_hehehe_merge.xml"
 with open(merged_epg_file, "w", encoding="utf-8") as outfile:
     for file_name in epg_files.keys():
         extracted_file = file_name.replace(".gz", "")
@@ -96,3 +96,14 @@ with open(merged_epg_file, "w", encoding="utf-8") as outfile:
 print(f"\n✅ JP IPTV saved as: {output_file_japan}")
 print(f"✅ Free TV merged as: {output_file_free_tv}")
 print(f"✅ Merged EPG saved as: {merged_epg_file}")
+
+# Step 8: Merge JAPAN and FREE_TV into one file
+final_merged_playlist = "SATANSLAYER666_666_hehehe_combined.m3u"
+
+with open(final_merged_playlist, "w", encoding="utf-8") as outfile:
+    for fname in [output_file_japan, output_file_free_tv]:
+        if os.path.exists(fname):
+            with open(fname, "r", encoding="utf-8") as infile:
+                outfile.write(infile.read() + "\n")
+
+print(f"✅ All channels merged into: {final_merged_playlist}")
