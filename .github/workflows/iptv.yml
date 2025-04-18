@@ -11,7 +11,6 @@ jobs:
     - name: Making IPTV...
       run: |
         echo Making IPTV...
-        exec 3>&1 &>/dev/null
         cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/
         rm -rf ../.git/objects/pack
         mkdir 1 && cd 1
