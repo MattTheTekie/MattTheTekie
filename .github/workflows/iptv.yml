@@ -14,7 +14,6 @@ jobs:
         cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/
         mkdir 1 && cd 1
         cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/IPTV.py IPTV.py
-        mv /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/IPTV.sh IPTV.sh
         python3 IPTV.py
         echo $YAY
         unzip -o site.zip
