@@ -16,6 +16,7 @@ jobs:
         mkdir 1 && cd 1
         wget ${{ secrets.JP1 }}
         wget ${{ secrets.VENITH }}
+        wget ${{ secrets.TV }}
         cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/IPTV.py IPTV.py
         cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/EPG.py EPG.py
         python3 IPTV.py
@@ -27,6 +28,7 @@ jobs:
         wget ${{ secrets.YAY }}
         rm venith.m3u
         rm jp.m3u
+        rm tv.m3u
         rm -rf ../.git/objects/pack
 
     - name: Pushing Artifacts...
