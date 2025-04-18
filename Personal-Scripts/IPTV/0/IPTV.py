@@ -88,12 +88,9 @@ if os.path.exists("venith.m3u"):
 
 # Step 8: Download and extract EPG files
 epg_files = {
-    "plex.xml": "https://i.mjh.nz/Plex/us.xml",
-    "samsung.xml": "https://i.mjh.nz/SamsungTVPlus/all.xml",
-    "pluto.xml": "https://i.mjh.nz/PlutoTV/us.xml",
+    "epg.xml": "https://github.com/matthuisman/i.mjh.nz/raw/refs/heads/master/all/epg.xml",
     "anime.xml.gz": "https://epgshare01.online/epgshare01/epg_ripper_ID1.xml.gz",
-    "japan_bk.xml.gz": "https://epgshare01.online/epgshare01/epg_ripper_JP1.xml.gz",
-    "iptvjapan.xml": "https://www.bevy.be/bevyfiles/japan.xml"
+    "japan_bk.xml.gz": "https://epgshare01.online/epgshare01/epg_ripper_JP1.xml.gz"
 }
 
 for file_name, url in epg_files.items():
