@@ -1,46 +1,74 @@
 import os
+import requests
+import gzip
+import shutil
 import xml.etree.ElementTree as ET
+
+# EPG URLs and corresponding local filenames
+epg_sources = {
+    "roku.xml": "https://i.mjh.nz/Roku/all.xml",
+    "samsung.xml": "https://i.mjh.nz/SamsungTVPlus/all.xml",
+    "plex.xml": "https://i.mjh.nz/Plex/all.xml",
+    "anime.xml.gz": "https://epgshare01.online/epgshare01/epg_ripper_ID1.xml.gz",
+    "japan_bk.xml.gz": "https://epgshare01.online/epgshare01/epg_ripper_JP1.xml.gz"
+}
+
+# Download and decompress EPG files
+for filename, url in epg_sources.items():
+    print(f"Downloading: {url}")
+    response = requests.get(url, stream=True)
+    if response.status_code == 200:
+        with open(filename, "wb") as f:
+            f.write(response.content)
+        print(f"Saved: {filename}")
+
+        # If it's a .gz file, decompress it
+        if filename.endswith(".gz"):
+            decompressed_filename = filename[:-3]  # remove .gz extension
+            with gzip.open(filename, 'rb') as f_in:
+                with open(decompressed_filename, 'wb') as f_out:
+                    shutil.copyfileobj(f_in, f_out)
+            print(f"Decompressed: {decompressed_filename}")
+    else:
+        print(f"Failed to download {url} (status code {response.status_code})")
 
 # Function to merge multiple EPG files into one
 def merge_epg_files(epg_files, output_file):
-    # Create the root element for the merged EPG file
     root = ET.Element("tv")
 
-    # Loop through each EPG file and append its channels to the merged root
     for epg_file in epg_files:
         if os.path.exists(epg_file):
-            # Parse the current EPG file
-            tree = ET.parse(epg_file)
-            current_root = tree.getroot()
+            try:
+                tree = ET.parse(epg_file)
+                current_root = tree.getroot()
 
-            # Append each channel from the current file to the root of the merged file
-            for channel in current_root.findall("channel"):
-                root.append(channel)
+                for channel in current_root.findall("channel"):
+                    root.append(channel)
 
-            # Append each programme from the current file to the merged file
-            for programme in current_root.findall("programme"):
-                root.append(programme)
+                for programme in current_root.findall("programme"):
+                    root.append(programme)
 
-            print(f"Merged {epg_file}")
+                print(f"Merged {epg_file}")
+            except Exception as e:
+                print(f"Error parsing {epg_file}: {e}")
         else:
             print(f"Warning: {epg_file} not found, skipping...")
 
-    # Create the tree for the merged file and save it to the output file
     merged_tree = ET.ElementTree(root)
     merged_tree.write(output_file, encoding="utf-8", xml_declaration=True)
     print(f"EPG files merged successfully! Saved to: {output_file}")
 
-# List of EPG XML files to merge
+# List of decompressed or XML files to merge
 epg_files = [
-    "roku.xml",        # Example: Replace with the actual path to your EPG files
-    "samsung.xml",     # Example: Replace with the actual path to your EPG files
-    "plex.xml",        # Example: Replace with the actual path to your EPG files
-    "anime.xml",       # Example: Replace with the actual path to your EPG files
-    "japan_bk.xml"     # Example: Replace with the actual path to your EPG files
+    "roku.xml",
+    "samsung.xml",
+    "plex.xml",
+    "anime.xml",     # decompressed from anime.xml.gz
+    "japan_bk.xml"   # decompressed from japan_bk.xml.gz
 ]
 
-# Output file for the merged EPG
+# Output file for merged result
 output_file = "SATANSLAYER666_666_hehehe_merge.xml"
 
-# Merge the EPG files
+# Merge EPG files
 merge_epg_files(epg_files, output_file)
