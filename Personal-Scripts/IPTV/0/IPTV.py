@@ -22,7 +22,7 @@ def clean_and_rename_m3u(input_file, output_file, prefix):
     content = re.sub(r"[\[\(].*?[\]\)]", "", content)
 
     # Standardize group-title
-    group_title = prefix.strip("[]")
+    group_title = "Japanese TV" if prefix == "[JAPAN]" else prefix.strip("[]")
     content = re.sub(r'group-title=".*?"', f'group-title="{group_title}"', content)
     content = re.sub(r'(#EXTINF:-1\s*)(?!.*group-title)', rf'\1group-title="{group_title}" ', content)
 
@@ -70,15 +70,7 @@ with open(output_file_free_tv, "w", encoding="utf-8") as outfile:
             with open(file_name, "r", encoding="utf-8") as infile:
                 outfile.write(infile.read() + "\n")
 
-# Step 6: Process VENITH
-venith_file = "VENITH.m3u"
-if os.path.exists("venith.m3u"):
-    clean_and_rename_m3u("venith.m3u", venith_file, "[VENITH]")
-    print("✅ VENITH.m3u created with prefix [VENITH]")
-else:
-    print("❌ venith.m3u not found!")
-
-# Step 7: Download and Extract EPG Files
+# Step 6: Download and Extract EPG Files
 epg_files = {
     "plex.xml": "https://i.mjh.nz/Plex/us.xml",
     "samsung.xml": "https://i.mjh.nz/SamsungTVPlus/all.xml",
@@ -91,7 +83,6 @@ epg_files = {
 for file_name, url in epg_files.items():
     download_file(url, file_name)
 
-# Step 8: Extract .gz EPG files
 compressed_files = ["anime.xml.gz", "japan_bk.xml.gz"]
 for file in compressed_files:
     if os.path.exists(file):
@@ -103,7 +94,6 @@ for file in compressed_files:
     else:
         print(f"Compressed file not found: {file}")
 
-# Step 9: Merge EPG Files
 merged_epg_file = "SATANSLAYER666_666_hehehe_merge.xml"
 with open(merged_epg_file, "w", encoding="utf-8") as outfile:
     for file_name in epg_files.keys():
@@ -116,12 +106,12 @@ print(f"\n✅ JP IPTV saved as: {output_file_japan}")
 print(f"✅ Free TV merged as: {output_file_free_tv}")
 print(f"✅ Merged EPG saved as: {merged_epg_file}")
 
-# Step 10: Merge JAPAN, FREE TV, and VENITH into one file
-final_full_playlist = "SATANSLAYER666_666_hehehe_combined.m3u"
-with open(final_full_playlist, "w", encoding="utf-8") as outfile:
-    for fname in [output_file_japan, output_file_free_tv, venith_file]:
+# Step 7: Merge JAPAN, FREE TV, and VENITH (unmodified) into one file
+final_combined_playlist = "SATANSLAYER666_666_hehehe_combined.m3u"
+with open(final_combined_playlist, "w", encoding="utf-8") as outfile:
+    for fname in [output_file_japan, output_file_free_tv, "venith.m3u"]:
         if os.path.exists(fname):
             with open(fname, "r", encoding="utf-8") as infile:
                 outfile.write(infile.read() + "\n")
 
-print(f"🔥 Final FULL playlist created: {final_full_playlist}")
+print(f"🔥 Final COMBINED playlist created: {final_combined_playlist}")
