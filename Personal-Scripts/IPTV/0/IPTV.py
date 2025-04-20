@@ -35,10 +35,6 @@ def clean_venith_m3u(input_file, output_file):
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(content)
 
-# Function to check if a string contains non-English characters
-def contains_non_english_chars(text):
-    return any(unicodedata.category(c) in ('Lo', 'Lm', 'Mn', 'Mc', 'Nd', 'Pc') for c in text)
-
 # --- Step 1: Download IPTV Files ---
 jp_file = {"jp_org.m3u": "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/jp.m3u"}
 free_tv_files = {
@@ -77,46 +73,15 @@ with open(output_file_japan, "a", encoding="utf-8") as outfile:
         with open("jp1.m3u", "r", encoding="utf-8") as infile:
             outfile.write(infile.read() + "\n")
 
-# --- Step 7: Merge and De-Duplicate Free TV (Filter Non-English Channels) ---
-def normalize(text):
-    return re.sub(r"\s+", " ", text.strip().lower())
-
+# --- Step 7: Merge Free TV Playlists (No De-Duplication, No Filtering) ---
 output_file_free_tv = "FREE_TV.m3u"
-seen_entries = set()
-unique_lines = []
-
-for file_name in free_tv_files.keys():
-    if os.path.exists(file_name):
-        with open(file_name, "r", encoding="utf-8") as infile:
-            lines = infile.readlines()
-            i = 0
-            while i < len(lines):
-                if lines[i].startswith("#EXTINF"):
-                    title_match = re.search(r"#EXTINF[^,]*,(.*)", lines[i])
-                    if title_match and i + 1 < len(lines):
-                        title = normalize(title_match.group(1))
-                        url = normalize(lines[i + 1])
-                        identifier = f"{title}|{url}"
-                        
-                        # Skip non-English channels based on title
-                        if contains_non_english_chars(title):
-                            print(f"❌ Skipped non-English channel: {title}")
-                            i += 2
-                            continue
-
-                        if identifier not in seen_entries:
-                            seen_entries.add(identifier)
-                            unique_lines.append(lines[i])
-                            unique_lines.append(lines[i + 1])
-                    i += 2
-                else:
-                    i += 1
-
-# Write unique entries
 with open(output_file_free_tv, "w", encoding="utf-8") as outfile:
-    outfile.writelines(unique_lines)
+    for file_name in free_tv_files.keys():
+        if os.path.exists(file_name):
+            with open(file_name, "r", encoding="utf-8") as infile:
+                outfile.write(infile.read() + "\n")
 
-print(f"✅ FREE_TV.m3u de-duplicated and saved.")
+print(f"✅ FREE_TV.m3u merged (no filtering or deduplication).")
 
 # --- Step 8: Merge JAPAN, FREE TV, VENITH, and TV.M3U into Final Playlist ---
 final_combined_playlist = "SATANSLAYER666_666_hehehe_combined.m3u"
