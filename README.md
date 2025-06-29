@@ -40,7 +40,7 @@
 
 ## 💻 Working Environment
 [![Android 14](https://img.shields.io/badge/Android%2014-3ddc84?style=flat&logo=android&logoColor=ffffff)](https://www.android.com/android-14/)<br>
-[![Windows 11](https://img.shields.io/badge/Windows%2011-00adef?style=flat&logo=windows&logoColor=ffffff)](https://www.youtube.com/c/GHOSTSPECTRE/)<br>
+[![Windows 11](https://img.shields.io/badge/Windows%2011-00adef?style=flat&logo=windows11&logoColor=ffffff)](https://www.youtube.com/c/GHOSTSPECTRE/)<br>
 [![Linux Mint 21.1](https://img.shields.io/badge/Linux%20Mint-Mint?logo=linux-mint&logoColor=fff&style=flat)](https://linuxmint.com/)<br>
 [![Arch](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=flat)](https://archlinux.org/)<br>
 
