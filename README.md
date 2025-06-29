@@ -46,7 +46,7 @@
 
 ## 📱 Devices
 [![OnePlus 12R](https://img.shields.io/badge/OnePlus%2012R-fd4900?style=flat&logo=OnePlus&logoColor=ffffff&color=red)](https://www.gsmarena.com/oneplus_12r-12727.php)<br>
-[![Xiaomi Pad 6](https://img.shields.io/badge/Xiaomi%20Pad%206-fd4900?style=flat&logo=Xiaomi&logoColor=ffffff)](https://MattTheTekie.surge.sh/redmi.html)<br>
+[![Xiaomi Pad 6](https://img.shields.io/badge/Xiaomi%20Pad%206-fd4900?style=flat&logo=Xiaomi&logoColor=ffffff)](https://www.gsmarena.com/xiaomi_pad_6-12237.php)<br>
 
 ## 📫 Get in touch
 [![Discord](https://tinyurl.com/3b9s4sz7)](https://discord.com/invite/Xjfy4sJpWx)<br>
