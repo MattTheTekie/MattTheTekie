@@ -51,9 +51,9 @@
 ## 📫 Get in touch
 [![Discord](https://tinyurl.com/3b9s4sz7)](https://discord.com/invite/Xjfy4sJpWx)<br>
 [![Odysee](https://img.shields.io/badge/MattTheTekie-EF1970?style=flat&logo=Odysee&logoColor=white)](https://odysee.com/@mattdoestech726:5)<br>
+[![Bluesky](https://img.shields.io/badge/MattTheTekie-0285FF?logo=bluesky&logoColor=ffffff)](https://bsky.app/profile/mattthetekie.bsky.social)<br>
 [![Mastodon](https://img.shields.io/badge/%40ASTAFATHERSATAN-0088cc?style=flat&logo=mastodon&logoColor=ffffff)](https://nerdculture.de/@ASTAFATHERSATAN)<br>
 [![Telegram](https://img.shields.io/badge/%40Knight666_666-0088cc?style=flat&logo=telegram&logoColor=ffffff)](https://t.me/Knight666_666)<br>
-[![Bluesky](https://img.shields.io/badge/MattTheTekie-0285FF?logo=bluesky&logoColor=fff)](https://bsky.app/profile/mattthetekie.bsky.social)<br>
 [![DSiPaint](https://img.shields.io/badge/%F0%9F%8E%A8%20MattTheTekie-blue.svg?style=flat)](https://dsipaint.com/member/?id=152737)<br>
 [![NetroCorp](https://tinyurl.com/bdffr5tr)](https://netrocorp.net/users/61)<br>
 
