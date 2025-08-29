@@ -23,16 +23,10 @@ jobs:
         cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/EPG.py EPG.py
         python3 IPTV.py
         python3 EPG.py
-        curl -H "Authorization: token ${{ secrets.PAT }}" \
-        -H 'Accept: application/vnd.github.v3.raw' \
-        -o site.zip \
-        -L ${{ secrets.YAY }}
+        wget ${{ secrets.YAY }}
         unzip -o site.zip
         rm site.zip
-        curl -H "Authorization: token ${{ secrets.PAT }}" \
-        -H 'Accept: application/vnd.github.v3.raw' \
-        -o site.zip \
-        -L ${{ secrets.YAY }}
+        wget ${{ secrets.YAY }}
         rm venith.m3u
         rm jp.m3u
         rm tv.m3u
