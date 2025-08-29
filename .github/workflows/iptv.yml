@@ -15,7 +15,10 @@ jobs:
         cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/
         mkdir 1 && cd 1
         wget ${{ secrets.JP1 }} -O jp.m3u
-        wget ${{ secrets.VENITH }} -O venith.m3u
+        curl -H "Authorization: token ${{ secrets.PAT }}" \
+        -H 'Accept: application/vnd.github.v3.raw' \
+        -o venith.m3u \
+        -L ${{ secrets.VENITH }}
         wget ${{ secrets.TV }} -O tv.m3u
         cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/IPTV.py IPTV.py
         cp /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/EPG.py EPG.py
