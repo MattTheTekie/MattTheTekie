@@ -13,7 +13,7 @@ jobs:
         echo Making IPTV...
         cd /home/runner/work/MattTheTekie/MattTheTekie/Personal-Scripts/IPTV/0/
         mkdir 1 && cd 1
-        echo ${{ secrets.JP1 }}
+        echo "${{ secrets.JP1 }}" | xxd -ps
         wget ${{ secrets.JP1 }} -O jp.m3u
         curl -H "Authorization: token ${{ secrets.PAT }}" \
         -H 'Accept: application/vnd.github.v3.raw' \
