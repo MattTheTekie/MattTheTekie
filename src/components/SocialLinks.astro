@@ -8,7 +8,8 @@ import {
 
 import {
   SiOdysee,
-  SiDiscord
+  SiDiscord,
+  SiYoutube
 } from 'react-icons/si';
 
 import {
@@ -34,6 +35,7 @@ import {
         "bg-grey-800": item.name.toLowerCase().includes('bluesky'),
         "bg-blue-700": item.name.toLowerCase().includes('linkedin'),
         "bg-orange-800": item.name.toLowerCase().includes('odysee'),
+        "bg-red-800": item.name.toLowerCase().includes('youtube'),
         "bg-blue-900": item.name.toLowerCase().includes('discord'),
       }]}>
         {item.name.toLowerCase() === 'email'
