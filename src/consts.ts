@@ -27,13 +27,17 @@ export const SOCIAL = [
     name: 'Email'
   },
     {
-    link: 'https://odysee.com/@mattdoestech726:5',
-    name: 'Odysee'
+    link: 'https://youtube.com/@mattthetekie',
+    name: 'YouTube'
     },
     {
-    link: 'https://discord.com/invite/Xjfy4sJpWx',
+    link: 'https://odysee.com/@mattdoestech726:5',
+    name: 'Odysee'
+  },
+    {
+    link: 'https://discord.go.venith.net',
     name: 'Discord'
-  }
+    }
 ]
 export const OTHER_LINKS = [
   {
