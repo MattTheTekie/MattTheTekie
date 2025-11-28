@@ -4,7 +4,7 @@
   <img src="https://readme-typing-svg.herokuapp.com/?font=courier+new&color=0BF700&lines=Hello!+My+name+is+Matt!;A.K.A+MattTheTekie+or+Matthew%20P." />
   <blockquote>Working with electronics, and backends.</blockquote>
 
-📡 [[**MattTheTekie**]](https://home.venith.net/)
+📡 [[**MattTheTekie**]](https://home.veltron.net/)
 
   <a href='https://discord.com/users/846112982772613171' target='_blank'><img alt="discord status" src="https://api.statusbadges.me/badge/status/846112982772613171" /></a>
   <a href="https://api.statusbadges.me/openspotify/846112982772613171"><img alt="what the hell i am listening to" src="https://api.statusbadges.me/badge/spotify/846112982772613171" /></a>
@@ -24,14 +24,14 @@
 ##     ![Wave](https://github.com/MattTheTekie/MattTheTekie/blob/master/218808235-50f91cfa-5ec0-43c3-89f7-abb8d4258621-ezgif.com-gif-to-apng-converter.png) Hi there
 <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&redirect=true"><img align="right" src="https://spotify-github-profile.kittinanx.com/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false" /></a>
  - You can call me Matt or 宇宙飛行士.
- - You can join the action at the <br> 🐱‍💻 [[**Venith Discord**]](https://discord.com/invite/Xjfy4sJpWx) server!
+ - You can join the action at the <br> 🐱‍💻 [[**Veltron Discord**]](https://discord.go.veltron.net) server!
 [![Snake Graph](https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/master/github-snake.svg)](https://github.com/MattTheTekie)
 
 ## ❓ About Me
-   I'm a 23-year-old Linux geek based in America with a strong focus in reverse engineering. I'm the creator of the Venith Network podcast series. I maintain scripts for various projects, and work on infrastructure as a hobby. In my free time, I indulge in maintaining infrastructure, ricing, hardware mods, gaming, creating Odysee exclusive content, and coding personal projects. I'm dedicated to becoming a pentester, and I am currently exploring more around the stacks in persuit of my goal. 
+   I'm a 23-year-old Linux geek based in America with a strong focus in reverse engineering. I'm the creator of the Veltron Network podcast series. I maintain scripts for various projects, and work on infrastructure as a hobby. In my free time, I indulge in maintaining infrastructure, ricing, hardware mods, gaming, creating Odysee exclusive content, and coding personal projects. I'm dedicated to becoming a pentester, and I am currently exploring more around the stacks in persuit of my goal. 
  - 💻 Reverse engineering.
- - 🌐 Maintaining the VENITH network.
- - ⌨️ Former Maintainer of the [[**Suyu**]](https://git.suyu.dev) emulator, current maintainer of the [[**RiiShop**]](https://discord.gg/5565aDyYBr) for the Wii, the Homebrew-eShop [Not public yet] for the 3DS, and the former maintainer of the [[**StreetPass-Shop**]](https://github.com/VenithNET/streetpass-shop) project which inspired the [[**NetPass**]](https://gbatemp.net/threads/a-new-way-to-experience-streetpass.653810/) project. I also have contributed along with various other projects.
+ - 🌐 Maintaining the Veltron network.
+ - ⌨️ Former Maintainer of the [[**Suyu**]](https://git.suyu.dev) emulator, current maintainer of the [[**RiiShop**]](https://discord.gg/5565aDyYBr) for the Wii, the Homebrew-eShop [Not public yet] for the 3DS, and the former maintainer of the [[**StreetPass-Shop**]](https://github.com/VeltronNET/streetpass-shop) project which inspired the [[**NetPass**]](https://gbatemp.net/threads/a-new-way-to-experience-streetpass.653810/) project. I also have contributed along with various other projects.
  - 🌌 Living on Kepler-186F. 
 
 ## 📈 Stats
@@ -59,10 +59,10 @@
 
 ## 🛸 Extras&nbsp;
 
-> 🔭 [[**Personal Blog**]](https://home.venith.net/blog/)
+> 🔭 [[**Personal Blog**]](https://home.veltron.net/blog/)
 
 My blogging corner on the world wide web.&nbsp;
 
-> 🐱‍💻 [[**VENITH NETWORK**]](https://venith.net/)
+> 🐱‍💻 [[**VELTRON NETWORK**]](https://veltron.net/)
 
 My infrastructure project on the internet.&nbsp;
