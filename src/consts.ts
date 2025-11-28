@@ -23,7 +23,7 @@ export const SOCIAL = [
     name: 'Bluesky'
   },
     {
-    link: 'mailto:mattthetekie@venith.net',
+    link: 'mailto:mattthetekie@veltron.net',
     name: 'Email'
   },
     {
@@ -35,7 +35,7 @@ export const SOCIAL = [
     name: 'Odysee'
   },
     {
-    link: 'https://discord.go.venith.net',
+    link: 'https://discord.go.veltron.net',
     name: 'Discord'
     }
 ]
