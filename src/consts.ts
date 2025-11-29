@@ -45,7 +45,7 @@ export const OTHER_LINKS = [
     link: 'MATTHEW_PITSICALIS-EN.pdf'
   },
   {
-    link: 'http://donate.venith.net',
+    link: 'http://donate.veltron.net',
     name: 'Buy me a coffee'
   },
   {
