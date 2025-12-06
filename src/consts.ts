@@ -34,6 +34,10 @@ export const SOCIAL = [
     link: 'https://odysee.com/@mattdoestech726:5',
     name: 'Odysee'
   },
+  {
+    link: 'https://www.twitch.tv/mattthetekie',
+    name: 'Twitch'
+  },  
     {
     link: 'https://discord.go.veltron.net',
     name: 'Discord'
