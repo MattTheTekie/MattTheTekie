@@ -9,14 +9,15 @@ import {
 import {
   SiOdysee,
   SiDiscord,
-  SiYoutube
+  SiYoutube,
+  SiTwitch
 } from 'react-icons/si';
 
 import {
   FaBluesky
 } from 'react-icons/fa6';
 
-const icons = [ FaGithub, FaLinkedin, FaMastodon, SiOdysee, SiDiscord, SiYoutube, FaBluesky ];
+const icons = [ FaGithub, FaLinkedin, FaMastodon, SiOdysee, SiTwitch, SiDiscord, SiYoutube, FaBluesky ];
 import {
   SOCIAL,
 } from '../consts';
@@ -30,11 +31,12 @@ import {
       <span>~</span>
       <span class:list={["p-1 rounded-md", {
         "bg-blue-800": item.name.toLowerCase().includes('email'),
-        "bg-gray-700": item.name.toLowerCase().includes('github'),
+        "bg-blue-700": item.name.toLowerCase().includes('github'),
         "bg-blue-600": item.name.toLowerCase().includes('mastodon'),
-        "bg-grey-800": item.name.toLowerCase().includes('bluesky'),
+        "bg-blue-800": item.name.toLowerCase().includes('bluesky'),
         "bg-blue-700": item.name.toLowerCase().includes('linkedin'),
         "bg-orange-800": item.name.toLowerCase().includes('odysee'),
+        "bg-purple-800": item.name.toLowerCase().includes('twitch'),
         "bg-red-800": item.name.toLowerCase().includes('youtube'),
         "bg-blue-900": item.name.toLowerCase().includes('discord'),
       }]}>
