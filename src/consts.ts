@@ -15,6 +15,10 @@ export const SOCIAL = [
     name: 'Email'
   },
     {
+    link: 'https://discord.go.veltron.net',
+    name: 'Discord'
+    },
+    {
     link: 'https://nerdculture.de/@ASTAFATHERSATAN',
     name: 'Mastodon'
   },
@@ -37,11 +41,7 @@ export const SOCIAL = [
   {
     link: 'https://www.twitch.tv/mattthetekie',
     name: 'Twitch'
-  },  
-    {
-    link: 'https://discord.go.veltron.net',
-    name: 'Discord'
-    }
+  }
 ]
 export const OTHER_LINKS = [
   {
