@@ -10,6 +10,10 @@ export const SOCIAL = [
     link: 'https://github.com/MattTheTekie',
     name: 'GitHub'
   },
+  {
+    link: 'mailto:mattthetekie@veltron.net',
+    name: 'Email'
+  },
     {
     link: 'https://nerdculture.de/@ASTAFATHERSATAN',
     name: 'Mastodon'
@@ -21,10 +25,6 @@ export const SOCIAL = [
     {
     link: 'https://bsky.app/profile/mattthetekie.bsky.social',
     name: 'Bluesky'
-  },
-    {
-    link: 'mailto:mattthetekie@veltron.net',
-    name: 'Email'
   },
     {
     link: 'https://youtube.com/@mattthetekie',
