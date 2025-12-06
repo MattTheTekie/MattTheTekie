@@ -39,10 +39,11 @@
 <p><img src="/github-metrics.svg" alt="Metrics"></p>
 
 ## 💻 Working Environment
-[![Android 14](https://img.shields.io/badge/Android%2014-3ddc84?style=flat&logo=android&logoColor=ffffff)](https://www.android.com/android-14/)<br>
-[![Windows 11](https://custom-icon-badges.demolab.com/badge/Windows%2011-00adef?style=flat&logo=windows11&logoColor=ffffff)](https://www.youtube.com/c/GHOSTSPECTRE/)<br>
-[![Linux Mint 21.1](https://img.shields.io/badge/Linux%20Mint-Mint?logo=linux-mint&logoColor=fff&style=flat)](https://linuxmint.com/)<br>
-[![Arch](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=flat)](https://archlinux.org/)<br>
+[![Android 15](https://img.shields.io/badge/Android%2014-3ddc84?style=flat&logo=android&logoColor=ffffff)](https://www.android.com/android-15/)<br>
+[![Windows 11](https://custom-icon-badges.demolab.com/badge/Windows%2011-00adef?style=flat&logo=windows11&logoColor=ffffff)](https://www.microsoft.com/en-us/software-download/windows11)<br>
+[![Linux Mint](https://img.shields.io/badge/Linux%20Mint-Mint?logo=linux-mint&logoColor=fff&style=flat)](https://linuxmint.com/)<br>
+[![EndeavourOS](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=endeavouros&logoColor=fff&style=flat)](https://endeavouros.com)<br>
+[![Manjaro](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=manjaro&logoColor=fff&style=flat)](https://manjaro.org/)<br>
 
 ## 📱 Devices
 [![OnePlus 12R](https://img.shields.io/badge/OnePlus%2012R-fd4900?style=flat&logo=OnePlus&logoColor=ffffff&color=red)](https://www.gsmarena.com/oneplus_12r-12727.php)<br>
