@@ -13,7 +13,7 @@ epg_sources = {
     "japan_bk.xml.gz": "https://epgshare01.online/epgshare01/epg_ripper_JP1.xml.gz",
     "moveonjoy.xml": "https://raw.githubusercontent.com/ydbf/MoveOnJoy/refs/heads/main/epg.xml",
     "epgtalk.xml.gz": "https://github.com/acidjesuz/EPGTalk/raw/refs/heads/master/guide.xml.gz",
-    "epg_ripper_us1.xml.gz": "https://epgshare01.online/epgshare01/epg_ripper_US1.xml.gz"
+    "epg_ripper_us1.xml.gz": "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz"
 }
 
 # Download and decompress EPG files
