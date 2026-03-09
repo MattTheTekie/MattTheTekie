@@ -15,8 +15,8 @@ export const SOCIAL = [
     name: 'Email'
   },
     {
-    link: 'https://discord.go.veltron.net',
-    name: 'Discord'
+    link: 'https://fluxer.go.veltron.net',
+    name: 'Fluxer'
     },
     {
     link: 'https://nerdculture.de/@ASTAFATHERSATAN',
