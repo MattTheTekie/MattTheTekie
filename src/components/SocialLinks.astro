@@ -8,7 +8,6 @@ import {
 
 import {
   SiOdysee,
-  SiDiscord,
   SiYoutube,
   SiTwitch
 } from 'react-icons/si';
@@ -17,7 +16,8 @@ import {
   FaBluesky
 } from 'react-icons/fa6';
 
-const icons = [ FaGithub, FaLinkedin, FaMastodon, SiOdysee, SiTwitch, FaSignalMessenger, SiYoutube, FaBluesky ];
+const icons = [ FaGithub, FaLinkedin, FaMastodon, SiOdysee, SiTwitch, FaSignalMessenger, SiYoutube, FaBluesky, FluxerIcon ];
+import FluxerIcon from "../components/icons/FluxerIcon.jsx";
 import {
   SOCIAL,
 } from '../consts';
@@ -38,7 +38,7 @@ import {
         "bg-orange-800": item.name.toLowerCase().includes('odysee'),
         "bg-purple-800": item.name.toLowerCase().includes('twitch'),
         "bg-red-800": item.name.toLowerCase().includes('youtube'),
-        "bg-blue-900": item.name.toLowerCase().includes('discord'),
+        "bg-indigo-800": item.name.toLowerCase().includes('fluxer')
       }]}>
         {item.name.toLowerCase() === 'email'
           ? <FaEnvelope size={18} />
