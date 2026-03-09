@@ -11,9 +11,9 @@ import rehypeKatex from 'rehype-katex';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://home.veltron.net',
-  integrations: [mdx({
-    extendMarkdownConfig: true
-  }), sitemap(), react(), tailwind()],
+#  integrations: [mdx({
+#    extendMarkdownConfig: true
+#  }), sitemap(), react(), tailwind()],
   markdown: {
     shikiConfig: {
       theme: 'min-dark',
