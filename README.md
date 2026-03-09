@@ -50,7 +50,7 @@
 [![Xiaomi Pad 6](https://img.shields.io/badge/Xiaomi%20Pad%206-fd4900?style=flat&logo=Xiaomi&logoColor=ffffff)](https://www.gsmarena.com/xiaomi_pad_6-12237.php)<br>
 
 ## 📫 Get in touch
-[![Fluxer](https://img.shields.io/badge/Veltron.NET-red.svg?style=flat&logo=signal)](https://fluxer.go.veltron.net)<br>
+[![Fluxer](https://tinyurl.com/3sxkv3ww)](https://fluxer.go.veltron.net)<br>
 [![Odysee](https://img.shields.io/badge/MattTheTekie-EF1970?style=flat&logo=Odysee&logoColor=white)](https://odysee.com/@mattdoestech726:5)<br>
 [![Bluesky](https://img.shields.io/badge/MattTheTekie-0285FF?logo=bluesky&logoColor=ffffff)](https://bsky.app/profile/mattthetekie.bsky.social)<br>
 [![Mastodon](https://img.shields.io/badge/%40ASTAFATHERSATAN-0088cc?style=flat&logo=mastodon&logoColor=ffffff)](https://nerdculture.de/@ASTAFATHERSATAN)<br>
