@@ -16,7 +16,7 @@ I was scrolling throughout GitHub, and came across Dashy. I was a bit hesitant t
 
 ### Finale
 In the end, I'm really happy with the outcome I have so far, but I will definitely be posting once I get around to the next parts of my Home Lab!
-https://tsukashomelab.netlify.app/
+https://hackerlab.veltron.net
 
 ### Part II
 Coming soon.
