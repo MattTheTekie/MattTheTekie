@@ -7,7 +7,7 @@
 📡 [[**MattTheTekie**]](https://home.veltron.net/)
 
   <a href='https://fluxer.go.veltron.net' target='_blank'><img alt="discord status" src="https://statusbadges.me/example-badges/status.svg" /></a>
-  <a href="https://api.statusbadges.me/openspotify/846112982772613171"><img alt="what the hell i am listening to" src="https://api.statusbadges.me/badge/spotify/846112982772613171" /></a>
+  <a href="https://www.youtube.com/watch?v=PsO6ZnUZI0g"><img alt="what the hell i am listening to" src="https://tinyurl.com/2x5scnaw" /></a>
   <img alt="who viewed me owo" src="https://komarev.com/ghpvc/?username=MattTheTekie" />
   <img alt='Pronouns' src='https://img.shields.io/badge/pronouns-he/bi-lightgrey' />
   <a href="https://wakatime.com/@MattTheTekie" target='_blank'>
