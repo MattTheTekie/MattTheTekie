@@ -6,7 +6,7 @@
 
 📡 [[**MattTheTekie**]](https://home.veltron.net/)
 
-  <a href='https://discord.com/users/846112982772613171' target='_blank'><img alt="discord status" src="https://api.statusbadges.me/badge/status/846112982772613171" /></a>
+  <a href='https://fluxer.go.veltron.net' target='_blank'><img alt="discord status" src="https://statusbadges.me/example-badges/status.svg" /></a>
   <a href="https://api.statusbadges.me/openspotify/846112982772613171"><img alt="what the hell i am listening to" src="https://api.statusbadges.me/badge/spotify/846112982772613171" /></a>
   <img alt="who viewed me owo" src="https://komarev.com/ghpvc/?username=MattTheTekie" />
   <img alt='Pronouns' src='https://img.shields.io/badge/pronouns-he/bi-lightgrey' />
