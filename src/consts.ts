@@ -54,6 +54,6 @@ export const OTHER_LINKS = [
   },
   {
     link: 'https://mattthetekie.substack.com/podcast',
-    name: 'Democracy At Risk Podcast'
+    name: 'Veltron Network Podcast'
   }
 ]
