@@ -1,8 +1,8 @@
 export const SITE_TITLE = 'MattTheTekie'
-export const SITE_DESCRIPTION = 'Welcome to my homepage. Im the creator of the Democracy At Risk podcast series, a cybersecurity geek, and a Linux nerd.'
+export const SITE_DESCRIPTION = 'Welcome to my homepage. Im the creator of the Veltron Network podcast series, a cybersecurity geek, and a Linux nerd.'
 
 export const NAME = 'MattTheTekie'
-export const ROLE = 'Linux geek'
+export const ROLE = 'Linux nerd'
 export const BOOKS = ['Clean Code - Robert C. Martin', 'Metamorphosis - Franz Kafka', 'Fahrenheit 451 - Ray Bradbury', 'The Crow and Other Stories - Edgar Allan Poe']
 export const HOBBIES = ['Linux customization', 'gaming', 'reading', 'coding']
 export const SOCIAL = [
