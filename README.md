@@ -21,11 +21,11 @@
   </p>
 </div>
 
-##     ![Wave](https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/master/218808235-50f91cfa-5ec0-43c3-89f7-abb8d4258621-ezgif.com-gif-to-apng-converter.png) Hi there
+##     ![Wave](218808235-50f91cfa-5ec0-43c3-89f7-abb8d4258621-ezgif.com-gif-to-apng-converter.png) Hi there
 <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&redirect=true"><img align="right" src="https://spotify-github-profile.kittinanx.com/api/view?uid=315qfjut4hle4ktych3hcsh6vzsa&cover_image=true&theme=novatorem&bar_color=53b14f&bar_color_cover=false" /></a>
  - You can call me Matt or 宇宙飛行士.
  - You can join the action at the <br> 🐱‍💻 [[**Veltron Fluxer**]](https://fluxer.go.veltron.net) server!
-[![Snake Graph](https://raw.githubusercontent.com/MattTheTekie/MattTheTekie/master/github-snake.svg)](https://github.com/MattTheTekie)
+[![Snake Graph](github-snake.svg)](https://github.com/MattTheTekie)
 
 ## ❓ About Me
    I'm a 23-year-old Linux nerd based in America with a strong focus in reverse engineering. I'm the creator of the Veltron Network podcast series. I maintain scripts for various projects, and work on infrastructure as a hobby. In my free time, I indulge in maintaining infrastructure, ricing, hardware mods, gaming, creating Odysee exclusive content, and coding personal projects. I'm dedicated to becoming a pentester, and I am currently exploring more around the stacks in persuit of my goal. 
@@ -36,7 +36,7 @@
 
 ## 📈 Stats
 <p><img align="center" src="https://github-readme-stats-lemon-two-88.vercel.app/api?username=MattTheTekie&count_private=true&show_icons=true&theme=chartreuse-dark" alt="MattTheTekie" /></p>
-<p><img src="/github-metrics.svg" alt="Metrics"></p>
+<p><img src="github-metrics.svg" alt="Metrics"></p>
 
 ## 💻 Working Environment
 [![Android 16](https://img.shields.io/badge/Android%2016-3ddc84?style=flat&logo=android&logoColor=ffffff)](https://www.android.com/android-16/)<br>
