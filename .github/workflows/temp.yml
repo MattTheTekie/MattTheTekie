@@ -1,5 +1,18 @@
-- run: |
-    echo "${{ secrets.TV }}" | base64
-  shell: bash
-  env:
-    SSH_KEY: ${{ secrets.PRIVATE_KEY }}
+name: Encode Secret Example
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Encode TV secret
+        shell: bash
+        env:
+          TV_SECRET: ${{ secrets.TV }}
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+        run: |
+          echo "$TV_SECRET" | base64
