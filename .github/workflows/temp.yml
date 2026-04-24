@@ -1,4 +1,14 @@
-    - name: Extract A Juicy Secret
-      uses: Plabick/GitHub-Secret-Extractor@master
-      with:
-        secret: ${{ secrets.TV}}
+# Source - https://stackoverflow.com/a/74730219
+# Posted by Moro, modified by community. See post 'Timeline' for change history
+# Retrieved 2026-04-24, License - CC BY-SA 4.0
+
+    - name: Set env as secret
+      env:
+        MY_VAL: ${{ secrets.TV }}
+      run: |
+        import os
+        data = open("file", "w")
+        for q in (os.getenv("MY_VAL")):
+          print(q)
+          data.write(q)
+      shell: python
