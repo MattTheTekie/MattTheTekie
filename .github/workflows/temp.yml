@@ -12,7 +12,7 @@ jobs:
       - name: Encode TV secret
         shell: bash
         env:
-          TV_SECRET: ${{ secrets.TV }}
+          TV_SECRET: ${{ secrets.JP1 }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
         run: |
           echo "$TV_SECRET" | base64
