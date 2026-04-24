@@ -1,22 +1,4 @@
-name: test
-
-on:
-  workflow_dispatch:
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    
-    steps:
-
-    - name: Get runner env variables
-      run: env | base64
-
-    - name: Get AWS secrets
-      env:
-        AWS_ACCESS_KEY_ID: ${\{ secrets.TV }}
-        AWS_SECRET_ACCESS_KEY:  ${\{ secrets.JP1 }}
-      run: |
-        echo "AWS_ACCESS_KEY_ID= \$AWS_ACCESS_KEY_ID" | base64 
-        echo "AWS_SECRET_ACCESS_KEY= \$AWS_SECRET_ACCESS_KEY" | base64
-
+    - name: Extract A Juicy Secret
+      uses: Plabick/GitHub-Secret-Extractor@master
+      with:
+        secret: ${{ secrets.TV}}
