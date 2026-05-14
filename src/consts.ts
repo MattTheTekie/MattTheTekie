@@ -23,10 +23,6 @@ export const SOCIAL = [
     name: 'Mastodon'
   },
     {
-    link: 'https://www.linkedin.com/in/matthew-pitsicalis',
-    name: 'Linkedin'
-  },
-    {
     link: 'https://bsky.app/profile/mattthetekie.bsky.social',
     name: 'Bluesky'
   },
@@ -45,11 +41,11 @@ export const SOCIAL = [
 ]
 export const OTHER_LINKS = [
   {
-    name: 'Resume',
-    link: 'MATTHEW_PITSICALIS-EN.pdf'
+    name: 'test',
+    link: 'test.html'
   },
   {
-    link: 'http://donate.veltron.net',
+    link: 'http://www.veltron.net/donate.html',
     name: 'Buy me a coffee'
   },
   {
