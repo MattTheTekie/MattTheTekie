@@ -11,7 +11,7 @@ title: "My Braindump"
 
 </div>
 
-Hello there! I’m Matthew Pitsicalis, and here you can find some of my notes I took while studying to things like podcast idea’s and more.
+Hello there! I’m MattTheTekie, and here you can find some of my notes I took while studying to things like podcast idea’s and more.
 
 ## How to read
 
