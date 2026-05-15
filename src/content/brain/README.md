@@ -27,7 +27,7 @@ Have a good read!
             <a href="https://github.com/mattthetekie">
                 <img src="https://github.com/mattthetekie.png" width="100px;" alt="MattTheTekie's Photo"/><br>
                 <sub>
-                    <b>Matthew Pitsicalis</b>
+                    <b>MattTheTekie</b>
                 </sub>
             </a>
         </td>
