@@ -1,0 +1,68 @@
+# /etc/systemd/system/tv-desktop.service
+
+[Unit]
+Description=TV Virtual Desktop (Xvfb + Cinnamon + x11vnc)
+After=network.target dbus.service systemd-logind.service
+Wants=network.target
+
+[Service]
+Type=simple
+User=tv
+Group=tv
+
+Environment=HOME=/home/tv
+Environment=USER=tv
+Environment=LOGNAME=tv
+Environment=DISPLAY=:2
+Environment=XDG_RUNTIME_DIR=/run/user/1000
+
+# ---- runtime setup ----
+ExecStartPre=/bin/mkdir -p /run/user/1000
+ExecStartPre=/bin/chown tv:tv /run/user/1000
+ExecStartPre=/bin/chmod 700 /run/user/1000
+
+# ---- cleanup (IMPORTANT: ignore failures) ----
+ExecStartPre=-/usr/bin/pkill -9 Xvfb
+ExecStartPre=-/usr/bin/pkill -9 cinnamon
+ExecStartPre=-/usr/bin/pkill -9 cinnamon-session
+ExecStartPre=-/usr/bin/pkill -9 nemo-desktop
+ExecStartPre=-/usr/bin/pkill -9 x11vnc
+ExecStartPre=-/usr/bin/pkill -9 pulseaudio
+
+# ---- main startup ----
+ExecStart=/bin/bash -lc '\
+set -e; \
+export DISPLAY=:2; \
+export HOME=/home/tv; \
+export XDG_RUNTIME_DIR=/run/user/1000; \
+\
+rm -f $HOME/.ICEauthority $HOME/.Xauthority; \
+unset DBUS_SESSION_BUS_ADDRESS; \
+\
+echo "[1] Starting Xvfb"; \
+Xvfb :2 -screen 0 1024x768x24 -ac +extension GLX +render -noreset & \
+sleep 3; \
+\
+echo "[2] Starting PulseAudio"; \
+pulseaudio --kill || true; \
+pulseaudio --start || true; \
+pactl load-module module-null-sink sink_name=virt_audio sink_properties=device.description=VirtAudio || true; \
+\
+echo "[3] Starting Cinnamon session"; \
+dbus-run-session -- cinnamon-session & \
+sleep 8; \
+\
+echo "[4] Starting VNC"; \
+exec x11vnc -display :2 -forever -shared -rfbport 8066 -nopw -xkb -noxdamage \
+'
+
+Restart=always
+RestartSec=5
+KillMode=mixed
+TimeoutStopSec=15
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
