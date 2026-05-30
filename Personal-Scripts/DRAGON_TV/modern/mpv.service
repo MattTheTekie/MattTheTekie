@@ -1,0 +1,18 @@
+[Unit]
+Description=MPV Radio Service
+After=network.target sound.target
+
+[Service]
+User=radio
+Group=audio
+#Environment=XDG_RUNTIME_DIR=/run/user/1002
+WorkingDirectory=/home/radio
+ExecStart=/home/radio/mpv.sh
+Restart=always
+RestartSec=5
+
+# Force ALSA only (IMPORTANT)
+#Environment=MPV_AUDIO_DEVICE=alsa/default
+
+[Install]
+WantedBy=multi-user.target
