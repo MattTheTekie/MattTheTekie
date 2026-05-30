@@ -1,0 +1,18 @@
+[Unit]
+Description=FieldStation42 On-Screen Display
+After=fs42.service
+PartOf=fs42.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/tv/FieldStation42
+Environment="DISPLAY=:2"
+ExecStartPre=/bin/sleep 10
+ExecStart=/home/tv/FieldStation42/env/bin/python3 fs42/osd/main.py
+Restart=always
+RestartSec=5
+StandardOutput=null
+StandardError=null
+
+[Install]
+WantedBy=default.target
