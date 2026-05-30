@@ -1,5 +1,3 @@
-# /etc/systemd/system/tv-desktop.service
-
 [Unit]
 Description=TV Virtual Desktop (Xvfb + Cinnamon + x11vnc)
 After=network.target dbus.service systemd-logind.service
