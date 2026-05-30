@@ -1,0 +1,31 @@
+[Unit]
+Description=FFmpeg X11 + Pulse HLS Stream
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -lc '\
+exec /usr/bin/ffmpeg \
+-thread_queue_size 1024 -f x11grab -framerate 30 -i :2 \
+-thread_queue_size 1024 -f pulse -i virt_audio.monitor \
+-fflags +genpts -probesize 32 -analyzeduration 0 \
+-vf "scale=854:480,setsar=1" \
+-c:v libx264 -preset ultrafast -tune zerolatency -pix_fmt yuv420p \
+-b:v 1200k -maxrate 1200k -bufsize 1200k \
+-r 30 -g 60 -sc_threshold 0 \
+-c:a aac -b:a 168k -ar 44100 \
+-af "aresample=async=1:min_hard_comp=0.100:first_pts=0" \
+-fps_mode cfr \
+-f hls -hls_time 1 -hls_list_size 5 \
+-hls_flags delete_segments+append_list+temp_file \
+/var/www/html/stream.m3u8'
+
+ExecStop=/bin/kill -TERM $MAINPID
+ExecStopPost=/bin/bash -lc 'sleep 2; rm -f /var/www/html/stream*'
+Restart=always
+RestartSec=3
+
+# optional hardening
+Nice=0
+
+[Install]
+WantedBy=default.target
