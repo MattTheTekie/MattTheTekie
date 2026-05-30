@@ -1,0 +1,16 @@
+[Unit]
+Description=DragonTV Station Script
+After=network.target
+
+[Service]
+User=tv1
+Group=tv1
+WorkingDirectory=/home/tv1/comfy-channel/
+
+ExecStart=/usr/bin/python3 /home/tv1/comfy-channel/src/ComfyChannel.py -o "/dev/shm/hls/stream.m3u8"
+
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
