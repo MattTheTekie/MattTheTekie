@@ -7,7 +7,7 @@ Wants=network.target
 Type=simple
 User=tv
 Group=tv
-
+MemoryMax=2G
 Environment=HOME=/home/tv
 Environment=USER=tv
 Environment=LOGNAME=tv
