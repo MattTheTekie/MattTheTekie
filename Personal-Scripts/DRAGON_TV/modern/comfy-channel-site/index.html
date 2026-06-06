@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Veltron TV</title>
+    <meta property="og:type" content="summary">
+    <meta property="og:site_name" content="Veltron TV">
+    <meta property="og:title" content="Powered by the Veltron Network">
+    <meta property="og:description" content="Broadcasting 24/7">
+    <meta property="og:image" content="https://www.veltron.net/images/favicon/banner.png">
+    <meta property="og:image:alt" content="Veltron TV">
+    <meta property="og:url" content="http://tv.veltron.net">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="The Veltron Network">
+    <meta name="description" content="Welcome to Veltron TV.">
+    <meta name="keywords" content="90s Web, 2000s, Veltron, Blog, Neocities, 3DSPaint, DSiPaint, Gaming, Web, HTML, CSS, Programming, Email, Tutorials, YouTube">
+    <link rel="shortcut icon" href="https://www.veltron.net/images/favicon/banner.png">
+    <link href="video-js.css" rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            background-image: url("5015.png");
+            background-repeat: repeat;
+        }
+        .container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .player {
+            width: 640px;
+            height: 360px;
+        }
+        .player div {
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+        }
+        .player div #my-video {
+            display: block;
+        }
+        .player div + #my-video {
+            position: absolute;
+            z-index: 0;
+            top: 97px;
+            right: 110px;
+        }
+        .ch_up {
+            position: absolute;
+            left: 560px;
+            top: -275px;
+            font-family: Arial, sans-serif;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 5px 12px;
+            font-size: 14px;
+        }
+        .ch_down {
+            position: absolute;
+            left: 560px;
+            top: -205px;
+            font-family: Arial, sans-serif;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 5px 12px;
+            font-size: 14px;
+        }
+        .active {
+            box-shadow: 0 0 10px white;
+            transform: scale(1.05);
+        }
+        #my-video {
+            height: 160px;
+            width: 300px;
+        }
+</style>
+
+</head>
+<body>
+<div class="container">
+<div class="player">
+<div>
+<div style="width: 640px; pointer-events: none;">
+<img src="jiru_wide.png" alt="" style="width: 640px; pointer-events: none;">
+</div>
+<div>
+<button class="ch_up" onclick="changeChannel,this)">▲ CH +</button>
+<button class="ch_down" onclick="changeChannel,this)">▼ CH -</button>
+</div>
+<video id="my-video" class="video-js" controls autoplay preload="auto" width="640" data-setup='{"controlBar":{"fullscreenToggle":false}}'>
+<source src="http://tv.int.veltron.net/media2/stream.m3u8" type="application/x-mpegURL"></video>
+</div>
+</div>
+</div>
+<script src="video.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+    const channels = [
+        { url: "http://tv.int.veltron.net/media2/stream.m3u8", name: "Veltron Cable" },
+        { url: "http://tv.int.veltron.net/media/stream.m3u8", name: "Veltron TV" }
+    ];
+
+    let channelIndex = 0;
+
+    const upBtn = document.querySelector('.ch_up');
+    const downBtn = document.querySelector('.ch_down');
+
+    const player = videojs('my-video');
+
+    function setActiveButton(btn) {
+        document.querySelectorAll('.ch_up, .ch_down')
+            .forEach(b => b.classList.remove('active'));
+
+        if (btn) btn.classList.add('active');
+    }
+
+    function changeChannel(index, btn) {
+        const ch = channels[index];
+
+        player.src({
+            src: ch.url,
+            type: 'application/x-mpegURL'
+        });
+
+        player.play();
+
+        setActiveButton(btn);
+
+        console.log("Switched to:", ch.name);
+    }
+
+    upBtn.addEventListener('click', function () {
+        channelIndex = (channelIndex + 1) % channels.length;
+        changeChannel(channelIndex, this);
+    });
+
+    downBtn.addEventListener('click', function () {
+        channelIndex = (channelIndex - 1 + channels.length) % channels.length;
+        changeChannel(channelIndex, this);
+    });
+
+    changeChannel(channelIndex, null);
+});
+</script>
+</body>
+</html>
