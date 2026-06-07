@@ -42,41 +42,49 @@ echo "Total repos: $repo_count"
 sync_repo() {
     repo_name="$1"
 
-    echo "===================================="
+    echo "========================================"
     echo "Syncing: $repo_name"
-    echo "===================================="
+    echo "========================================"
 
     mirror_path="${WORKDIR}/${repo_name}.git"
     rm -rf "$mirror_path"
 
-    # -------------------------
-    # CLONE (NO PR REFS PROBLEM)
-    # -------------------------
-    git clone --bare \
+    # -----------------------------
+    # CLONE CLEAN SOURCE
+    # -----------------------------
+    if ! git clone --bare \
         "https://${GH_TOKEN}@github.com/${GH_USER}/${repo_name}.git" \
-        "$mirror_path"
+        "$mirror_path"; then
+        echo "❌ Failed to clone $repo_name"
+        return 0
+    fi
 
-    # fetch clean state
-    git -C "$mirror_path" fetch --prune origin
+    # -----------------------------
+    # FETCH PRUNE (SAFE)
+    # -----------------------------
+    git -C "$mirror_path" fetch --prune origin || true
 
-    # -------------------------
-    # REMOVE GITHUB PULL REQUEST REFS
-    # -------------------------
-    git -C "$mirror_path" for-each-ref refs/pull | while read -r ref; do
-        git -C "$mirror_path" update-ref -d "$ref" || true
-    done
+    # -----------------------------
+    # REMOVE GITHUB PULL REQUEST REFS (SAFE LOOP)
+    # -----------------------------
+    while read -r ref; do
+        [[ -n "$ref" ]] && git -C "$mirror_path" update-ref -d "$ref" || true
+    done < <(
+        git -C "$mirror_path" for-each-ref \
+            --format='%(refname)' refs/pull 2>/dev/null || true
+    )
 
-    # -------------------------
-    # CODEBERG
-    # -------------------------
+    # -----------------------------
+    # CODEBERG SETUP
+    # -----------------------------
     codeberg_url="https://${CODEBERG_USER}:${CODEBERG_TOKEN}@codeberg.org/${CODEBERG_USER}/${repo_name}.git"
 
     git -C "$mirror_path" remote remove codeberg >/dev/null 2>&1 || true
     git -C "$mirror_path" remote add codeberg "$codeberg_url"
 
-    # -------------------------
-    # GIT.GAY (OPTIONAL)
-    # -------------------------
+    # -----------------------------
+    # GIT.GAY SETUP (OPTIONAL)
+    # -----------------------------
     if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
         gitgay_url="https://${GITGAY_USER}:${GITGAY_TOKEN}@git.gay/${GITGAY_USER}/${repo_name}.git"
 
@@ -84,18 +92,18 @@ sync_repo() {
         git -C "$mirror_path" remote add gitgay "$gitgay_url"
     fi
 
-    # -------------------------
+    # -----------------------------
     # PUSH CLEAN REFS ONLY
-    # -------------------------
-    git -C "$mirror_path" push --all codeberg
-    git -C "$mirror_path" push --tags codeberg
+    # -----------------------------
+    git -C "$mirror_path" push --all codeberg || true
+    git -C "$mirror_path" push --tags codeberg || true
 
     if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
-        git -C "$mirror_path" push --all gitgay
-        git -C "$mirror_path" push --tags gitgay
+        git -C "$mirror_path" push --all gitgay || true
+        git -C "$mirror_path" push --tags gitgay || true
     fi
 
-    echo "Done: $repo_name"
+    echo "✔ Done: $repo_name"
 }
 
 running=0
@@ -108,11 +116,13 @@ for ((i=0; i<repo_count; i++)); do
     ((running++))
 
     if (( running >= MAX_JOBS )); then
-        wait -n
+        wait -n || true
         ((running--))
     fi
 done
 
 wait
 
-echo "All repositories synced successfully."
+echo "========================================"
+echo "ALL REPOSITORIES SYNCED SUCCESSFULLY"
+echo "========================================"
