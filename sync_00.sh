@@ -39,73 +39,81 @@ repo_count=$(echo "$repos" | jq length)
 
 echo "Total repos: $repo_count"
 
+# -----------------------------
+# SYNC FUNCTION (ISOLATED SAFE)
+# -----------------------------
 sync_repo() {
-    repo_name="$1"
+    local repo_name="$1"
 
-    echo "========================================"
-    echo "Syncing: $repo_name"
-    echo "========================================"
+    {
+        echo "========================================"
+        echo "Syncing: $repo_name"
+        echo "========================================"
 
-    mirror_path="${WORKDIR}/${repo_name}.git"
-    rm -rf "$mirror_path"
+        mirror_path="${WORKDIR}/${repo_name}.git"
+        rm -rf "$mirror_path"
 
-    # -----------------------------
-    # CLONE CLEAN SOURCE
-    # -----------------------------
-    if ! git clone --bare \
-        "https://${GH_TOKEN}@github.com/${GH_USER}/${repo_name}.git" \
-        "$mirror_path"; then
-        echo "❌ Failed to clone $repo_name"
-        return 0
-    fi
+        # -------------------------
+        # CLONE
+        # -------------------------
+        if ! git clone --bare \
+            "https://${GH_TOKEN}@github.com/${GH_USER}/${repo_name}.git" \
+            "$mirror_path"; then
+            echo "❌ Clone failed: $repo_name"
+            exit 0
+        fi
 
-    # -----------------------------
-    # FETCH PRUNE (SAFE)
-    # -----------------------------
-    git -C "$mirror_path" fetch --prune origin || true
+        git -C "$mirror_path" fetch --prune origin || true
 
-    # -----------------------------
-    # REMOVE GITHUB PULL REQUEST REFS (SAFE LOOP)
-    # -----------------------------
-    while read -r ref; do
-        [[ -n "$ref" ]] && git -C "$mirror_path" update-ref -d "$ref" || true
-    done < <(
-        git -C "$mirror_path" for-each-ref \
-            --format='%(refname)' refs/pull 2>/dev/null || true
-    )
+        # -------------------------
+        # REMOVE PR REFS SAFELY
+        # -------------------------
+        while read -r ref; do
+            [[ -n "$ref" ]] && git -C "$mirror_path" update-ref -d "$ref" || true
+        done < <(
+            git -C "$mirror_path" for-each-ref \
+                --format='%(refname)' refs/pull 2>/dev/null || true
+        )
 
-    # -----------------------------
-    # CODEBERG SETUP
-    # -----------------------------
-    codeberg_url="https://${CODEBERG_USER}:${CODEBERG_TOKEN}@codeberg.org/${CODEBERG_USER}/${repo_name}.git"
+        # -------------------------
+        # CODEBERG SETUP
+        # -------------------------
+        codeberg_url="https://${CODEBERG_USER}:${CODEBERG_TOKEN}@codeberg.org/${CODEBERG_USER}/${repo_name}.git"
 
-    git -C "$mirror_path" remote remove codeberg >/dev/null 2>&1 || true
-    git -C "$mirror_path" remote add codeberg "$codeberg_url"
+        git -C "$mirror_path" remote remove codeberg >/dev/null 2>&1 || true
+        git -C "$mirror_path" remote add codeberg "$codeberg_url"
 
-    # -----------------------------
-    # GIT.GAY SETUP (OPTIONAL)
-    # -----------------------------
-    if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
-        gitgay_url="https://${GITGAY_USER}:${GITGAY_TOKEN}@git.gay/${GITGAY_USER}/${repo_name}.git"
+        # -------------------------
+        # GIT.GAY (OPTIONAL)
+        # -------------------------
+        if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
+            gitgay_url="https://${GITGAY_USER}:${GITGAY_TOKEN}@git.gay/${GITGAY_USER}/${repo_name}.git"
 
-        git -C "$mirror_path" remote remove gitgay >/dev/null 2>&1 || true
-        git -C "$mirror_path" remote add gitgay "$gitgay_url"
-    fi
+            git -C "$mirror_path" remote remove gitgay >/dev/null 2>&1 || true
+            git -C "$mirror_path" remote add gitgay "$gitgay_url"
+        fi
 
-    # -----------------------------
-    # PUSH CLEAN REFS ONLY
-    # -----------------------------
-    git -C "$mirror_path" push --all codeberg || true
-    git -C "$mirror_path" push --tags codeberg || true
+        # -------------------------
+        # PUSH (NEVER FAIL SCRIPT)
+        # -------------------------
+        git -C "$mirror_path" push --all codeberg || true
+        git -C "$mirror_path" push --tags codeberg || true
 
-    if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
-        git -C "$mirror_path" push --all gitgay || true
-        git -C "$mirror_path" push --tags gitgay || true
-    fi
+        if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
+            git -C "$mirror_path" push --all gitgay || true
+            git -C "$mirror_path" push --tags gitgay || true
+        fi
 
-    echo "✔ Done: $repo_name"
+        echo "✔ Done: $repo_name"
+
+    } || {
+        echo "⚠️ Repo failed (non-fatal): $repo_name"
+    }
 }
 
+# -----------------------------
+# PARALLEL EXECUTION
+# -----------------------------
 running=0
 
 for ((i=0; i<repo_count; i++)); do
@@ -121,8 +129,21 @@ for ((i=0; i<repo_count; i++)); do
     fi
 done
 
-wait
+# -----------------------------
+# SAFE FINAL WAIT (CRITICAL FIX)
+# -----------------------------
+fail=0
+
+for job in $(jobs -p); do
+    wait "$job" || fail=1
+done
 
 echo "========================================"
-echo "ALL REPOSITORIES SYNCED SUCCESSFULLY"
+if [[ "$fail" -eq 0 ]]; then
+    echo "ALL REPOSITORIES SYNCED SUCCESSFULLY"
+else
+    echo "DONE WITH SOME FAILURES (NON-FATAL)"
+fi
 echo "========================================"
+
+exit 0
