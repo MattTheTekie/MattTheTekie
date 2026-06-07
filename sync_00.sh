@@ -40,34 +40,6 @@ repo_count=$(echo "$repos" | jq length)
 echo "Total repos: $repo_count"
 
 # =====================================================
-# CODEBERG
-# =====================================================
-
-ensure_codeberg_repo() {
-    local name="MattTheTekie"
-    local private="$2"
-
-    status=$(curl --silent --connect-timeout 10 --max-time 20 \
-        -o /dev/null -w "%{http_code}" \
-        -H "Authorization: token ${CODEBERG_TOKEN}" \
-        "https://codeberg.org/api/v1/repos/${CODEBERG_USER}/${name}")
-
-    if [[ "$status" == "404" ]]; then
-        echo "📦 Creating Codeberg repo: $name"
-
-        curl --silent --show-error --fail \
-            --connect-timeout 10 \
-            --max-time 30 \
-            -X POST \
-            -H "Authorization: token ${CODEBERG_TOKEN}" \
-            -H "Content-Type: application/json" \
-            "https://codeberg.org/api/v1/user/repos" \
-            -d "$(jq -n --arg name "$name" --argjson private "$private" '{name:$name, private:$private}')" \
-            >/dev/null || true
-    fi
-}
-
-# =====================================================
 # GIT.GAY
 # =====================================================
 
@@ -109,7 +81,7 @@ sync_repo() {
     echo "========================================"
     echo "Syncing: $repo_name"
     echo "========================================"
-    mirror_path1="${WORKDIR}/MattThetekie.git"
+
     mirror_path="${WORKDIR}/${repo_name}.git"
     rm -rf "$mirror_path"
 
@@ -131,24 +103,14 @@ sync_repo() {
     )
 
     # Ensure remotes
-    timeout 25s bash -c "ensure_codeberg_repo 'MattTheTekie' '$repo_private'" || true
-    timeout 25s bash -c "ensure_gitgay_repo '$repo_name' '$repo_private'" || true
-
-    # Add remotes
-    codeberg_url="https://${CODEBERG_USER}:${CODEBERG_TOKEN}@codeberg.org/${CODEBERG_USER}/MattTheTekie.git"
-    git -C "$mirror_path1" remote remove codeberg >/dev/null 2>&1 || true
-    git -C "$mirror_path1" remote add codeberg "$codeberg_url"
+    bash -c "ensure_gitgay_repo '$repo_name' '$repo_private'" || true
 
     if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
         gitgay_url="https://${GITGAY_USER}:${GITGAY_TOKEN}@git.gay/${GITGAY_USER}/${repo_name}.git"
         git -C "$mirror_path" remote remove gitgay >/dev/null 2>&1 || true
         git -C "$mirror_path" remote add gitgay "$gitgay_url"
     fi
-
-    # Push (never fail)
-    git -C "$mirror_path1" push --all codeberg || true
-    git -C "$mirror_path1" push --tags codeberg || true
-
+    
     if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
         git -C "$mirror_path" push --all gitgay || true
         git -C "$mirror_path" push --tags gitgay || true
