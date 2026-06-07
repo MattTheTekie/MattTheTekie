@@ -24,6 +24,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           CODEBERG_USER: ${{ secrets.CODEBERG_USER }}
           CODEBERG_TOKEN: ${{ secrets.CODEBERG_TOKEN }}
+          VELTRON_USER: ${{ secrets.VELTRON_USER }}
+          VELTRON_TOKEN: ${{ secrets.VELTRON_TOKEN }}
 
           # optional
           GITGAY_USER: ${{ secrets.GITGAY_USER }}
