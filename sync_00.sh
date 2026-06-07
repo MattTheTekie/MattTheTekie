@@ -151,3 +151,36 @@ done
 echo "========================================"
 echo "ALL REPOSITORIES SYNCED SUCCESSFULLY"
 echo "========================================"
+
+
+
+
+
+echo "========================================"
+echo "PUSHING mattthetekie → Codeberg"
+echo "========================================"
+
+single_repo="mattthetekie"
+mirror_path="${WORKDIR}/${single_repo}.git"
+
+rm -rf "$mirror_path"
+
+# Clone the single repo
+if git clone --bare \
+    "https://${GH_TOKEN}@github.com/${GH_USER}/${single_repo}.git" \
+    "$mirror_path"; then
+
+    git -C "$mirror_path" fetch --prune origin || true
+
+    # Add Codeberg remote
+    codeberg_url="https://${CODEBERG_USER}:${CODEBERG_TOKEN}@codeberg.org/${CODEBERG_USER}/${single_repo}.git"
+    git -C "$mirror_path" remote remove codeberg >/dev/null 2>&1 || true
+    git -C "$mirror_path" remote add codeberg "$codeberg_url"
+
+    # Push to Codeberg
+    git -C "$mirror_path" push --mirror codeberg || true
+
+    echo "✔ Successfully pushed mattthetekie → Codeberg"
+else
+    echo "❌ Failed to clone mattthetekie"
+fi
