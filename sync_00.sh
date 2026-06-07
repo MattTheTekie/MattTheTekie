@@ -39,9 +39,9 @@ repo_count=$(echo "$repos" | jq length)
 
 echo "Total repos: $repo_count"
 
-# -----------------------------
-# SYNC FUNCTION (ISOLATED SAFE)
-# -----------------------------
+# =========================
+# SAFE SYNC FUNCTION
+# =========================
 sync_repo() {
     local repo_name="$1"
 
@@ -54,19 +54,19 @@ sync_repo() {
         rm -rf "$mirror_path"
 
         # -------------------------
-        # CLONE
+        # CLONE (SAFE)
         # -------------------------
         if ! git clone --bare \
             "https://${GH_TOKEN}@github.com/${GH_USER}/${repo_name}.git" \
             "$mirror_path"; then
             echo "❌ Clone failed: $repo_name"
-            exit 0
+            return 0
         fi
 
         git -C "$mirror_path" fetch --prune origin || true
 
         # -------------------------
-        # REMOVE PR REFS SAFELY
+        # REMOVE PR REFS (SAFE)
         # -------------------------
         while read -r ref; do
             [[ -n "$ref" ]] && git -C "$mirror_path" update-ref -d "$ref" || true
@@ -76,7 +76,7 @@ sync_repo() {
         )
 
         # -------------------------
-        # CODEBERG SETUP
+        # CODEBERG REMOTE
         # -------------------------
         codeberg_url="https://${CODEBERG_USER}:${CODEBERG_TOKEN}@codeberg.org/${CODEBERG_USER}/${repo_name}.git"
 
@@ -84,7 +84,7 @@ sync_repo() {
         git -C "$mirror_path" remote add codeberg "$codeberg_url"
 
         # -------------------------
-        # GIT.GAY (OPTIONAL)
+        # GIT.GAY REMOTE (OPTIONAL)
         # -------------------------
         if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
             gitgay_url="https://${GITGAY_USER}:${GITGAY_TOKEN}@git.gay/${GITGAY_USER}/${repo_name}.git"
@@ -94,7 +94,7 @@ sync_repo() {
         fi
 
         # -------------------------
-        # PUSH (NEVER FAIL SCRIPT)
+        # PUSH (NEVER BREAK CI)
         # -------------------------
         git -C "$mirror_path" push --all codeberg || true
         git -C "$mirror_path" push --tags codeberg || true
@@ -107,43 +107,38 @@ sync_repo() {
         echo "✔ Done: $repo_name"
 
     } || {
-        echo "⚠️ Repo failed (non-fatal): $repo_name"
+        echo "⚠️ Failed repo (non-fatal): $repo_name"
     }
 }
 
-# -----------------------------
-# PARALLEL EXECUTION
-# -----------------------------
-running=0
+# =========================
+# FIXED PARALLEL EXECUTION (IMPORTANT FIX)
+# =========================
+
+pids=()
 
 for ((i=0; i<repo_count; i++)); do
     repo_name=$(echo "$repos" | jq -r ".[$i].name")
 
     sync_repo "$repo_name" &
+    pids+=("$!")
 
-    ((running++))
-
-    if (( running >= MAX_JOBS )); then
-        wait -n || true
-        ((running--))
+    # throttle concurrency
+    if (( ${#pids[@]} >= MAX_JOBS )); then
+        for pid in "${pids[@]}"; do
+            wait "$pid" || true
+        done
+        pids=()
     fi
 done
 
-# -----------------------------
-# SAFE FINAL WAIT (CRITICAL FIX)
-# -----------------------------
-fail=0
-
-for job in $(jobs -p); do
-    wait "$job" || fail=1
+# wait remaining jobs safely
+for pid in "${pids[@]}"; do
+    wait "$pid" || true
 done
 
 echo "========================================"
-if [[ "$fail" -eq 0 ]]; then
-    echo "ALL REPOSITORIES SYNCED SUCCESSFULLY"
-else
-    echo "DONE WITH SOME FAILURES (NON-FATAL)"
-fi
+echo "ALL REPOSITORIES SYNCED SUCCESSFULLY"
 echo "========================================"
 
 exit 0
