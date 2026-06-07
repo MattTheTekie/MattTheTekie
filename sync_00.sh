@@ -21,7 +21,9 @@ repos='[]'
 page=1
 
 while true; do
-    resp=$(curl -fsSL \
+    resp=$(curl --silent --show-error --fail \
+        --connect-timeout 10 \
+        --max-time 30 \
         -H "Authorization: Bearer ${GH_TOKEN}" \
         "https://api.github.com/user/repos?per_page=100&type=owner&page=${page}")
 
@@ -38,133 +40,131 @@ repo_count=$(echo "$repos" | jq length)
 echo "Total repos: $repo_count"
 
 # =====================================================
-# CREATE CODEBERG REPO (IF MISSING)
+# CODEBERG
 # =====================================================
+
 ensure_codeberg_repo() {
     local name="$1"
     local private="$2"
 
-    status=$(curl -s -o /dev/null -w "%{http_code}" \
+    status=$(curl --silent --connect-timeout 10 --max-time 20 \
+        -o /dev/null -w "%{http_code}" \
         -H "Authorization: token ${CODEBERG_TOKEN}" \
         "https://codeberg.org/api/v1/repos/${CODEBERG_USER}/${name}")
 
     if [[ "$status" == "404" ]]; then
         echo "📦 Creating Codeberg repo: $name"
 
-        curl -fsSL -X POST \
+        curl --silent --show-error --fail \
+            --connect-timeout 10 \
+            --max-time 30 \
+            -X POST \
             -H "Authorization: token ${CODEBERG_TOKEN}" \
             -H "Content-Type: application/json" \
             "https://codeberg.org/api/v1/user/repos" \
-            -d "$(jq -n \
-                --arg name "$name" \
-                --argjson private "$private" \
-                '{name:$name, private:$private}')" \
+            -d "$(jq -n --arg name "$name" --argjson private "$private" '{name:$name, private:$private}')" \
             >/dev/null || true
     fi
 }
 
 # =====================================================
-# CREATE GIT.GAY REPO (IF MISSING)
+# GIT.GAY
 # =====================================================
+
 ensure_gitgay_repo() {
     local name="$1"
     local private="$2"
 
     [[ -z "$GITGAY_USER" || -z "$GITGAY_TOKEN" ]] && return 0
 
-    status=$(curl -s -o /dev/null -w "%{http_code}" \
+    status=$(curl --silent --connect-timeout 10 --max-time 20 \
+        -o /dev/null -w "%{http_code}" \
         -H "Authorization: token ${GITGAY_TOKEN}" \
         "https://git.gay/api/v1/repos/${GITGAY_USER}/${name}")
 
     if [[ "$status" == "404" ]]; then
         echo "📦 Creating git.gay repo: $name"
 
-        curl -fsSL -X POST \
+        curl --silent --show-error --fail \
+            --connect-timeout 10 \
+            --max-time 30 \
+            -X POST \
             -H "Authorization: token ${GITGAY_TOKEN}" \
             -H "Content-Type: application/json" \
             "https://git.gay/api/v1/user/repos" \
-            -d "$(jq -n \
-                --arg name "$name" \
-                --argjson private "$private" \
-                '{name:$name, private:$private}')" \
+            -d "$(jq -n --arg name "$name" --argjson private "$private" '{name:$name, private:$private}')" \
             >/dev/null || true
     fi
 }
 
 # =====================================================
-# SYNC FUNCTION
+# SYNC
 # =====================================================
+
 sync_repo() {
+{
     local repo_name="$1"
     local repo_private="$2"
 
-    {
-        echo "========================================"
-        echo "Syncing: $repo_name"
-        echo "========================================"
+    echo "========================================"
+    echo "Syncing: $repo_name"
+    echo "========================================"
 
-        mirror_path="${WORKDIR}/${repo_name}.git"
-        rm -rf "$mirror_path"
+    mirror_path="${WORKDIR}/${repo_name}.git"
+    rm -rf "$mirror_path"
 
-        # -------------------------
-        # CLONE FROM GITHUB
-        # -------------------------
-        if ! git clone --bare \
-            "https://${GH_TOKEN}@github.com/${GH_USER}/${repo_name}.git" \
-            "$mirror_path"; then
-            echo "❌ Clone failed: $repo_name"
-            return 0
-        fi
+    # Clone
+    if ! git clone --bare \
+        "https://${GH_TOKEN}@github.com/${GH_USER}/${repo_name}.git" \
+        "$mirror_path"; then
+        echo "❌ Clone failed: $repo_name"
+        return 0
+    fi
 
-        git -C "$mirror_path" fetch --prune origin || true
+    git -C "$mirror_path" fetch --prune origin || true
 
-        # -------------------------
-        # CLEAN PR REFS
-        # -------------------------
-        while read -r ref; do
-            [[ -n "$ref" ]] && git -C "$mirror_path" update-ref -d "$ref" || true
-        done < <(
-            git -C "$mirror_path" for-each-ref \
-                --format='%(refname)' refs/pull 2>/dev/null || true
-        )
+    # Clean PR refs
+    while read -r ref; do
+        [[ -n "$ref" ]] && git -C "$mirror_path" update-ref -d "$ref" || true
+    done < <(
+        git -C "$mirror_path" for-each-ref --format='%(refname)' refs/pull 2>/dev/null || true
+    )
 
-        # -------------------------
-        # ENSURE REMOTES EXIST
-        # -------------------------
-        ensure_codeberg_repo "$repo_name" "$repo_private"
-        ensure_gitgay_repo "$repo_name" "$repo_private"
+    # Ensure remotes
+    timeout 25s bash -c "ensure_codeberg_repo '$repo_name' '$repo_private'" || true
+    timeout 25s bash -c "ensure_gitgay_repo '$repo_name' '$repo_private'" || true
 
-        codeberg_url="https://${CODEBERG_USER}:${CODEBERG_TOKEN}@codeberg.org/${CODEBERG_USER}/${repo_name}.git"
-        git -C "$mirror_path" remote remove codeberg >/dev/null 2>&1 || true
-        git -C "$mirror_path" remote add codeberg "$codeberg_url"
+    # Add remotes
+    codeberg_url="https://${CODEBERG_USER}:${CODEBERG_TOKEN}@codeberg.org/${CODEBERG_USER}/${repo_name}.git"
+    git -C "$mirror_path" remote remove codeberg >/dev/null 2>&1 || true
+    git -C "$mirror_path" remote add codeberg "$codeberg_url"
 
-        if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
-            gitgay_url="https://${GITGAY_USER}:${GITGAY_TOKEN}@git.gay/${GITGAY_USER}/${repo_name}.git"
-            git -C "$mirror_path" remote remove gitgay >/dev/null 2>&1 || true
-            git -C "$mirror_path" remote add gitgay "$gitgay_url"
-        fi
+    if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
+        gitgay_url="https://${GITGAY_USER}:${GITGAY_TOKEN}@git.gay/${GITGAY_USER}/${repo_name}.git"
+        git -C "$mirror_path" remote remove gitgay >/dev/null 2>&1 || true
+        git -C "$mirror_path" remote add gitgay "$gitgay_url"
+    fi
 
-        # -------------------------
-        # PUSH (NEVER FAIL)
-        # -------------------------
-        git -C "$mirror_path" push --all codeberg || true
-        git -C "$mirror_path" push --tags codeberg || true
+    # Push (never fail)
+    git -C "$mirror_path" push --all codeberg || true
+    git -C "$mirror_path" push --tags codeberg || true
 
-        if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
-            git -C "$mirror_path" push --all gitgay || true
-            git -C "$mirror_path" push --tags gitgay || true
-        fi
+    if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
+        git -C "$mirror_path" push --all gitgay || true
+        git -C "$mirror_path" push --tags gitgay || true
+    fi
 
-        echo "✔ Done: $repo_name"
+    echo "✔ Done: $repo_name"
 
-    } || {
-        echo "⚠️ Failed repo (non-fatal): $repo_name"
-    }
+} || {
+    echo "⚠️ Failed repo (non-fatal): $repo_name"
+}
 }
 
 # =====================================================
-# PARALLEL EXECUTION (SAFE)
+# PARALLEL EXECUTION
 # =====================================================
+
 pids=()
 
 for ((i=0; i<repo_count; i++)); do
@@ -189,5 +189,3 @@ done
 echo "========================================"
 echo "ALL REPOSITORIES SYNCED SUCCESSFULLY"
 echo "========================================"
-
-exit 0
