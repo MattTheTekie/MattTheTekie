@@ -145,9 +145,13 @@ sync_repo() {
         git -C "$mirror_path" remote add gitgay "$gitgay_url"
     fi
 
-    # Push (never fail)
+# Only push THIS repo to Codeberg
+if [[ "$repo_name" == "mattthetekie" ]]; then
     git -C "$mirror_path" push --all codeberg || true
     git -C "$mirror_path" push --tags codeberg || true
+else
+    echo "⏭ Skipping Codeberg push for $repo_name"
+fi
 
     if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
         git -C "$mirror_path" push --all gitgay || true
