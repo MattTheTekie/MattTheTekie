@@ -24,6 +24,10 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           CODEBERG_USER: ${{ secrets.CODEBERG_USER }}
           CODEBERG_TOKEN: ${{ secrets.CODEBERG_TOKEN }}
+
+          # OPTIONAL (only needed for git.gay)
+          GITGAY_USER: ${{ secrets.GITGAY_USER }}
+          GITGAY_TOKEN: ${{ secrets.GITGAY_TOKEN }}
         run: |
           chmod +x sync_00.sh
           ./sync_00.sh
