@@ -1,0 +1,27 @@
+name: Sync Mirrors
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+
+      - name: Run sync script
+        env:
+          GITHUB_USER: ${{ vars.GH_USER }}
+          CODEBERG_USER: ${{ vars.CODEBERG_USER }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          CODEBERG_TOKEN: ${{ secrets.CODEBERG_TOKEN }}
+        run: |
+          chmod +x sync_00.sh
+          ./sync_00.sh
