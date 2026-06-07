@@ -80,25 +80,33 @@ ensure_veltron_repo() {
     local name="$1"
     local private="$2"
 
+    # Convert GitHub's "true"/"false" to real JSON booleans
+    if [[ "$private" == "true" ]]; then
+        private_bool=true
+    else
+        private_bool=false
+    fi
+
     status=$(curl --silent --connect-timeout 10 --max-time 20 \
         -o /dev/null -w "%{http_code}" \
-        -H "Authorization: token ${VELTRON_TOKEN}" \
+        -H "Authorization: Bearer ${VELTRON_TOKEN}" \
         "https://git.veltron.net/api/v1/repos/${VELTRON_USER}/${name}")
 
     if [[ "$status" == "404" ]]; then
-        echo "📦 Creating git.veltron.net repo: $name"
+        echo "📦 Creating git.veltron.net repo: $name (private=$private_bool)"
 
         curl --silent --show-error --fail \
             --connect-timeout 10 \
             --max-time 30 \
             -X POST \
-            -H "Authorization: token ${VELTRON_TOKEN}" \
+            -H "Authorization: Bearer ${VELTRON_TOKEN}" \
             -H "Content-Type: application/json" \
             "https://git.veltron.net/api/v1/user/repos" \
-            -d "$(jq -n --arg name "$name" --argjson private "$private" '{name:$name, private:$private}')" \
+            -d "$(jq -n --arg name "$name" --argjson private "$private_bool" '{name:$name, private:$private}')" \
             >/dev/null || true
     fi
 }
+
 
 # =====================================================
 # SYNC
@@ -134,9 +142,9 @@ sync_repo() {
     )
 
     # Ensure remotes exist
-    bash -c "ensure_gitgay_repo '$repo_name' '$repo_private'" || true
-    bash -c "ensure_veltron_repo '$repo_name' '$repo_private'" || true
-
+    ensure_gitgay_repo "$repo_name" "$repo_private" || true
+    ensure_veltron_repo "$repo_name" "$repo_private" || true
+    
     # git.gay remote
     if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
         gitgay_url="https://${GITGAY_USER}:${GITGAY_TOKEN}@git.gay/${GITGAY_USER}/${repo_name}.git"
