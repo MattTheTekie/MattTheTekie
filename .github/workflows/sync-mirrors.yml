@@ -2,7 +2,7 @@ name: Sync Mirrors
 
 on:
   schedule:
-    - cron: "*/15 * * * *"  # every 15 minutes
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -16,13 +16,13 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y jq
+          sudo apt-get install -y jq git curl
 
       - name: Run sync script
         env:
-          GITHUB_USER: ${{ vars.GH_USER }}
-          CODEBERG_USER: ${{ vars.CODEBERG_USER }}
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_USER: ${{ secrets.GH_USER }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          CODEBERG_USER: ${{ secrets.CODEBERG_USER }}
           CODEBERG_TOKEN: ${{ secrets.CODEBERG_TOKEN }}
         run: |
           chmod +x sync_00.sh
