@@ -26,7 +26,6 @@ while true; do
         "https://api.github.com/user/repos?per_page=100&type=owner&page=${page}")
 
     count=$(echo "$resp" | jq length)
-
     [[ "$count" -eq 0 ]] && break
 
     repos=$(jq -s 'add' <(echo "$repos") <(echo "$resp"))
@@ -36,30 +35,57 @@ while true; do
 done
 
 repo_count=$(echo "$repos" | jq length)
-
 echo "Total repos: $repo_count"
 
 # =====================================================
-# CREATE CODEBERG REPO IF NOT EXISTS
+# CREATE CODEBERG REPO (IF MISSING)
 # =====================================================
-create_codeberg_repo() {
-    local repo_name="$1"
+ensure_codeberg_repo() {
+    local name="$1"
+    local private="$2"
 
-    exists=$(curl -fsSL \
+    status=$(curl -s -o /dev/null -w "%{http_code}" \
         -H "Authorization: token ${CODEBERG_TOKEN}" \
-        "https://codeberg.org/api/v1/repos/${CODEBERG_USER}/${repo_name}" \
-        | jq -r '.name' 2>/dev/null || true)
+        "https://codeberg.org/api/v1/repos/${CODEBERG_USER}/${name}")
 
-    if [[ -z "$exists" || "$exists" == "null" ]]; then
-        echo "📦 Creating Codeberg repo: $repo_name"
+    if [[ "$status" == "404" ]]; then
+        echo "📦 Creating Codeberg repo: $name"
 
         curl -fsSL -X POST \
             -H "Authorization: token ${CODEBERG_TOKEN}" \
             -H "Content-Type: application/json" \
             "https://codeberg.org/api/v1/user/repos" \
             -d "$(jq -n \
-                --arg name "$repo_name" \
-                --argjson private false \
+                --arg name "$name" \
+                --argjson private "$private" \
+                '{name:$name, private:$private}')" \
+            >/dev/null || true
+    fi
+}
+
+# =====================================================
+# CREATE GIT.GAY REPO (IF MISSING)
+# =====================================================
+ensure_gitgay_repo() {
+    local name="$1"
+    local private="$2"
+
+    [[ -z "$GITGAY_USER" || -z "$GITGAY_TOKEN" ]] && return 0
+
+    status=$(curl -s -o /dev/null -w "%{http_code}" \
+        -H "Authorization: token ${GITGAY_TOKEN}" \
+        "https://git.gay/api/v1/repos/${GITGAY_USER}/${name}")
+
+    if [[ "$status" == "404" ]]; then
+        echo "📦 Creating git.gay repo: $name"
+
+        curl -fsSL -X POST \
+            -H "Authorization: token ${GITGAY_TOKEN}" \
+            -H "Content-Type: application/json" \
+            "https://git.gay/api/v1/user/repos" \
+            -d "$(jq -n \
+                --arg name "$name" \
+                --argjson private "$private" \
                 '{name:$name, private:$private}')" \
             >/dev/null || true
     fi
@@ -70,6 +96,7 @@ create_codeberg_repo() {
 # =====================================================
 sync_repo() {
     local repo_name="$1"
+    local repo_private="$2"
 
     {
         echo "========================================"
@@ -92,7 +119,7 @@ sync_repo() {
         git -C "$mirror_path" fetch --prune origin || true
 
         # -------------------------
-        # REMOVE PR REFS (SAFE)
+        # CLEAN PR REFS
         # -------------------------
         while read -r ref; do
             [[ -n "$ref" ]] && git -C "$mirror_path" update-ref -d "$ref" || true
@@ -102,27 +129,23 @@ sync_repo() {
         )
 
         # -------------------------
-        # CODEBERG SETUP + CREATE REPO
+        # ENSURE REMOTES EXIST
         # -------------------------
-        create_codeberg_repo "$repo_name"
+        ensure_codeberg_repo "$repo_name" "$repo_private"
+        ensure_gitgay_repo "$repo_name" "$repo_private"
 
         codeberg_url="https://${CODEBERG_USER}:${CODEBERG_TOKEN}@codeberg.org/${CODEBERG_USER}/${repo_name}.git"
-
         git -C "$mirror_path" remote remove codeberg >/dev/null 2>&1 || true
         git -C "$mirror_path" remote add codeberg "$codeberg_url"
 
-        # -------------------------
-        # GIT.GAY SETUP (OPTIONAL)
-        # -------------------------
         if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
             gitgay_url="https://${GITGAY_USER}:${GITGAY_TOKEN}@git.gay/${GITGAY_USER}/${repo_name}.git"
-
             git -C "$mirror_path" remote remove gitgay >/dev/null 2>&1 || true
             git -C "$mirror_path" remote add gitgay "$gitgay_url"
         fi
 
         # -------------------------
-        # PUSH SAFELY
+        # PUSH (NEVER FAIL)
         # -------------------------
         git -C "$mirror_path" push --all codeberg || true
         git -C "$mirror_path" push --tags codeberg || true
@@ -146,8 +169,9 @@ pids=()
 
 for ((i=0; i<repo_count; i++)); do
     repo_name=$(echo "$repos" | jq -r ".[$i].name")
+    repo_private=$(echo "$repos" | jq -r ".[$i].private")
 
-    sync_repo "$repo_name" &
+    sync_repo "$repo_name" "$repo_private" &
     pids+=("$!")
 
     if (( ${#pids[@]} >= MAX_JOBS )); then
