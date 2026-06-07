@@ -130,9 +130,9 @@ sync_repo() {
         git -C "$mirror_path" for-each-ref --format='%(refname)' refs/pull 2>/dev/null || true
     )
 
-    # Ensure remotes
-    timeout 25s bash -c "ensure_codeberg_repo '$repo_name' '$repo_private'" || true
-    timeout 25s bash -c "ensure_gitgay_repo '$repo_name' '$repo_private'" || true
+    # Ensure remotes (FIXED: no subshell)
+    timeout 25s ensure_codeberg_repo "$repo_name" "$repo_private" || true
+    timeout 25s ensure_gitgay_repo "$repo_name" "$repo_private" || true
 
     # Add remotes
     codeberg_url="https://${CODEBERG_USER}:${CODEBERG_TOKEN}@codeberg.org/${CODEBERG_USER}/${repo_name}.git"
@@ -145,14 +145,16 @@ sync_repo() {
         git -C "$mirror_path" remote add gitgay "$gitgay_url"
     fi
 
-# Only push THIS repo to Codeberg
-if [[ "$repo_name" == "mattthetekie" ]]; then
-    git -C "$mirror_path" push --all codeberg || true
-    git -C "$mirror_path" push --tags codeberg || true
-else
-    echo "⏭ Skipping Codeberg push for $repo_name"
-fi
+    # Push (ONLY mattthetekie → Codeberg)
+    if [[ "$repo_name" == "mattthetekie" ]]; then
+        echo "⬆️  Pushing $repo_name to Codeberg"
+        git -C "$mirror_path" push --all codeberg || true
+        git -C "$mirror_path" push --tags codeberg || true
+    else
+        echo "⏭ Skipping Codeberg push for $repo_name"
+    fi
 
+    # Push ALL repos to git.gay
     if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
         git -C "$mirror_path" push --all gitgay || true
         git -C "$mirror_path" push --tags gitgay || true
