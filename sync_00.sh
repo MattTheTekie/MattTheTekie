@@ -6,7 +6,6 @@ set -euo pipefail
 : "${CODEBERG_USER:?Missing CODEBERG_USER}"
 : "${CODEBERG_TOKEN:?Missing CODEBERG_TOKEN}"
 
-# optional git.gay
 GITGAY_USER="${GITGAY_USER:-}"
 GITGAY_TOKEN="${GITGAY_TOKEN:-}"
 
@@ -18,7 +17,7 @@ MAX_JOBS=5
 
 echo "Fetching GitHub repositories..."
 
-github_repos='[]'
+repos='[]'
 page=1
 
 while true; do
@@ -30,33 +29,45 @@ while true; do
 
     [[ "$count" -eq 0 ]] && break
 
-    github_repos=$(jq -s 'add' <(echo "$github_repos") <(echo "$resp"))
+    repos=$(jq -s 'add' <(echo "$repos") <(echo "$resp"))
 
     echo "Fetched page $page ($count repos)"
     ((page++))
 done
 
-repo_count=$(echo "$github_repos" | jq length)
+repo_count=$(echo "$repos" | jq length)
 
-echo "Total repositories: $repo_count"
+echo "Total repos: $repo_count"
 
 sync_repo() {
     repo_name="$1"
 
-    echo "======================================"
+    echo "===================================="
     echo "Syncing: $repo_name"
-    echo "======================================"
+    echo "===================================="
 
     mirror_path="${WORKDIR}/${repo_name}.git"
     rm -rf "$mirror_path"
 
-    # clone fresh mirror from GitHub
-    git clone --mirror \
+    # -------------------------
+    # CLONE (NO PR REFS PROBLEM)
+    # -------------------------
+    git clone --bare \
         "https://${GH_TOKEN}@github.com/${GH_USER}/${repo_name}.git" \
         "$mirror_path"
 
+    # fetch clean state
+    git -C "$mirror_path" fetch --prune origin
+
     # -------------------------
-    # Codeberg remote
+    # REMOVE GITHUB PULL REQUEST REFS
+    # -------------------------
+    git -C "$mirror_path" for-each-ref refs/pull | while read -r ref; do
+        git -C "$mirror_path" update-ref -d "$ref" || true
+    done
+
+    # -------------------------
+    # CODEBERG
     # -------------------------
     codeberg_url="https://${CODEBERG_USER}:${CODEBERG_TOKEN}@codeberg.org/${CODEBERG_USER}/${repo_name}.git"
 
@@ -64,7 +75,7 @@ sync_repo() {
     git -C "$mirror_path" remote add codeberg "$codeberg_url"
 
     # -------------------------
-    # git.gay remote (optional)
+    # GIT.GAY (OPTIONAL)
     # -------------------------
     if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
         gitgay_url="https://${GITGAY_USER}:${GITGAY_TOKEN}@git.gay/${GITGAY_USER}/${repo_name}.git"
@@ -74,12 +85,14 @@ sync_repo() {
     fi
 
     # -------------------------
-    # PUSH ALL MIRRORS
+    # PUSH CLEAN REFS ONLY
     # -------------------------
-    git -C "$mirror_path" push --mirror codeberg
+    git -C "$mirror_path" push --all codeberg
+    git -C "$mirror_path" push --tags codeberg
 
     if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
-        git -C "$mirror_path" push --mirror gitgay
+        git -C "$mirror_path" push --all gitgay
+        git -C "$mirror_path" push --tags gitgay
     fi
 
     echo "Done: $repo_name"
@@ -88,7 +101,7 @@ sync_repo() {
 running=0
 
 for ((i=0; i<repo_count; i++)); do
-    repo_name=$(echo "$github_repos" | jq -r ".[$i].name")
+    repo_name=$(echo "$repos" | jq -r ".[$i].name")
 
     sync_repo "$repo_name" &
 
