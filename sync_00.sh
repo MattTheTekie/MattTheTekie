@@ -44,7 +44,7 @@ echo "Total repos: $repo_count"
 # =====================================================
 
 ensure_codeberg_repo() {
-    local name="$1"
+    local name="MattTheTekie"
     local private="$2"
 
     status=$(curl --silent --connect-timeout 10 --max-time 20 \
