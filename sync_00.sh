@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-: "${GITHUB_USER:?Missing GITHUB_USER}"
-: "${GITHUB_TOKEN:?Missing GITHUB_TOKEN}"
+: "${GH_USER:?Missing GITHUB_USER}"
+: "${GH_TOKEN:?Missing GITHUB_TOKEN}"
 : "${CODEBERG_USER:?Missing CODEBERG_USER}"
 : "${CODEBERG_TOKEN:?Missing CODEBERG_TOKEN}"
 
@@ -17,7 +17,7 @@ page=1
 
 while true; do
     resp=$(curl -fsSL \
-        -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+        -H "Authorization: Bearer ${GH_TOKEN}" \
         "https://api.github.com/user/repos?per_page=100&type=owner&page=${page}")
 
     count=$(echo "$resp" | jq length)
@@ -67,7 +67,7 @@ for ((i=0; i<repo_count; i++)); do
 
     echo "Cloning mirror..."
     git clone --mirror \
-        "https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_USER}/${repo_name}.git" \
+        "https://${GH_USER}:${GH_TOKEN}@github.com/${GH_USER}/${repo_name}.git" \
         "$mirror_path"
 
     codeberg_url="https://${CODEBERG_USER}:${CODEBERG_TOKEN}@codeberg.org/${CODEBERG_USER}/${repo_name}.git"
