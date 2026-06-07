@@ -6,11 +6,12 @@ set -euo pipefail
 : "${CODEBERG_USER:?Missing CODEBERG_USER}"
 : "${CODEBERG_TOKEN:?Missing CODEBERG_TOKEN}"
 
-# OPTIONAL: git.gay credentials (set if needed)
-: "${GITGAY_USER:=}"
-: "${GITGAY_TOKEN:=}"
+# optional git.gay
+GITGAY_USER="${GITGAY_USER:-}"
+GITGAY_TOKEN="${GITGAY_TOKEN:-}"
 
 WORKDIR="./mirrors"
+rm -rf "$WORKDIR"
 mkdir -p "$WORKDIR"
 
 MAX_JOBS=5
@@ -37,16 +38,19 @@ done
 
 repo_count=$(echo "$github_repos" | jq length)
 
-echo "Total repos: $repo_count"
+echo "Total repositories: $repo_count"
 
 sync_repo() {
     repo_name="$1"
 
-    echo ">>> Syncing $repo_name"
+    echo "======================================"
+    echo "Syncing: $repo_name"
+    echo "======================================"
 
     mirror_path="${WORKDIR}/${repo_name}.git"
     rm -rf "$mirror_path"
 
+    # clone fresh mirror from GitHub
     git clone --mirror \
         "https://${GH_TOKEN}@github.com/${GH_USER}/${repo_name}.git" \
         "$mirror_path"
@@ -78,7 +82,7 @@ sync_repo() {
         git -C "$mirror_path" push --mirror gitgay
     fi
 
-    echo "<<< Done $repo_name"
+    echo "Done: $repo_name"
 }
 
 running=0
