@@ -109,7 +109,7 @@ sync_repo() {
     echo "========================================"
     echo "Syncing: $repo_name"
     echo "========================================"
-
+    mirror_path1="${WORKDIR}/MattThetekie.git"
     mirror_path="${WORKDIR}/${repo_name}.git"
     rm -rf "$mirror_path"
 
@@ -131,13 +131,13 @@ sync_repo() {
     )
 
     # Ensure remotes
-    timeout 25s bash -c "ensure_codeberg_repo '$repo_name' '$repo_private'" || true
+    timeout 25s bash -c "ensure_codeberg_repo 'MattTheTekie' '$repo_private'" || true
     timeout 25s bash -c "ensure_gitgay_repo '$repo_name' '$repo_private'" || true
 
     # Add remotes
-    codeberg_url="https://${CODEBERG_USER}:${CODEBERG_TOKEN}@codeberg.org/${CODEBERG_USER}/${repo_name}.git"
-    git -C "$mirror_path" remote remove codeberg >/dev/null 2>&1 || true
-    git -C "$mirror_path" remote add codeberg "$codeberg_url"
+    codeberg_url="https://${CODEBERG_USER}:${CODEBERG_TOKEN}@codeberg.org/${CODEBERG_USER}/MattTheTekie.git"
+    git -C "$mirror_path1" remote remove codeberg >/dev/null 2>&1 || true
+    git -C "$mirror_path1" remote add codeberg "$codeberg_url"
 
     if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
         gitgay_url="https://${GITGAY_USER}:${GITGAY_TOKEN}@git.gay/${GITGAY_USER}/${repo_name}.git"
@@ -146,8 +146,8 @@ sync_repo() {
     fi
 
     # Push (never fail)
-    git -C "$mirror_path" push --all codeberg || true
-    git -C "$mirror_path" push --tags codeberg || true
+    git -C "$mirror_path1" push --all codeberg || true
+    git -C "$mirror_path1" push --tags codeberg || true
 
     if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
         git -C "$mirror_path" push --all gitgay || true
