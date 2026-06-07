@@ -7,8 +7,9 @@ set -euo pipefail
 : "${CODEBERG_TOKEN:?Missing CODEBERG_TOKEN}"
 
 WORKDIR="./mirrors"
-rm -rf "$WORKDIR"
 mkdir -p "$WORKDIR"
+
+MAX_JOBS=5   # adjust (3–10 is safe in GitHub Actions)
 
 echo "Fetching GitHub repositories..."
 
@@ -22,76 +23,65 @@ while true; do
 
     count=$(echo "$resp" | jq length)
 
-    if [[ "$count" -eq 0 ]]; then
-        break
-    fi
+    [[ "$count" -eq 0 ]] && break
 
     github_repos=$(jq -s 'add' <(echo "$github_repos") <(echo "$resp"))
 
-    echo "Fetched GitHub page $page ($count repos)"
+    echo "Fetched page $page ($count repos)"
     ((page++))
 done
 
-echo "Fetching Codeberg repositories..."
-
-codeberg_repos=$(curl -fsSL \
-    -H "Authorization: token ${CODEBERG_TOKEN}" \
-    "https://codeberg.org/api/v1/user/repos?limit=1000")
-
 repo_count=$(echo "$github_repos" | jq length)
 
-echo "Total GitHub repos: $repo_count"
+echo "Total repos: $repo_count"
 
-for ((i=0; i<repo_count; i++)); do
-    repo_name=$(echo "$github_repos" | jq -r ".[$i].name")
-    repo_private=$(echo "$github_repos" | jq -r ".[$i].private")
+# -------------------------------
+# FUNCTION: sync one repo
+# -------------------------------
+sync_repo() {
+    repo_name="$1"
+    repo_private="$2"
 
-    echo
-    echo "========================================"
-    echo "Syncing: $repo_name"
-    echo "========================================"
-
-    exists=$(echo "$codeberg_repos" | jq -r --arg n "$repo_name" '
-        .[] | select(.name == $n) | .name
-    ' | head -n1)
-
-    if [[ -z "$exists" ]]; then
-        echo "Creating repo on Codeberg..."
-
-        curl -fsSL -X POST \
-            -H "Authorization: token ${CODEBERG_TOKEN}" \
-            -H "Content-Type: application/json" \
-            https://codeberg.org/api/v1/user/repos \
-            -d "$(jq -n \
-                --arg name "$repo_name" \
-                --argjson private "$repo_private" \
-                '{name:$name, private:$private}')" >/dev/null
-
-        echo "Repository created."
-    else
-        echo "Repository already exists."
-    fi
+    echo ">>> Syncing $repo_name"
 
     mirror_path="${WORKDIR}/${repo_name}.git"
 
-    echo "Cloning fresh mirror..."
+    # Always fresh clone (safe in CI)
+    rm -rf "$mirror_path"
+
     git clone --mirror \
         "https://${GH_TOKEN}@github.com/${GH_USER}/${repo_name}.git" \
         "$mirror_path"
 
     codeberg_url="https://${CODEBERG_USER}:${CODEBERG_TOKEN}@codeberg.org/${CODEBERG_USER}/${repo_name}.git"
 
-    if git -C "$mirror_path" remote get-url codeberg >/dev/null 2>&1; then
-        git -C "$mirror_path" remote set-url codeberg "$codeberg_url"
-    else
-        git -C "$mirror_path" remote add codeberg "$codeberg_url"
-    fi
+    git -C "$mirror_path" remote remove codeberg >/dev/null 2>&1 || true
+    git -C "$mirror_path" remote add codeberg "$codeberg_url"
 
-    echo "Pushing mirror to Codeberg..."
     git -C "$mirror_path" push --mirror codeberg
 
-    echo "Done: $repo_name"
+    echo "<<< Done $repo_name"
+}
+
+# -------------------------------
+# PARALLEL EXECUTION
+# -------------------------------
+running=0
+
+for ((i=0; i<repo_count; i++)); do
+    repo_name=$(echo "$github_repos" | jq -r ".[$i].name")
+    repo_private=$(echo "$github_repos" | jq -r ".[$i].private")
+
+    sync_repo "$repo_name" "$repo_private" &
+
+    ((running++))
+
+    if (( running >= MAX_JOBS )); then
+        wait -n   # wait for any job to finish
+        ((running--))
+    fi
 done
 
-echo
+wait
+
 echo "All repositories synced successfully."
