@@ -10,22 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install dependencies
+      - name: Install deps
         run: |
           sudo apt-get update
           sudo apt-get install -y jq git curl
 
-      - name: Run sync script
+      - name: Run sync
         env:
           GH_USER: ${{ secrets.GH_USER }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           CODEBERG_USER: ${{ secrets.CODEBERG_USER }}
           CODEBERG_TOKEN: ${{ secrets.CODEBERG_TOKEN }}
 
-          # OPTIONAL (only needed for git.gay)
+          # optional
           GITGAY_USER: ${{ secrets.GITGAY_USER }}
           GITGAY_TOKEN: ${{ secrets.GITGAY_TOKEN }}
         run: |
