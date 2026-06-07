@@ -39,9 +39,35 @@ repo_count=$(echo "$repos" | jq length)
 
 echo "Total repos: $repo_count"
 
-# =========================
-# SAFE SYNC FUNCTION
-# =========================
+# =====================================================
+# CREATE CODEBERG REPO IF NOT EXISTS
+# =====================================================
+create_codeberg_repo() {
+    local repo_name="$1"
+
+    exists=$(curl -fsSL \
+        -H "Authorization: token ${CODEBERG_TOKEN}" \
+        "https://codeberg.org/api/v1/repos/${CODEBERG_USER}/${repo_name}" \
+        | jq -r '.name' 2>/dev/null || true)
+
+    if [[ -z "$exists" || "$exists" == "null" ]]; then
+        echo "📦 Creating Codeberg repo: $repo_name"
+
+        curl -fsSL -X POST \
+            -H "Authorization: token ${CODEBERG_TOKEN}" \
+            -H "Content-Type: application/json" \
+            "https://codeberg.org/api/v1/user/repos" \
+            -d "$(jq -n \
+                --arg name "$repo_name" \
+                --argjson private false \
+                '{name:$name, private:$private}')" \
+            >/dev/null || true
+    fi
+}
+
+# =====================================================
+# SYNC FUNCTION
+# =====================================================
 sync_repo() {
     local repo_name="$1"
 
@@ -54,7 +80,7 @@ sync_repo() {
         rm -rf "$mirror_path"
 
         # -------------------------
-        # CLONE (SAFE)
+        # CLONE FROM GITHUB
         # -------------------------
         if ! git clone --bare \
             "https://${GH_TOKEN}@github.com/${GH_USER}/${repo_name}.git" \
@@ -76,15 +102,17 @@ sync_repo() {
         )
 
         # -------------------------
-        # CODEBERG REMOTE
+        # CODEBERG SETUP + CREATE REPO
         # -------------------------
+        create_codeberg_repo "$repo_name"
+
         codeberg_url="https://${CODEBERG_USER}:${CODEBERG_TOKEN}@codeberg.org/${CODEBERG_USER}/${repo_name}.git"
 
         git -C "$mirror_path" remote remove codeberg >/dev/null 2>&1 || true
         git -C "$mirror_path" remote add codeberg "$codeberg_url"
 
         # -------------------------
-        # GIT.GAY REMOTE (OPTIONAL)
+        # GIT.GAY SETUP (OPTIONAL)
         # -------------------------
         if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
             gitgay_url="https://${GITGAY_USER}:${GITGAY_TOKEN}@git.gay/${GITGAY_USER}/${repo_name}.git"
@@ -94,7 +122,7 @@ sync_repo() {
         fi
 
         # -------------------------
-        # PUSH (NEVER BREAK CI)
+        # PUSH SAFELY
         # -------------------------
         git -C "$mirror_path" push --all codeberg || true
         git -C "$mirror_path" push --tags codeberg || true
@@ -111,10 +139,9 @@ sync_repo() {
     }
 }
 
-# =========================
-# FIXED PARALLEL EXECUTION (IMPORTANT FIX)
-# =========================
-
+# =====================================================
+# PARALLEL EXECUTION (SAFE)
+# =====================================================
 pids=()
 
 for ((i=0; i<repo_count; i++)); do
@@ -123,7 +150,6 @@ for ((i=0; i<repo_count; i++)); do
     sync_repo "$repo_name" &
     pids+=("$!")
 
-    # throttle concurrency
     if (( ${#pids[@]} >= MAX_JOBS )); then
         for pid in "${pids[@]}"; do
             wait "$pid" || true
@@ -132,7 +158,6 @@ for ((i=0; i<repo_count; i++)); do
     fi
 done
 
-# wait remaining jobs safely
 for pid in "${pids[@]}"; do
     wait "$pid" || true
 done
