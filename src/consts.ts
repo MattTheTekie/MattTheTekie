@@ -49,7 +49,7 @@ export const OTHER_LINKS = [
     name: 'Buy me a coffee'
   },
   {
-    link: 'https://mattthetekie.substack.com/podcast',
+    link: 'https://podcast.veltron.net',
     name: 'Veltron Network Podcast'
   }
 ]
