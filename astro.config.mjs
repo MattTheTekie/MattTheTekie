@@ -29,6 +29,7 @@ function safeSitemap() {
 
 // https://astro.build/config
 export default defineConfig({
+  outDir: '../compiled_websites/MattTheTekie',
   site: 'https://home.veltron.net',
   integrations: [
     mdx({ extendMarkdownConfig: true }),
