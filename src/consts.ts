@@ -41,8 +41,8 @@ export const SOCIAL = [
 ]
 export const OTHER_LINKS = [
   {
-    name: 'Hackerlab',
-    link: 'https://hackerlab.veltron.net'
+    name: 'The Veltron Network',
+    link: 'http://www.veltron.net'
   },
   {
     link: 'http://www.veltron.net/donate.html',
