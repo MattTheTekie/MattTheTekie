@@ -1,5 +1,5 @@
 export const SITE_TITLE = 'MattTheTekie'
-export const SITE_DESCRIPTION = 'Welcome to my homepage. Im the creator of the Veltron Network podcast series, a cybersecurity geek, and a Linux nerd.'
+export const SITE_DESCRIPTION = 'Welcome to my homepage. Im the Administrator the Veltron Network, an aspiring content creator, a cybersecurity geek, and a Linux nerd.'
 
 export const NAME = 'MattTheTekie'
 export const ROLE = 'Linux nerd'
