@@ -1,0 +1,74 @@
+import cv2
+import numpy as np
+import os
+
+def convert_full_rle(input_path, output_path):
+    cap = cv2.VideoCapture(input_path)
+    if not cap.isOpened():
+        return
+
+    width, height = 64, 32
+    target_fps = 10
+    source_fps = cap.get(cv2.CAP_PROP_FPS)
+    hop = max(1, round(source_fps / target_fps))
+    
+    all_frames = []
+    count = 0
+
+    print("processing...")
+    while cap.isOpened():
+        ret, frame = cap.read()
+        if not ret: break
+        
+        if count % hop == 0:
+            gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+            resized = cv2.resize(gray, (width, height), interpolation=cv2.INTER_AREA)
+            _, binary = cv2.threshold(resized, 127, 255, cv2.THRESH_BINARY)
+            
+            flat = binary.flatten()
+            
+            # RLE compression
+            compressed = []
+            if len(flat) > 0:
+                curr_color = flat[0]
+                run_len = 0
+                for pixel in flat:
+                    if pixel == curr_color and run_len < 255:
+                        run_len += 1
+                    else:
+                        compressed.append(run_len)
+                        compressed.append(1 if curr_color == 255 else 0)
+                        curr_color = pixel
+                        run_len = 1
+                compressed.append(run_len)
+                compressed.append(1 if curr_color == 255 else 0)
+            
+            all_frames.append(compressed)
+        count += 1
+
+    cap.release()
+
+    # write to cpp header
+    with open(output_path, 'w') as f:
+        f.write("#include <pgmspace.h>\n\n")
+        f.write(f"const int totalFrames = {len(all_frames)};\n\n")
+        
+        for i, frame in enumerate(all_frames):
+            f.write(f"const unsigned char frame_{i}[] PROGMEM = {{{', '.join(map(str, frame))}}};\n")
+            f.write(f"const int size_{i} = {len(frame)};\n")
+
+        f.write("\nconst unsigned char* const video_data[] PROGMEM = {\n")
+        for i in range(len(all_frames)):
+            f.write(f"  frame_{i},\n")
+        f.write("};\n\n")
+        
+        f.write("const int frame_sizes[] PROGMEM = {\n")
+        for i in range(len(all_frames)):
+            f.write(f"  size_{i},\n")
+        f.write("};\n")
+
+    print(f"created {output_path} with {len(all_frames)} frames.")
+
+if __name__ == "__main__":
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    convert_full_rle(os.path.join(script_dir, 'vid.mp4'), os.path.join(script_dir, 'video_data.h'))
