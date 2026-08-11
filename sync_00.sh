@@ -1,16 +1,14 @@
+```bash
 #!/usr/bin/env bash
 set -euo pipefail
 
 : "${GH_USER:?Missing GH_USER}"
 : "${GH_TOKEN:?Missing GH_TOKEN}"
-: "${CODEBERG_USER:?Missing CODEBERG_USER}"
-: "${CODEBERG_TOKEN:?Missing CODEBERG_TOKEN}"
+: "${VELTRON_USER:?Missing VELTRON_USER}"
+: "${VELTRON_TOKEN:?Missing VELTRON_TOKEN}"
 
 GITGAY_USER="${GITGAY_USER:-}"
 GITGAY_TOKEN="${GITGAY_TOKEN:-}"
-
-: "${VELTRON_USER:?Missing VELTRON_USER}"
-: "${VELTRON_TOKEN:?Missing VELTRON_TOKEN}"
 
 WORKDIR="./mirrors"
 rm -rf "$WORKDIR"
@@ -44,13 +42,17 @@ echo "Total repos: $repo_count"
 
 # =====================================================
 # GIT.GAY
+# Only mattthetekie is synced to Git.Gay
 # =====================================================
 
 ensure_gitgay_repo() {
     local name="$1"
     local private="$2"
 
+    [[ "$name" != "mattthetekie" ]] && return 0
     [[ -z "$GITGAY_USER" || -z "$GITGAY_TOKEN" ]] && return 0
+
+    local status
 
     status=$(curl --silent --connect-timeout 10 --max-time 20 \
         -o /dev/null -w "%{http_code}" \
@@ -67,7 +69,10 @@ ensure_gitgay_repo() {
             -H "Authorization: token ${GITGAY_TOKEN}" \
             -H "Content-Type: application/json" \
             "https://git.gay/api/v1/user/repos" \
-            -d "$(jq -n --arg name "$name" --argjson private "$private" '{name:$name, private:$private}')" \
+            -d "$(jq -n \
+                --arg name "$name" \
+                --argjson private "$private" \
+                '{name:$name, private:$private}')" \
             >/dev/null || true
     fi
 }
@@ -80,12 +85,15 @@ ensure_veltron_repo() {
     local name="$1"
     local private="$2"
 
-    # Convert GitHub's "true"/"false" to real JSON booleans
+    local private_bool
+
     if [[ "$private" == "true" ]]; then
         private_bool=true
     else
         private_bool=false
     fi
+
+    local status
 
     status=$(curl --silent --connect-timeout 10 --max-time 20 \
         -o /dev/null -w "%{http_code}" \
@@ -102,11 +110,13 @@ ensure_veltron_repo() {
             -H "Authorization: Bearer ${VELTRON_TOKEN}" \
             -H "Content-Type: application/json" \
             "https://git.veltron.net/api/v1/user/repos" \
-            -d "$(jq -n --arg name "$name" --argjson private "$private_bool" '{name:$name, private:$private}')" \
+            -d "$(jq -n \
+                --arg name "$name" \
+                --argjson private "$private_bool" \
+                '{name:$name, private:$private}')" \
             >/dev/null || true
     fi
 }
-
 
 # =====================================================
 # SYNC
@@ -124,7 +134,7 @@ sync_repo() {
     mirror_path="${WORKDIR}/${repo_name}.git"
     rm -rf "$mirror_path"
 
-    # Clone
+    # Clone from GitHub
     if ! git clone --bare \
         "https://${GH_TOKEN}@github.com/${GH_USER}/${repo_name}.git" \
         "$mirror_path"; then
@@ -136,30 +146,60 @@ sync_repo() {
 
     # Clean PR refs
     while read -r ref; do
-        [[ -n "$ref" ]] && git -C "$mirror_path" update-ref -d "$ref" || true
+        [[ -n "$ref" ]] && \
+            git -C "$mirror_path" update-ref -d "$ref" || true
     done < <(
-        git -C "$mirror_path" for-each-ref --format='%(refname)' refs/pull 2>/dev/null || true
+        git -C "$mirror_path" \
+            for-each-ref \
+            --format='%(refname)' \
+            refs/pull 2>/dev/null || true
     )
 
-    # Ensure remotes exist
-    ensure_gitgay_repo "$repo_name" "$repo_private" || true
-    ensure_veltron_repo "$repo_name" "$repo_private" || true
-    
-    # git.gay remote
-    if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
-        gitgay_url="https://${GITGAY_USER}:${GITGAY_TOKEN}@git.gay/${GITGAY_USER}/${repo_name}.git"
-        git -C "$mirror_path" remote remove gitgay >/dev/null 2>&1 || true
-        git -C "$mirror_path" remote add gitgay "$gitgay_url"
-        git -C "$mirror_path" push --all gitgay || true
-        git -C "$mirror_path" push --tags gitgay || true
+    # =================================================
+    # GIT.GAY
+    # ONLY mattthetekie
+    # =================================================
+
+    if [[ "$repo_name" == "mattthetekie" ]]; then
+        ensure_gitgay_repo "$repo_name" "$repo_private" || true
+
+        if [[ -n "$GITGAY_USER" && -n "$GITGAY_TOKEN" ]]; then
+            echo "🚀 Pushing $repo_name → Git.Gay"
+
+            gitgay_url="https://${GITGAY_USER}:${GITGAY_TOKEN}@git.gay/${GITGAY_USER}/${repo_name}.git"
+
+            git -C "$mirror_path" \
+                remote remove gitgay >/dev/null 2>&1 || true
+
+            git -C "$mirror_path" \
+                remote add gitgay "$gitgay_url"
+
+            git -C "$mirror_path" \
+                push --mirror gitgay || true
+
+            echo "✔ Git.Gay sync complete: $repo_name"
+        fi
     fi
 
-    # veltron remote
+    # =================================================
+    # VELTRON
+    # All repositories
+    # =================================================
+
+    ensure_veltron_repo "$repo_name" "$repo_private" || true
+
     veltron_url="https://${VELTRON_USER}:${VELTRON_TOKEN}@git.veltron.net/${VELTRON_USER}/${repo_name}.git"
-    git -C "$mirror_path" remote remove veltron >/dev/null 2>&1 || true
-    git -C "$mirror_path" remote add veltron "$veltron_url"
-    git -C "$mirror_path" push --all veltron || true
-    git -C "$mirror_path" push --tags veltron || true
+
+    git -C "$mirror_path" \
+        remote remove veltron >/dev/null 2>&1 || true
+
+    git -C "$mirror_path" \
+        remote add veltron "$veltron_url"
+
+    echo "🚀 Pushing $repo_name → git.veltron.net"
+
+    git -C "$mirror_path" \
+        push --mirror veltron || true
 
     echo "✔ Done: $repo_name"
 
@@ -194,35 +234,9 @@ for pid in "${pids[@]}"; do
 done
 
 echo "========================================"
-echo "ALL REPOSITORIES SYNCED SUCCESSFULLY"
+echo "ALL REPOSITORIES SYNCED TO VELTRON"
+echo "mattthetekie ALSO SYNCED TO GIT.GAY"
 echo "========================================"
+```
 
-# =====================================================
-# SPECIAL: mattthetekie → Codeberg
-# =====================================================
-
-echo "========================================"
-echo "PUSHING mattthetekie → Codeberg"
-echo "========================================"
-
-single_repo="mattthetekie"
-mirror_path="${WORKDIR}/${single_repo}.git"
-
-rm -rf "$mirror_path"
-
-if git clone --bare \
-    "https://${GH_TOKEN}@github.com/${GH_USER}/${single_repo}.git" \
-    "$mirror_path"; then
-
-    git -C "$mirror_path" fetch --prune origin || true
-
-    codeberg_url="https://${CODEBERG_USER}:${CODEBERG_TOKEN}@codeberg.org/${CODEBERG_USER}/${single_repo}.git"
-    git -C "$mirror_path" remote remove codeberg >/dev/null 2>&1 || true
-    git -C "$mirror_path" remote add codeberg "$codeberg_url"
-
-    git -C "$mirror_path" push --mirror codeberg || true
-
-    echo "✔ Successfully pushed mattthetekie → Codeberg"
-else
-    echo "❌ Failed to clone mattthetekie"
-fi
+This version has **no Codeberg credentials, API calls, remote, or push logic**. `mattthetekie` goes to Git.Gay, while **all GitHub-owned repositories continue going to Veltron**.
