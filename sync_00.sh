@@ -1,4 +1,3 @@
-```bash
 #!/usr/bin/env bash
 set -euo pipefail
 
@@ -237,6 +236,3 @@ echo "========================================"
 echo "ALL REPOSITORIES SYNCED TO VELTRON"
 echo "mattthetekie ALSO SYNCED TO GIT.GAY"
 echo "========================================"
-```
-
-This version has **no Codeberg credentials, API calls, remote, or push logic**. `mattthetekie` goes to Git.Gay, while **all GitHub-owned repositories continue going to Veltron**.
