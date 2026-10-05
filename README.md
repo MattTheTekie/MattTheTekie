@@ -40,7 +40,7 @@
 
 ## 💻 Working Environment
 [![Android 16](https://img.shields.io/badge/Android%2016-3ddc84?style=flat&logo=android&logoColor=ffffff)](https://www.android.com/android-16/)<br>
-[![Windows 11 Enterprise IoT LTSC](https://custom-icon-badges.demolab.com/badge/Windows%2011-00adef?style=flat&logo=windows11&logoColor=ffffff)](https://www.microsoft.com/en-us/software-download/windows11)<br>
+[![Windows 11 Enterprise IoT LTSC](https://custom-icon-badges.demolab.com/badge/Windows%2011%IoT-00adef?style=flat&logo=windows11&logoColor=ffffff)](https://massgrave.dev/windows_ltsc_links#download-links)<br>
 [![Linux Mint](https://img.shields.io/badge/Linux%20Mint-Mint?logo=linux-mint&logoColor=fff&style=flat)](https://linuxmint.com/)<br>
 [![CachyOS](https://img.shields.io/badge/EndeavourOS-1793D1?logo=endeavouros&logoColor=purple&style=flat)](https://endeavouros.com)<br>
 [![Dragon Linux](https://img.shields.io/badge/Manjaro%20Linux-1793D1?logo=manjaro&logoColor=fff&style=flat)](https://manjaro.org/)<br>
