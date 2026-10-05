@@ -31,7 +31,7 @@
    I'm a Linux nerd with a strong focus in reverse engineering. I'm the Administrator the Veltron Network, and an aspiring content creator. I maintain scripts for various projects, and work on infrastructure as a hobby. In my free time, I indulge in maintaining infrastructure, ricing, hardware mods, gaming, creating Odysee exclusive content, and coding personal projects. I'm dedicated to becoming a pentester, and I am currently exploring more around the stacks in persuit of my goal. 
  - 💻 Reverse engineering.
  - 🌐 Maintaining the Veltron network.
- - ⌨️ Former Maintainer of the [[**Suyu**]](https://git.suyu.dev) emulator, current maintainer of the [[**RiiShop**]](https://discord.gg/5565aDyYBr) for the Wii, the Homebrew-eShop [Not public yet] for the 3DS, and the former maintainer of the [[**StreetPass-Shop**]](https://github.com/VeltronNET/streetpass-shop) project which inspired the [[**NetPass**]](https://gbatemp.net/threads/a-new-way-to-experience-streetpass.653810/) project. I also have contributed along with various other projects.
+ - ⌨️ Former Maintainer of the [[**Suyu**]](https://git.suyu.dev) emulator, current maintainer of the [[**RiiShop**]](https://discord.gg/5565aDyYBr) for the Wii, the Homebrew-eShop [Not public yet] for the 3DS, and the former maintainer of the [[**StreetPass-Shop**]](https://git.veltron.net/VeltronNET/streetpass-shop) project which inspired the [[**NetPass**]](https://gbatemp.net/threads/a-new-way-to-experience-streetpass.653810/) project. I also have contributed along with various other projects.
  - 🌌 Living on Kepler-186F. 
 
 ## 📈 Stats
@@ -39,11 +39,11 @@
 <p><img src="github-metrics.svg" alt="Metrics"></p>
 
 ## 💻 Working Environment
-[![Android 16](https://img.shields.io/badge/Android%2016-3ddc84?style=flat&logo=android&logoColor=ffffff)](https://www.android.com/android-16/)<br>
-[![Windows 11 Enterprise IoT LTSC](https://custom-icon-badges.demolab.com/badge/Windows%2011%IoT-00adef?style=flat&logo=windows11&logoColor=ffffff)](https://massgrave.dev/windows_ltsc_links#download-links)<br>
-[![Linux Mint](https://img.shields.io/badge/Linux%20Mint-Mint?logo=linux-mint&logoColor=fff&style=flat)](https://linuxmint.com/)<br>
-[![CachyOS](https://img.shields.io/badge/EndeavourOS-1793D1?logo=endeavouros&logoColor=purple&style=flat)](https://endeavouros.com)<br>
-[![Dragon Linux](https://img.shields.io/badge/Manjaro%20Linux-1793D1?logo=manjaro&logoColor=fff&style=flat)](https://manjaro.org/)<br>
+[![Android 16](https://img.shields.io/badge/Android%2016-3ddc84?style=flat&logo=android&logoColor=ffffff)](https://www.android.com/android-16)<br>
+[![Windows 11 Enterprise IoT LTSC](https://custom-icon-badges.demolab.com/badge/Windows%2011-00adef?style=flat&logo=windows11&logoColor=ffffff)](https://massgrave.dev/windows_ltsc_links#download-links)<br>
+[![Linux Mint](https://img.shields.io/badge/Linux%20Mint-Mint?logo=linux-mint&logoColor=fff&style=flat)](https://linuxmint.com)<br>
+[![CachyOS](https://img.shields.io/badge/CachyOS-1793D1?logo=cachyos&logoColor=purple&style=flat)](https://endeavouros.com)<br>
+[![Dragon Linux](https://img.shields.io/badge/Manjaro%20Linux-1793D1?logo=manjaro&logoColor=fff&style=flat)](https://manjaro.org)<br>
 
 ## 📱 Devices
 [![OnePlus 12R](https://img.shields.io/badge/OnePlus%2012R-fd4900?style=flat&logo=OnePlus&logoColor=ffffff&color=red)](https://www.gsmarena.com/oneplus_12r-12727.php)<br>
