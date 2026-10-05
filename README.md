@@ -42,7 +42,7 @@
 [![Android 16](https://img.shields.io/badge/Android%2016-3ddc84?style=flat&logo=android&logoColor=ffffff)](https://www.android.com/android-16)<br>
 [![CachyOS](https://img.shields.io/badge/CachyOS-1793D1?logo=cachyos&logoColor=purple&style=flat)](https://cachyos.org)<br>
 [![Linux Mint](https://img.shields.io/badge/Linux%20Mint-Mint?logo=linux-mint&logoColor=fff&style=flat)](https://linuxmint.com)<br>
-[![Dragon Linux](https://img.shields.io/badge/Dragon%20Linux-1793D1?logo=manjaro&logoColor=fff&style=flat)](http://dragon-linux.veltron.net)<br>
+[![Dragon Linux](https://tinyurl.com/2sy5bsn6)](http://dragon-linux.veltron.net)<br>
 [![Windows 11 Enterprise IoT LTSC](https://custom-icon-badges.demolab.com/badge/Windows%2011-00adef?style=flat&logo=windows11&logoColor=ffffff)](https://massgrave.dev/windows_ltsc_links#download-links)<br>
 
 ## 📱 Devices
