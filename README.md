@@ -40,10 +40,10 @@
 
 ## 💻 Working Environment
 [![Android 16](https://img.shields.io/badge/Android%2016-3ddc84?style=flat&logo=android&logoColor=ffffff)](https://www.android.com/android-16)<br>
-[![Windows 11 Enterprise IoT LTSC](https://custom-icon-badges.demolab.com/badge/Windows%2011-00adef?style=flat&logo=windows11&logoColor=ffffff)](https://massgrave.dev/windows_ltsc_links#download-links)<br>
+[![CachyOS](https://img.shields.io/badge/CachyOS-1793D1?logo=cachyos&logoColor=purple&style=flat)](https://cachyos.org)<br>
 [![Linux Mint](https://img.shields.io/badge/Linux%20Mint-Mint?logo=linux-mint&logoColor=fff&style=flat)](https://linuxmint.com)<br>
-[![CachyOS](https://img.shields.io/badge/CachyOS-1793D1?logo=cachyos&logoColor=purple&style=flat)](https://endeavouros.com)<br>
 [![Dragon Linux](https://img.shields.io/badge/Manjaro%20Linux-1793D1?logo=manjaro&logoColor=fff&style=flat)](https://manjaro.org)<br>
+[![Windows 11 Enterprise IoT LTSC](https://custom-icon-badges.demolab.com/badge/Windows%2011-00adef?style=flat&logo=windows11&logoColor=ffffff)](https://massgrave.dev/windows_ltsc_links#download-links)<br>
 
 ## 📱 Devices
 [![OnePlus 12R](https://img.shields.io/badge/OnePlus%2012R-fd4900?style=flat&logo=OnePlus&logoColor=ffffff&color=red)](https://www.gsmarena.com/oneplus_12r-12727.php)<br>
@@ -53,7 +53,7 @@
 [![Fluxer](https://tinyurl.com/3sxkv3ww)](https://fluxer.go.veltron.net)<br>
 [![Odysee](https://img.shields.io/badge/MattTheTekie-EF1970?style=flat&logo=Odysee&logoColor=white)](https://odysee.com/@mattdoestech726:5)<br>
 [![Bluesky](https://img.shields.io/badge/MattTheTekie-0285FF?logo=bluesky&logoColor=ffffff)](https://bsky.app/profile/mattthetekie.bsky.social)<br>
-[![Mastodon](https://img.shields.io/badge/%40ASTAFATHERSATAN-0088cc?style=flat&logo=mastodon&logoColor=ffffff)](https://nerdculture.de/@ASTAFATHERSATAN)<br>
+[![Mastodon](https://img.shields.io/badge/ASTAFATHERSATAN-0088cc?style=flat&logo=mastodon&logoColor=ffffff)](https://nerdculture.de/@ASTAFATHERSATAN)<br>
 [![DSiPaint](https://img.shields.io/badge/%F0%9F%8E%A8%20MattTheTekie-blue.svg?style=flat)](https://dsipaint.com/member/?id=152737)<br>
 
 ## 🛸 Extras&nbsp;
