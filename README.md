@@ -40,10 +40,10 @@
 
 ## 💻 Working Environment
 [![Android 16](https://img.shields.io/badge/Android%2016-3ddc84?style=flat&logo=android&logoColor=ffffff)](https://www.android.com/android-16/)<br>
-[![Windows 11](https://custom-icon-badges.demolab.com/badge/Windows%2011-00adef?style=flat&logo=windows11&logoColor=ffffff)](https://www.microsoft.com/en-us/software-download/windows11)<br>
+[![Windows 11 Enterprise IoT LTSC](https://custom-icon-badges.demolab.com/badge/Windows%2011-00adef?style=flat&logo=windows11&logoColor=ffffff)](https://www.microsoft.com/en-us/software-download/windows11)<br>
 [![Linux Mint](https://img.shields.io/badge/Linux%20Mint-Mint?logo=linux-mint&logoColor=fff&style=flat)](https://linuxmint.com/)<br>
-[![EndeavourOS](https://img.shields.io/badge/EndeavourOS-1793D1?logo=endeavouros&logoColor=purple&style=flat)](https://endeavouros.com)<br>
-[![Manjaro](https://img.shields.io/badge/Manjaro%20Linux-1793D1?logo=manjaro&logoColor=fff&style=flat)](https://manjaro.org/)<br>
+[![CachyOS](https://img.shields.io/badge/EndeavourOS-1793D1?logo=endeavouros&logoColor=purple&style=flat)](https://endeavouros.com)<br>
+[![Dragon Linux](https://img.shields.io/badge/Manjaro%20Linux-1793D1?logo=manjaro&logoColor=fff&style=flat)](https://manjaro.org/)<br>
 
 ## 📱 Devices
 [![OnePlus 12R](https://img.shields.io/badge/OnePlus%2012R-fd4900?style=flat&logo=OnePlus&logoColor=ffffff&color=red)](https://www.gsmarena.com/oneplus_12r-12727.php)<br>
@@ -54,9 +54,7 @@
 [![Odysee](https://img.shields.io/badge/MattTheTekie-EF1970?style=flat&logo=Odysee&logoColor=white)](https://odysee.com/@mattdoestech726:5)<br>
 [![Bluesky](https://img.shields.io/badge/MattTheTekie-0285FF?logo=bluesky&logoColor=ffffff)](https://bsky.app/profile/mattthetekie.bsky.social)<br>
 [![Mastodon](https://img.shields.io/badge/%40ASTAFATHERSATAN-0088cc?style=flat&logo=mastodon&logoColor=ffffff)](https://nerdculture.de/@ASTAFATHERSATAN)<br>
-[![Telegram](https://img.shields.io/badge/%40MattTheTekie-0088cc?style=flat&logo=telegram&logoColor=ffffff)](https://t.me/MattTheTekie)<br>
 [![DSiPaint](https://img.shields.io/badge/%F0%9F%8E%A8%20MattTheTekie-blue.svg?style=flat)](https://dsipaint.com/member/?id=152737)<br>
-[![NetroCorp](https://tinyurl.com/bdffr5tr)](https://netrocorp.net/users/61)<br>
 
 ## 🛸 Extras&nbsp;
 
