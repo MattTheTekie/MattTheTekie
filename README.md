@@ -51,7 +51,7 @@
 
 ## 📫 Get in touch
 [![Fluxer](https://tinyurl.com/myfssusz)](https://fluxer.go.veltron.net)<br>
-[![Odysee](https://img.shields.io/badge/Odysse-EF1970?style=flat&logo=Odysee&logoColor=white)](https://odysee.com/@mattdoestech726:5)<br>
+[![Odysee](https://img.shields.io/badge/Odysee-EF1970?style=flat&logo=Odysee&logoColor=white)](https://odysee.com/@mattdoestech726:5)<br>
 [![Bluesky](https://img.shields.io/badge/Bluesky-0285FF?logo=bluesky&logoColor=ffffff)](https://bsky.app/profile/mattthetekie.bsky.social)<br>
 [![Mastodon](https://img.shields.io/badge/Mastodon-0088cc?style=flat&logo=mastodon&logoColor=ffffff)](https://nerdculture.de/@ASTAFATHERSATAN)<br>
 [![DSiPaint](https://img.shields.io/badge/%F0%9F%8E%A8%20DSiPaint-blue.svg?style=flat)](https://dsipaint.com/member/?id=152737)<br>
